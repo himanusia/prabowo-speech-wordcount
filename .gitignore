@@ -1,0 +1,20 @@
+# Local environments and caches
+.venv/
+.venv-*/
+.qa/
+.chrome-profile*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# Local/raw source material
+data/transcripts/raw/
+data/manifest.json
+data/*.sha256
+*.log
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
