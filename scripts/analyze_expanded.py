@@ -36,7 +36,7 @@ MBG_FULL_RE = re.compile(
 NON_SPEECH_RE = re.compile(
     r"(?i)(ustaz\s+adi\s+hidayat|mar(?:u|ú)f\s+amin|ketum\s+mui|"
     r"\bmui\b|mensesneg|menteri|minister|teddy|ahy|gibran|"
-    r"momen|aksi|polemik|pakar|kroni|podcast|parodi|analisis|"
+    r"momen|polemik|pakar|kroni|podcast|parodi|analisis|"
     r"komentari|survei|siswa|siswi|bocah|dapur|ayam|mahfud)"
 )
 ARRIVAL_RE = re.compile(
@@ -329,8 +329,39 @@ def prepare_items() -> tuple[list[dict], list[list[dict]], int]:
     return eligible, clusters, excluded
 
 
+def fetch_stats() -> dict:
+    seeds = json.loads(
+        (EXPANDED_DIR / "candidate-seeds.json").read_text(encoding="utf-8")
+    )["selected"]
+    manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+    entries = {entry["id"]: entry for entry in manifest["sources"]}
+    stats = {
+        "ok": 0,
+        "ip_blocked": 0,
+        "transcripts_disabled": 0,
+        "no_indonesian_track": 0,
+        "never_attempted": 0,
+    }
+    for seed in seeds:
+        entry = entries.get(seed["id"])
+        if entry is None:
+            stats["never_attempted"] += 1
+        elif entry.get("status") == "ok":
+            stats["ok"] += 1
+        elif entry.get("status") == "no_indonesian_track":
+            stats["no_indonesian_track"] += 1
+        elif entry.get("error_type") == "IpBlocked":
+            stats["ip_blocked"] += 1
+        elif entry.get("error_type") == "TranscriptsDisabled":
+            stats["transcripts_disabled"] += 1
+        else:
+            stats["never_attempted"] += 1
+    return stats
+
+
 def main() -> None:
     eligible, clusters, excluded = prepare_items()
+    stats = fetch_stats()
     canonical = []
     duplicate_groups = []
 
@@ -500,6 +531,11 @@ def main() -> None:
                 len(group) - 1 for group in clusters
             ),
             "excluded_items": excluded,
+            "fetch_ok": stats["ok"],
+            "fetch_ip_blocked": stats["ip_blocked"],
+            "fetch_transcripts_disabled": stats["transcripts_disabled"],
+            "fetch_no_indonesian_track": stats["no_indonesian_track"],
+            "fetch_never_attempted": stats["never_attempted"],
             "total_tokens": total_tokens,
             "unique_words": len(corpus),
             "top_words": top_words,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T13:00:24.006803+00:00",
+  "generated_at": "2026-09-11T13:24:34.821883+00:00",
   "method": {
     "source": "Indonesian YouTube caption tracks",
     "primary_metric": "surface-form token count for canonical speech events",
@@ -12,931 +12,936 @@
   },
   "totals": {
     "input_caption_items": 80,
-    "eligible_caption_items": 75,
-    "unique_speech_events": 44,
+    "eligible_caption_items": 76,
+    "unique_speech_events": 45,
     "duplicate_items_removed": 31,
-    "excluded_items": 5,
-    "total_tokens": 105507,
-    "unique_words": 8969,
+    "excluded_items": 4,
+    "fetch_ok": 74,
+    "fetch_ip_blocked": 31,
+    "fetch_transcripts_disabled": 3,
+    "fetch_no_indonesian_track": 13,
+    "fetch_never_attempted": 39,
+    "total_tokens": 106246,
+    "unique_words": 9007,
     "top_words": [
       {
         "word": "kita",
-        "count": 4071,
-        "per_1000": 38.59,
-        "speech_count": 44
+        "count": 4089,
+        "per_1000": 38.49,
+        "speech_count": 45
       },
       {
         "word": "yang",
-        "count": 3486,
-        "per_1000": 33.04,
-        "speech_count": 44
+        "count": 3515,
+        "per_1000": 33.08,
+        "speech_count": 45
       },
       {
         "word": "saya",
-        "count": 2673,
-        "per_1000": 25.33,
-        "speech_count": 43
-      },
-      {
-        "word": "dan",
-        "count": 2207,
-        "per_1000": 20.92,
+        "count": 2685,
+        "per_1000": 25.27,
         "speech_count": 44
       },
       {
+        "word": "dan",
+        "count": 2235,
+        "per_1000": 21.04,
+        "speech_count": 45
+      },
+      {
         "word": "ini",
-        "count": 1624,
-        "per_1000": 15.39,
-        "speech_count": 43
+        "count": 1627,
+        "per_1000": 15.31,
+        "speech_count": 44
       },
       {
         "word": "di",
-        "count": 1432,
-        "per_1000": 13.57,
-        "speech_count": 43
+        "count": 1440,
+        "per_1000": 13.55,
+        "speech_count": 44
       },
       {
         "word": "tidak",
-        "count": 1199,
-        "per_1000": 11.36,
-        "speech_count": 41
+        "count": 1203,
+        "per_1000": 11.32,
+        "speech_count": 42
       },
       {
         "word": "indonesia",
-        "count": 1112,
-        "per_1000": 10.54,
-        "speech_count": 43
+        "count": 1118,
+        "per_1000": 10.52,
+        "speech_count": 44
       },
       {
         "word": "itu",
-        "count": 1098,
-        "per_1000": 10.41,
-        "speech_count": 39
+        "count": 1100,
+        "per_1000": 10.35,
+        "speech_count": 40
       },
       {
         "word": "ya",
         "count": 1028,
-        "per_1000": 9.74,
+        "per_1000": 9.68,
         "speech_count": 33
       },
       {
         "word": "saudara-saudara",
-        "count": 839,
+        "count": 845,
         "per_1000": 7.95,
-        "speech_count": 40
+        "speech_count": 41
       },
       {
         "word": "untuk",
-        "count": 820,
-        "per_1000": 7.77,
-        "speech_count": 44
+        "count": 828,
+        "per_1000": 7.79,
+        "speech_count": 45
       },
       {
         "word": "rakyat",
-        "count": 803,
+        "count": 809,
         "per_1000": 7.61,
-        "speech_count": 41
+        "speech_count": 42
       },
       {
         "word": "ada",
-        "count": 792,
-        "per_1000": 7.51,
-        "speech_count": 39
+        "count": 795,
+        "per_1000": 7.48,
+        "speech_count": 40
       },
       {
         "word": "dari",
-        "count": 763,
-        "per_1000": 7.23,
-        "speech_count": 42
-      },
-      {
-        "word": "akan",
-        "count": 752,
-        "per_1000": 7.13,
-        "speech_count": 39
-      },
-      {
-        "word": "harus",
-        "count": 710,
-        "per_1000": 6.73,
-        "speech_count": 41
-      },
-      {
-        "word": "dengan",
-        "count": 682,
-        "per_1000": 6.46,
-        "speech_count": 42
-      },
-      {
-        "word": "kalau",
-        "count": 573,
-        "per_1000": 5.43,
-        "speech_count": 34
-      },
-      {
-        "word": "tahun",
-        "count": 573,
-        "per_1000": 5.43,
-        "speech_count": 40
-      },
-      {
-        "word": "negara",
-        "count": 572,
-        "per_1000": 5.42,
-        "speech_count": 40
-      },
-      {
-        "word": "bangsa",
-        "count": 567,
-        "per_1000": 5.37,
+        "count": 770,
+        "per_1000": 7.25,
         "speech_count": 43
       },
       {
+        "word": "akan",
+        "count": 758,
+        "per_1000": 7.13,
+        "speech_count": 40
+      },
+      {
+        "word": "harus",
+        "count": 715,
+        "per_1000": 6.73,
+        "speech_count": 42
+      },
+      {
+        "word": "dengan",
+        "count": 691,
+        "per_1000": 6.5,
+        "speech_count": 43
+      },
+      {
+        "word": "negara",
+        "count": 580,
+        "per_1000": 5.46,
+        "speech_count": 41
+      },
+      {
+        "word": "kalau",
+        "count": 574,
+        "per_1000": 5.4,
+        "speech_count": 35
+      },
+      {
+        "word": "tahun",
+        "count": 574,
+        "per_1000": 5.4,
+        "speech_count": 41
+      },
+      {
         "word": "sudah",
-        "count": 563,
-        "per_1000": 5.34,
-        "speech_count": 36
+        "count": 569,
+        "per_1000": 5.36,
+        "speech_count": 37
+      },
+      {
+        "word": "bangsa",
+        "count": 568,
+        "per_1000": 5.35,
+        "speech_count": 44
+      },
+      {
+        "word": "adalah",
+        "count": 561,
+        "per_1000": 5.28,
+        "speech_count": 43
       },
       {
         "word": "saudara",
         "count": 560,
-        "per_1000": 5.31,
+        "per_1000": 5.27,
         "speech_count": 40
-      },
-      {
-        "word": "adalah",
-        "count": 559,
-        "per_1000": 5.3,
-        "speech_count": 42
       },
       {
         "word": "bisa",
-        "count": 554,
-        "per_1000": 5.25,
-        "speech_count": 36
+        "count": 556,
+        "per_1000": 5.23,
+        "speech_count": 37
       },
       {
         "word": "juga",
-        "count": 508,
-        "per_1000": 4.81,
-        "speech_count": 40
+        "count": 515,
+        "per_1000": 4.85,
+        "speech_count": 41
+      },
+      {
+        "word": "semua",
+        "count": 513,
+        "per_1000": 4.83,
+        "speech_count": 43
       },
       {
         "word": "tapi",
         "count": 507,
-        "per_1000": 4.81,
+        "per_1000": 4.77,
         "speech_count": 38
-      },
-      {
-        "word": "semua",
-        "count": 507,
-        "per_1000": 4.81,
-        "speech_count": 42
       },
       {
         "word": "jadi",
         "count": 482,
-        "per_1000": 4.57,
+        "per_1000": 4.54,
         "speech_count": 37
       },
       {
         "word": "ee",
-        "count": 480,
-        "per_1000": 4.55,
-        "speech_count": 33
+        "count": 481,
+        "per_1000": 4.53,
+        "speech_count": 34
       },
       {
         "word": "dalam",
-        "count": 445,
-        "per_1000": 4.22,
-        "speech_count": 42
+        "count": 450,
+        "per_1000": 4.24,
+        "speech_count": 43
       },
       {
         "word": "enggak",
         "count": 442,
-        "per_1000": 4.19,
+        "per_1000": 4.16,
         "speech_count": 30
       },
       {
         "word": "karena",
         "count": 406,
-        "per_1000": 3.85,
+        "per_1000": 3.82,
         "speech_count": 41
       },
       {
         "word": "para",
-        "count": 378,
-        "per_1000": 3.58,
-        "speech_count": 39
+        "count": 384,
+        "per_1000": 3.61,
+        "speech_count": 40
       },
       {
         "word": "kepada",
-        "count": 373,
-        "per_1000": 3.54,
-        "speech_count": 39
+        "count": 381,
+        "per_1000": 3.59,
+        "speech_count": 40
+      },
+      {
+        "word": "hari",
+        "count": 356,
+        "per_1000": 3.35,
+        "speech_count": 41
       },
       {
         "word": "besar",
         "count": 356,
-        "per_1000": 3.37,
+        "per_1000": 3.35,
         "speech_count": 42
       },
       {
-        "word": "hari",
-        "count": 354,
-        "per_1000": 3.36,
-        "speech_count": 40
+        "word": "ke",
+        "count": 353,
+        "per_1000": 3.32,
+        "speech_count": 39
       },
       {
-        "word": "ke",
-        "count": 351,
-        "per_1000": 3.33,
-        "speech_count": 38
+        "word": "sekalian",
+        "count": 346,
+        "per_1000": 3.26,
+        "speech_count": 42
       },
       {
         "word": "kasih",
-        "count": 342,
+        "count": 344,
         "per_1000": 3.24,
-        "speech_count": 43
+        "speech_count": 44
       },
       {
         "word": "menteri",
         "count": 342,
-        "per_1000": 3.24,
+        "per_1000": 3.22,
         "speech_count": 36
       },
       {
         "word": "presiden",
-        "count": 340,
-        "per_1000": 3.22,
-        "speech_count": 41
-      },
-      {
-        "word": "sekalian",
-        "count": 340,
-        "per_1000": 3.22,
-        "speech_count": 41
+        "count": 341,
+        "per_1000": 3.21,
+        "speech_count": 42
       },
       {
         "word": "sekarang",
-        "count": 335,
-        "per_1000": 3.18,
-        "speech_count": 37
+        "count": 336,
+        "per_1000": 3.16,
+        "speech_count": 38
       },
       {
         "word": "banyak",
         "count": 334,
-        "per_1000": 3.17,
+        "per_1000": 3.14,
         "speech_count": 37
       },
       {
         "word": "ketua",
-        "count": 321,
-        "per_1000": 3.04,
-        "speech_count": 29
+        "count": 325,
+        "per_1000": 3.06,
+        "speech_count": 30
       },
       {
         "word": "bahwa",
-        "count": 313,
+        "count": 316,
         "per_1000": 2.97,
-        "speech_count": 40
-      },
-      {
-        "word": "mereka",
-        "count": 307,
-        "per_1000": 2.91,
-        "speech_count": 33
-      },
-      {
-        "word": "oleh",
-        "count": 298,
-        "per_1000": 2.82,
         "speech_count": 41
       },
       {
-        "word": "apa",
-        "count": 292,
-        "per_1000": 2.77,
-        "speech_count": 29
+        "word": "mereka",
+        "count": 311,
+        "per_1000": 2.93,
+        "speech_count": 34
+      },
+      {
+        "word": "oleh",
+        "count": 299,
+        "per_1000": 2.81,
+        "speech_count": 42
       },
       {
         "word": "terima",
-        "count": 291,
+        "count": 293,
         "per_1000": 2.76,
-        "speech_count": 43
+        "speech_count": 44
+      },
+      {
+        "word": "apa",
+        "count": 293,
+        "per_1000": 2.76,
+        "speech_count": 30
       },
       {
         "word": "mau",
-        "count": 284,
-        "per_1000": 2.69,
-        "speech_count": 32
+        "count": 285,
+        "per_1000": 2.68,
+        "speech_count": 33
       },
       {
         "word": "kan",
         "count": 284,
-        "per_1000": 2.69,
+        "per_1000": 2.67,
         "speech_count": 28
       },
       {
-        "word": "seluruh",
-        "count": 275,
-        "per_1000": 2.61,
-        "speech_count": 41
+        "word": "lagi",
+        "count": 278,
+        "per_1000": 2.62,
+        "speech_count": 37
       },
       {
-        "word": "lagi",
-        "count": 275,
+        "word": "seluruh",
+        "count": 277,
         "per_1000": 2.61,
-        "speech_count": 36
+        "speech_count": 42
       },
       {
         "word": "baik",
-        "count": 269,
-        "per_1000": 2.55,
-        "speech_count": 38
+        "count": 273,
+        "per_1000": 2.57,
+        "speech_count": 39
       },
       {
         "word": "republik",
-        "count": 267,
+        "count": 269,
         "per_1000": 2.53,
-        "speech_count": 39
+        "speech_count": 40
       },
       {
         "word": "lebih",
         "count": 267,
-        "per_1000": 2.53,
+        "per_1000": 2.51,
         "speech_count": 35
       },
       {
         "word": "hadir",
-        "count": 262,
+        "count": 263,
         "per_1000": 2.48,
-        "speech_count": 37
+        "speech_count": 38
       },
       {
         "word": "sebagai",
         "count": 258,
-        "per_1000": 2.45,
+        "per_1000": 2.43,
         "speech_count": 42
       },
       {
         "word": "sangat",
         "count": 247,
-        "per_1000": 2.34,
+        "per_1000": 2.32,
         "speech_count": 39
       },
       {
         "word": "satu",
         "count": 240,
-        "per_1000": 2.27,
+        "per_1000": 2.26,
         "speech_count": 37
       },
       {
         "word": "atas",
         "count": 235,
-        "per_1000": 2.23,
+        "per_1000": 2.21,
         "speech_count": 40
       },
       {
         "word": "sama",
         "count": 234,
-        "per_1000": 2.22,
+        "per_1000": 2.2,
         "speech_count": 35
       },
       {
         "word": "telah",
-        "count": 228,
-        "per_1000": 2.16,
-        "speech_count": 34
+        "count": 233,
+        "per_1000": 2.19,
+        "speech_count": 35
       },
       {
         "word": "pak",
         "count": 227,
-        "per_1000": 2.15,
+        "per_1000": 2.14,
         "speech_count": 26
       },
       {
         "word": "dia",
         "count": 226,
-        "per_1000": 2.14,
+        "per_1000": 2.13,
         "speech_count": 26
       },
       {
         "word": "orang",
         "count": 221,
-        "per_1000": 2.09,
+        "per_1000": 2.08,
         "speech_count": 31
       },
       {
         "word": "dunia",
         "count": 221,
-        "per_1000": 2.09,
+        "per_1000": 2.08,
         "speech_count": 37
       },
       {
         "word": "bagi",
-        "count": 218,
-        "per_1000": 2.07,
-        "speech_count": 41
+        "count": 219,
+        "per_1000": 2.06,
+        "speech_count": 42
       },
       {
         "word": "punya",
         "count": 217,
-        "per_1000": 2.06,
+        "per_1000": 2.04,
         "speech_count": 34
       },
       {
         "word": "hanya",
         "count": 211,
-        "per_1000": 2.0,
+        "per_1000": 1.99,
         "speech_count": 38
       },
       {
         "word": "boleh",
         "count": 209,
-        "per_1000": 1.98,
+        "per_1000": 1.97,
         "speech_count": 35
       },
       {
         "word": "mungkin",
-        "count": 199,
-        "per_1000": 1.89,
-        "speech_count": 36
-      },
-      {
-        "word": "masih",
-        "count": 198,
+        "count": 200,
         "per_1000": 1.88,
         "speech_count": 37
       },
       {
+        "word": "masih",
+        "count": 198,
+        "per_1000": 1.86,
+        "speech_count": 37
+      },
+      {
         "word": "pemerintah",
-        "count": 192,
-        "per_1000": 1.82,
-        "speech_count": 33
+        "count": 195,
+        "per_1000": 1.84,
+        "speech_count": 34
       },
       {
         "word": "wakil",
         "count": 191,
-        "per_1000": 1.81,
+        "per_1000": 1.8,
         "speech_count": 31
+      },
+      {
+        "word": "ingin",
+        "count": 189,
+        "per_1000": 1.78,
+        "speech_count": 37
       },
       {
         "word": "bukan",
         "count": 187,
-        "per_1000": 1.77,
+        "per_1000": 1.76,
         "speech_count": 34
+      },
+      {
+        "word": "dapat",
+        "count": 186,
+        "per_1000": 1.75,
+        "speech_count": 40
       },
       {
         "word": "nanti",
         "count": 185,
-        "per_1000": 1.75,
+        "per_1000": 1.74,
         "speech_count": 30
-      },
-      {
-        "word": "ingin",
-        "count": 183,
-        "per_1000": 1.73,
-        "speech_count": 36
-      },
-      {
-        "word": "dapat",
-        "count": 183,
-        "per_1000": 1.73,
-        "speech_count": 39
       },
       {
         "word": "hormati",
         "count": 180,
-        "per_1000": 1.71,
+        "per_1000": 1.69,
         "speech_count": 37
+      },
+      {
+        "word": "kami",
+        "count": 177,
+        "per_1000": 1.67,
+        "speech_count": 25
       },
       {
         "word": "benar",
         "count": 176,
-        "per_1000": 1.67,
+        "per_1000": 1.66,
         "speech_count": 32
       },
       {
-        "word": "kami",
-        "count": 174,
-        "per_1000": 1.65,
-        "speech_count": 24
-      },
-      {
         "word": "ekonomi",
-        "count": 173,
+        "count": 174,
         "per_1000": 1.64,
-        "speech_count": 31
-      },
-      {
-        "word": "atau",
-        "count": 167,
-        "per_1000": 1.58,
-        "speech_count": 33
+        "speech_count": 32
       },
       {
         "word": "luar",
-        "count": 164,
+        "count": 169,
+        "per_1000": 1.59,
+        "speech_count": 33
+      },
+      {
+        "word": "atau",
+        "count": 169,
+        "per_1000": 1.59,
+        "speech_count": 34
+      },
+      {
+        "word": "sampai",
+        "count": 165,
         "per_1000": 1.55,
         "speech_count": 32
       },
       {
-        "word": "sampai",
-        "count": 163,
-        "per_1000": 1.54,
-        "speech_count": 31
-      },
-      {
-        "word": "menjadi",
-        "count": 163,
+        "word": "selalu",
+        "count": 164,
         "per_1000": 1.54,
         "speech_count": 37
       },
       {
-        "word": "selalu",
-        "count": 159,
-        "per_1000": 1.51,
-        "speech_count": 36
+        "word": "menjadi",
+        "count": 164,
+        "per_1000": 1.54,
+        "speech_count": 38
       },
       {
         "word": "pada",
+        "count": 159,
+        "per_1000": 1.5,
+        "speech_count": 39
+      },
+      {
+        "word": "terus",
         "count": 157,
-        "per_1000": 1.49,
-        "speech_count": 38
+        "per_1000": 1.48,
+        "speech_count": 34
       },
       {
         "word": "iya",
         "count": 156,
-        "per_1000": 1.48,
+        "per_1000": 1.47,
         "speech_count": 30
-      },
-      {
-        "word": "terus",
-        "count": 154,
-        "per_1000": 1.46,
-        "speech_count": 33
       },
       {
         "word": "juta",
         "count": 153,
-        "per_1000": 1.45,
+        "per_1000": 1.44,
         "speech_count": 26
+      },
+      {
+        "word": "jangan",
+        "count": 151,
+        "per_1000": 1.42,
+        "speech_count": 29
       },
       {
         "word": "mana",
         "count": 151,
-        "per_1000": 1.43,
+        "per_1000": 1.42,
         "speech_count": 35
       },
       {
         "word": "kali",
         "count": 151,
-        "per_1000": 1.43,
+        "per_1000": 1.42,
         "speech_count": 30
+      },
+      {
+        "word": "tni",
+        "count": 150,
+        "per_1000": 1.41,
+        "speech_count": 31
       },
       {
         "word": "waktu",
         "count": 150,
-        "per_1000": 1.42,
+        "per_1000": 1.41,
         "speech_count": 31
-      },
-      {
-        "word": "tni",
-        "count": 149,
-        "per_1000": 1.41,
-        "speech_count": 30
-      },
-      {
-        "word": "jangan",
-        "count": 149,
-        "per_1000": 1.41,
-        "speech_count": 28
       },
       {
         "word": "tadi",
-        "count": 146,
-        "per_1000": 1.38,
-        "speech_count": 31
+        "count": 149,
+        "per_1000": 1.4,
+        "speech_count": 32
       }
     ],
     "top_content_words": [
       {
         "word": "indonesia",
-        "count": 1112,
-        "per_1000": 10.54,
-        "speech_count": 43
+        "count": 1118,
+        "per_1000": 10.52,
+        "speech_count": 44
       },
       {
         "word": "rakyat",
-        "count": 803,
+        "count": 809,
         "per_1000": 7.61,
-        "speech_count": 41
+        "speech_count": 42
       },
       {
         "word": "harus",
-        "count": 710,
+        "count": 715,
         "per_1000": 6.73,
+        "speech_count": 42
+      },
+      {
+        "word": "negara",
+        "count": 580,
+        "per_1000": 5.46,
         "speech_count": 41
       },
       {
         "word": "tahun",
-        "count": 573,
-        "per_1000": 5.43,
-        "speech_count": 40
-      },
-      {
-        "word": "negara",
-        "count": 572,
-        "per_1000": 5.42,
-        "speech_count": 40
+        "count": 574,
+        "per_1000": 5.4,
+        "speech_count": 41
       },
       {
         "word": "bangsa",
-        "count": 567,
-        "per_1000": 5.37,
-        "speech_count": 43
+        "count": 568,
+        "per_1000": 5.35,
+        "speech_count": 44
       },
       {
         "word": "enggak",
         "count": 442,
-        "per_1000": 4.19,
+        "per_1000": 4.16,
         "speech_count": 30
       },
       {
         "word": "menteri",
         "count": 342,
-        "per_1000": 3.24,
+        "per_1000": 3.22,
         "speech_count": 36
       },
       {
         "word": "presiden",
-        "count": 340,
-        "per_1000": 3.22,
-        "speech_count": 41
+        "count": 341,
+        "per_1000": 3.21,
+        "speech_count": 42
       },
       {
         "word": "ketua",
-        "count": 321,
-        "per_1000": 3.04,
-        "speech_count": 29
+        "count": 325,
+        "per_1000": 3.06,
+        "speech_count": 30
       },
       {
         "word": "apa",
-        "count": 292,
-        "per_1000": 2.77,
-        "speech_count": 29
+        "count": 293,
+        "per_1000": 2.76,
+        "speech_count": 30
       },
       {
         "word": "mau",
-        "count": 284,
-        "per_1000": 2.69,
-        "speech_count": 32
+        "count": 285,
+        "per_1000": 2.68,
+        "speech_count": 33
       },
       {
         "word": "seluruh",
-        "count": 275,
+        "count": 277,
         "per_1000": 2.61,
-        "speech_count": 41
+        "speech_count": 42
       },
       {
         "word": "republik",
-        "count": 267,
+        "count": 269,
         "per_1000": 2.53,
-        "speech_count": 39
+        "speech_count": 40
       },
       {
         "word": "hadir",
-        "count": 262,
+        "count": 263,
         "per_1000": 2.48,
-        "speech_count": 37
+        "speech_count": 38
       },
       {
         "word": "satu",
         "count": 240,
-        "per_1000": 2.27,
+        "per_1000": 2.26,
         "speech_count": 37
       },
       {
         "word": "pak",
         "count": 227,
-        "per_1000": 2.15,
+        "per_1000": 2.14,
         "speech_count": 26
       },
       {
         "word": "dia",
         "count": 226,
-        "per_1000": 2.14,
+        "per_1000": 2.13,
         "speech_count": 26
       },
       {
         "word": "orang",
         "count": 221,
-        "per_1000": 2.09,
+        "per_1000": 2.08,
         "speech_count": 31
       },
       {
         "word": "dunia",
         "count": 221,
-        "per_1000": 2.09,
+        "per_1000": 2.08,
         "speech_count": 37
       },
       {
         "word": "punya",
         "count": 217,
-        "per_1000": 2.06,
+        "per_1000": 2.04,
         "speech_count": 34
       },
       {
         "word": "boleh",
         "count": 209,
-        "per_1000": 1.98,
+        "per_1000": 1.97,
         "speech_count": 35
       },
       {
         "word": "mungkin",
-        "count": 199,
-        "per_1000": 1.89,
-        "speech_count": 36
-      },
-      {
-        "word": "masih",
-        "count": 198,
+        "count": 200,
         "per_1000": 1.88,
         "speech_count": 37
       },
       {
+        "word": "masih",
+        "count": 198,
+        "per_1000": 1.86,
+        "speech_count": 37
+      },
+      {
         "word": "pemerintah",
-        "count": 192,
-        "per_1000": 1.82,
-        "speech_count": 33
+        "count": 195,
+        "per_1000": 1.84,
+        "speech_count": 34
       },
       {
         "word": "wakil",
         "count": 191,
-        "per_1000": 1.81,
+        "per_1000": 1.8,
         "speech_count": 31
+      },
+      {
+        "word": "ingin",
+        "count": 189,
+        "per_1000": 1.78,
+        "speech_count": 37
       },
       {
         "word": "bukan",
         "count": 187,
-        "per_1000": 1.77,
+        "per_1000": 1.76,
         "speech_count": 34
       },
       {
         "word": "nanti",
         "count": 185,
-        "per_1000": 1.75,
+        "per_1000": 1.74,
         "speech_count": 30
-      },
-      {
-        "word": "ingin",
-        "count": 183,
-        "per_1000": 1.73,
-        "speech_count": 36
       },
       {
         "word": "hormati",
         "count": 180,
-        "per_1000": 1.71,
+        "per_1000": 1.69,
         "speech_count": 37
       },
       {
         "word": "benar",
         "count": 176,
-        "per_1000": 1.67,
+        "per_1000": 1.66,
         "speech_count": 32
       },
       {
         "word": "ekonomi",
-        "count": 173,
+        "count": 174,
         "per_1000": 1.64,
-        "speech_count": 31
-      },
-      {
-        "word": "luar",
-        "count": 164,
-        "per_1000": 1.55,
         "speech_count": 32
       },
       {
+        "word": "luar",
+        "count": 169,
+        "per_1000": 1.59,
+        "speech_count": 33
+      },
+      {
         "word": "selalu",
-        "count": 159,
-        "per_1000": 1.51,
-        "speech_count": 36
+        "count": 164,
+        "per_1000": 1.54,
+        "speech_count": 37
+      },
+      {
+        "word": "terus",
+        "count": 157,
+        "per_1000": 1.48,
+        "speech_count": 34
       },
       {
         "word": "iya",
         "count": 156,
-        "per_1000": 1.48,
+        "per_1000": 1.47,
         "speech_count": 30
-      },
-      {
-        "word": "terus",
-        "count": 154,
-        "per_1000": 1.46,
-        "speech_count": 33
       },
       {
         "word": "juta",
         "count": 153,
-        "per_1000": 1.45,
+        "per_1000": 1.44,
         "speech_count": 26
+      },
+      {
+        "word": "jangan",
+        "count": 151,
+        "per_1000": 1.42,
+        "speech_count": 29
       },
       {
         "word": "mana",
         "count": 151,
-        "per_1000": 1.43,
+        "per_1000": 1.42,
         "speech_count": 35
       },
       {
         "word": "kali",
         "count": 151,
-        "per_1000": 1.43,
+        "per_1000": 1.42,
         "speech_count": 30
+      },
+      {
+        "word": "tni",
+        "count": 150,
+        "per_1000": 1.41,
+        "speech_count": 31
       },
       {
         "word": "waktu",
         "count": 150,
-        "per_1000": 1.42,
+        "per_1000": 1.41,
         "speech_count": 31
       },
       {
-        "word": "tni",
-        "count": 149,
-        "per_1000": 1.41,
-        "speech_count": 30
-      },
-      {
-        "word": "jangan",
-        "count": 149,
-        "per_1000": 1.41,
-        "speech_count": 28
-      },
-      {
         "word": "lain",
-        "count": 146,
-        "per_1000": 1.38,
-        "speech_count": 34
+        "count": 148,
+        "per_1000": 1.39,
+        "speech_count": 35
+      },
+      {
+        "word": "partai",
+        "count": 145,
+        "per_1000": 1.36,
+        "speech_count": 16
       },
       {
         "word": "berapa",
         "count": 142,
-        "per_1000": 1.35,
+        "per_1000": 1.34,
+        "speech_count": 24
+      },
+      {
+        "word": "umum",
+        "count": 142,
+        "per_1000": 1.34,
         "speech_count": 24
       },
       {
         "word": "kerja",
-        "count": 139,
-        "per_1000": 1.32,
-        "speech_count": 29
-      },
-      {
-        "word": "partai",
-        "count": 139,
-        "per_1000": 1.32,
-        "speech_count": 15
+        "count": 141,
+        "per_1000": 1.33,
+        "speech_count": 30
       },
       {
         "word": "sekolah",
         "count": 138,
-        "per_1000": 1.31,
+        "per_1000": 1.3,
         "speech_count": 20
       },
       {
         "word": "bapak",
         "count": 137,
-        "per_1000": 1.3,
+        "per_1000": 1.29,
         "speech_count": 27
       },
       {
         "word": "lihat",
         "count": 136,
-        "per_1000": 1.29,
+        "per_1000": 1.28,
         "speech_count": 29
       },
       {
         "word": "kepala",
         "count": 133,
-        "per_1000": 1.26,
-        "speech_count": 29
-      },
-      {
-        "word": "umum",
-        "count": 132,
         "per_1000": 1.25,
-        "speech_count": 23
+        "speech_count": 29
       },
       {
         "word": "baru",
         "count": 130,
-        "per_1000": 1.23,
+        "per_1000": 1.22,
         "speech_count": 32
       },
       {
         "word": "bekerja",
         "count": 129,
-        "per_1000": 1.22,
+        "per_1000": 1.21,
         "speech_count": 31
       },
       {
@@ -946,76 +951,82 @@
         "speech_count": 32
       },
       {
+        "word": "paling",
+        "count": 125,
+        "per_1000": 1.18,
+        "speech_count": 31
+      },
+      {
+        "word": "salam",
+        "count": 124,
+        "per_1000": 1.17,
+        "speech_count": 41
+      },
+      {
         "word": "triliun",
         "count": 124,
-        "per_1000": 1.18,
+        "per_1000": 1.17,
         "speech_count": 15
       },
       {
         "word": "sendiri",
         "count": 123,
-        "per_1000": 1.17,
+        "per_1000": 1.16,
         "speech_count": 26
       },
       {
-        "word": "paling",
-        "count": 123,
-        "per_1000": 1.17,
-        "speech_count": 30
-      },
-      {
-        "word": "salam",
-        "count": 122,
-        "per_1000": 1.16,
-        "speech_count": 40
+        "word": "negeri",
+        "count": 118,
+        "per_1000": 1.11,
+        "speech_count": 31
       },
       {
         "word": "bersama",
         "count": 118,
-        "per_1000": 1.12,
+        "per_1000": 1.11,
         "speech_count": 30
       },
       {
         "word": "tiap",
         "count": 117,
-        "per_1000": 1.11,
+        "per_1000": 1.1,
         "speech_count": 25
       },
       {
         "word": "pertama",
         "count": 117,
-        "per_1000": 1.11,
+        "per_1000": 1.1,
         "speech_count": 31
       },
       {
-        "word": "negeri",
-        "count": 116,
-        "per_1000": 1.1,
-        "speech_count": 30
-      },
-      {
         "word": "rumah",
-        "count": 113,
+        "count": 114,
         "per_1000": 1.07,
-        "speech_count": 17
+        "speech_count": 18
       },
       {
         "word": "hidup",
         "count": 111,
-        "per_1000": 1.05,
+        "per_1000": 1.04,
         "speech_count": 32
       },
       {
         "word": "suatu",
         "count": 111,
-        "per_1000": 1.05,
+        "per_1000": 1.04,
         "speech_count": 30
       },
       {
         "word": "kekayaan",
         "count": 111,
-        "per_1000": 1.05,
+        "per_1000": 1.04,
         "speech_count": 26
+      },
+      {
+        "word": "pimpinan",
+        "count": 110,
+        "per_1000": 1.04,
+        "speech_count": 31
       },
       {
         "word": "pangan",
@@ -1048,124 +1059,136 @@
         "speech_count": 23
       },
       {
+        "word": "nasional",
+        "count": 107,
+        "per_1000": 1.01,
+        "speech_count": 32
+      },
+      {
         "word": "penting",
         "count": 106,
         "per_1000": 1.0,
         "speech_count": 33
       },
       {
-        "word": "nasional",
-        "count": 106,
-        "per_1000": 1.0,
-        "speech_count": 31
-      },
-      {
-        "word": "pimpinan",
-        "count": 105,
-        "per_1000": 1.0,
-        "speech_count": 30
-      },
-      {
         "word": "memang",
         "count": 102,
-        "per_1000": 0.97,
+        "per_1000": 0.96,
         "speech_count": 30
       },
       {
         "word": "salah",
         "count": 102,
-        "per_1000": 0.97,
+        "per_1000": 0.96,
         "speech_count": 31
       },
       {
         "word": "sini",
         "count": 100,
-        "per_1000": 0.95,
+        "per_1000": 0.94,
         "speech_count": 34
       },
       {
         "word": "masa",
         "count": 100,
-        "per_1000": 0.95,
+        "per_1000": 0.94,
         "speech_count": 29
       },
       {
         "word": "anak-anak",
         "count": 100,
-        "per_1000": 0.95,
+        "per_1000": 0.94,
         "speech_count": 26
+      },
+      {
+        "word": "dpr",
+        "count": 100,
+        "per_1000": 0.94,
+        "speech_count": 18
       },
       {
         "word": "prabowo",
         "count": 99,
-        "per_1000": 0.94,
+        "per_1000": 0.93,
         "speech_count": 33
+      },
+      {
+        "word": "merdeka",
+        "count": 99,
+        "per_1000": 0.93,
+        "speech_count": 28
       },
       {
         "word": "saja",
         "count": 99,
-        "per_1000": 0.94,
+        "per_1000": 0.93,
         "speech_count": 27
       },
       {
         "word": "masalah",
         "count": 99,
-        "per_1000": 0.94,
+        "per_1000": 0.93,
         "speech_count": 24
+      },
+      {
+        "word": "air",
+        "count": 98,
+        "per_1000": 0.92,
+        "speech_count": 31
       },
       {
         "word": "perlu",
         "count": 97,
-        "per_1000": 0.92,
-        "speech_count": 28
-      },
-      {
-        "word": "air",
-        "count": 96,
         "per_1000": 0.91,
-        "speech_count": 30
+        "speech_count": 28
       },
       {
         "word": "depan",
         "count": 96,
-        "per_1000": 0.91,
+        "per_1000": 0.9,
         "speech_count": 35
       },
       {
-        "word": "merdeka",
+        "word": "warahmatullahi",
         "count": 96,
-        "per_1000": 0.91,
-        "speech_count": 27
+        "per_1000": 0.9,
+        "speech_count": 43
+      },
+      {
+        "word": "sejahtera",
+        "count": 96,
+        "per_1000": 0.9,
+        "speech_count": 37
       },
       {
         "word": "desa",
         "count": 96,
-        "per_1000": 0.91,
+        "per_1000": 0.9,
         "speech_count": 18
       },
       {
-        "word": "warahmatullahi",
+        "word": "wabarakatuh",
         "count": 95,
-        "per_1000": 0.9,
-        "speech_count": 42
+        "per_1000": 0.89,
+        "speech_count": 43
+      },
+      {
+        "word": "minta",
+        "count": 95,
+        "per_1000": 0.89,
+        "speech_count": 27
       },
       {
         "word": "setiap",
         "count": 94,
-        "per_1000": 0.89,
+        "per_1000": 0.88,
         "speech_count": 21
       },
       {
-        "word": "wabarakatuh",
+        "word": "sekali",
         "count": 94,
-        "per_1000": 0.89,
-        "speech_count": 42
-      },
-      {
-        "word": "sejahtera",
-        "count": 94,
-        "per_1000": 0.89,
-        "speech_count": 36
+        "per_1000": 0.88,
+        "speech_count": 35
       },
       {
         "word": "memberi",
@@ -1180,22 +1203,10 @@
         "speech_count": 29
       },
       {
-        "word": "minta",
-        "count": 93,
-        "per_1000": 0.88,
-        "speech_count": 26
-      },
-      {
         "word": "ibu",
         "count": 91,
         "per_1000": 0.86,
         "speech_count": 25
-      },
-      {
-        "word": "sekali",
-        "count": 91,
-        "per_1000": 0.86,
-        "speech_count": 34
       },
       {
         "word": "sejarah",
@@ -1204,106 +1215,100 @@
         "speech_count": 22
       },
       {
+        "word": "tanpa",
+        "count": 91,
+        "per_1000": 0.86,
+        "speech_count": 30
+      },
+      {
         "word": "bupati",
         "count": 91,
         "per_1000": 0.86,
         "speech_count": 13
-      },
-      {
-        "word": "pemimpin",
-        "count": 90,
-        "per_1000": 0.85,
-        "speech_count": 23
-      },
-      {
-        "word": "keras",
-        "count": 90,
-        "per_1000": 0.85,
-        "speech_count": 29
       }
     ],
     "topics": [
       {
         "topic": "mbg",
         "matched_units": 78,
-        "per_1000_tokens": 0.74,
+        "per_1000_tokens": 0.73,
         "speech_count": 16,
-        "speech_share": 36.4
+        "speech_share": 35.6
       },
       {
         "topic": "pangan",
         "matched_units": 440,
-        "per_1000_tokens": 4.17,
+        "per_1000_tokens": 4.14,
         "speech_count": 32,
-        "speech_share": 72.7
+        "speech_share": 71.1
       },
       {
         "topic": "ekonomi",
-        "matched_units": 622,
-        "per_1000_tokens": 5.9,
-        "speech_count": 39,
-        "speech_share": 88.6
+        "matched_units": 623,
+        "per_1000_tokens": 5.86,
+        "speech_count": 40,
+        "speech_share": 88.9
       },
       {
         "topic": "pendidikan",
         "matched_units": 284,
-        "per_1000_tokens": 2.69,
+        "per_1000_tokens": 2.67,
         "speech_count": 33,
-        "speech_share": 75.0
+        "speech_share": 73.3
       },
       {
         "topic": "kesehatan_dan_gizi",
-        "matched_units": 425,
-        "per_1000_tokens": 4.03,
-        "speech_count": 39,
-        "speech_share": 88.6
+        "matched_units": 426,
+        "per_1000_tokens": 4.01,
+        "speech_count": 40,
+        "speech_share": 88.9
       },
       {
         "topic": "tata_kelola",
-        "matched_units": 386,
-        "per_1000_tokens": 3.66,
-        "speech_count": 37,
-        "speech_share": 84.1
+        "matched_units": 395,
+        "per_1000_tokens": 3.72,
+        "speech_count": 38,
+        "speech_share": 84.4
       },
       {
         "topic": "pertahanan_dan_keamanan",
-        "matched_units": 393,
-        "per_1000_tokens": 3.72,
-        "speech_count": 35,
-        "speech_share": 79.5
+        "matched_units": 396,
+        "per_1000_tokens": 3.73,
+        "speech_count": 36,
+        "speech_share": 80.0
       },
       {
         "topic": "nasional_dan_identitas",
-        "matched_units": 3458,
-        "per_1000_tokens": 32.78,
-        "speech_count": 44,
+        "matched_units": 3482,
+        "per_1000_tokens": 32.77,
+        "speech_count": 45,
         "speech_share": 100.0
       }
     ],
     "framing": [
       {
         "word": "saya",
-        "count": 2673,
-        "per_1000_tokens": 25.33,
-        "speech_count": 43
-      },
-      {
-        "word": "kita",
-        "count": 4071,
-        "per_1000_tokens": 38.59,
+        "count": 2685,
+        "per_1000_tokens": 25.27,
         "speech_count": 44
       },
       {
+        "word": "kita",
+        "count": 4089,
+        "per_1000_tokens": 38.49,
+        "speech_count": 45
+      },
+      {
         "word": "kami",
-        "count": 174,
-        "per_1000_tokens": 1.65,
-        "speech_count": 24
+        "count": 177,
+        "per_1000_tokens": 1.67,
+        "speech_count": 25
       },
       {
         "word": "mereka",
-        "count": 307,
-        "per_1000_tokens": 2.91,
-        "speech_count": 33
+        "count": 311,
+        "per_1000_tokens": 2.93,
+        "speech_count": 34
       }
     ]
   },
@@ -1316,7 +1321,7 @@
       "url": "https://www.youtube.com/watch?v=ffYHRrgqg5U",
       "duration": 1616,
       "source_tier": "full_media",
-      "duplicate_group": "event-017",
+      "duplicate_group": "event-018",
       "duplicate_count": 0,
       "token_count": 1465,
       "unique_word_count": 551,
@@ -1902,7 +1907,7 @@
       "url": "https://www.youtube.com/watch?v=CfnRESwOZKQ",
       "duration": 923,
       "source_tier": "official",
-      "duplicate_group": "event-003",
+      "duplicate_group": "event-004",
       "duplicate_count": 0,
       "token_count": 807,
       "unique_word_count": 335,
@@ -2272,7 +2277,7 @@
       "url": "https://www.youtube.com/watch?v=Enmz62kOMyI",
       "duration": 1057,
       "source_tier": "official",
-      "duplicate_group": "event-040",
+      "duplicate_group": "event-041",
       "duplicate_count": 0,
       "token_count": 1102,
       "unique_word_count": 424,
@@ -2744,7 +2749,7 @@
       "url": "https://www.youtube.com/watch?v=E_doThSKS4E",
       "duration": 651,
       "source_tier": "official",
-      "duplicate_group": "event-004",
+      "duplicate_group": "event-005",
       "duplicate_count": 0,
       "token_count": 588,
       "unique_word_count": 315,
@@ -3087,6 +3092,370 @@
       }
     },
     {
+      "id": "3e_gu9rWwWQ",
+      "date": "2025-08-31",
+      "title": "Pernyataan Presiden Prabowo Menyikapi Aksi Demo",
+      "channel": "Kompas.com",
+      "url": "https://www.youtube.com/watch?v=3e_gu9rWwWQ",
+      "duration": 646,
+      "source_tier": "media",
+      "duplicate_group": "event-002",
+      "duplicate_count": 0,
+      "token_count": 739,
+      "unique_word_count": 329,
+      "topics": {
+        "pangan": 0,
+        "ekonomi": 1,
+        "pendidikan": 0,
+        "kesehatan_dan_gizi": 1,
+        "tata_kelola": 9,
+        "pertahanan_dan_keamanan": 3,
+        "nasional_dan_identitas": 24,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      },
+      "counts": {
+        "yang": 29,
+        "dan": 28,
+        "kita": 18,
+        "saya": 12,
+        "dpr": 11,
+        "terhadap": 10,
+        "umum": 10,
+        "dengan": 9,
+        "di": 8,
+        "negara": 8,
+        "kepada": 8,
+        "untuk": 8,
+        "dari": 7,
+        "menyampaikan": 7,
+        "juga": 7,
+        "saudara-saudara": 6,
+        "indonesia": 6,
+        "aspirasi": 6,
+        "masyarakat": 6,
+        "para": 6,
+        "partai": 6,
+        "akan": 6,
+        "sudah": 6,
+        "rakyat": 6,
+        "sekalian": 6,
+        "ingin": 6,
+        "semua": 6,
+        "dalam": 5,
+        "telah": 5,
+        "anggota": 5,
+        "masing-masing": 5,
+        "pimpinan": 5,
+        "luar": 5,
+        "harus": 5,
+        "selalu": 5,
+        "hukum": 5,
+        "tanpa": 5,
+        "beberapa": 4,
+        "murni": 4,
+        "dilakukan": 4,
+        "ketua": 4,
+        "mereka": 4,
+        "termasuk": 4,
+        "damai": 4,
+        "merusak": 4,
+        "fasilitas": 4,
+        "menjaga": 4,
+        "tidak": 4,
+        "baik": 4,
+        "ini": 3,
+        "terus": 3,
+        "melakukan": 3,
+        "dapat": 3,
+        "secara": 3,
+        "politik": 3,
+        "bahwa": 3,
+        "ri": 3,
+        "tadi": 3,
+        "kepentingan": 3,
+        "kami": 3,
+        "ada": 3,
+        "sekali": 3,
+        "lagi": 3,
+        "disampaikan": 3,
+        "sampaikan": 3,
+        "tokoh-tokoh": 3,
+        "kelompok-kelompok": 3,
+        "pemerintah": 3,
+        "pemerintahan": 3,
+        "mari": 3,
+        "diadu": 3,
+        "domba": 3,
+        "santi": 3,
+        "merdeka": 3,
+        "air": 2,
+        "hari": 2,
+        "republik": 2,
+        "lain": 2,
+        "menghormati": 2,
+        "terbuka": 2,
+        "kebebasan": 2,
+        "penyampaian": 2,
+        "ataupun": 2,
+        "pelanggaran": 2,
+        "kepolisian": 2,
+        "minta": 2,
+        "publik": 2,
+        "menerima": 2,
+        "mengambil": 2,
+        "langkah": 2,
+        "tegas": 2,
+        "pencabutan": 2,
+        "kebijakan": 2,
+        "besaran": 2,
+        "tunjangan": 2,
+        "moratorium": 2,
+        "kunjungan": 2,
+        "kerja": 2,
+        "ke": 2,
+        "negeri": 2,
+        "adalah": 2,
+        "bisa": 2,
+        "namun": 2,
+        "atau": 2,
+        "sampai": 2,
+        "adanya": 2,
+        "mengancam": 2,
+        "rumah-rumah": 2,
+        "maupun": 2,
+        "itu": 2,
+        "melindungi": 2,
+        "aparat": 2,
+        "bertugas": 2,
+        "dihormati": 2,
+        "bahkan": 2,
+        "mengarah": 2,
+        "perintahkan": 2,
+        "penjarahan": 2,
+        "seluruh": 2,
+        "tindaklanjuti": 2,
+        "langsung": 2,
+        "segera": 2,
+        "paling": 2,
+        "jangan": 2,
+        "merugikan": 2,
+        "keluarga": 2,
+        "sejahtera": 2,
+        "pada": 2,
+        "terima": 2,
+        "kasih": 2,
+        "salam": 2,
+        "om": 2,
+        "rahayu": 2,
+        "sebangsa": 1,
+        "setanah": 1,
+        "presiden": 1,
+        "memantau": 1,
+        "perkembangan": 1,
+        "situasi": 1,
+        "terjadi": 1,
+        "jakarta": 1,
+        "kota": 1,
+        "pendapat": 1,
+        "petugas": 1,
+        "kemarin": 1,
+        "kesalahan": 1,
+        "saat": 1,
+        "proses": 1,
+        "pemeriksaan": 1,
+        "cepat": 1,
+        "transparan": 1,
+        "diikuti": 1,
+        "oleh": 1,
+        "rangka": 1,
+        "menyikapi": 1,
+        "apa": 1,
+        "menjadi": 1,
+        "laporan": 1,
+        "terhitung": 1,
+        "sejak": 1,
+        "senin": 1,
+        "september": 1,
+        "lima": 1,
+        "yaitu": 1,
+        "mungkin": 1,
+        "pernyataan-pernyataan": 1,
+        "keliru": 1,
+        "kemudian": 1,
+        "dicabut": 1,
+        "keanggotannya": 1,
+        "berbicara": 1,
+        "melalui": 1,
+        "fraksi": 1,
+        "peka": 1,
+        "berpihak": 1,
+        "berpendapat": 1,
+        "seperti": 1,
+        "diatur": 1,
+        "united": 1,
+        "nations": 1,
+        "international": 1,
+        "covenant": 1,
+        "on": 1,
+        "civil": 1,
+        "and": 1,
+        "political": 1,
+        "rights": 1,
+        "pasal": 1,
+        "undang-undang": 1,
+        "nomor": 1,
+        "tahun": 1,
+        "jika": 1,
+        "pelaksananya": 1,
+        "terdapat": 1,
+        "kegiatan-kegiatan": 1,
+        "bersifat": 1,
+        "anarkis": 1,
+        "destabilisasi": 1,
+        "membakar": 1,
+        "korban": 1,
+        "jiwa": 1,
+        "menjarah": 1,
+        "instansi-instansi": 1,
+        "pribadi": 1,
+        "hal": 1,
+        "merupakan": 1,
+        "wajib": 1,
+        "hadir": 1,
+        "rakyatnya": 1,
+        "fasilitas-fasilitas": 1,
+        "dibangun": 1,
+        "uang": 1,
+        "menegakkan": 1,
+        "apabila": 1,
+        "pelanggaran-pelanggaran": 1,
+        "kehidupan": 1,
+        "luas": 1,
+        "hak": 1,
+        "berkumpul": 1,
+        "dilindungi": 1,
+        "pungkiri": 1,
+        "mulai": 1,
+        "kelihatan": 1,
+        "gejala": 1,
+        "tindakan-tindakan": 1,
+        "melawan": 1,
+        "makar": 1,
+        "terorisme": 1,
+        "pihak": 1,
+        "tni": 1,
+        "tindakan": 1,
+        "setegas-tegasnya": 1,
+        "segala": 1,
+        "macam": 1,
+        "bentuk": 1,
+        "pengerusakan": 1,
+        "rumah": 1,
+        "individu": 1,
+        "tempat-tempat": 1,
+        "sentra-sentra": 1,
+        "ekonomi": 1,
+        "sesuai": 1,
+        "berlaku": 1,
+        "silakan": 1,
+        "tuntutan": 1,
+        "pastikan": 1,
+        "didengar": 1,
+        "dicatat": 1,
+        "meminta": 1,
+        "mengundang": 1,
+        "mahasiswa": 1,
+        "aspirasinya": 1,
+        "supaya": 1,
+        "diterima": 1,
+        "berdialog": 1,
+        "pun": 1,
+        "sekarang": 1,
+        "dprri": 1,
+        "tetapi": 1,
+        "hal-hal": 1,
+        "dipersilakan": 1,
+        "mengirim": 1,
+        "delegasi": 1,
+        "kl": 1,
+        "ee": 1,
+        "utusan-utusan": 1,
+        "koreksi": 1,
+        "kritik": 1,
+        "perbaikan": 1,
+        "jalannya": 1,
+        "sungguh-sungguh": 1,
+        "warga": 1,
+        "percaya": 1,
+        "tenang": 1,
+        "pimpin": 1,
+        "bertekad": 1,
+        "memperjuangkan": 1,
+        "bangsa": 1,
+        "kecil": 1,
+        "tertinggal": 1,
+        "jaga": 1,
+        "persatuan": 1,
+        "nasional": 1,
+        "diambang": 1,
+        "kebangkitan": 1,
+        "suarakan": 1,
+        "kekerasan": 1,
+        "kerusuhan": 1,
+        "perbuatan": 1,
+        "kalau": 1,
+        "artinya": 1,
+        "menghamburkan": 1,
+        "silak": 1,
+        "saling": 1,
+        "mengingatkan": 1,
+        "mengikuti": 1,
+        "kegiatan": 1,
+        "waspada": 1,
+        "campur": 1,
+        "tangan": 1,
+        "bangkit": 1,
+        "bersama-sama": 1,
+        "perbaiki": 1,
+        "kekurangan": 1,
+        "semangat": 1,
+        "nenek": 1,
+        "moyang": 1,
+        "gotong-royong": 1,
+        "marilah": 1,
+        "bergotong-royong": 1,
+        "lingkungan": 1,
+        "keselamatan": 1,
+        "tanah": 1,
+        "diintervensi": 1,
+        "mau": 1,
+        "demikian": 1,
+        "pernyataan": 1,
+        "setelah": 1,
+        "berunding": 1,
+        "koalisi": 1,
+        "lembaga": 1,
+        "wasalamualaikum": 1,
+        "warahmatullahi": 1,
+        "wabarakatuh": 1,
+        "bagi": 1,
+        "salve": 1,
+        "shalom": 1,
+        "kebajikan": 1,
+        "yeah": 1
+      }
+    },
+    {
       "id": "gyT_qLziJ2M",
       "date": "2025-09-29",
       "title": "[FULL] Pidato Lengkap Presiden Prabowo di Munas Ke-VI PKS | tvOne",
@@ -3094,7 +3463,7 @@
       "url": "https://www.youtube.com/watch?v=gyT_qLziJ2M",
       "duration": 4928,
       "source_tier": "full_media",
-      "duplicate_group": "event-024",
+      "duplicate_group": "event-025",
       "duplicate_count": 0,
       "token_count": 5204,
       "unique_word_count": 1385,
@@ -4718,7 +5087,7 @@
       "url": "https://www.youtube.com/watch?v=OOAGKPFdwf0",
       "duration": 161,
       "source_tier": "official",
-      "duplicate_group": "event-044",
+      "duplicate_group": "event-045",
       "duplicate_count": 0,
       "token_count": 213,
       "unique_word_count": 120,
@@ -4873,7 +5242,7 @@
       "url": "https://www.youtube.com/watch?v=doW8-nSNL-8",
       "duration": 2950,
       "source_tier": "full_media",
-      "duplicate_group": "event-018",
+      "duplicate_group": "event-019",
       "duplicate_count": 0,
       "token_count": 2952,
       "unique_word_count": 830,
@@ -5805,7 +6174,7 @@
       "url": "https://www.youtube.com/watch?v=mu2ep3dsHaQ",
       "duration": 5635,
       "source_tier": "full_media",
-      "duplicate_group": "event-034",
+      "duplicate_group": "event-035",
       "duplicate_count": 0,
       "token_count": 6257,
       "unique_word_count": 1619,
@@ -7526,7 +7895,7 @@
       "url": "https://www.youtube.com/watch?v=5OIq7GaU4sI",
       "duration": 257,
       "source_tier": "official",
-      "duplicate_group": "event-002",
+      "duplicate_group": "event-003",
       "duplicate_count": 0,
       "token_count": 333,
       "unique_word_count": 175,
@@ -7736,7 +8105,7 @@
       "url": "https://www.youtube.com/watch?v=Fm09R5akNzM",
       "duration": 1309,
       "source_tier": "full_media",
-      "duplicate_group": "event-033",
+      "duplicate_group": "event-034",
       "duplicate_count": 1,
       "token_count": 1388,
       "unique_word_count": 559,
@@ -8330,7 +8699,7 @@
       "url": "https://www.youtube.com/watch?v=VyPCSPnxbaE",
       "duration": 986,
       "source_tier": "media",
-      "duplicate_group": "event-005",
+      "duplicate_group": "event-006",
       "duplicate_count": 0,
       "token_count": 1205,
       "unique_word_count": 459,
@@ -8824,7 +9193,7 @@
       "url": "https://www.youtube.com/watch?v=rKpNQwecniM",
       "duration": 2242,
       "source_tier": "official",
-      "duplicate_group": "event-007",
+      "duplicate_group": "event-008",
       "duplicate_count": 4,
       "token_count": 2044,
       "unique_word_count": 691,
@@ -9576,7 +9945,7 @@
       "url": "https://www.youtube.com/watch?v=JkLlmVzJ_dc",
       "duration": 2454,
       "source_tier": "full_media",
-      "duplicate_group": "event-039",
+      "duplicate_group": "event-040",
       "duplicate_count": 0,
       "token_count": 2769,
       "unique_word_count": 916,
@@ -10527,7 +10896,7 @@
       "url": "https://www.youtube.com/watch?v=ypWhdkJiz3o",
       "duration": 3135,
       "source_tier": "full_media",
-      "duplicate_group": "event-019",
+      "duplicate_group": "event-020",
       "duplicate_count": 0,
       "token_count": 3552,
       "unique_word_count": 1104,
@@ -11721,7 +12090,7 @@
       "url": "https://www.youtube.com/watch?v=7gTnSb4faRk",
       "duration": 70,
       "source_tier": "official",
-      "duplicate_group": "event-015",
+      "duplicate_group": "event-016",
       "duplicate_count": 1,
       "token_count": 68,
       "unique_word_count": 47,
@@ -11803,7 +12172,7 @@
       "url": "https://www.youtube.com/watch?v=HiJYFR1vR9g",
       "duration": 636,
       "source_tier": "full_media",
-      "duplicate_group": "event-037",
+      "duplicate_group": "event-038",
       "duplicate_count": 0,
       "token_count": 661,
       "unique_word_count": 261,
@@ -12099,7 +12468,7 @@
       "url": "https://www.youtube.com/watch?v=e3ByeIYYKYU",
       "duration": 264,
       "source_tier": "official",
-      "duplicate_group": "event-016",
+      "duplicate_group": "event-017",
       "duplicate_count": 0,
       "token_count": 352,
       "unique_word_count": 206,
@@ -12340,7 +12709,7 @@
       "url": "https://www.youtube.com/watch?v=1fkbpthd1MI",
       "duration": 1303,
       "source_tier": "full_media",
-      "duplicate_group": "event-027",
+      "duplicate_group": "event-028",
       "duplicate_count": 1,
       "token_count": 1520,
       "unique_word_count": 605,
@@ -12987,7 +13356,7 @@
       "url": "https://www.youtube.com/watch?v=9KWsOM3B6_c",
       "duration": 2389,
       "source_tier": "official",
-      "duplicate_group": "event-013",
+      "duplicate_group": "event-014",
       "duplicate_count": 1,
       "token_count": 2386,
       "unique_word_count": 730,
@@ -13771,7 +14140,7 @@
       "url": "https://www.youtube.com/watch?v=Ntf-BzRGTug",
       "duration": 4555,
       "source_tier": "full_media",
-      "duplicate_group": "event-023",
+      "duplicate_group": "event-024",
       "duplicate_count": 3,
       "token_count": 4297,
       "unique_word_count": 1246,
@@ -15052,7 +15421,7 @@
       "url": "https://www.youtube.com/watch?v=rn96VRQ4SgY",
       "duration": 2276,
       "source_tier": "full_media",
-      "duplicate_group": "event-021",
+      "duplicate_group": "event-022",
       "duplicate_count": 2,
       "token_count": 2358,
       "unique_word_count": 795,
@@ -15882,7 +16251,7 @@
       "url": "https://www.youtube.com/watch?v=WN4ObtcpRMs",
       "duration": 2995,
       "source_tier": "full_media",
-      "duplicate_group": "event-010",
+      "duplicate_group": "event-011",
       "duplicate_count": 2,
       "token_count": 2990,
       "unique_word_count": 901,
@@ -16843,7 +17212,7 @@
       "url": "https://www.youtube.com/watch?v=hJybE-uF_qE",
       "duration": 1688,
       "source_tier": "official",
-      "duplicate_group": "event-006",
+      "duplicate_group": "event-007",
       "duplicate_count": 0,
       "token_count": 1619,
       "unique_word_count": 617,
@@ -17495,7 +17864,7 @@
       "url": "https://www.youtube.com/watch?v=xK61ktEglpc",
       "duration": 1050,
       "source_tier": "media",
-      "duplicate_group": "event-009",
+      "duplicate_group": "event-010",
       "duplicate_count": 0,
       "token_count": 1137,
       "unique_word_count": 462,
@@ -17992,7 +18361,7 @@
       "url": "https://www.youtube.com/watch?v=HBuj_rOU5yA",
       "duration": 1935,
       "source_tier": "full_media",
-      "duplicate_group": "event-032",
+      "duplicate_group": "event-033",
       "duplicate_count": 2,
       "token_count": 1822,
       "unique_word_count": 679,
@@ -18719,7 +19088,7 @@
       "url": "https://www.youtube.com/watch?v=xh-kV0Rm8K8",
       "duration": 2385,
       "source_tier": "full_media",
-      "duplicate_group": "event-036",
+      "duplicate_group": "event-037",
       "duplicate_count": 2,
       "token_count": 2541,
       "unique_word_count": 879,
@@ -19633,7 +20002,7 @@
       "url": "https://www.youtube.com/watch?v=YYas7H5zORI",
       "duration": 3134,
       "source_tier": "full_media",
-      "duplicate_group": "event-012",
+      "duplicate_group": "event-013",
       "duplicate_count": 2,
       "token_count": 3129,
       "unique_word_count": 948,
@@ -20659,7 +21028,7 @@
       "url": "https://www.youtube.com/watch?v=QAFNXg-LfTU",
       "duration": 1555,
       "source_tier": "full_media",
-      "duplicate_group": "event-041",
+      "duplicate_group": "event-042",
       "duplicate_count": 0,
       "token_count": 1575,
       "unique_word_count": 601,
@@ -21295,7 +21664,7 @@
       "url": "https://www.youtube.com/watch?v=yJglGGY8ADI",
       "duration": 2665,
       "source_tier": "full_media",
-      "duplicate_group": "event-030",
+      "duplicate_group": "event-031",
       "duplicate_count": 1,
       "token_count": 2617,
       "unique_word_count": 905,
@@ -22235,7 +22604,7 @@
       "url": "https://www.youtube.com/watch?v=p7G73zBiow4",
       "duration": 5218,
       "source_tier": "full_media",
-      "duplicate_group": "event-035",
+      "duplicate_group": "event-036",
       "duplicate_count": 0,
       "token_count": 5868,
       "unique_word_count": 1482,
@@ -23766,7 +24135,7 @@
       "url": "https://www.youtube.com/watch?v=vyp6JITYFM8",
       "duration": 2803,
       "source_tier": "media",
-      "duplicate_group": "event-008",
+      "duplicate_group": "event-009",
       "duplicate_count": 0,
       "token_count": 2730,
       "unique_word_count": 900,
@@ -24714,7 +25083,7 @@
       "url": "https://www.youtube.com/watch?v=IHY-7SvqxoI",
       "duration": 1631,
       "source_tier": "full_media",
-      "duplicate_group": "event-031",
+      "duplicate_group": "event-032",
       "duplicate_count": 0,
       "token_count": 1616,
       "unique_word_count": 604,
@@ -25353,7 +25722,7 @@
       "url": "https://www.youtube.com/watch?v=NmbVCeypyHE",
       "duration": 2215,
       "source_tier": "full_media",
-      "duplicate_group": "event-026",
+      "duplicate_group": "event-027",
       "duplicate_count": 1,
       "token_count": 2412,
       "unique_word_count": 834,
@@ -26222,7 +26591,7 @@
       "url": "https://www.youtube.com/watch?v=YUONIE2ivHo",
       "duration": 1255,
       "source_tier": "full_media",
-      "duplicate_group": "event-020",
+      "duplicate_group": "event-021",
       "duplicate_count": 0,
       "token_count": 1414,
       "unique_word_count": 601,
@@ -26858,7 +27227,7 @@
       "url": "https://www.youtube.com/watch?v=SjuGxdMRzPk",
       "duration": 1075,
       "source_tier": "full_media",
-      "duplicate_group": "event-025",
+      "duplicate_group": "event-026",
       "duplicate_count": 0,
       "token_count": 1185,
       "unique_word_count": 448,
@@ -27341,7 +27710,7 @@
       "url": "https://www.youtube.com/watch?v=9rpZpKagShM",
       "duration": 2075,
       "source_tier": "full_media",
-      "duplicate_group": "event-042",
+      "duplicate_group": "event-043",
       "duplicate_count": 0,
       "token_count": 2315,
       "unique_word_count": 818,
@@ -28194,7 +28563,7 @@
       "url": "https://www.youtube.com/watch?v=EZC8X_pgFlY",
       "duration": 9512,
       "source_tier": "full_media",
-      "duplicate_group": "event-014",
+      "duplicate_group": "event-015",
       "duplicate_count": 3,
       "token_count": 11989,
       "unique_word_count": 2631,
@@ -30903,7 +31272,7 @@
       "url": "https://www.youtube.com/watch?v=pQAVGm6zYsA",
       "duration": 6875,
       "source_tier": "full_media",
-      "duplicate_group": "event-022",
+      "duplicate_group": "event-023",
       "duplicate_count": 2,
       "token_count": 7750,
       "unique_word_count": 1884,
@@ -32853,7 +33222,7 @@
       "url": "https://www.youtube.com/watch?v=UYdFSPfJZfk",
       "duration": 1310,
       "source_tier": "full_media",
-      "duplicate_group": "event-028",
+      "duplicate_group": "event-029",
       "duplicate_count": 0,
       "token_count": 1388,
       "unique_word_count": 576,
@@ -33464,7 +33833,7 @@
       "url": "https://www.youtube.com/watch?v=KXoaUQadksU",
       "duration": 1675,
       "source_tier": "full_media",
-      "duplicate_group": "event-011",
+      "duplicate_group": "event-012",
       "duplicate_count": 1,
       "token_count": 1697,
       "unique_word_count": 675,
@@ -34193,7 +34562,7 @@
       "url": "https://www.youtube.com/watch?v=ZqMj_BRxODM",
       "duration": 1518,
       "source_tier": "full_media",
-      "duplicate_group": "event-029",
+      "duplicate_group": "event-030",
       "duplicate_count": 2,
       "token_count": 1595,
       "unique_word_count": 645,
@@ -34873,7 +35242,7 @@
       "url": "https://www.youtube.com/watch?v=6mWMd7ClCv8",
       "duration": 923,
       "source_tier": "full_media",
-      "duplicate_group": "event-038",
+      "duplicate_group": "event-039",
       "duplicate_count": 0,
       "token_count": 1123,
       "unique_word_count": 439,
@@ -35347,7 +35716,7 @@
       "url": "https://www.youtube.com/watch?v=BYJsAQ79gdg",
       "duration": 3210,
       "source_tier": "full_media",
-      "duplicate_group": "event-043",
+      "duplicate_group": "event-044",
       "duplicate_count": 0,
       "token_count": 3238,
       "unique_word_count": 973,
@@ -36367,7 +36736,7 @@
       "source_kind": "expanded",
       "token_count": 1465,
       "is_canonical": true,
-      "event_group": "event-017"
+      "event_group": "event-018"
     },
     {
       "id": "CfnRESwOZKQ",
@@ -36380,7 +36749,7 @@
       "source_kind": "baseline",
       "token_count": 807,
       "is_canonical": true,
-      "event_group": "event-003"
+      "event_group": "event-004"
     },
     {
       "id": "Enmz62kOMyI",
@@ -36393,7 +36762,7 @@
       "source_kind": "expanded",
       "token_count": 1102,
       "is_canonical": true,
-      "event_group": "event-040"
+      "event_group": "event-041"
     },
     {
       "id": "E_doThSKS4E",
@@ -36406,7 +36775,20 @@
       "source_kind": "baseline",
       "token_count": 588,
       "is_canonical": true,
-      "event_group": "event-004"
+      "event_group": "event-005"
+    },
+    {
+      "id": "3e_gu9rWwWQ",
+      "date": "2025-08-31",
+      "title": "Pernyataan Presiden Prabowo Menyikapi Aksi Demo",
+      "channel": "Kompas.com",
+      "url": "https://www.youtube.com/watch?v=3e_gu9rWwWQ",
+      "duration": 646,
+      "source_tier": "media",
+      "source_kind": "baseline",
+      "token_count": 739,
+      "is_canonical": true,
+      "event_group": "event-002"
     },
     {
       "id": "gyT_qLziJ2M",
@@ -36419,7 +36801,7 @@
       "source_kind": "expanded",
       "token_count": 5204,
       "is_canonical": true,
-      "event_group": "event-024"
+      "event_group": "event-025"
     },
     {
       "id": "02IcsjvhFGQ",
@@ -36445,7 +36827,7 @@
       "source_kind": "expanded",
       "token_count": 213,
       "is_canonical": true,
-      "event_group": "event-044"
+      "event_group": "event-045"
     },
     {
       "id": "doW8-nSNL-8",
@@ -36458,7 +36840,7 @@
       "source_kind": "expanded",
       "token_count": 2952,
       "is_canonical": true,
-      "event_group": "event-018"
+      "event_group": "event-019"
     },
     {
       "id": "mu2ep3dsHaQ",
@@ -36471,7 +36853,7 @@
       "source_kind": "expanded",
       "token_count": 6257,
       "is_canonical": true,
-      "event_group": "event-034"
+      "event_group": "event-035"
     },
     {
       "id": "5OIq7GaU4sI",
@@ -36484,7 +36866,7 @@
       "source_kind": "baseline",
       "token_count": 333,
       "is_canonical": true,
-      "event_group": "event-002"
+      "event_group": "event-003"
     },
     {
       "id": "Fm09R5akNzM",
@@ -36497,7 +36879,7 @@
       "source_kind": "expanded",
       "token_count": 1388,
       "is_canonical": true,
-      "event_group": "event-033"
+      "event_group": "event-034"
     },
     {
       "id": "rr-pObURxuc",
@@ -36510,7 +36892,7 @@
       "source_kind": "expanded",
       "token_count": 1204,
       "is_canonical": false,
-      "event_group": "event-033"
+      "event_group": "event-034"
     },
     {
       "id": "VyPCSPnxbaE",
@@ -36523,7 +36905,7 @@
       "source_kind": "baseline",
       "token_count": 1205,
       "is_canonical": true,
-      "event_group": "event-005"
+      "event_group": "event-006"
     },
     {
       "id": "BkZwWNtcJko",
@@ -36536,7 +36918,7 @@
       "source_kind": "expanded",
       "token_count": 437,
       "is_canonical": false,
-      "event_group": "event-007"
+      "event_group": "event-008"
     },
     {
       "id": "CfWcrTCUIcI",
@@ -36549,7 +36931,7 @@
       "source_kind": "expanded",
       "token_count": 1756,
       "is_canonical": false,
-      "event_group": "event-007"
+      "event_group": "event-008"
     },
     {
       "id": "PAtys9TmQ4U",
@@ -36562,7 +36944,7 @@
       "source_kind": "expanded",
       "token_count": 2110,
       "is_canonical": false,
-      "event_group": "event-007"
+      "event_group": "event-008"
     },
     {
       "id": "rKpNQwecniM",
@@ -36575,7 +36957,7 @@
       "source_kind": "baseline",
       "token_count": 2044,
       "is_canonical": true,
-      "event_group": "event-007"
+      "event_group": "event-008"
     },
     {
       "id": "IBGGAryAVu8",
@@ -36588,7 +36970,7 @@
       "source_kind": "expanded",
       "token_count": 169,
       "is_canonical": false,
-      "event_group": "event-007"
+      "event_group": "event-008"
     },
     {
       "id": "JkLlmVzJ_dc",
@@ -36601,7 +36983,7 @@
       "source_kind": "expanded",
       "token_count": 2769,
       "is_canonical": true,
-      "event_group": "event-039"
+      "event_group": "event-040"
     },
     {
       "id": "ypWhdkJiz3o",
@@ -36614,7 +36996,7 @@
       "source_kind": "expanded",
       "token_count": 3552,
       "is_canonical": true,
-      "event_group": "event-019"
+      "event_group": "event-020"
     },
     {
       "id": "7gTnSb4faRk",
@@ -36627,7 +37009,7 @@
       "source_kind": "expanded",
       "token_count": 68,
       "is_canonical": true,
-      "event_group": "event-015"
+      "event_group": "event-016"
     },
     {
       "id": "WJtmyDrIgHg",
@@ -36640,7 +37022,7 @@
       "source_kind": "expanded",
       "token_count": 7623,
       "is_canonical": false,
-      "event_group": "event-015"
+      "event_group": "event-016"
     },
     {
       "id": "HiJYFR1vR9g",
@@ -36653,7 +37035,7 @@
       "source_kind": "expanded",
       "token_count": 661,
       "is_canonical": true,
-      "event_group": "event-037"
+      "event_group": "event-038"
     },
     {
       "id": "e3ByeIYYKYU",
@@ -36666,7 +37048,7 @@
       "source_kind": "expanded",
       "token_count": 352,
       "is_canonical": true,
-      "event_group": "event-016"
+      "event_group": "event-017"
     },
     {
       "id": "1fkbpthd1MI",
@@ -36679,7 +37061,7 @@
       "source_kind": "expanded",
       "token_count": 1520,
       "is_canonical": true,
-      "event_group": "event-027"
+      "event_group": "event-028"
     },
     {
       "id": "mj5ur3bCtR8",
@@ -36692,7 +37074,7 @@
       "source_kind": "expanded",
       "token_count": 1303,
       "is_canonical": false,
-      "event_group": "event-027"
+      "event_group": "event-028"
     },
     {
       "id": "9KWsOM3B6_c",
@@ -36705,7 +37087,7 @@
       "source_kind": "expanded",
       "token_count": 2386,
       "is_canonical": true,
-      "event_group": "event-013"
+      "event_group": "event-014"
     },
     {
       "id": "MqRxhlSThLA",
@@ -36718,7 +37100,7 @@
       "source_kind": "expanded",
       "token_count": 2386,
       "is_canonical": false,
-      "event_group": "event-013"
+      "event_group": "event-014"
     },
     {
       "id": "K4uvrC38Yxk",
@@ -36731,7 +37113,7 @@
       "source_kind": "expanded",
       "token_count": 4207,
       "is_canonical": false,
-      "event_group": "event-023"
+      "event_group": "event-024"
     },
     {
       "id": "Le2zr-cRENo",
@@ -36744,7 +37126,7 @@
       "source_kind": "expanded",
       "token_count": 4153,
       "is_canonical": false,
-      "event_group": "event-023"
+      "event_group": "event-024"
     },
     {
       "id": "Ntf-BzRGTug",
@@ -36757,7 +37139,7 @@
       "source_kind": "expanded",
       "token_count": 4297,
       "is_canonical": true,
-      "event_group": "event-023"
+      "event_group": "event-024"
     },
     {
       "id": "kyfyXGWzoCY",
@@ -36770,7 +37152,7 @@
       "source_kind": "expanded",
       "token_count": 4244,
       "is_canonical": false,
-      "event_group": "event-023"
+      "event_group": "event-024"
     },
     {
       "id": "LVv2n7Yc87E",
@@ -36783,7 +37165,7 @@
       "source_kind": "expanded",
       "token_count": 2350,
       "is_canonical": false,
-      "event_group": "event-021"
+      "event_group": "event-022"
     },
     {
       "id": "bo0MqM07bcs",
@@ -36796,7 +37178,7 @@
       "source_kind": "expanded",
       "token_count": 2287,
       "is_canonical": false,
-      "event_group": "event-021"
+      "event_group": "event-022"
     },
     {
       "id": "rn96VRQ4SgY",
@@ -36809,7 +37191,7 @@
       "source_kind": "expanded",
       "token_count": 2358,
       "is_canonical": true,
-      "event_group": "event-021"
+      "event_group": "event-022"
     },
     {
       "id": "LN2JbamjmcE",
@@ -36822,7 +37204,7 @@
       "source_kind": "expanded",
       "token_count": 2733,
       "is_canonical": false,
-      "event_group": "event-010"
+      "event_group": "event-011"
     },
     {
       "id": "WN4ObtcpRMs",
@@ -36835,7 +37217,7 @@
       "source_kind": "expanded",
       "token_count": 2990,
       "is_canonical": true,
-      "event_group": "event-010"
+      "event_group": "event-011"
     },
     {
       "id": "qswoKxCknHg",
@@ -36848,7 +37230,7 @@
       "source_kind": "expanded",
       "token_count": 2955,
       "is_canonical": false,
-      "event_group": "event-010"
+      "event_group": "event-011"
     },
     {
       "id": "hJybE-uF_qE",
@@ -36861,7 +37243,7 @@
       "source_kind": "baseline",
       "token_count": 1619,
       "is_canonical": true,
-      "event_group": "event-006"
+      "event_group": "event-007"
     },
     {
       "id": "xK61ktEglpc",
@@ -36874,7 +37256,7 @@
       "source_kind": "baseline",
       "token_count": 1137,
       "is_canonical": true,
-      "event_group": "event-009"
+      "event_group": "event-010"
     },
     {
       "id": "CpQyrmIrasU",
@@ -36887,7 +37269,7 @@
       "source_kind": "expanded",
       "token_count": 1470,
       "is_canonical": false,
-      "event_group": "event-032"
+      "event_group": "event-033"
     },
     {
       "id": "HBuj_rOU5yA",
@@ -36900,7 +37282,7 @@
       "source_kind": "expanded",
       "token_count": 1822,
       "is_canonical": true,
-      "event_group": "event-032"
+      "event_group": "event-033"
     },
     {
       "id": "MExLyHOhkkE",
@@ -36913,7 +37295,7 @@
       "source_kind": "expanded",
       "token_count": 1835,
       "is_canonical": false,
-      "event_group": "event-032"
+      "event_group": "event-033"
     },
     {
       "id": "A6vTh2qoGrc",
@@ -36926,7 +37308,7 @@
       "source_kind": "expanded",
       "token_count": 2501,
       "is_canonical": false,
-      "event_group": "event-036"
+      "event_group": "event-037"
     },
     {
       "id": "dvCtCfifU30",
@@ -36939,7 +37321,7 @@
       "source_kind": "expanded",
       "token_count": 2532,
       "is_canonical": false,
-      "event_group": "event-036"
+      "event_group": "event-037"
     },
     {
       "id": "xh-kV0Rm8K8",
@@ -36952,7 +37334,7 @@
       "source_kind": "expanded",
       "token_count": 2541,
       "is_canonical": true,
-      "event_group": "event-036"
+      "event_group": "event-037"
     },
     {
       "id": "YYas7H5zORI",
@@ -36965,7 +37347,7 @@
       "source_kind": "expanded",
       "token_count": 3129,
       "is_canonical": true,
-      "event_group": "event-012"
+      "event_group": "event-013"
     },
     {
       "id": "bvLTXCGnFT4",
@@ -36978,7 +37360,7 @@
       "source_kind": "expanded",
       "token_count": 1664,
       "is_canonical": false,
-      "event_group": "event-012"
+      "event_group": "event-013"
     },
     {
       "id": "guZ8TO7OaIQ",
@@ -36991,7 +37373,7 @@
       "source_kind": "expanded",
       "token_count": 3126,
       "is_canonical": false,
-      "event_group": "event-012"
+      "event_group": "event-013"
     },
     {
       "id": "QAFNXg-LfTU",
@@ -37004,7 +37386,7 @@
       "source_kind": "expanded",
       "token_count": 1575,
       "is_canonical": true,
-      "event_group": "event-041"
+      "event_group": "event-042"
     },
     {
       "id": "wqtxaE1csEI",
@@ -37017,7 +37399,7 @@
       "source_kind": "expanded",
       "token_count": 2576,
       "is_canonical": false,
-      "event_group": "event-030"
+      "event_group": "event-031"
     },
     {
       "id": "yJglGGY8ADI",
@@ -37030,7 +37412,7 @@
       "source_kind": "expanded",
       "token_count": 2617,
       "is_canonical": true,
-      "event_group": "event-030"
+      "event_group": "event-031"
     },
     {
       "id": "p7G73zBiow4",
@@ -37043,7 +37425,7 @@
       "source_kind": "expanded",
       "token_count": 5868,
       "is_canonical": true,
-      "event_group": "event-035"
+      "event_group": "event-036"
     },
     {
       "id": "vyp6JITYFM8",
@@ -37056,7 +37438,7 @@
       "source_kind": "baseline",
       "token_count": 2730,
       "is_canonical": true,
-      "event_group": "event-008"
+      "event_group": "event-009"
     },
     {
       "id": "IHY-7SvqxoI",
@@ -37069,7 +37451,7 @@
       "source_kind": "expanded",
       "token_count": 1616,
       "is_canonical": true,
-      "event_group": "event-031"
+      "event_group": "event-032"
     },
     {
       "id": "3VR-aKaxHyU",
@@ -37082,7 +37464,7 @@
       "source_kind": "expanded",
       "token_count": 2342,
       "is_canonical": false,
-      "event_group": "event-026"
+      "event_group": "event-027"
     },
     {
       "id": "NmbVCeypyHE",
@@ -37095,7 +37477,7 @@
       "source_kind": "expanded",
       "token_count": 2412,
       "is_canonical": true,
-      "event_group": "event-026"
+      "event_group": "event-027"
     },
     {
       "id": "YUONIE2ivHo",
@@ -37108,7 +37490,7 @@
       "source_kind": "expanded",
       "token_count": 1414,
       "is_canonical": true,
-      "event_group": "event-020"
+      "event_group": "event-021"
     },
     {
       "id": "SjuGxdMRzPk",
@@ -37121,7 +37503,7 @@
       "source_kind": "expanded",
       "token_count": 1185,
       "is_canonical": true,
-      "event_group": "event-025"
+      "event_group": "event-026"
     },
     {
       "id": "9rpZpKagShM",
@@ -37134,7 +37516,7 @@
       "source_kind": "expanded",
       "token_count": 2315,
       "is_canonical": true,
-      "event_group": "event-042"
+      "event_group": "event-043"
     },
     {
       "id": "06kk5UIx6a8",
@@ -37147,7 +37529,7 @@
       "source_kind": "expanded",
       "token_count": 7746,
       "is_canonical": false,
-      "event_group": "event-022"
+      "event_group": "event-023"
     },
     {
       "id": "38G2GvbhUKo",
@@ -37160,7 +37542,7 @@
       "source_kind": "expanded",
       "token_count": 17018,
       "is_canonical": false,
-      "event_group": "event-014"
+      "event_group": "event-015"
     },
     {
       "id": "EZC8X_pgFlY",
@@ -37173,7 +37555,7 @@
       "source_kind": "expanded",
       "token_count": 11989,
       "is_canonical": true,
-      "event_group": "event-014"
+      "event_group": "event-015"
     },
     {
       "id": "OzET9XSJ55k",
@@ -37186,7 +37568,7 @@
       "source_kind": "expanded",
       "token_count": 7746,
       "is_canonical": false,
-      "event_group": "event-022"
+      "event_group": "event-023"
     },
     {
       "id": "SldYWZTaoXs",
@@ -37199,7 +37581,7 @@
       "source_kind": "expanded",
       "token_count": 5485,
       "is_canonical": false,
-      "event_group": "event-014"
+      "event_group": "event-015"
     },
     {
       "id": "pQAVGm6zYsA",
@@ -37212,7 +37594,7 @@
       "source_kind": "expanded",
       "token_count": 7750,
       "is_canonical": true,
-      "event_group": "event-022"
+      "event_group": "event-023"
     },
     {
       "id": "sv1HMoSzRk4",
@@ -37225,7 +37607,7 @@
       "source_kind": "expanded",
       "token_count": 5554,
       "is_canonical": false,
-      "event_group": "event-014"
+      "event_group": "event-015"
     },
     {
       "id": "UYdFSPfJZfk",
@@ -37238,7 +37620,7 @@
       "source_kind": "expanded",
       "token_count": 1388,
       "is_canonical": true,
-      "event_group": "event-028"
+      "event_group": "event-029"
     },
     {
       "id": "KXoaUQadksU",
@@ -37251,7 +37633,7 @@
       "source_kind": "expanded",
       "token_count": 1697,
       "is_canonical": true,
-      "event_group": "event-011"
+      "event_group": "event-012"
     },
     {
       "id": "LXPkBOctQhE",
@@ -37264,7 +37646,7 @@
       "source_kind": "expanded",
       "token_count": 1607,
       "is_canonical": false,
-      "event_group": "event-011"
+      "event_group": "event-012"
     },
     {
       "id": "ZqMj_BRxODM",
@@ -37277,7 +37659,7 @@
       "source_kind": "expanded",
       "token_count": 1595,
       "is_canonical": true,
-      "event_group": "event-029"
+      "event_group": "event-030"
     },
     {
       "id": "pikkD5C3swU",
@@ -37290,7 +37672,7 @@
       "source_kind": "expanded",
       "token_count": 1520,
       "is_canonical": false,
-      "event_group": "event-029"
+      "event_group": "event-030"
     },
     {
       "id": "zdU-K2x6Foc",
@@ -37303,7 +37685,7 @@
       "source_kind": "expanded",
       "token_count": 1473,
       "is_canonical": false,
-      "event_group": "event-029"
+      "event_group": "event-030"
     },
     {
       "id": "6mWMd7ClCv8",
@@ -37316,7 +37698,7 @@
       "source_kind": "expanded",
       "token_count": 1123,
       "is_canonical": true,
-      "event_group": "event-038"
+      "event_group": "event-039"
     },
     {
       "id": "BYJsAQ79gdg",
@@ -37329,54 +37711,54 @@
       "source_kind": "expanded",
       "token_count": 3238,
       "is_canonical": true,
-      "event_group": "event-043"
+      "event_group": "event-044"
     }
   ],
   "word_index": [
     [
       "kita",
-      4071,
-      44
+      4089,
+      45
     ],
     [
       "yang",
-      3486,
-      44
+      3515,
+      45
     ],
     [
       "saya",
-      2673,
-      43
-    ],
-    [
-      "dan",
-      2207,
+      2685,
       44
     ],
     [
+      "dan",
+      2235,
+      45
+    ],
+    [
       "ini",
-      1624,
-      43
+      1627,
+      44
     ],
     [
       "di",
-      1432,
-      43
+      1440,
+      44
     ],
     [
       "tidak",
-      1199,
-      41
+      1203,
+      42
     ],
     [
       "indonesia",
-      1112,
-      43
+      1118,
+      44
     ],
     [
       "itu",
-      1098,
-      39
+      1100,
+      40
     ],
     [
       "ya",
@@ -37385,68 +37767,73 @@
     ],
     [
       "saudara-saudara",
-      839,
-      40
+      845,
+      41
     ],
     [
       "untuk",
-      820,
-      44
+      828,
+      45
     ],
     [
       "rakyat",
-      803,
-      41
+      809,
+      42
     ],
     [
       "ada",
-      792,
-      39
+      795,
+      40
     ],
     [
       "dari",
-      763,
-      42
-    ],
-    [
-      "akan",
-      752,
-      39
-    ],
-    [
-      "harus",
-      710,
-      41
-    ],
-    [
-      "dengan",
-      682,
-      42
-    ],
-    [
-      "kalau",
-      573,
-      34
-    ],
-    [
-      "tahun",
-      573,
-      40
-    ],
-    [
-      "negara",
-      572,
-      40
-    ],
-    [
-      "bangsa",
-      567,
+      770,
       43
     ],
     [
+      "akan",
+      758,
+      40
+    ],
+    [
+      "harus",
+      715,
+      42
+    ],
+    [
+      "dengan",
+      691,
+      43
+    ],
+    [
+      "negara",
+      580,
+      41
+    ],
+    [
+      "kalau",
+      574,
+      35
+    ],
+    [
+      "tahun",
+      574,
+      41
+    ],
+    [
       "sudah",
-      563,
-      36
+      569,
+      37
+    ],
+    [
+      "bangsa",
+      568,
+      44
+    ],
+    [
+      "adalah",
+      561,
+      43
     ],
     [
       "saudara",
@@ -37454,29 +37841,24 @@
       40
     ],
     [
-      "adalah",
-      559,
-      42
-    ],
-    [
       "bisa",
-      554,
-      36
+      556,
+      37
     ],
     [
       "juga",
-      508,
-      40
+      515,
+      41
+    ],
+    [
+      "semua",
+      513,
+      43
     ],
     [
       "tapi",
       507,
       38
-    ],
-    [
-      "semua",
-      507,
-      42
     ],
     [
       "jadi",
@@ -37485,13 +37867,13 @@
     ],
     [
       "ee",
-      480,
-      33
+      481,
+      34
     ],
     [
       "dalam",
-      445,
-      42
+      450,
+      43
     ],
     [
       "enggak",
@@ -37505,13 +37887,18 @@
     ],
     [
       "para",
-      378,
-      39
+      384,
+      40
     ],
     [
       "kepada",
-      373,
-      39
+      381,
+      40
+    ],
+    [
+      "hari",
+      356,
+      41
     ],
     [
       "besar",
@@ -37519,19 +37906,19 @@
       42
     ],
     [
-      "hari",
-      354,
-      40
+      "ke",
+      353,
+      39
     ],
     [
-      "ke",
-      351,
-      38
+      "sekalian",
+      346,
+      42
     ],
     [
       "kasih",
-      342,
-      43
+      344,
+      44
     ],
     [
       "menteri",
@@ -37540,18 +37927,13 @@
     ],
     [
       "presiden",
-      340,
-      41
-    ],
-    [
-      "sekalian",
-      340,
-      41
+      341,
+      42
     ],
     [
       "sekarang",
-      335,
-      37
+      336,
+      38
     ],
     [
       "banyak",
@@ -37560,38 +37942,38 @@
     ],
     [
       "ketua",
-      321,
-      29
+      325,
+      30
     ],
     [
       "bahwa",
-      313,
-      40
-    ],
-    [
-      "mereka",
-      307,
-      33
-    ],
-    [
-      "oleh",
-      298,
+      316,
       41
     ],
     [
-      "apa",
-      292,
-      29
+      "mereka",
+      311,
+      34
+    ],
+    [
+      "oleh",
+      299,
+      42
     ],
     [
       "terima",
-      291,
-      43
+      293,
+      44
+    ],
+    [
+      "apa",
+      293,
+      30
     ],
     [
       "mau",
-      284,
-      32
+      285,
+      33
     ],
     [
       "kan",
@@ -37599,24 +37981,24 @@
       28
     ],
     [
-      "seluruh",
-      275,
-      41
+      "lagi",
+      278,
+      37
     ],
     [
-      "lagi",
-      275,
-      36
+      "seluruh",
+      277,
+      42
     ],
     [
       "baik",
-      269,
-      38
+      273,
+      39
     ],
     [
       "republik",
-      267,
-      39
+      269,
+      40
     ],
     [
       "lebih",
@@ -37625,8 +38007,8 @@
     ],
     [
       "hadir",
-      262,
-      37
+      263,
+      38
     ],
     [
       "sebagai",
@@ -37655,8 +38037,8 @@
     ],
     [
       "telah",
-      228,
-      34
+      233,
+      35
     ],
     [
       "pak",
@@ -37680,8 +38062,8 @@
     ],
     [
       "bagi",
-      218,
-      41
+      219,
+      42
     ],
     [
       "punya",
@@ -37700,8 +38082,8 @@
     ],
     [
       "mungkin",
-      199,
-      36
+      200,
+      37
     ],
     [
       "masih",
@@ -37710,8 +38092,8 @@
     ],
     [
       "pemerintah",
-      192,
-      33
+      195,
+      34
     ],
     [
       "wakil",
@@ -37719,9 +38101,19 @@
       31
     ],
     [
+      "ingin",
+      189,
+      37
+    ],
+    [
       "bukan",
       187,
       34
+    ],
+    [
+      "dapat",
+      186,
+      40
     ],
     [
       "nanti",
@@ -37729,19 +38121,14 @@
       30
     ],
     [
-      "ingin",
-      183,
-      36
-    ],
-    [
-      "dapat",
-      183,
-      39
-    ],
-    [
       "hormati",
       180,
       37
+    ],
+    [
+      "kami",
+      177,
+      25
     ],
     [
       "benar",
@@ -37749,44 +38136,44 @@
       32
     ],
     [
-      "kami",
-      174,
-      24
-    ],
-    [
       "ekonomi",
-      173,
-      31
-    ],
-    [
-      "atau",
-      167,
-      33
-    ],
-    [
-      "luar",
-      164,
+      174,
       32
     ],
     [
-      "sampai",
-      163,
-      31
+      "luar",
+      169,
+      33
     ],
     [
-      "menjadi",
-      163,
-      37
+      "atau",
+      169,
+      34
+    ],
+    [
+      "sampai",
+      165,
+      32
     ],
     [
       "selalu",
-      159,
-      36
+      164,
+      37
+    ],
+    [
+      "menjadi",
+      164,
+      38
     ],
     [
       "pada",
+      159,
+      39
+    ],
+    [
+      "terus",
       157,
-      38
+      34
     ],
     [
       "iya",
@@ -37794,14 +38181,14 @@
       30
     ],
     [
-      "terus",
-      154,
-      33
-    ],
-    [
       "juta",
       153,
       26
+    ],
+    [
+      "jangan",
+      151,
+      29
     ],
     [
       "mana",
@@ -37814,29 +38201,29 @@
       30
     ],
     [
+      "tni",
+      150,
+      31
+    ],
+    [
       "waktu",
       150,
       31
     ],
     [
-      "tni",
-      149,
-      30
-    ],
-    [
-      "jangan",
-      149,
-      28
-    ],
-    [
       "tadi",
-      146,
-      31
+      149,
+      32
     ],
     [
       "lain",
-      146,
-      34
+      148,
+      35
+    ],
+    [
+      "partai",
+      145,
+      16
     ],
     [
       "berapa",
@@ -37844,14 +38231,14 @@
       24
     ],
     [
-      "kerja",
-      139,
-      29
+      "umum",
+      142,
+      24
     ],
     [
-      "partai",
-      139,
-      15
+      "kerja",
+      141,
+      30
     ],
     [
       "sekolah",
@@ -37874,11 +38261,6 @@
       29
     ],
     [
-      "umum",
-      132,
-      23
-    ],
-    [
       "baru",
       130,
       32
@@ -37894,6 +38276,16 @@
       32
     ],
     [
+      "paling",
+      125,
+      31
+    ],
+    [
+      "salam",
+      124,
+      41
+    ],
+    [
       "triliun",
       124,
       15
@@ -37904,14 +38296,9 @@
       26
     ],
     [
-      "paling",
-      123,
-      30
-    ],
-    [
-      "salam",
-      122,
-      40
+      "negeri",
+      118,
+      31
     ],
     [
       "bersama",
@@ -37929,14 +38316,9 @@
       31
     ],
     [
-      "negeri",
-      116,
-      30
-    ],
-    [
       "rumah",
-      113,
-      17
+      114,
+      18
     ],
     [
       "hidup",
@@ -37952,6 +38334,16 @@
       "kekayaan",
       111,
       26
+    ],
+    [
+      "pimpinan",
+      110,
+      31
+    ],
+    [
+      "ri",
+      110,
+      20
     ],
     [
       "pangan",
@@ -37979,24 +38371,14 @@
       23
     ],
     [
-      "ri",
+      "nasional",
       107,
-      19
+      32
     ],
     [
       "penting",
       106,
       33
-    ],
-    [
-      "nasional",
-      106,
-      31
-    ],
-    [
-      "pimpinan",
-      105,
-      30
     ],
     [
       "memang",
@@ -38024,9 +38406,19 @@
       26
     ],
     [
+      "dpr",
+      100,
+      18
+    ],
+    [
       "prabowo",
       99,
       33
+    ],
+    [
+      "merdeka",
+      99,
+      28
     ],
     [
       "saja",
@@ -38039,14 +38431,14 @@
       24
     ],
     [
+      "air",
+      98,
+      31
+    ],
+    [
       "perlu",
       97,
       28
-    ],
-    [
-      "air",
-      96,
-      30
     ],
     [
       "depan",
@@ -38054,9 +38446,14 @@
       35
     ],
     [
-      "merdeka",
+      "warahmatullahi",
       96,
-      27
+      43
+    ],
+    [
+      "sejahtera",
+      96,
+      37
     ],
     [
       "desa",
@@ -38064,9 +38461,14 @@
       18
     ],
     [
-      "warahmatullahi",
+      "wabarakatuh",
       95,
-      42
+      43
+    ],
+    [
+      "minta",
+      95,
+      27
     ],
     [
       "setiap",
@@ -38074,14 +38476,9 @@
       21
     ],
     [
-      "wabarakatuh",
+      "sekali",
       94,
-      42
-    ],
-    [
-      "sejahtera",
-      94,
-      36
+      35
     ],
     [
       "memberi",
@@ -38094,24 +38491,19 @@
       29
     ],
     [
-      "minta",
-      93,
-      26
-    ],
-    [
       "ibu",
       91,
       25
     ],
     [
-      "sekali",
-      91,
-      34
-    ],
-    [
       "sejarah",
       91,
       22
+    ],
+    [
+      "tanpa",
+      91,
+      30
     ],
     [
       "bupati",
@@ -38120,6 +38512,11 @@
     ],
     [
       "pemimpin",
+      90,
+      23
+    ],
+    [
+      "politik",
       90,
       23
     ],
@@ -38134,11 +38531,6 @@
       38
     ],
     [
-      "dpr",
-      89,
-      17
-    ],
-    [
       "antara",
       89,
       21
@@ -38149,7 +38541,12 @@
       23
     ],
     [
-      "politik",
+      "anggota",
+      88,
+      28
+    ],
+    [
+      "mulai",
       87,
       22
     ],
@@ -38159,19 +38556,9 @@
       15
     ],
     [
-      "tanpa",
-      86,
-      29
-    ],
-    [
       "tuhan",
       86,
       33
-    ],
-    [
-      "mulai",
-      86,
-      21
     ],
     [
       "daerah",
@@ -38199,11 +38586,6 @@
       30
     ],
     [
-      "anggota",
-      83,
-      27
-    ],
-    [
       "memiliki",
       83,
       30
@@ -38224,9 +38606,19 @@
       27
     ],
     [
+      "om",
+      81,
+      33
+    ],
+    [
       "cukup",
       80,
       27
+    ],
+    [
+      "secara",
+      80,
+      26
     ],
     [
       "jenderal",
@@ -38244,11 +38636,6 @@
       24
     ],
     [
-      "om",
-      79,
-      32
-    ],
-    [
       "kesehatan",
       79,
       34
@@ -38264,6 +38651,11 @@
       23
     ],
     [
+      "pun",
+      78,
+      32
+    ],
+    [
       "berada",
       78,
       30
@@ -38274,19 +38666,14 @@
       24
     ],
     [
-      "pun",
-      77,
-      31
-    ],
-    [
       "serta",
       77,
       22
     ],
     [
-      "secara",
+      "undang-undang",
       77,
-      25
+      14
     ],
     [
       "ulama",
@@ -38309,9 +38696,9 @@
       25
     ],
     [
-      "undang-undang",
-      76,
-      13
+      "menjaga",
+      75,
+      21
     ],
     [
       "bagaimana",
@@ -38334,6 +38721,11 @@
       24
     ],
     [
+      "uang",
+      73,
+      24
+    ],
+    [
       "hampir",
       73,
       25
@@ -38342,6 +38734,11 @@
       "pembangunan",
       73,
       24
+    ],
+    [
+      "masyarakat",
+      73,
+      22
     ],
     [
       "bumn",
@@ -38359,14 +38756,14 @@
       21
     ],
     [
-      "uang",
-      72,
-      23
-    ],
-    [
       "beserta",
       72,
       26
+    ],
+    [
+      "keluarga",
+      72,
+      22
     ],
     [
       "gubernur",
@@ -38379,9 +38776,9 @@
       19
     ],
     [
-      "menjaga",
+      "kecil",
       71,
-      20
+      29
     ],
     [
       "k",
@@ -38404,19 +38801,14 @@
       27
     ],
     [
-      "kecil",
-      70,
-      28
-    ],
-    [
-      "keluarga",
-      70,
-      21
-    ],
-    [
       "melihat",
       69,
       26
+    ],
+    [
+      "menyampaikan",
+      68,
+      27
     ],
     [
       "berani",
@@ -38449,11 +38841,6 @@
       24
     ],
     [
-      "masyarakat",
-      67,
-      21
-    ],
-    [
       "demokrat",
       67,
       5
@@ -38469,6 +38856,11 @@
       21
     ],
     [
+      "segala",
+      66,
+      34
+    ],
+    [
       "kalian",
       66,
       18
@@ -38482,11 +38874,6 @@
       "diri",
       65,
       26
-    ],
-    [
-      "segala",
-      65,
-      33
     ],
     [
       "masuk",
@@ -38507,6 +38894,11 @@
       "agung",
       64,
       17
+    ],
+    [
+      "pemerintahan",
+      64,
+      18
     ],
     [
       "timur",
@@ -38539,6 +38931,11 @@
       22
     ],
     [
+      "saat",
+      62,
+      23
+    ],
+    [
       "harga",
       62,
       19
@@ -38559,16 +38956,6 @@
       23
     ],
     [
-      "saat",
-      61,
-      22
-    ],
-    [
-      "menyampaikan",
-      61,
-      26
-    ],
-    [
       "tempat",
       61,
       24
@@ -38579,9 +38966,9 @@
       25
     ],
     [
-      "pemerintahan",
+      "santi",
       61,
-      17
+      23
     ],
     [
       "bikin",
@@ -38594,19 +38981,19 @@
       23
     ],
     [
-      "kabinet",
-      60,
-      31
-    ],
-    [
       "percaya",
-      59,
-      27
+      60,
+      28
     ],
     [
       "kota",
-      59,
-      15
+      60,
+      16
+    ],
+    [
+      "kabinet",
+      60,
+      31
     ],
     [
       "subianto",
@@ -38644,6 +39031,11 @@
       27
     ],
     [
+      "hukum",
+      58,
+      19
+    ],
+    [
       "tetap",
       58,
       14
@@ -38659,9 +39051,9 @@
       28
     ],
     [
-      "santi",
+      "sampaikan",
       58,
-      22
+      25
     ],
     [
       "apbn",
@@ -38704,14 +39096,19 @@
       21
     ],
     [
+      "demikian",
+      55,
+      27
+    ],
+    [
       "semuanya",
       55,
       26
     ],
     [
-      "sampaikan",
+      "kepentingan",
       55,
-      24
+      21
     ],
     [
       "mbg",
@@ -38719,14 +39116,14 @@
       12
     ],
     [
+      "kemudian",
+      54,
+      19
+    ],
+    [
       "hati",
       54,
       27
-    ],
-    [
-      "demikian",
-      54,
-      26
     ],
     [
       "kenapa",
@@ -38734,13 +39131,13 @@
       19
     ],
     [
-      "butuh",
+      "bahkan",
       54,
-      18
+      22
     ],
     [
-      "kemudian",
-      53,
+      "butuh",
+      54,
       18
     ],
     [
@@ -38749,9 +39146,9 @@
       24
     ],
     [
-      "hukum",
+      "kebajikan",
       53,
-      18
+      32
     ],
     [
       "polri",
@@ -38784,9 +39181,9 @@
       22
     ],
     [
-      "kepentingan",
+      "seperti",
       52,
-      20
+      27
     ],
     [
       "siap",
@@ -38794,19 +39191,24 @@
       18
     ],
     [
-      "kebajikan",
-      52,
-      31
-    ],
-    [
       "muhammad",
       52,
       24
     ],
     [
+      "kepolisian",
+      52,
+      12
+    ],
+    [
       "tentunya",
       52,
       24
+    ],
+    [
+      "marilah",
+      52,
+      32
     ],
     [
       "kesulitan",
@@ -38817,11 +39219,6 @@
       "oke",
       52,
       13
-    ],
-    [
-      "bahkan",
-      52,
-      21
     ],
     [
       "nu",
@@ -38839,9 +39236,9 @@
       16
     ],
     [
-      "seperti",
+      "perbaiki",
       51,
-      26
+      15
     ],
     [
       "muda",
@@ -38849,14 +39246,19 @@
       15
     ],
     [
+      "semangat",
+      51,
+      26
+    ],
+    [
       "mencapai",
       51,
       16
     ],
     [
-      "marilah",
+      "shalom",
       51,
-      31
+      33
     ],
     [
       "maju",
@@ -38879,34 +39281,19 @@
       15
     ],
     [
+      "beberapa",
+      50,
+      25
+    ],
+    [
       "anggaran",
       50,
       6
     ],
     [
-      "perbaiki",
-      50,
-      14
-    ],
-    [
-      "semangat",
-      50,
-      25
-    ],
-    [
-      "shalom",
-      50,
-      32
-    ],
-    [
       "namo",
       50,
       32
-    ],
-    [
-      "kepolisian",
-      50,
-      11
     ],
     [
       "saudari",
@@ -38969,6 +39356,11 @@
       25
     ],
     [
+      "tetapi",
+      47,
+      19
+    ],
+    [
       "bangun",
       47,
       21
@@ -38977,6 +39369,11 @@
       "alam",
       47,
       28
+    ],
+    [
+      "artinya",
+      47,
+      18
     ],
     [
       "bagus",
@@ -39004,24 +39401,29 @@
       19
     ],
     [
-      "beberapa",
-      46,
-      24
-    ],
-    [
       "tentang",
       46,
       13
     ],
     [
-      "tetapi",
+      "wasalamualaikum",
       46,
-      18
+      35
+    ],
+    [
+      "menerima",
+      46,
+      12
     ],
     [
       "miskin",
       46,
       18
+    ],
+    [
+      "langsung",
+      46,
+      21
     ],
     [
       "selesai",
@@ -39039,11 +39441,6 @@
       19
     ],
     [
-      "artinya",
-      46,
-      17
-    ],
-    [
       "situ",
       46,
       17
@@ -39059,9 +39456,9 @@
       19
     ],
     [
-      "wasalamualaikum",
+      "tangan",
       45,
-      34
+      17
     ],
     [
       "bismillahirrahmanirrahim",
@@ -39069,9 +39466,24 @@
       30
     ],
     [
+      "tanah",
+      45,
+      20
+    ],
+    [
+      "terhadap",
+      45,
+      16
+    ],
+    [
       "buddhaya",
       45,
       32
+    ],
+    [
+      "bangkit",
+      45,
+      17
     ],
     [
       "pintar",
@@ -39094,29 +39506,9 @@
       19
     ],
     [
-      "tangan",
-      44,
-      16
-    ],
-    [
       "keluar",
       44,
       17
-    ],
-    [
-      "tanah",
-      44,
-      19
-    ],
-    [
-      "menerima",
-      44,
-      11
-    ],
-    [
-      "langsung",
-      44,
-      20
     ],
     [
       "investasi",
@@ -39124,9 +39516,9 @@
       20
     ],
     [
-      "bangkit",
+      "melalui",
       44,
-      16
+      19
     ],
     [
       "pasar",
@@ -39174,9 +39566,9 @@
       17
     ],
     [
-      "melalui",
+      "saling",
       43,
-      18
+      14
     ],
     [
       "sebut",
@@ -39209,6 +39601,11 @@
       38
     ],
     [
+      "terjadi",
+      42,
+      19
+    ],
+    [
       "mahkamah",
       42,
       8
@@ -39219,17 +39616,22 @@
       27
     ],
     [
+      "laporan",
+      42,
+      16
+    ],
+    [
+      "persatuan",
+      42,
+      16
+    ],
+    [
       "memperkuat",
       42,
       18
     ],
     [
       "paham",
-      42,
-      13
-    ],
-    [
-      "saling",
       42,
       13
     ],
@@ -39259,14 +39661,19 @@
       20
     ],
     [
+      "lembaga",
+      41,
+      21
+    ],
+    [
       "berdiri",
       41,
       20
     ],
     [
-      "terjadi",
+      "salve",
       41,
-      18
+      30
     ],
     [
       "bidang",
@@ -39289,11 +39696,6 @@
       19
     ],
     [
-      "persatuan",
-      41,
-      15
-    ],
-    [
       "betul",
       41,
       10
@@ -39304,11 +39706,6 @@
       13
     ],
     [
-      "laporan",
-      41,
-      15
-    ],
-    [
       "membantu",
       40,
       20
@@ -39317,16 +39714,6 @@
       "berjuang",
       40,
       20
-    ],
-    [
-      "lembaga",
-      40,
-      20
-    ],
-    [
-      "salve",
-      40,
-      29
     ],
     [
       "ahmad",
@@ -39374,6 +39761,11 @@
       16
     ],
     [
+      "supaya",
+      39,
+      17
+    ],
+    [
       "cita-cita",
       39,
       16
@@ -39414,11 +39806,6 @@
       13
     ],
     [
-      "supaya",
-      38,
-      16
-    ],
-    [
       "jawab",
       38,
       16
@@ -39442,6 +39829,11 @@
       "pengusaha",
       38,
       13
+    ],
+    [
+      "kehidupan",
+      37,
+      19
     ],
     [
       "barat",
@@ -39479,6 +39871,16 @@
       11
     ],
     [
+      "cepat",
+      37,
+      14
+    ],
+    [
+      "kebijakan",
+      37,
+      6
+    ],
+    [
       "walaupun",
       37,
       20
@@ -39494,14 +39896,14 @@
       15
     ],
     [
-      "kehidupan",
+      "kemiskinan",
       36,
       18
     ],
     [
-      "kemiskinan",
+      "termasuk",
       36,
-      18
+      16
     ],
     [
       "tambah",
@@ -39512,11 +39914,6 @@
       "pasti",
       36,
       16
-    ],
-    [
-      "cepat",
-      36,
-      13
     ],
     [
       "mohon",
@@ -39554,11 +39951,6 @@
       20
     ],
     [
-      "terhadap",
-      35,
-      15
-    ],
-    [
       "swastiastu",
       35,
       30
@@ -39572,6 +39964,11 @@
       "wa",
       35,
       27
+    ],
+    [
+      "kekurangan",
+      35,
+      13
     ],
     [
       "muliakan",
@@ -39629,11 +40026,6 @@
       13
     ],
     [
-      "kebijakan",
-      35,
-      5
-    ],
-    [
       "dpd",
       35,
       8
@@ -39642,6 +40034,11 @@
       "sebetulnya",
       34,
       16
+    ],
+    [
+      "kemarin",
+      34,
+      20
     ],
     [
       "lemah",
@@ -39657,11 +40054,6 @@
       "media",
       34,
       24
-    ],
-    [
-      "kekurangan",
-      34,
-      12
     ],
     [
       "berbeda",
@@ -39687,11 +40079,6 @@
       "umat",
       33,
       23
-    ],
-    [
-      "kemarin",
-      33,
-      19
     ],
     [
       "apa-apa",
@@ -39747,6 +40134,11 @@
       "tantangan",
       33,
       19
+    ],
+    [
+      "nomor",
+      33,
+      11
     ],
     [
       "inilah",
@@ -39829,14 +40221,14 @@
       11
     ],
     [
+      "yaitu",
+      32,
+      18
+    ],
+    [
       "maaf",
       32,
       12
-    ],
-    [
-      "termasuk",
-      32,
-      15
     ],
     [
       "manfaat",
@@ -39852,11 +40244,6 @@
       "menghasilkan",
       32,
       15
-    ],
-    [
-      "nomor",
-      32,
-      10
     ],
     [
       "perlindungan",
@@ -39889,9 +40276,19 @@
       14
     ],
     [
+      "mari",
+      31,
+      15
+    ],
+    [
       "unsur",
       31,
       14
+    ],
+    [
+      "sesuai",
+      31,
+      17
     ],
     [
       "angka",
@@ -39922,11 +40319,6 @@
       "sebelum",
       31,
       13
-    ],
-    [
-      "yaitu",
-      31,
-      17
     ],
     [
       "akhirnya",
@@ -40019,11 +40411,6 @@
       14
     ],
     [
-      "sesuai",
-      30,
-      16
-    ],
-    [
       "gaji",
       30,
       11
@@ -40042,6 +40429,11 @@
       "usah",
       29,
       12
+    ],
+    [
+      "setelah",
+      29,
+      18
     ],
     [
       "ambil",
@@ -40129,11 +40521,6 @@
       12
     ],
     [
-      "setelah",
-      28,
-      17
-    ],
-    [
       "wartawan",
       28,
       11
@@ -40149,19 +40536,29 @@
       16
     ],
     [
-      "mari",
-      28,
-      14
-    ],
-    [
       "kepadanyaalah",
       28,
       17
     ],
     [
+      "melindungi",
+      28,
+      15
+    ],
+    [
+      "hal",
+      28,
+      18
+    ],
+    [
       "profesor",
       28,
       15
+    ],
+    [
+      "segera",
+      28,
+      12
     ],
     [
       "kemakmuran",
@@ -40259,9 +40656,9 @@
       15
     ],
     [
-      "hal",
+      "pihak",
       27,
-      17
+      13
     ],
     [
       "tutup",
@@ -40334,11 +40731,6 @@
       13
     ],
     [
-      "melindungi",
-      26,
-      14
-    ],
-    [
       "ribuan",
       26,
       17
@@ -40354,9 +40746,9 @@
       11
     ],
     [
-      "segera",
+      "tokoh-tokoh",
       26,
-      11
+      13
     ],
     [
       "gratis",
@@ -40389,11 +40781,6 @@
       8
     ],
     [
-      "pihak",
-      26,
-      12
-    ],
-    [
       "perjalanan",
       25,
       13
@@ -40407,6 +40794,11 @@
       "produksi",
       25,
       13
+    ],
+    [
+      "jakarta",
+      25,
+      16
     ],
     [
       "menteri-menteri",
@@ -40479,9 +40871,9 @@
       15
     ],
     [
-      "jakarta",
+      "disampaikan",
       24,
-      15
+      13
     ],
     [
       "mulia",
@@ -40522,6 +40914,21 @@
       "nafas",
       24,
       24
+    ],
+    [
+      "berkumpul",
+      24,
+      22
+    ],
+    [
+      "pimpin",
+      24,
+      13
+    ],
+    [
+      "kebangkitan",
+      24,
+      13
     ],
     [
       "kedaulatan",
@@ -40599,6 +41006,11 @@
       12
     ],
     [
+      "silakan",
+      23,
+      15
+    ],
+    [
       "anda",
       23,
       15
@@ -40629,24 +41041,9 @@
       20
     ],
     [
-      "berkumpul",
-      23,
-      21
-    ],
-    [
       "lakukan",
       23,
       9
-    ],
-    [
-      "pimpin",
-      23,
-      12
-    ],
-    [
-      "kebangkitan",
-      23,
-      12
     ],
     [
       "tata",
@@ -40664,14 +41061,24 @@
       9
     ],
     [
+      "dilakukan",
+      23,
+      7
+    ],
+    [
+      "masing-masing",
+      23,
+      15
+    ],
+    [
+      "lima",
+      23,
+      13
+    ],
+    [
       "mpr",
       23,
       9
-    ],
-    [
-      "tokoh-tokoh",
-      23,
-      12
     ],
     [
       "elit",
@@ -40754,9 +41161,9 @@
       11
     ],
     [
-      "silakan",
+      "melakukan",
       22,
-      14
+      10
     ],
     [
       "sekedar",
@@ -40774,6 +41181,11 @@
       17
     ],
     [
+      "mengambil",
+      22,
+      13
+    ],
+    [
       "budaya",
       22,
       11
@@ -40782,6 +41194,11 @@
       "lu",
       22,
       11
+    ],
+    [
+      "koreksi",
+      22,
+      10
     ],
     [
       "sebentar",
@@ -40812,11 +41229,6 @@
       "alat",
       22,
       9
-    ],
-    [
-      "lima",
-      22,
-      12
     ],
     [
       "capai",
@@ -40884,11 +41296,6 @@
       10
     ],
     [
-      "disampaikan",
-      21,
-      12
-    ],
-    [
       "senang",
       21,
       12
@@ -40934,14 +41341,29 @@
       10
     ],
     [
+      "langkah",
+      21,
+      11
+    ],
+    [
       "tertinggi",
       21,
       10
     ],
     [
+      "jaga",
+      21,
+      14
+    ],
+    [
       "hilirisasi",
       21,
       12
+    ],
+    [
+      "sejak",
+      21,
+      10
     ],
     [
       "eropa",
@@ -40977,11 +41399,6 @@
       "teruskan",
       21,
       10
-    ],
-    [
-      "koreksi",
-      21,
-      9
     ],
     [
       "india",
@@ -41084,22 +41501,32 @@
       10
     ],
     [
-      "mengambil",
-      20,
-      12
-    ],
-    [
-      "jaga",
-      20,
-      13
-    ],
-    [
       "kepercayaan",
       20,
       13
     ],
     [
       "swasta",
+      20,
+      12
+    ],
+    [
+      "pasal",
+      20,
+      6
+    ],
+    [
+      "kelihatan",
+      20,
+      10
+    ],
+    [
+      "perintahkan",
+      20,
+      9
+    ],
+    [
+      "warga",
       20,
       12
     ],
@@ -41179,11 +41606,6 @@
       11
     ],
     [
-      "sejak",
-      20,
-      9
-    ],
-    [
       "selain",
       20,
       9
@@ -41194,6 +41616,11 @@
       12
     ],
     [
+      "kegiatan",
+      19,
+      10
+    ],
+    [
       "mereka-mereka",
       19,
       13
@@ -41202,11 +41629,6 @@
       "mata",
       19,
       12
-    ],
-    [
-      "melakukan",
-      19,
-      9
     ],
     [
       "lapar",
@@ -41224,6 +41646,11 @@
       9
     ],
     [
+      "rakyatnya",
+      19,
+      11
+    ],
+    [
       "cerita",
       19,
       11
@@ -41232,6 +41659,11 @@
       "berkembang",
       19,
       9
+    ],
+    [
+      "damai",
+      19,
+      12
     ],
     [
       "amin",
@@ -41249,14 +41681,14 @@
       14
     ],
     [
-      "langkah",
-      19,
-      10
-    ],
-    [
       "tuh",
       19,
       11
+    ],
+    [
+      "kritik",
+      19,
+      6
     ],
     [
       "hadapi",
@@ -41289,19 +41721,9 @@
       5
     ],
     [
-      "warga",
-      19,
-      11
-    ],
-    [
       "setuju",
       19,
       8
-    ],
-    [
-      "kelihatan",
-      19,
-      9
     ],
     [
       "perbedaan",
@@ -41312,11 +41734,6 @@
       "raya",
       19,
       7
-    ],
-    [
-      "dilakukan",
-      19,
-      6
     ],
     [
       "amerika",
@@ -41344,11 +41761,6 @@
       10
     ],
     [
-      "pasal",
-      19,
-      5
-    ],
-    [
       "jembatan",
       19,
       9
@@ -41367,11 +41779,6 @@
       "dekat",
       18,
       12
-    ],
-    [
-      "kegiatan",
-      18,
-      9
     ],
     [
       "agustus",
@@ -41399,9 +41806,9 @@
       13
     ],
     [
-      "rakyatnya",
+      "terbuka",
       18,
-      10
+      7
     ],
     [
       "yusuf",
@@ -41429,6 +41836,16 @@
       18
     ],
     [
+      "hal-hal",
+      18,
+      13
+    ],
+    [
+      "bertekad",
+      18,
+      13
+    ],
+    [
       "alhamdulillah",
       18,
       13
@@ -41442,11 +41859,6 @@
       "ilegal",
       18,
       6
-    ],
-    [
-      "perintahkan",
-      18,
-      8
     ],
     [
       "menutup",
@@ -41494,17 +41906,7 @@
       10
     ],
     [
-      "masing-masing",
-      18,
-      14
-    ],
-    [
       "layar",
-      18,
-      5
-    ],
-    [
-      "kritik",
       18,
       5
     ],
@@ -41569,6 +41971,11 @@
       12
     ],
     [
+      "lingkungan",
+      17,
+      12
+    ],
+    [
       "niat",
       17,
       9
@@ -41594,9 +42001,19 @@
       13
     ],
     [
+      "hak",
+      17,
+      9
+    ],
+    [
       "mantan",
       17,
       11
+    ],
+    [
+      "setanah",
+      17,
+      15
     ],
     [
       "unggul",
@@ -41629,6 +42046,16 @@
       7
     ],
     [
+      "menghormati",
+      17,
+      10
+    ],
+    [
+      "dibangun",
+      17,
+      10
+    ],
+    [
       "tanggung",
       17,
       7
@@ -41657,11 +42084,6 @@
       "memilih",
       17,
       10
-    ],
-    [
-      "bertekad",
-      17,
-      12
     ],
     [
       "desember",
@@ -41724,11 +42146,6 @@
       10
     ],
     [
-      "hal-hal",
-      17,
-      12
-    ],
-    [
       "tambahan",
       17,
       7
@@ -41774,14 +42191,14 @@
       12
     ],
     [
-      "lingkungan",
-      16,
-      11
-    ],
-    [
       "menghemat",
       16,
       9
+    ],
+    [
+      "merupakan",
+      16,
+      10
     ],
     [
       "hadapan",
@@ -41789,19 +42206,9 @@
       9
     ],
     [
-      "terbuka",
-      16,
-      6
-    ],
-    [
       "pemimpin-pemimpin",
       16,
       10
-    ],
-    [
-      "hak",
-      16,
-      8
     ],
     [
       "memimpin",
@@ -41824,7 +42231,7 @@
       11
     ],
     [
-      "setanah",
+      "sebangsa",
       16,
       14
     ],
@@ -41837,6 +42244,11 @@
       "ketiga",
       16,
       11
+    ],
+    [
+      "sungguh-sungguh",
+      16,
+      9
     ],
     [
       "komunikasi",
@@ -41852,6 +42264,31 @@
       "gizi",
       16,
       10
+    ],
+    [
+      "penyampaian",
+      16,
+      2
+    ],
+    [
+      "kesalahan",
+      16,
+      9
+    ],
+    [
+      "publik",
+      16,
+      4
+    ],
+    [
+      "fasilitas",
+      16,
+      6
+    ],
+    [
+      "maupun",
+      16,
+      9
     ],
     [
       "sby",
@@ -41882,11 +42319,6 @@
       "rupiah",
       16,
       8
-    ],
-    [
-      "dibangun",
-      16,
-      9
     ],
     [
       "minggu",
@@ -42014,6 +42446,11 @@
       9
     ],
     [
+      "adanya",
+      15,
+      8
+    ],
+    [
       "mengakui",
       15,
       10
@@ -42039,11 +42476,6 @@
       9
     ],
     [
-      "merupakan",
-      15,
-      9
-    ],
-    [
       "bersejarah",
       15,
       11
@@ -42064,24 +42496,9 @@
       9
     ],
     [
-      "damai",
-      15,
-      11
-    ],
-    [
-      "sebangsa",
-      15,
-      13
-    ],
-    [
       "pertama-tama",
       15,
       14
-    ],
-    [
-      "sungguh-sungguh",
-      15,
-      8
     ],
     [
       "sebesar-besarnya",
@@ -42097,6 +42514,11 @@
       "ancaman",
       15,
       6
+    ],
+    [
+      "and",
+      15,
+      9
     ],
     [
       "pbb",
@@ -42144,11 +42566,6 @@
       8
     ],
     [
-      "kesalahan",
-      15,
-      8
-    ],
-    [
       "desa-desa",
       15,
       10
@@ -42177,11 +42594,6 @@
       "serikat",
       15,
       7
-    ],
-    [
-      "menghormati",
-      15,
-      9
     ],
     [
       "pengalaman",
@@ -42514,11 +42926,6 @@
       5
     ],
     [
-      "and",
-      14,
-      8
-    ],
-    [
       "genteng",
       14,
       3
@@ -42527,11 +42934,6 @@
       "mendapatkan",
       14,
       10
-    ],
-    [
-      "maupun",
-      14,
-      8
     ],
     [
       "sore",
@@ -42574,19 +42976,9 @@
       5
     ],
     [
-      "publik",
-      14,
-      3
-    ],
-    [
       "beroperasi",
       14,
       4
-    ],
-    [
-      "penyampaian",
-      14,
-      1
     ],
     [
       "sahabat",
@@ -42609,11 +43001,6 @@
       7
     ],
     [
-      "adanya",
-      13,
-      7
-    ],
-    [
       "inggris",
       13,
       10
@@ -42627,6 +43014,11 @@
       "buat",
       13,
       11
+    ],
+    [
+      "pribadi",
+      13,
+      10
     ],
     [
       "global",
@@ -42649,6 +43041,11 @@
       11
     ],
     [
+      "meminta",
+      13,
+      12
+    ],
+    [
       "rektor",
       13,
       5
@@ -42662,6 +43059,21 @@
       "sungguh",
       13,
       9
+    ],
+    [
+      "aspirasi",
+      13,
+      4
+    ],
+    [
+      "proses",
+      13,
+      7
+    ],
+    [
+      "tenang",
+      13,
+      10
     ],
     [
       "pakar",
@@ -42929,6 +43341,11 @@
       9
     ],
     [
+      "menegakkan",
+      12,
+      6
+    ],
+    [
       "rukun",
       12,
       10
@@ -42937,6 +43354,11 @@
       "angkat",
       12,
       4
+    ],
+    [
+      "perbaikan",
+      12,
+      5
     ],
     [
       "lawan",
@@ -42949,14 +43371,19 @@
       9
     ],
     [
-      "pribadi",
-      12,
-      9
-    ],
-    [
       "hubungan",
       12,
       8
+    ],
+    [
+      "tegas",
+      12,
+      7
+    ],
+    [
+      "bersama-sama",
+      12,
+      9
     ],
     [
       "konstitusi",
@@ -42964,9 +43391,9 @@
       6
     ],
     [
-      "meminta",
+      "bertugas",
       12,
-      11
+      5
     ],
     [
       "mengajarkan",
@@ -42982,6 +43409,31 @@
       "itb",
       12,
       4
+    ],
+    [
+      "namun",
+      12,
+      8
+    ],
+    [
+      "rangka",
+      12,
+      7
+    ],
+    [
+      "jika",
+      12,
+      3
+    ],
+    [
+      "mengundang",
+      12,
+      11
+    ],
+    [
+      "dprri",
+      12,
+      6
     ],
     [
       "kader",
@@ -43067,11 +43519,6 @@
       "umkm",
       12,
       8
-    ],
-    [
-      "fasilitas",
-      12,
-      5
     ],
     [
       "sma",
@@ -43164,11 +43611,6 @@
       8
     ],
     [
-      "proses",
-      12,
-      6
-    ],
-    [
       "harganya",
       12,
       8
@@ -43192,11 +43634,6 @@
       "meresmikan",
       12,
       7
-    ],
-    [
-      "tenang",
-      12,
-      9
     ],
     [
       "miliki",
@@ -43279,11 +43716,6 @@
       4
     ],
     [
-      "menegakkan",
-      11,
-      5
-    ],
-    [
       "menemukan",
       11,
       7
@@ -43299,11 +43731,6 @@
       8
     ],
     [
-      "perbaikan",
-      11,
-      4
-    ],
-    [
       "mati",
       11,
       6
@@ -43312,11 +43739,6 @@
       "daerah-daerah",
       11,
       9
-    ],
-    [
-      "bersama-sama",
-      11,
-      8
     ],
     [
       "keenam",
@@ -43369,14 +43791,14 @@
       9
     ],
     [
+      "kelompok-kelompok",
+      11,
+      6
+    ],
+    [
       "jumlahnya",
       11,
       9
-    ],
-    [
-      "dprri",
-      11,
-      5
     ],
     [
       "pilih",
@@ -43519,11 +43941,6 @@
       8
     ],
     [
-      "rangka",
-      11,
-      6
-    ],
-    [
       "batu",
       11,
       9
@@ -43572,11 +43989,6 @@
       "usia",
       11,
       6
-    ],
-    [
-      "mengundang",
-      11,
-      10
     ],
     [
       "komisaris",
@@ -43659,11 +44071,6 @@
       2
     ],
     [
-      "jika",
-      11,
-      2
-    ],
-    [
       "pfi",
       11,
       1
@@ -43704,11 +44111,6 @@
       4
     ],
     [
-      "tegas",
-      10,
-      6
-    ],
-    [
       "kantor",
       10,
       6
@@ -43724,9 +44126,14 @@
       6
     ],
     [
-      "bertugas",
+      "merusak",
       10,
-      4
+      7
+    ],
+    [
+      "jiwa",
+      10,
+      7
     ],
     [
       "brian",
@@ -43744,9 +44151,24 @@
       6
     ],
     [
-      "namun",
+      "perkembangan",
       10,
       7
+    ],
+    [
+      "keliru",
+      10,
+      7
+    ],
+    [
+      "apabila",
+      10,
+      6
+    ],
+    [
+      "memperjuangkan",
+      10,
+      5
     ],
     [
       "serius",
@@ -44214,9 +44636,34 @@
       5
     ],
     [
-      "jiwa",
+      "september",
+      9,
+      5
+    ],
+    [
+      "dihormati",
+      9,
+      8
+    ],
+    [
+      "bentuk",
+      9,
+      7
+    ],
+    [
+      "diterima",
+      9,
+      8
+    ],
+    [
+      "tertinggal",
       9,
       6
+    ],
+    [
+      "mengikuti",
+      9,
+      8
     ],
     [
       "perhatikan",
@@ -44277,16 +44724,6 @@
       "mahal",
       9,
       5
-    ],
-    [
-      "keliru",
-      9,
-      6
-    ],
-    [
-      "memperjuangkan",
-      9,
-      4
     ],
     [
       "dprd",
@@ -44372,11 +44809,6 @@
       "zaman",
       9,
       6
-    ],
-    [
-      "apabila",
-      9,
-      5
     ],
     [
       "dosa",
@@ -44542,11 +44974,6 @@
       "sulaiman",
       9,
       5
-    ],
-    [
-      "perkembangan",
-      9,
-      6
     ],
     [
       "esa",
@@ -44724,7 +45151,22 @@
       6
     ],
     [
-      "september",
+      "petugas",
+      8,
+      6
+    ],
+    [
+      "fraksi",
+      8,
+      3
+    ],
+    [
+      "luas",
+      8,
+      7
+    ],
+    [
+      "rahayu",
       8,
       4
     ],
@@ -44834,11 +45276,6 @@
       7
     ],
     [
-      "bentuk",
-      8,
-      6
-    ],
-    [
       "dikelola",
       8,
       6
@@ -44924,19 +45361,9 @@
       6
     ],
     [
-      "diterima",
-      8,
-      7
-    ],
-    [
       "desil",
       8,
       2
-    ],
-    [
-      "kelompok-kelompok",
-      8,
-      5
     ],
     [
       "persilakan",
@@ -44967,11 +45394,6 @@
       "protein",
       8,
       3
-    ],
-    [
-      "tertinggal",
-      8,
-      5
     ],
     [
       "katakanlah",
@@ -45027,11 +45449,6 @@
       "mempercepat",
       8,
       6
-    ],
-    [
-      "mengikuti",
-      8,
-      7
     ],
     [
       "pengawasan",
@@ -45384,6 +45801,11 @@
       5
     ],
     [
+      "yeah",
+      7,
+      7
+    ],
+    [
       "bandung",
       7,
       3
@@ -45404,6 +45826,41 @@
       6
     ],
     [
+      "murni",
+      7,
+      3
+    ],
+    [
+      "on",
+      7,
+      3
+    ],
+    [
+      "terdapat",
+      7,
+      4
+    ],
+    [
+      "aparat",
+      7,
+      5
+    ],
+    [
+      "tempat-tempat",
+      7,
+      5
+    ],
+    [
+      "mengingatkan",
+      7,
+      5
+    ],
+    [
+      "waspada",
+      7,
+      5
+    ],
+    [
       "nur",
       7,
       5
@@ -45412,11 +45869,6 @@
       "berprestasi",
       7,
       5
-    ],
-    [
-      "fraksi",
-      7,
-      2
     ],
     [
       "haturkan",
@@ -45914,11 +46366,6 @@
       4
     ],
     [
-      "petugas",
-      7,
-      5
-    ],
-    [
       "iri",
       7,
       3
@@ -46014,11 +46461,6 @@
       5
     ],
     [
-      "dihormati",
-      7,
-      7
-    ],
-    [
       "dapur-dapur",
       7,
       2
@@ -46057,11 +46499,6 @@
       "jeep",
       7,
       2
-    ],
-    [
-      "luas",
-      7,
-      6
     ],
     [
       "izinkan",
@@ -46155,11 +46592,6 @@
     ],
     [
       "periode",
-      7,
-      3
-    ],
-    [
-      "aspirasi",
       7,
       3
     ],
@@ -46269,6 +46701,11 @@
       4
     ],
     [
+      "kunjungan",
+      6,
+      4
+    ],
+    [
       "istimewa",
       6,
       5
@@ -46280,6 +46717,11 @@
     ],
     [
       "mengenal",
+      6,
+      6
+    ],
+    [
+      "pendapat",
       6,
       6
     ],
@@ -46314,11 +46756,6 @@
       4
     ],
     [
-      "merusak",
-      6,
-      6
-    ],
-    [
       "cucu-cucu",
       6,
       6
@@ -46339,11 +46776,6 @@
       6
     ],
     [
-      "yeah",
-      6,
-      6
-    ],
-    [
       "daftar",
       6,
       4
@@ -46359,9 +46791,59 @@
       5
     ],
     [
+      "dicatat",
+      6,
+      6
+    ],
+    [
       "pindat",
       6,
       4
+    ],
+    [
+      "situasi",
+      6,
+      6
+    ],
+    [
+      "international",
+      6,
+      6
+    ],
+    [
+      "berlaku",
+      6,
+      4
+    ],
+    [
+      "kl",
+      6,
+      4
+    ],
+    [
+      "domba",
+      6,
+      3
+    ],
+    [
+      "kerusuhan",
+      6,
+      3
+    ],
+    [
+      "merugikan",
+      6,
+      4
+    ],
+    [
+      "nenek",
+      6,
+      6
+    ],
+    [
+      "koalisi",
+      6,
+      5
     ],
     [
       "hidayat",
@@ -46420,11 +46902,6 @@
     ],
     [
       "ratus",
-      6,
-      3
-    ],
-    [
-      "terdapat",
       6,
       3
     ],
@@ -46569,11 +47046,6 @@
       4
     ],
     [
-      "tempat-tempat",
-      6,
-      4
-    ],
-    [
       "gotongroyong",
       6,
       6
@@ -46679,11 +47151,6 @@
       2
     ],
     [
-      "waspada",
-      6,
-      4
-    ],
-    [
       "melupakan",
       6,
       3
@@ -46700,11 +47167,6 @@
     ],
     [
       "dibicarakan",
-      6,
-      4
-    ],
-    [
-      "mengingatkan",
       6,
       4
     ],
@@ -46854,11 +47316,6 @@
       3
     ],
     [
-      "on",
-      6,
-      2
-    ],
-    [
       "cicit",
       6,
       4
@@ -46937,11 +47394,6 @@
       "online",
       6,
       4
-    ],
-    [
-      "rahayu",
-      6,
-      3
     ],
     [
       "kehutanan",
@@ -47394,6 +47846,11 @@
       4
     ],
     [
+      "mengirim",
+      5,
+      2
+    ],
+    [
       "azazi",
       5,
       4
@@ -47402,11 +47859,6 @@
       "gaza",
       5,
       4
-    ],
-    [
-      "pendapat",
-      5,
-      5
     ],
     [
       "pnawirawan",
@@ -47454,14 +47906,49 @@
       5
     ],
     [
+      "mahasiswa",
+      5,
+      4
+    ],
+    [
       "ipb",
       5,
       4
     ],
     [
-      "dicatat",
+      "transparan",
       5,
-      5
+      3
+    ],
+    [
+      "berbicara",
+      5,
+      4
+    ],
+    [
+      "berpendapat",
+      5,
+      3
+    ],
+    [
+      "kegiatan-kegiatan",
+      5,
+      4
+    ],
+    [
+      "wajib",
+      5,
+      3
+    ],
+    [
+      "diadu",
+      5,
+      3
+    ],
+    [
+      "gotong-royong",
+      5,
+      4
     ],
     [
       "harimurti",
@@ -47490,11 +47977,6 @@
     ],
     [
       "keinginan",
-      5,
-      3
-    ],
-    [
-      "berlaku",
       5,
       3
     ],
@@ -47594,11 +48076,6 @@
       3
     ],
     [
-      "kerusuhan",
-      5,
-      2
-    ],
-    [
       "kejahatan",
       5,
       2
@@ -47615,11 +48092,6 @@
     ],
     [
       "itikat",
-      5,
-      4
-    ],
-    [
-      "koalisi",
       5,
       4
     ],
@@ -47690,11 +48162,6 @@
     ],
     [
       "marah",
-      5,
-      5
-    ],
-    [
-      "nenek",
       5,
       5
     ],
@@ -47879,11 +48346,6 @@
       5
     ],
     [
-      "situasi",
-      5,
-      5
-    ],
-    [
       "dijajah",
       5,
       4
@@ -48032,11 +48494,6 @@
       "realita",
       5,
       2
-    ],
-    [
-      "kl",
-      5,
-      3
     ],
     [
       "jorok",
@@ -48217,11 +48674,6 @@
       "maunya",
       5,
       4
-    ],
-    [
-      "international",
-      5,
-      5
     ],
     [
       "dirut",
@@ -48487,11 +48939,6 @@
       "ulum",
       5,
       3
-    ],
-    [
-      "aparat",
-      5,
-      4
     ],
     [
       "belas",
@@ -48869,6 +49316,11 @@
       1
     ],
     [
+      "melawan",
+      4,
+      3
+    ],
+    [
       "kebal",
       4,
       2
@@ -48904,19 +49356,9 @@
       2
     ],
     [
-      "kunjungan",
-      4,
-      3
-    ],
-    [
       "diserang",
       4,
       3
-    ],
-    [
-      "mengirim",
-      4,
-      1
     ],
     [
       "ikatan",
@@ -49009,11 +49451,6 @@
       4
     ],
     [
-      "mahasiswa",
-      4,
-      3
-    ],
-    [
       "jauh-jauh",
       4,
       4
@@ -49072,6 +49509,91 @@
       "dibaca",
       4,
       2
+    ],
+    [
+      "kebebasan",
+      4,
+      2
+    ],
+    [
+      "pemeriksaan",
+      4,
+      2
+    ],
+    [
+      "senin",
+      4,
+      4
+    ],
+    [
+      "besaran",
+      4,
+      2
+    ],
+    [
+      "tunjangan",
+      4,
+      2
+    ],
+    [
+      "berpihak",
+      4,
+      4
+    ],
+    [
+      "diatur",
+      4,
+      4
+    ],
+    [
+      "united",
+      4,
+      4
+    ],
+    [
+      "korban",
+      4,
+      4
+    ],
+    [
+      "rumah-rumah",
+      4,
+      3
+    ],
+    [
+      "dilindungi",
+      4,
+      4
+    ],
+    [
+      "pungkiri",
+      4,
+      3
+    ],
+    [
+      "mengarah",
+      4,
+      3
+    ],
+    [
+      "macam",
+      4,
+      4
+    ],
+    [
+      "moyang",
+      4,
+      4
+    ],
+    [
+      "keselamatan",
+      4,
+      4
+    ],
+    [
+      "pernyataan",
+      4,
+      4
     ],
     [
       "almuzamil",
@@ -49172,11 +49694,6 @@
       "pemilu",
       4,
       4
-    ],
-    [
-      "merugikan",
-      4,
-      3
     ],
     [
       "caranya",
@@ -50279,11 +50796,6 @@
       2
     ],
     [
-      "kegiatan-kegiatan",
-      4,
-      3
-    ],
-    [
       "tekan",
       4,
       3
@@ -50484,11 +50996,6 @@
       3
     ],
     [
-      "gotong-royong",
-      4,
-      3
-    ],
-    [
       "gedek",
       4,
       1
@@ -50654,11 +51161,6 @@
       2
     ],
     [
-      "berpendapat",
-      4,
-      2
-    ],
-    [
       "ilmuwan",
       4,
       3
@@ -50677,16 +51179,6 @@
       "berkarya",
       4,
       3
-    ],
-    [
-      "berbicara",
-      4,
-      3
-    ],
-    [
-      "transparan",
-      4,
-      2
     ],
     [
       "terkuat",
@@ -50772,11 +51264,6 @@
       "kikin",
       4,
       3
-    ],
-    [
-      "wajib",
-      4,
-      2
     ],
     [
       "bersatulah",
@@ -51254,11 +51741,6 @@
       1
     ],
     [
-      "melawan",
-      3,
-      2
-    ],
-    [
       "fgd",
       3,
       2
@@ -51347,6 +51829,11 @@
       "diam",
       3,
       3
+    ],
+    [
+      "pelanggaran",
+      3,
+      2
     ],
     [
       "ikon",
@@ -51529,6 +52016,56 @@
       3
     ],
     [
+      "dipersilakan",
+      3,
+      3
+    ],
+    [
+      "nations",
+      3,
+      3
+    ],
+    [
+      "mengancam",
+      3,
+      2
+    ],
+    [
+      "tindakan-tindakan",
+      3,
+      3
+    ],
+    [
+      "terorisme",
+      3,
+      2
+    ],
+    [
+      "tindakan",
+      3,
+      3
+    ],
+    [
+      "pastikan",
+      3,
+      3
+    ],
+    [
+      "delegasi",
+      3,
+      2
+    ],
+    [
+      "utusan-utusan",
+      3,
+      2
+    ],
+    [
+      "campur",
+      3,
+      3
+    ],
+    [
       "baskoro",
       3,
       3
@@ -51594,21 +52131,6 @@
       3
     ],
     [
-      "korban",
-      3,
-      3
-    ],
-    [
-      "pungkiri",
-      3,
-      2
-    ],
-    [
-      "murni",
-      3,
-      2
-    ],
-    [
       "negatif",
       3,
       3
@@ -51627,11 +52149,6 @@
       "sejujur-jujurnya",
       3,
       2
-    ],
-    [
-      "macam",
-      3,
-      3
     ],
     [
       "membentuk",
@@ -51732,11 +52249,6 @@
       "jalur",
       3,
       3
-    ],
-    [
-      "domba",
-      3,
-      2
     ],
     [
       "gambar",
@@ -51850,11 +52362,6 @@
     ],
     [
       "iuran",
-      3,
-      3
-    ],
-    [
-      "senin",
       3,
       3
     ],
@@ -51974,11 +52481,6 @@
       3
     ],
     [
-      "keselamatan",
-      3,
-      3
-    ],
-    [
       "pemimpin-pemimpinnya",
       3,
       3
@@ -52067,11 +52569,6 @@
       "nation",
       3,
       1
-    ],
-    [
-      "united",
-      3,
-      3
     ],
     [
       "ketenangan",
@@ -52544,11 +53041,6 @@
       3
     ],
     [
-      "dilindungi",
-      3,
-      3
-    ],
-    [
       "dibina",
       3,
       3
@@ -52694,11 +53186,6 @@
       2
     ],
     [
-      "berpihak",
-      3,
-      3
-    ],
-    [
       "berpenghasilan",
       3,
       2
@@ -52762,11 +53249,6 @@
       "penjualan",
       3,
       1
-    ],
-    [
-      "moyang",
-      3,
-      3
     ],
     [
       "difitnah",
@@ -53159,11 +53641,6 @@
       3
     ],
     [
-      "diatur",
-      3,
-      3
-    ],
-    [
       "porsi",
       3,
       1
@@ -53297,11 +53774,6 @@
       "berkhianat",
       3,
       1
-    ],
-    [
-      "pernyataan",
-      3,
-      3
     ],
     [
       "anwar",
@@ -54574,11 +55046,6 @@
       1
     ],
     [
-      "pemeriksaan",
-      3,
-      1
-    ],
-    [
       "dilengkapi",
       3,
       1
@@ -54859,6 +55326,11 @@
       2
     ],
     [
+      "didengar",
+      2,
+      2
+    ],
+    [
       "ke-21",
       2,
       2
@@ -55074,12 +55546,67 @@
       2
     ],
     [
-      "dipersilakan",
+      "beragam",
       2,
       2
     ],
     [
-      "beragam",
+      "memantau",
+      2,
+      2
+    ],
+    [
+      "ataupun",
+      2,
+      1
+    ],
+    [
+      "pencabutan",
+      2,
+      1
+    ],
+    [
+      "moratorium",
+      2,
+      1
+    ],
+    [
+      "political",
+      2,
+      2
+    ],
+    [
+      "bersifat",
+      2,
+      2
+    ],
+    [
+      "penjarahan",
+      2,
+      1
+    ],
+    [
+      "individu",
+      2,
+      2
+    ],
+    [
+      "tuntutan",
+      2,
+      2
+    ],
+    [
+      "tindaklanjuti",
+      2,
+      1
+    ],
+    [
+      "jalannya",
+      2,
+      2
+    ],
+    [
+      "bergotong-royong",
       2,
       2
     ],
@@ -55274,11 +55801,6 @@
       1
     ],
     [
-      "diadu",
-      2,
-      2
-    ],
-    [
       "dibakar",
       2,
       1
@@ -55372,11 +55894,6 @@
       "d",
       2,
       2
-    ],
-    [
-      "tunjangan",
-      2,
-      1
     ],
     [
       "en",
@@ -56479,11 +56996,6 @@
       1
     ],
     [
-      "mengarah",
-      2,
-      2
-    ],
-    [
       "penugasan",
       2,
       2
@@ -56500,11 +57012,6 @@
     ],
     [
       "dirawat",
-      2,
-      2
-    ],
-    [
-      "campur",
       2,
       2
     ],
@@ -56570,11 +57077,6 @@
     ],
     [
       "diterjemahkan",
-      2,
-      2
-    ],
-    [
-      "tindakan",
       2,
       2
     ],
@@ -56679,11 +57181,6 @@
       2
     ],
     [
-      "utusan-utusan",
-      2,
-      1
-    ],
-    [
       "supratman",
       2,
       2
@@ -56780,11 +57277,6 @@
     ],
     [
       "pemutusan",
-      2,
-      2
-    ],
-    [
-      "rumah-rumah",
       2,
       2
     ],
@@ -57284,11 +57776,6 @@
       2
     ],
     [
-      "delegasi",
-      2,
-      1
-    ],
-    [
       "sependapat",
       2,
       1
@@ -57450,11 +57937,6 @@
     ],
     [
       "disertai",
-      2,
-      2
-    ],
-    [
-      "tindakan-tindakan",
       2,
       2
     ],
@@ -58194,11 +58676,6 @@
       1
     ],
     [
-      "nations",
-      2,
-      2
-    ],
-    [
       "rp50",
       2,
       2
@@ -58474,11 +58951,6 @@
       1
     ],
     [
-      "kebebasan",
-      2,
-      1
-    ],
-    [
       "pertentangan",
       2,
       2
@@ -58580,11 +59052,6 @@
     ],
     [
       "judi",
-      2,
-      1
-    ],
-    [
-      "terorisme",
       2,
       1
     ],
@@ -58857,11 +59324,6 @@
       "pakan",
       2,
       1
-    ],
-    [
-      "pastikan",
-      2,
-      2
     ],
     [
       "lumbung",
@@ -60294,11 +60756,6 @@
       1
     ],
     [
-      "besaran",
-      2,
-      1
-    ],
-    [
       "dibanding",
       2,
       2
@@ -61464,11 +61921,6 @@
       1
     ],
     [
-      "pelanggaran",
-      1,
-      1
-    ],
-    [
       "pengagum",
       1,
       1
@@ -61505,11 +61957,6 @@
     ],
     [
       "turk",
-      1,
-      1
-    ],
-    [
-      "didengar",
       1,
       1
     ],
@@ -61835,6 +62282,171 @@
     ],
     [
       "stan",
+      1,
+      1
+    ],
+    [
+      "diikuti",
+      1,
+      1
+    ],
+    [
+      "menyikapi",
+      1,
+      1
+    ],
+    [
+      "terhitung",
+      1,
+      1
+    ],
+    [
+      "pernyataan-pernyataan",
+      1,
+      1
+    ],
+    [
+      "dicabut",
+      1,
+      1
+    ],
+    [
+      "keanggotannya",
+      1,
+      1
+    ],
+    [
+      "peka",
+      1,
+      1
+    ],
+    [
+      "covenant",
+      1,
+      1
+    ],
+    [
+      "civil",
+      1,
+      1
+    ],
+    [
+      "rights",
+      1,
+      1
+    ],
+    [
+      "pelaksananya",
+      1,
+      1
+    ],
+    [
+      "anarkis",
+      1,
+      1
+    ],
+    [
+      "destabilisasi",
+      1,
+      1
+    ],
+    [
+      "membakar",
+      1,
+      1
+    ],
+    [
+      "menjarah",
+      1,
+      1
+    ],
+    [
+      "instansi-instansi",
+      1,
+      1
+    ],
+    [
+      "fasilitas-fasilitas",
+      1,
+      1
+    ],
+    [
+      "pelanggaran-pelanggaran",
+      1,
+      1
+    ],
+    [
+      "gejala",
+      1,
+      1
+    ],
+    [
+      "makar",
+      1,
+      1
+    ],
+    [
+      "setegas-tegasnya",
+      1,
+      1
+    ],
+    [
+      "pengerusakan",
+      1,
+      1
+    ],
+    [
+      "sentra-sentra",
+      1,
+      1
+    ],
+    [
+      "aspirasinya",
+      1,
+      1
+    ],
+    [
+      "berdialog",
+      1,
+      1
+    ],
+    [
+      "diambang",
+      1,
+      1
+    ],
+    [
+      "suarakan",
+      1,
+      1
+    ],
+    [
+      "kekerasan",
+      1,
+      1
+    ],
+    [
+      "perbuatan",
+      1,
+      1
+    ],
+    [
+      "menghamburkan",
+      1,
+      1
+    ],
+    [
+      "silak",
+      1,
+      1
+    ],
+    [
+      "diintervensi",
+      1,
+      1
+    ],
+    [
+      "berunding",
       1,
       1
     ],
@@ -63564,11 +64176,6 @@
       1
     ],
     [
-      "mengancam",
-      1,
-      1
-    ],
-    [
       "siapapa",
       1,
       1
@@ -64880,11 +65487,6 @@
     ],
     [
       "sovnalt",
-      1,
-      1
-    ],
-    [
-      "political",
       1,
       1
     ],
@@ -69629,11 +70231,6 @@
       1
     ],
     [
-      "individu",
-      1,
-      1
-    ],
-    [
       "posisi-posisi",
       1,
       1
@@ -69850,11 +70447,6 @@
     ],
     [
       "mendikti",
-      1,
-      1
-    ],
-    [
-      "jalannya",
       1,
       1
     ],
@@ -73554,11 +74146,6 @@
       1
     ],
     [
-      "bersifat",
-      1,
-      1
-    ],
-    [
       "dasok",
       1,
       1
@@ -73915,11 +74502,6 @@
     ],
     [
       "hidupmu",
-      1,
-      1
-    ],
-    [
-      "tuntutan",
       1,
       1
     ],
@@ -77574,11 +78156,6 @@
       1
     ],
     [
-      "bergotong-royong",
-      1,
-      1
-    ],
-    [
       "melewati",
       1,
       1
@@ -77740,11 +78317,6 @@
     ],
     [
       "kehati-hatian",
-      1,
-      1
-    ],
-    [
-      "memantau",
       1,
       1
     ],
@@ -82181,35 +82753,42 @@
   ],
   "duplicate_groups": [
     {
-      "event_group": "event-017",
+      "event_group": "event-018",
       "canonical_id": "ffYHRrgqg5U",
       "member_ids": [
         "ffYHRrgqg5U"
       ]
     },
     {
-      "event_group": "event-003",
+      "event_group": "event-004",
       "canonical_id": "CfnRESwOZKQ",
       "member_ids": [
         "CfnRESwOZKQ"
       ]
     },
     {
-      "event_group": "event-040",
+      "event_group": "event-041",
       "canonical_id": "Enmz62kOMyI",
       "member_ids": [
         "Enmz62kOMyI"
       ]
     },
     {
-      "event_group": "event-004",
+      "event_group": "event-005",
       "canonical_id": "E_doThSKS4E",
       "member_ids": [
         "E_doThSKS4E"
       ]
     },
     {
-      "event_group": "event-024",
+      "event_group": "event-002",
+      "canonical_id": "3e_gu9rWwWQ",
+      "member_ids": [
+        "3e_gu9rWwWQ"
+      ]
+    },
+    {
+      "event_group": "event-025",
       "canonical_id": "gyT_qLziJ2M",
       "member_ids": [
         "gyT_qLziJ2M"
@@ -82223,35 +82802,35 @@
       ]
     },
     {
-      "event_group": "event-044",
+      "event_group": "event-045",
       "canonical_id": "OOAGKPFdwf0",
       "member_ids": [
         "OOAGKPFdwf0"
       ]
     },
     {
-      "event_group": "event-018",
+      "event_group": "event-019",
       "canonical_id": "doW8-nSNL-8",
       "member_ids": [
         "doW8-nSNL-8"
       ]
     },
     {
-      "event_group": "event-034",
+      "event_group": "event-035",
       "canonical_id": "mu2ep3dsHaQ",
       "member_ids": [
         "mu2ep3dsHaQ"
       ]
     },
     {
-      "event_group": "event-002",
+      "event_group": "event-003",
       "canonical_id": "5OIq7GaU4sI",
       "member_ids": [
         "5OIq7GaU4sI"
       ]
     },
     {
-      "event_group": "event-033",
+      "event_group": "event-034",
       "canonical_id": "Fm09R5akNzM",
       "member_ids": [
         "Fm09R5akNzM",
@@ -82259,14 +82838,14 @@
       ]
     },
     {
-      "event_group": "event-005",
+      "event_group": "event-006",
       "canonical_id": "VyPCSPnxbaE",
       "member_ids": [
         "VyPCSPnxbaE"
       ]
     },
     {
-      "event_group": "event-007",
+      "event_group": "event-008",
       "canonical_id": "rKpNQwecniM",
       "member_ids": [
         "BkZwWNtcJko",
@@ -82277,21 +82856,21 @@
       ]
     },
     {
-      "event_group": "event-039",
+      "event_group": "event-040",
       "canonical_id": "JkLlmVzJ_dc",
       "member_ids": [
         "JkLlmVzJ_dc"
       ]
     },
     {
-      "event_group": "event-019",
+      "event_group": "event-020",
       "canonical_id": "ypWhdkJiz3o",
       "member_ids": [
         "ypWhdkJiz3o"
       ]
     },
     {
-      "event_group": "event-015",
+      "event_group": "event-016",
       "canonical_id": "7gTnSb4faRk",
       "member_ids": [
         "7gTnSb4faRk",
@@ -82299,21 +82878,21 @@
       ]
     },
     {
-      "event_group": "event-037",
+      "event_group": "event-038",
       "canonical_id": "HiJYFR1vR9g",
       "member_ids": [
         "HiJYFR1vR9g"
       ]
     },
     {
-      "event_group": "event-016",
+      "event_group": "event-017",
       "canonical_id": "e3ByeIYYKYU",
       "member_ids": [
         "e3ByeIYYKYU"
       ]
     },
     {
-      "event_group": "event-027",
+      "event_group": "event-028",
       "canonical_id": "1fkbpthd1MI",
       "member_ids": [
         "1fkbpthd1MI",
@@ -82321,7 +82900,7 @@
       ]
     },
     {
-      "event_group": "event-013",
+      "event_group": "event-014",
       "canonical_id": "9KWsOM3B6_c",
       "member_ids": [
         "9KWsOM3B6_c",
@@ -82329,7 +82908,7 @@
       ]
     },
     {
-      "event_group": "event-023",
+      "event_group": "event-024",
       "canonical_id": "Ntf-BzRGTug",
       "member_ids": [
         "K4uvrC38Yxk",
@@ -82339,7 +82918,7 @@
       ]
     },
     {
-      "event_group": "event-021",
+      "event_group": "event-022",
       "canonical_id": "rn96VRQ4SgY",
       "member_ids": [
         "LVv2n7Yc87E",
@@ -82348,7 +82927,7 @@
       ]
     },
     {
-      "event_group": "event-010",
+      "event_group": "event-011",
       "canonical_id": "WN4ObtcpRMs",
       "member_ids": [
         "LN2JbamjmcE",
@@ -82357,21 +82936,21 @@
       ]
     },
     {
-      "event_group": "event-006",
+      "event_group": "event-007",
       "canonical_id": "hJybE-uF_qE",
       "member_ids": [
         "hJybE-uF_qE"
       ]
     },
     {
-      "event_group": "event-009",
+      "event_group": "event-010",
       "canonical_id": "xK61ktEglpc",
       "member_ids": [
         "xK61ktEglpc"
       ]
     },
     {
-      "event_group": "event-032",
+      "event_group": "event-033",
       "canonical_id": "HBuj_rOU5yA",
       "member_ids": [
         "CpQyrmIrasU",
@@ -82380,7 +82959,7 @@
       ]
     },
     {
-      "event_group": "event-036",
+      "event_group": "event-037",
       "canonical_id": "xh-kV0Rm8K8",
       "member_ids": [
         "A6vTh2qoGrc",
@@ -82389,7 +82968,7 @@
       ]
     },
     {
-      "event_group": "event-012",
+      "event_group": "event-013",
       "canonical_id": "YYas7H5zORI",
       "member_ids": [
         "YYas7H5zORI",
@@ -82398,14 +82977,14 @@
       ]
     },
     {
-      "event_group": "event-041",
+      "event_group": "event-042",
       "canonical_id": "QAFNXg-LfTU",
       "member_ids": [
         "QAFNXg-LfTU"
       ]
     },
     {
-      "event_group": "event-030",
+      "event_group": "event-031",
       "canonical_id": "yJglGGY8ADI",
       "member_ids": [
         "wqtxaE1csEI",
@@ -82413,28 +82992,28 @@
       ]
     },
     {
-      "event_group": "event-035",
+      "event_group": "event-036",
       "canonical_id": "p7G73zBiow4",
       "member_ids": [
         "p7G73zBiow4"
       ]
     },
     {
-      "event_group": "event-008",
+      "event_group": "event-009",
       "canonical_id": "vyp6JITYFM8",
       "member_ids": [
         "vyp6JITYFM8"
       ]
     },
     {
-      "event_group": "event-031",
+      "event_group": "event-032",
       "canonical_id": "IHY-7SvqxoI",
       "member_ids": [
         "IHY-7SvqxoI"
       ]
     },
     {
-      "event_group": "event-026",
+      "event_group": "event-027",
       "canonical_id": "NmbVCeypyHE",
       "member_ids": [
         "3VR-aKaxHyU",
@@ -82442,28 +83021,28 @@
       ]
     },
     {
-      "event_group": "event-020",
+      "event_group": "event-021",
       "canonical_id": "YUONIE2ivHo",
       "member_ids": [
         "YUONIE2ivHo"
       ]
     },
     {
-      "event_group": "event-025",
+      "event_group": "event-026",
       "canonical_id": "SjuGxdMRzPk",
       "member_ids": [
         "SjuGxdMRzPk"
       ]
     },
     {
-      "event_group": "event-042",
+      "event_group": "event-043",
       "canonical_id": "9rpZpKagShM",
       "member_ids": [
         "9rpZpKagShM"
       ]
     },
     {
-      "event_group": "event-014",
+      "event_group": "event-015",
       "canonical_id": "EZC8X_pgFlY",
       "member_ids": [
         "38G2GvbhUKo",
@@ -82473,7 +83052,7 @@
       ]
     },
     {
-      "event_group": "event-022",
+      "event_group": "event-023",
       "canonical_id": "pQAVGm6zYsA",
       "member_ids": [
         "06kk5UIx6a8",
@@ -82482,14 +83061,14 @@
       ]
     },
     {
-      "event_group": "event-028",
+      "event_group": "event-029",
       "canonical_id": "UYdFSPfJZfk",
       "member_ids": [
         "UYdFSPfJZfk"
       ]
     },
     {
-      "event_group": "event-011",
+      "event_group": "event-012",
       "canonical_id": "KXoaUQadksU",
       "member_ids": [
         "KXoaUQadksU",
@@ -82497,7 +83076,7 @@
       ]
     },
     {
-      "event_group": "event-029",
+      "event_group": "event-030",
       "canonical_id": "ZqMj_BRxODM",
       "member_ids": [
         "ZqMj_BRxODM",
@@ -82506,14 +83085,14 @@
       ]
     },
     {
-      "event_group": "event-038",
+      "event_group": "event-039",
       "canonical_id": "6mWMd7ClCv8",
       "member_ids": [
         "6mWMd7ClCv8"
       ]
     },
     {
-      "event_group": "event-043",
+      "event_group": "event-044",
       "canonical_id": "BYJsAQ79gdg",
       "member_ids": [
         "BYJsAQ79gdg"

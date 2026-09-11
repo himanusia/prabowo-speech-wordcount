@@ -10,7 +10,7 @@
       "url": "https://www.youtube.com/watch?v=ffYHRrgqg5U",
       "duration": 1616,
       "source_tier": "full_media",
-      "duplicate_group": "event-017",
+      "duplicate_group": "event-018",
       "duplicate_count": 0,
       "token_count": 1465,
       "unique_word_count": 551,
@@ -596,7 +596,7 @@
       "url": "https://www.youtube.com/watch?v=CfnRESwOZKQ",
       "duration": 923,
       "source_tier": "official",
-      "duplicate_group": "event-003",
+      "duplicate_group": "event-004",
       "duplicate_count": 0,
       "token_count": 807,
       "unique_word_count": 335,
@@ -966,7 +966,7 @@
       "url": "https://www.youtube.com/watch?v=Enmz62kOMyI",
       "duration": 1057,
       "source_tier": "official",
-      "duplicate_group": "event-040",
+      "duplicate_group": "event-041",
       "duplicate_count": 0,
       "token_count": 1102,
       "unique_word_count": 424,
@@ -1438,7 +1438,7 @@
       "url": "https://www.youtube.com/watch?v=E_doThSKS4E",
       "duration": 651,
       "source_tier": "official",
-      "duplicate_group": "event-004",
+      "duplicate_group": "event-005",
       "duplicate_count": 0,
       "token_count": 588,
       "unique_word_count": 315,
@@ -1781,6 +1781,370 @@
       }
     },
     {
+      "id": "3e_gu9rWwWQ",
+      "date": "2025-08-31",
+      "title": "Pernyataan Presiden Prabowo Menyikapi Aksi Demo",
+      "channel": "Kompas.com",
+      "url": "https://www.youtube.com/watch?v=3e_gu9rWwWQ",
+      "duration": 646,
+      "source_tier": "media",
+      "duplicate_group": "event-002",
+      "duplicate_count": 0,
+      "token_count": 739,
+      "unique_word_count": 329,
+      "topics": {
+        "pangan": 0,
+        "ekonomi": 1,
+        "pendidikan": 0,
+        "kesehatan_dan_gizi": 1,
+        "tata_kelola": 9,
+        "pertahanan_dan_keamanan": 3,
+        "nasional_dan_identitas": 24,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      },
+      "counts": {
+        "yang": 29,
+        "dan": 28,
+        "kita": 18,
+        "saya": 12,
+        "dpr": 11,
+        "terhadap": 10,
+        "umum": 10,
+        "dengan": 9,
+        "di": 8,
+        "negara": 8,
+        "kepada": 8,
+        "untuk": 8,
+        "dari": 7,
+        "menyampaikan": 7,
+        "juga": 7,
+        "saudara-saudara": 6,
+        "indonesia": 6,
+        "aspirasi": 6,
+        "masyarakat": 6,
+        "para": 6,
+        "partai": 6,
+        "akan": 6,
+        "sudah": 6,
+        "rakyat": 6,
+        "sekalian": 6,
+        "ingin": 6,
+        "semua": 6,
+        "dalam": 5,
+        "telah": 5,
+        "anggota": 5,
+        "masing-masing": 5,
+        "pimpinan": 5,
+        "luar": 5,
+        "harus": 5,
+        "selalu": 5,
+        "hukum": 5,
+        "tanpa": 5,
+        "beberapa": 4,
+        "murni": 4,
+        "dilakukan": 4,
+        "ketua": 4,
+        "mereka": 4,
+        "termasuk": 4,
+        "damai": 4,
+        "merusak": 4,
+        "fasilitas": 4,
+        "menjaga": 4,
+        "tidak": 4,
+        "baik": 4,
+        "ini": 3,
+        "terus": 3,
+        "melakukan": 3,
+        "dapat": 3,
+        "secara": 3,
+        "politik": 3,
+        "bahwa": 3,
+        "ri": 3,
+        "tadi": 3,
+        "kepentingan": 3,
+        "kami": 3,
+        "ada": 3,
+        "sekali": 3,
+        "lagi": 3,
+        "disampaikan": 3,
+        "sampaikan": 3,
+        "tokoh-tokoh": 3,
+        "kelompok-kelompok": 3,
+        "pemerintah": 3,
+        "pemerintahan": 3,
+        "mari": 3,
+        "diadu": 3,
+        "domba": 3,
+        "santi": 3,
+        "merdeka": 3,
+        "air": 2,
+        "hari": 2,
+        "republik": 2,
+        "lain": 2,
+        "menghormati": 2,
+        "terbuka": 2,
+        "kebebasan": 2,
+        "penyampaian": 2,
+        "ataupun": 2,
+        "pelanggaran": 2,
+        "kepolisian": 2,
+        "minta": 2,
+        "publik": 2,
+        "menerima": 2,
+        "mengambil": 2,
+        "langkah": 2,
+        "tegas": 2,
+        "pencabutan": 2,
+        "kebijakan": 2,
+        "besaran": 2,
+        "tunjangan": 2,
+        "moratorium": 2,
+        "kunjungan": 2,
+        "kerja": 2,
+        "ke": 2,
+        "negeri": 2,
+        "adalah": 2,
+        "bisa": 2,
+        "namun": 2,
+        "atau": 2,
+        "sampai": 2,
+        "adanya": 2,
+        "mengancam": 2,
+        "rumah-rumah": 2,
+        "maupun": 2,
+        "itu": 2,
+        "melindungi": 2,
+        "aparat": 2,
+        "bertugas": 2,
+        "dihormati": 2,
+        "bahkan": 2,
+        "mengarah": 2,
+        "perintahkan": 2,
+        "penjarahan": 2,
+        "seluruh": 2,
+        "tindaklanjuti": 2,
+        "langsung": 2,
+        "segera": 2,
+        "paling": 2,
+        "jangan": 2,
+        "merugikan": 2,
+        "keluarga": 2,
+        "sejahtera": 2,
+        "pada": 2,
+        "terima": 2,
+        "kasih": 2,
+        "salam": 2,
+        "om": 2,
+        "rahayu": 2,
+        "sebangsa": 1,
+        "setanah": 1,
+        "presiden": 1,
+        "memantau": 1,
+        "perkembangan": 1,
+        "situasi": 1,
+        "terjadi": 1,
+        "jakarta": 1,
+        "kota": 1,
+        "pendapat": 1,
+        "petugas": 1,
+        "kemarin": 1,
+        "kesalahan": 1,
+        "saat": 1,
+        "proses": 1,
+        "pemeriksaan": 1,
+        "cepat": 1,
+        "transparan": 1,
+        "diikuti": 1,
+        "oleh": 1,
+        "rangka": 1,
+        "menyikapi": 1,
+        "apa": 1,
+        "menjadi": 1,
+        "laporan": 1,
+        "terhitung": 1,
+        "sejak": 1,
+        "senin": 1,
+        "september": 1,
+        "lima": 1,
+        "yaitu": 1,
+        "mungkin": 1,
+        "pernyataan-pernyataan": 1,
+        "keliru": 1,
+        "kemudian": 1,
+        "dicabut": 1,
+        "keanggotannya": 1,
+        "berbicara": 1,
+        "melalui": 1,
+        "fraksi": 1,
+        "peka": 1,
+        "berpihak": 1,
+        "berpendapat": 1,
+        "seperti": 1,
+        "diatur": 1,
+        "united": 1,
+        "nations": 1,
+        "international": 1,
+        "covenant": 1,
+        "on": 1,
+        "civil": 1,
+        "and": 1,
+        "political": 1,
+        "rights": 1,
+        "pasal": 1,
+        "undang-undang": 1,
+        "nomor": 1,
+        "tahun": 1,
+        "jika": 1,
+        "pelaksananya": 1,
+        "terdapat": 1,
+        "kegiatan-kegiatan": 1,
+        "bersifat": 1,
+        "anarkis": 1,
+        "destabilisasi": 1,
+        "membakar": 1,
+        "korban": 1,
+        "jiwa": 1,
+        "menjarah": 1,
+        "instansi-instansi": 1,
+        "pribadi": 1,
+        "hal": 1,
+        "merupakan": 1,
+        "wajib": 1,
+        "hadir": 1,
+        "rakyatnya": 1,
+        "fasilitas-fasilitas": 1,
+        "dibangun": 1,
+        "uang": 1,
+        "menegakkan": 1,
+        "apabila": 1,
+        "pelanggaran-pelanggaran": 1,
+        "kehidupan": 1,
+        "luas": 1,
+        "hak": 1,
+        "berkumpul": 1,
+        "dilindungi": 1,
+        "pungkiri": 1,
+        "mulai": 1,
+        "kelihatan": 1,
+        "gejala": 1,
+        "tindakan-tindakan": 1,
+        "melawan": 1,
+        "makar": 1,
+        "terorisme": 1,
+        "pihak": 1,
+        "tni": 1,
+        "tindakan": 1,
+        "setegas-tegasnya": 1,
+        "segala": 1,
+        "macam": 1,
+        "bentuk": 1,
+        "pengerusakan": 1,
+        "rumah": 1,
+        "individu": 1,
+        "tempat-tempat": 1,
+        "sentra-sentra": 1,
+        "ekonomi": 1,
+        "sesuai": 1,
+        "berlaku": 1,
+        "silakan": 1,
+        "tuntutan": 1,
+        "pastikan": 1,
+        "didengar": 1,
+        "dicatat": 1,
+        "meminta": 1,
+        "mengundang": 1,
+        "mahasiswa": 1,
+        "aspirasinya": 1,
+        "supaya": 1,
+        "diterima": 1,
+        "berdialog": 1,
+        "pun": 1,
+        "sekarang": 1,
+        "dprri": 1,
+        "tetapi": 1,
+        "hal-hal": 1,
+        "dipersilakan": 1,
+        "mengirim": 1,
+        "delegasi": 1,
+        "kl": 1,
+        "ee": 1,
+        "utusan-utusan": 1,
+        "koreksi": 1,
+        "kritik": 1,
+        "perbaikan": 1,
+        "jalannya": 1,
+        "sungguh-sungguh": 1,
+        "warga": 1,
+        "percaya": 1,
+        "tenang": 1,
+        "pimpin": 1,
+        "bertekad": 1,
+        "memperjuangkan": 1,
+        "bangsa": 1,
+        "kecil": 1,
+        "tertinggal": 1,
+        "jaga": 1,
+        "persatuan": 1,
+        "nasional": 1,
+        "diambang": 1,
+        "kebangkitan": 1,
+        "suarakan": 1,
+        "kekerasan": 1,
+        "kerusuhan": 1,
+        "perbuatan": 1,
+        "kalau": 1,
+        "artinya": 1,
+        "menghamburkan": 1,
+        "silak": 1,
+        "saling": 1,
+        "mengingatkan": 1,
+        "mengikuti": 1,
+        "kegiatan": 1,
+        "waspada": 1,
+        "campur": 1,
+        "tangan": 1,
+        "bangkit": 1,
+        "bersama-sama": 1,
+        "perbaiki": 1,
+        "kekurangan": 1,
+        "semangat": 1,
+        "nenek": 1,
+        "moyang": 1,
+        "gotong-royong": 1,
+        "marilah": 1,
+        "bergotong-royong": 1,
+        "lingkungan": 1,
+        "keselamatan": 1,
+        "tanah": 1,
+        "diintervensi": 1,
+        "mau": 1,
+        "demikian": 1,
+        "pernyataan": 1,
+        "setelah": 1,
+        "berunding": 1,
+        "koalisi": 1,
+        "lembaga": 1,
+        "wasalamualaikum": 1,
+        "warahmatullahi": 1,
+        "wabarakatuh": 1,
+        "bagi": 1,
+        "salve": 1,
+        "shalom": 1,
+        "kebajikan": 1,
+        "yeah": 1
+      }
+    },
+    {
       "id": "gyT_qLziJ2M",
       "date": "2025-09-29",
       "title": "[FULL] Pidato Lengkap Presiden Prabowo di Munas Ke-VI PKS | tvOne",
@@ -1788,7 +2152,7 @@
       "url": "https://www.youtube.com/watch?v=gyT_qLziJ2M",
       "duration": 4928,
       "source_tier": "full_media",
-      "duplicate_group": "event-024",
+      "duplicate_group": "event-025",
       "duplicate_count": 0,
       "token_count": 5204,
       "unique_word_count": 1385,
@@ -3412,7 +3776,7 @@
       "url": "https://www.youtube.com/watch?v=OOAGKPFdwf0",
       "duration": 161,
       "source_tier": "official",
-      "duplicate_group": "event-044",
+      "duplicate_group": "event-045",
       "duplicate_count": 0,
       "token_count": 213,
       "unique_word_count": 120,
@@ -3567,7 +3931,7 @@
       "url": "https://www.youtube.com/watch?v=doW8-nSNL-8",
       "duration": 2950,
       "source_tier": "full_media",
-      "duplicate_group": "event-018",
+      "duplicate_group": "event-019",
       "duplicate_count": 0,
       "token_count": 2952,
       "unique_word_count": 830,
@@ -4499,7 +4863,7 @@
       "url": "https://www.youtube.com/watch?v=mu2ep3dsHaQ",
       "duration": 5635,
       "source_tier": "full_media",
-      "duplicate_group": "event-034",
+      "duplicate_group": "event-035",
       "duplicate_count": 0,
       "token_count": 6257,
       "unique_word_count": 1619,
@@ -6220,7 +6584,7 @@
       "url": "https://www.youtube.com/watch?v=5OIq7GaU4sI",
       "duration": 257,
       "source_tier": "official",
-      "duplicate_group": "event-002",
+      "duplicate_group": "event-003",
       "duplicate_count": 0,
       "token_count": 333,
       "unique_word_count": 175,
@@ -6430,7 +6794,7 @@
       "url": "https://www.youtube.com/watch?v=Fm09R5akNzM",
       "duration": 1309,
       "source_tier": "full_media",
-      "duplicate_group": "event-033",
+      "duplicate_group": "event-034",
       "duplicate_count": 1,
       "token_count": 1388,
       "unique_word_count": 559,
@@ -7024,7 +7388,7 @@
       "url": "https://www.youtube.com/watch?v=VyPCSPnxbaE",
       "duration": 986,
       "source_tier": "media",
-      "duplicate_group": "event-005",
+      "duplicate_group": "event-006",
       "duplicate_count": 0,
       "token_count": 1205,
       "unique_word_count": 459,
@@ -7518,7 +7882,7 @@
       "url": "https://www.youtube.com/watch?v=rKpNQwecniM",
       "duration": 2242,
       "source_tier": "official",
-      "duplicate_group": "event-007",
+      "duplicate_group": "event-008",
       "duplicate_count": 4,
       "token_count": 2044,
       "unique_word_count": 691,
@@ -8270,7 +8634,7 @@
       "url": "https://www.youtube.com/watch?v=JkLlmVzJ_dc",
       "duration": 2454,
       "source_tier": "full_media",
-      "duplicate_group": "event-039",
+      "duplicate_group": "event-040",
       "duplicate_count": 0,
       "token_count": 2769,
       "unique_word_count": 916,
@@ -9221,7 +9585,7 @@
       "url": "https://www.youtube.com/watch?v=ypWhdkJiz3o",
       "duration": 3135,
       "source_tier": "full_media",
-      "duplicate_group": "event-019",
+      "duplicate_group": "event-020",
       "duplicate_count": 0,
       "token_count": 3552,
       "unique_word_count": 1104,
@@ -10415,7 +10779,7 @@
       "url": "https://www.youtube.com/watch?v=7gTnSb4faRk",
       "duration": 70,
       "source_tier": "official",
-      "duplicate_group": "event-015",
+      "duplicate_group": "event-016",
       "duplicate_count": 1,
       "token_count": 68,
       "unique_word_count": 47,
@@ -10497,7 +10861,7 @@
       "url": "https://www.youtube.com/watch?v=HiJYFR1vR9g",
       "duration": 636,
       "source_tier": "full_media",
-      "duplicate_group": "event-037",
+      "duplicate_group": "event-038",
       "duplicate_count": 0,
       "token_count": 661,
       "unique_word_count": 261,
@@ -10793,7 +11157,7 @@
       "url": "https://www.youtube.com/watch?v=e3ByeIYYKYU",
       "duration": 264,
       "source_tier": "official",
-      "duplicate_group": "event-016",
+      "duplicate_group": "event-017",
       "duplicate_count": 0,
       "token_count": 352,
       "unique_word_count": 206,
@@ -11034,7 +11398,7 @@
       "url": "https://www.youtube.com/watch?v=1fkbpthd1MI",
       "duration": 1303,
       "source_tier": "full_media",
-      "duplicate_group": "event-027",
+      "duplicate_group": "event-028",
       "duplicate_count": 1,
       "token_count": 1520,
       "unique_word_count": 605,
@@ -11681,7 +12045,7 @@
       "url": "https://www.youtube.com/watch?v=9KWsOM3B6_c",
       "duration": 2389,
       "source_tier": "official",
-      "duplicate_group": "event-013",
+      "duplicate_group": "event-014",
       "duplicate_count": 1,
       "token_count": 2386,
       "unique_word_count": 730,
@@ -12465,7 +12829,7 @@
       "url": "https://www.youtube.com/watch?v=Ntf-BzRGTug",
       "duration": 4555,
       "source_tier": "full_media",
-      "duplicate_group": "event-023",
+      "duplicate_group": "event-024",
       "duplicate_count": 3,
       "token_count": 4297,
       "unique_word_count": 1246,
@@ -13746,7 +14110,7 @@
       "url": "https://www.youtube.com/watch?v=rn96VRQ4SgY",
       "duration": 2276,
       "source_tier": "full_media",
-      "duplicate_group": "event-021",
+      "duplicate_group": "event-022",
       "duplicate_count": 2,
       "token_count": 2358,
       "unique_word_count": 795,
@@ -14576,7 +14940,7 @@
       "url": "https://www.youtube.com/watch?v=WN4ObtcpRMs",
       "duration": 2995,
       "source_tier": "full_media",
-      "duplicate_group": "event-010",
+      "duplicate_group": "event-011",
       "duplicate_count": 2,
       "token_count": 2990,
       "unique_word_count": 901,
@@ -15537,7 +15901,7 @@
       "url": "https://www.youtube.com/watch?v=hJybE-uF_qE",
       "duration": 1688,
       "source_tier": "official",
-      "duplicate_group": "event-006",
+      "duplicate_group": "event-007",
       "duplicate_count": 0,
       "token_count": 1619,
       "unique_word_count": 617,
@@ -16189,7 +16553,7 @@
       "url": "https://www.youtube.com/watch?v=xK61ktEglpc",
       "duration": 1050,
       "source_tier": "media",
-      "duplicate_group": "event-009",
+      "duplicate_group": "event-010",
       "duplicate_count": 0,
       "token_count": 1137,
       "unique_word_count": 462,
@@ -16686,7 +17050,7 @@
       "url": "https://www.youtube.com/watch?v=HBuj_rOU5yA",
       "duration": 1935,
       "source_tier": "full_media",
-      "duplicate_group": "event-032",
+      "duplicate_group": "event-033",
       "duplicate_count": 2,
       "token_count": 1822,
       "unique_word_count": 679,
@@ -17413,7 +17777,7 @@
       "url": "https://www.youtube.com/watch?v=xh-kV0Rm8K8",
       "duration": 2385,
       "source_tier": "full_media",
-      "duplicate_group": "event-036",
+      "duplicate_group": "event-037",
       "duplicate_count": 2,
       "token_count": 2541,
       "unique_word_count": 879,
@@ -18327,7 +18691,7 @@
       "url": "https://www.youtube.com/watch?v=YYas7H5zORI",
       "duration": 3134,
       "source_tier": "full_media",
-      "duplicate_group": "event-012",
+      "duplicate_group": "event-013",
       "duplicate_count": 2,
       "token_count": 3129,
       "unique_word_count": 948,
@@ -19353,7 +19717,7 @@
       "url": "https://www.youtube.com/watch?v=QAFNXg-LfTU",
       "duration": 1555,
       "source_tier": "full_media",
-      "duplicate_group": "event-041",
+      "duplicate_group": "event-042",
       "duplicate_count": 0,
       "token_count": 1575,
       "unique_word_count": 601,
@@ -19989,7 +20353,7 @@
       "url": "https://www.youtube.com/watch?v=yJglGGY8ADI",
       "duration": 2665,
       "source_tier": "full_media",
-      "duplicate_group": "event-030",
+      "duplicate_group": "event-031",
       "duplicate_count": 1,
       "token_count": 2617,
       "unique_word_count": 905,
@@ -20929,7 +21293,7 @@
       "url": "https://www.youtube.com/watch?v=p7G73zBiow4",
       "duration": 5218,
       "source_tier": "full_media",
-      "duplicate_group": "event-035",
+      "duplicate_group": "event-036",
       "duplicate_count": 0,
       "token_count": 5868,
       "unique_word_count": 1482,
@@ -22460,7 +22824,7 @@
       "url": "https://www.youtube.com/watch?v=vyp6JITYFM8",
       "duration": 2803,
       "source_tier": "media",
-      "duplicate_group": "event-008",
+      "duplicate_group": "event-009",
       "duplicate_count": 0,
       "token_count": 2730,
       "unique_word_count": 900,
@@ -23408,7 +23772,7 @@
       "url": "https://www.youtube.com/watch?v=IHY-7SvqxoI",
       "duration": 1631,
       "source_tier": "full_media",
-      "duplicate_group": "event-031",
+      "duplicate_group": "event-032",
       "duplicate_count": 0,
       "token_count": 1616,
       "unique_word_count": 604,
@@ -24047,7 +24411,7 @@
       "url": "https://www.youtube.com/watch?v=NmbVCeypyHE",
       "duration": 2215,
       "source_tier": "full_media",
-      "duplicate_group": "event-026",
+      "duplicate_group": "event-027",
       "duplicate_count": 1,
       "token_count": 2412,
       "unique_word_count": 834,
@@ -24916,7 +25280,7 @@
       "url": "https://www.youtube.com/watch?v=YUONIE2ivHo",
       "duration": 1255,
       "source_tier": "full_media",
-      "duplicate_group": "event-020",
+      "duplicate_group": "event-021",
       "duplicate_count": 0,
       "token_count": 1414,
       "unique_word_count": 601,
@@ -25552,7 +25916,7 @@
       "url": "https://www.youtube.com/watch?v=SjuGxdMRzPk",
       "duration": 1075,
       "source_tier": "full_media",
-      "duplicate_group": "event-025",
+      "duplicate_group": "event-026",
       "duplicate_count": 0,
       "token_count": 1185,
       "unique_word_count": 448,
@@ -26035,7 +26399,7 @@
       "url": "https://www.youtube.com/watch?v=9rpZpKagShM",
       "duration": 2075,
       "source_tier": "full_media",
-      "duplicate_group": "event-042",
+      "duplicate_group": "event-043",
       "duplicate_count": 0,
       "token_count": 2315,
       "unique_word_count": 818,
@@ -26888,7 +27252,7 @@
       "url": "https://www.youtube.com/watch?v=EZC8X_pgFlY",
       "duration": 9512,
       "source_tier": "full_media",
-      "duplicate_group": "event-014",
+      "duplicate_group": "event-015",
       "duplicate_count": 3,
       "token_count": 11989,
       "unique_word_count": 2631,
@@ -29597,7 +29961,7 @@
       "url": "https://www.youtube.com/watch?v=pQAVGm6zYsA",
       "duration": 6875,
       "source_tier": "full_media",
-      "duplicate_group": "event-022",
+      "duplicate_group": "event-023",
       "duplicate_count": 2,
       "token_count": 7750,
       "unique_word_count": 1884,
@@ -31547,7 +31911,7 @@
       "url": "https://www.youtube.com/watch?v=UYdFSPfJZfk",
       "duration": 1310,
       "source_tier": "full_media",
-      "duplicate_group": "event-028",
+      "duplicate_group": "event-029",
       "duplicate_count": 0,
       "token_count": 1388,
       "unique_word_count": 576,
@@ -32158,7 +32522,7 @@
       "url": "https://www.youtube.com/watch?v=KXoaUQadksU",
       "duration": 1675,
       "source_tier": "full_media",
-      "duplicate_group": "event-011",
+      "duplicate_group": "event-012",
       "duplicate_count": 1,
       "token_count": 1697,
       "unique_word_count": 675,
@@ -32887,7 +33251,7 @@
       "url": "https://www.youtube.com/watch?v=ZqMj_BRxODM",
       "duration": 1518,
       "source_tier": "full_media",
-      "duplicate_group": "event-029",
+      "duplicate_group": "event-030",
       "duplicate_count": 2,
       "token_count": 1595,
       "unique_word_count": 645,
@@ -33567,7 +33931,7 @@
       "url": "https://www.youtube.com/watch?v=6mWMd7ClCv8",
       "duration": 923,
       "source_tier": "full_media",
-      "duplicate_group": "event-038",
+      "duplicate_group": "event-039",
       "duplicate_count": 0,
       "token_count": 1123,
       "unique_word_count": 439,
@@ -34041,7 +34405,7 @@
       "url": "https://www.youtube.com/watch?v=BYJsAQ79gdg",
       "duration": 3210,
       "source_tier": "full_media",
-      "duplicate_group": "event-043",
+      "duplicate_group": "event-044",
       "duplicate_count": 0,
       "token_count": 3238,
       "unique_word_count": 973,
@@ -35051,35 +35415,42 @@
   ],
   "duplicate_groups": [
     {
-      "event_group": "event-017",
+      "event_group": "event-018",
       "canonical_id": "ffYHRrgqg5U",
       "member_ids": [
         "ffYHRrgqg5U"
       ]
     },
     {
-      "event_group": "event-003",
+      "event_group": "event-004",
       "canonical_id": "CfnRESwOZKQ",
       "member_ids": [
         "CfnRESwOZKQ"
       ]
     },
     {
-      "event_group": "event-040",
+      "event_group": "event-041",
       "canonical_id": "Enmz62kOMyI",
       "member_ids": [
         "Enmz62kOMyI"
       ]
     },
     {
-      "event_group": "event-004",
+      "event_group": "event-005",
       "canonical_id": "E_doThSKS4E",
       "member_ids": [
         "E_doThSKS4E"
       ]
     },
     {
-      "event_group": "event-024",
+      "event_group": "event-002",
+      "canonical_id": "3e_gu9rWwWQ",
+      "member_ids": [
+        "3e_gu9rWwWQ"
+      ]
+    },
+    {
+      "event_group": "event-025",
       "canonical_id": "gyT_qLziJ2M",
       "member_ids": [
         "gyT_qLziJ2M"
@@ -35093,35 +35464,35 @@
       ]
     },
     {
-      "event_group": "event-044",
+      "event_group": "event-045",
       "canonical_id": "OOAGKPFdwf0",
       "member_ids": [
         "OOAGKPFdwf0"
       ]
     },
     {
-      "event_group": "event-018",
+      "event_group": "event-019",
       "canonical_id": "doW8-nSNL-8",
       "member_ids": [
         "doW8-nSNL-8"
       ]
     },
     {
-      "event_group": "event-034",
+      "event_group": "event-035",
       "canonical_id": "mu2ep3dsHaQ",
       "member_ids": [
         "mu2ep3dsHaQ"
       ]
     },
     {
-      "event_group": "event-002",
+      "event_group": "event-003",
       "canonical_id": "5OIq7GaU4sI",
       "member_ids": [
         "5OIq7GaU4sI"
       ]
     },
     {
-      "event_group": "event-033",
+      "event_group": "event-034",
       "canonical_id": "Fm09R5akNzM",
       "member_ids": [
         "Fm09R5akNzM",
@@ -35129,14 +35500,14 @@
       ]
     },
     {
-      "event_group": "event-005",
+      "event_group": "event-006",
       "canonical_id": "VyPCSPnxbaE",
       "member_ids": [
         "VyPCSPnxbaE"
       ]
     },
     {
-      "event_group": "event-007",
+      "event_group": "event-008",
       "canonical_id": "rKpNQwecniM",
       "member_ids": [
         "BkZwWNtcJko",
@@ -35147,21 +35518,21 @@
       ]
     },
     {
-      "event_group": "event-039",
+      "event_group": "event-040",
       "canonical_id": "JkLlmVzJ_dc",
       "member_ids": [
         "JkLlmVzJ_dc"
       ]
     },
     {
-      "event_group": "event-019",
+      "event_group": "event-020",
       "canonical_id": "ypWhdkJiz3o",
       "member_ids": [
         "ypWhdkJiz3o"
       ]
     },
     {
-      "event_group": "event-015",
+      "event_group": "event-016",
       "canonical_id": "7gTnSb4faRk",
       "member_ids": [
         "7gTnSb4faRk",
@@ -35169,21 +35540,21 @@
       ]
     },
     {
-      "event_group": "event-037",
+      "event_group": "event-038",
       "canonical_id": "HiJYFR1vR9g",
       "member_ids": [
         "HiJYFR1vR9g"
       ]
     },
     {
-      "event_group": "event-016",
+      "event_group": "event-017",
       "canonical_id": "e3ByeIYYKYU",
       "member_ids": [
         "e3ByeIYYKYU"
       ]
     },
     {
-      "event_group": "event-027",
+      "event_group": "event-028",
       "canonical_id": "1fkbpthd1MI",
       "member_ids": [
         "1fkbpthd1MI",
@@ -35191,7 +35562,7 @@
       ]
     },
     {
-      "event_group": "event-013",
+      "event_group": "event-014",
       "canonical_id": "9KWsOM3B6_c",
       "member_ids": [
         "9KWsOM3B6_c",
@@ -35199,7 +35570,7 @@
       ]
     },
     {
-      "event_group": "event-023",
+      "event_group": "event-024",
       "canonical_id": "Ntf-BzRGTug",
       "member_ids": [
         "K4uvrC38Yxk",
@@ -35209,7 +35580,7 @@
       ]
     },
     {
-      "event_group": "event-021",
+      "event_group": "event-022",
       "canonical_id": "rn96VRQ4SgY",
       "member_ids": [
         "LVv2n7Yc87E",
@@ -35218,7 +35589,7 @@
       ]
     },
     {
-      "event_group": "event-010",
+      "event_group": "event-011",
       "canonical_id": "WN4ObtcpRMs",
       "member_ids": [
         "LN2JbamjmcE",
@@ -35227,21 +35598,21 @@
       ]
     },
     {
-      "event_group": "event-006",
+      "event_group": "event-007",
       "canonical_id": "hJybE-uF_qE",
       "member_ids": [
         "hJybE-uF_qE"
       ]
     },
     {
-      "event_group": "event-009",
+      "event_group": "event-010",
       "canonical_id": "xK61ktEglpc",
       "member_ids": [
         "xK61ktEglpc"
       ]
     },
     {
-      "event_group": "event-032",
+      "event_group": "event-033",
       "canonical_id": "HBuj_rOU5yA",
       "member_ids": [
         "CpQyrmIrasU",
@@ -35250,7 +35621,7 @@
       ]
     },
     {
-      "event_group": "event-036",
+      "event_group": "event-037",
       "canonical_id": "xh-kV0Rm8K8",
       "member_ids": [
         "A6vTh2qoGrc",
@@ -35259,7 +35630,7 @@
       ]
     },
     {
-      "event_group": "event-012",
+      "event_group": "event-013",
       "canonical_id": "YYas7H5zORI",
       "member_ids": [
         "YYas7H5zORI",
@@ -35268,14 +35639,14 @@
       ]
     },
     {
-      "event_group": "event-041",
+      "event_group": "event-042",
       "canonical_id": "QAFNXg-LfTU",
       "member_ids": [
         "QAFNXg-LfTU"
       ]
     },
     {
-      "event_group": "event-030",
+      "event_group": "event-031",
       "canonical_id": "yJglGGY8ADI",
       "member_ids": [
         "wqtxaE1csEI",
@@ -35283,28 +35654,28 @@
       ]
     },
     {
-      "event_group": "event-035",
+      "event_group": "event-036",
       "canonical_id": "p7G73zBiow4",
       "member_ids": [
         "p7G73zBiow4"
       ]
     },
     {
-      "event_group": "event-008",
+      "event_group": "event-009",
       "canonical_id": "vyp6JITYFM8",
       "member_ids": [
         "vyp6JITYFM8"
       ]
     },
     {
-      "event_group": "event-031",
+      "event_group": "event-032",
       "canonical_id": "IHY-7SvqxoI",
       "member_ids": [
         "IHY-7SvqxoI"
       ]
     },
     {
-      "event_group": "event-026",
+      "event_group": "event-027",
       "canonical_id": "NmbVCeypyHE",
       "member_ids": [
         "3VR-aKaxHyU",
@@ -35312,28 +35683,28 @@
       ]
     },
     {
-      "event_group": "event-020",
+      "event_group": "event-021",
       "canonical_id": "YUONIE2ivHo",
       "member_ids": [
         "YUONIE2ivHo"
       ]
     },
     {
-      "event_group": "event-025",
+      "event_group": "event-026",
       "canonical_id": "SjuGxdMRzPk",
       "member_ids": [
         "SjuGxdMRzPk"
       ]
     },
     {
-      "event_group": "event-042",
+      "event_group": "event-043",
       "canonical_id": "9rpZpKagShM",
       "member_ids": [
         "9rpZpKagShM"
       ]
     },
     {
-      "event_group": "event-014",
+      "event_group": "event-015",
       "canonical_id": "EZC8X_pgFlY",
       "member_ids": [
         "38G2GvbhUKo",
@@ -35343,7 +35714,7 @@
       ]
     },
     {
-      "event_group": "event-022",
+      "event_group": "event-023",
       "canonical_id": "pQAVGm6zYsA",
       "member_ids": [
         "06kk5UIx6a8",
@@ -35352,14 +35723,14 @@
       ]
     },
     {
-      "event_group": "event-028",
+      "event_group": "event-029",
       "canonical_id": "UYdFSPfJZfk",
       "member_ids": [
         "UYdFSPfJZfk"
       ]
     },
     {
-      "event_group": "event-011",
+      "event_group": "event-012",
       "canonical_id": "KXoaUQadksU",
       "member_ids": [
         "KXoaUQadksU",
@@ -35367,7 +35738,7 @@
       ]
     },
     {
-      "event_group": "event-029",
+      "event_group": "event-030",
       "canonical_id": "ZqMj_BRxODM",
       "member_ids": [
         "ZqMj_BRxODM",
@@ -35376,14 +35747,14 @@
       ]
     },
     {
-      "event_group": "event-038",
+      "event_group": "event-039",
       "canonical_id": "6mWMd7ClCv8",
       "member_ids": [
         "6mWMd7ClCv8"
       ]
     },
     {
-      "event_group": "event-043",
+      "event_group": "event-044",
       "canonical_id": "BYJsAQ79gdg",
       "member_ids": [
         "BYJsAQ79gdg"

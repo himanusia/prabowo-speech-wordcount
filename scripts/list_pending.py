@@ -15,30 +15,38 @@ def main() -> None:
         **json.loads((EXPANDED / "metadata.json").read_text(encoding="utf-8")),
     }
     seeds = json.loads((EXPANDED / "candidate-seeds.json").read_text(encoding="utf-8"))["selected"]
-    status = {entry["id"]: entry.get("status") for entry in manifest["sources"]}
+    entries = {entry["id"]: entry for entry in manifest["sources"]}
 
     pending = []
     for seed in seeds:
         video_id = seed["id"]
-        if status.get(video_id) == "ok":
+        entry = entries.get(video_id)
+        if entry is None:
+            reason = "never_attempted"
+        elif entry.get("status") == "ok":
             continue
+        elif entry.get("status") == "no_indonesian_track":
+            reason = "no_indonesian_track"
+        else:
+            reason = entry.get("error_type", entry.get("status", "unknown"))
         meta = metadata.get(video_id, {})
         pending.append({
             "id": video_id,
-            "status": status.get(video_id, "never_fetched"),
+            "reason": reason,
             "date": meta.get("upload_date", ""),
             "channel": meta.get("channel", ""),
             "title": meta.get("title", seed.get("title", "")),
         })
 
-    print(f"seeds={len(seeds)} ok={sum(1 for value in status.values() if value == 'ok')} pending={len(pending)}")
-    print(Counter(item["status"] for item in pending))
+    ok = sum(1 for entry in entries.values() if entry.get("status") == "ok")
+    print(f"seeds={len(seeds)} ok={ok} pending={len(pending)}")
+    print(Counter(item["reason"] for item in pending))
     (EXPANDED / "pending.json").write_text(
         json.dumps(pending, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
     for item in pending:
-        print(item["status"], item["id"], item["date"], item["title"][:70])
+        print(item["reason"], item["id"], item["date"], item["title"][:70])
 
 
 if __name__ == "__main__":
