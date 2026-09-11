@@ -10,7 +10,11 @@ __pycache__/
 
 # Local/raw source material
 data/transcripts/raw/
+data/expanded/raw/
+data/expanded/ytdlp_subs/
 data/manifest.json
+data/expanded/manifest.json
+data/expanded/discovery.json
 data/*.sha256
 *.log
 

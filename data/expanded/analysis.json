@@ -1,0 +1,3592 @@
+{
+  "generated_at": "2026-09-11T12:45:35.042078+00:00",
+  "method": {
+    "source": "Indonesian YouTube caption tracks",
+    "primary_metric": "surface-form token count for canonical speech events",
+    "normalization": "Unicode NFC + casefold + Unicode-aware tokenization",
+    "event_markers": "bracketed caption events removed",
+    "deduplication": "4-token shingle containment; one canonical source per event",
+    "topic_layer": "curated lexical signals; overlapping categories are allowed",
+    "mbg_rule": "exact MBG/full phrase or contextual makan+bergizi/SPPG signal; ambiguous acronym evidence is reported separately",
+    "warning": "caption windows/tracks are not verified audio ground truth; topic signals need spot review before publication"
+  },
+  "totals": {
+    "input_caption_items": 80,
+    "eligible_caption_items": 75,
+    "unique_speech_events": 44,
+    "duplicate_items_removed": 31,
+    "excluded_items": 5,
+    "total_tokens": 105507,
+    "unique_words": 8969,
+    "top_words": [
+      {
+        "word": "kita",
+        "count": 4071,
+        "per_1000": 38.59,
+        "speech_count": 44
+      },
+      {
+        "word": "yang",
+        "count": 3486,
+        "per_1000": 33.04,
+        "speech_count": 44
+      },
+      {
+        "word": "saya",
+        "count": 2673,
+        "per_1000": 25.33,
+        "speech_count": 43
+      },
+      {
+        "word": "dan",
+        "count": 2207,
+        "per_1000": 20.92,
+        "speech_count": 44
+      },
+      {
+        "word": "ini",
+        "count": 1624,
+        "per_1000": 15.39,
+        "speech_count": 43
+      },
+      {
+        "word": "di",
+        "count": 1432,
+        "per_1000": 13.57,
+        "speech_count": 43
+      },
+      {
+        "word": "tidak",
+        "count": 1199,
+        "per_1000": 11.36,
+        "speech_count": 41
+      },
+      {
+        "word": "indonesia",
+        "count": 1112,
+        "per_1000": 10.54,
+        "speech_count": 43
+      },
+      {
+        "word": "itu",
+        "count": 1098,
+        "per_1000": 10.41,
+        "speech_count": 39
+      },
+      {
+        "word": "ya",
+        "count": 1028,
+        "per_1000": 9.74,
+        "speech_count": 33
+      },
+      {
+        "word": "saudara-saudara",
+        "count": 839,
+        "per_1000": 7.95,
+        "speech_count": 40
+      },
+      {
+        "word": "untuk",
+        "count": 820,
+        "per_1000": 7.77,
+        "speech_count": 44
+      },
+      {
+        "word": "rakyat",
+        "count": 803,
+        "per_1000": 7.61,
+        "speech_count": 41
+      },
+      {
+        "word": "ada",
+        "count": 792,
+        "per_1000": 7.51,
+        "speech_count": 39
+      },
+      {
+        "word": "dari",
+        "count": 763,
+        "per_1000": 7.23,
+        "speech_count": 42
+      },
+      {
+        "word": "akan",
+        "count": 752,
+        "per_1000": 7.13,
+        "speech_count": 39
+      },
+      {
+        "word": "harus",
+        "count": 710,
+        "per_1000": 6.73,
+        "speech_count": 41
+      },
+      {
+        "word": "dengan",
+        "count": 682,
+        "per_1000": 6.46,
+        "speech_count": 42
+      },
+      {
+        "word": "kalau",
+        "count": 573,
+        "per_1000": 5.43,
+        "speech_count": 34
+      },
+      {
+        "word": "tahun",
+        "count": 573,
+        "per_1000": 5.43,
+        "speech_count": 40
+      },
+      {
+        "word": "negara",
+        "count": 572,
+        "per_1000": 5.42,
+        "speech_count": 40
+      },
+      {
+        "word": "bangsa",
+        "count": 567,
+        "per_1000": 5.37,
+        "speech_count": 43
+      },
+      {
+        "word": "sudah",
+        "count": 563,
+        "per_1000": 5.34,
+        "speech_count": 36
+      },
+      {
+        "word": "saudara",
+        "count": 560,
+        "per_1000": 5.31,
+        "speech_count": 40
+      },
+      {
+        "word": "adalah",
+        "count": 559,
+        "per_1000": 5.3,
+        "speech_count": 42
+      },
+      {
+        "word": "bisa",
+        "count": 554,
+        "per_1000": 5.25,
+        "speech_count": 36
+      },
+      {
+        "word": "juga",
+        "count": 508,
+        "per_1000": 4.81,
+        "speech_count": 40
+      },
+      {
+        "word": "tapi",
+        "count": 507,
+        "per_1000": 4.81,
+        "speech_count": 38
+      },
+      {
+        "word": "semua",
+        "count": 507,
+        "per_1000": 4.81,
+        "speech_count": 42
+      },
+      {
+        "word": "jadi",
+        "count": 482,
+        "per_1000": 4.57,
+        "speech_count": 37
+      },
+      {
+        "word": "ee",
+        "count": 480,
+        "per_1000": 4.55,
+        "speech_count": 33
+      },
+      {
+        "word": "dalam",
+        "count": 445,
+        "per_1000": 4.22,
+        "speech_count": 42
+      },
+      {
+        "word": "enggak",
+        "count": 442,
+        "per_1000": 4.19,
+        "speech_count": 30
+      },
+      {
+        "word": "karena",
+        "count": 406,
+        "per_1000": 3.85,
+        "speech_count": 41
+      },
+      {
+        "word": "para",
+        "count": 378,
+        "per_1000": 3.58,
+        "speech_count": 39
+      },
+      {
+        "word": "kepada",
+        "count": 373,
+        "per_1000": 3.54,
+        "speech_count": 39
+      },
+      {
+        "word": "besar",
+        "count": 356,
+        "per_1000": 3.37,
+        "speech_count": 42
+      },
+      {
+        "word": "hari",
+        "count": 354,
+        "per_1000": 3.36,
+        "speech_count": 40
+      },
+      {
+        "word": "ke",
+        "count": 351,
+        "per_1000": 3.33,
+        "speech_count": 38
+      },
+      {
+        "word": "kasih",
+        "count": 342,
+        "per_1000": 3.24,
+        "speech_count": 43
+      },
+      {
+        "word": "menteri",
+        "count": 342,
+        "per_1000": 3.24,
+        "speech_count": 36
+      },
+      {
+        "word": "presiden",
+        "count": 340,
+        "per_1000": 3.22,
+        "speech_count": 41
+      },
+      {
+        "word": "sekalian",
+        "count": 340,
+        "per_1000": 3.22,
+        "speech_count": 41
+      },
+      {
+        "word": "sekarang",
+        "count": 335,
+        "per_1000": 3.18,
+        "speech_count": 37
+      },
+      {
+        "word": "banyak",
+        "count": 334,
+        "per_1000": 3.17,
+        "speech_count": 37
+      },
+      {
+        "word": "ketua",
+        "count": 321,
+        "per_1000": 3.04,
+        "speech_count": 29
+      },
+      {
+        "word": "bahwa",
+        "count": 313,
+        "per_1000": 2.97,
+        "speech_count": 40
+      },
+      {
+        "word": "mereka",
+        "count": 307,
+        "per_1000": 2.91,
+        "speech_count": 33
+      },
+      {
+        "word": "oleh",
+        "count": 298,
+        "per_1000": 2.82,
+        "speech_count": 41
+      },
+      {
+        "word": "apa",
+        "count": 292,
+        "per_1000": 2.77,
+        "speech_count": 29
+      },
+      {
+        "word": "terima",
+        "count": 291,
+        "per_1000": 2.76,
+        "speech_count": 43
+      },
+      {
+        "word": "mau",
+        "count": 284,
+        "per_1000": 2.69,
+        "speech_count": 32
+      },
+      {
+        "word": "kan",
+        "count": 284,
+        "per_1000": 2.69,
+        "speech_count": 28
+      },
+      {
+        "word": "seluruh",
+        "count": 275,
+        "per_1000": 2.61,
+        "speech_count": 41
+      },
+      {
+        "word": "lagi",
+        "count": 275,
+        "per_1000": 2.61,
+        "speech_count": 36
+      },
+      {
+        "word": "baik",
+        "count": 269,
+        "per_1000": 2.55,
+        "speech_count": 38
+      },
+      {
+        "word": "republik",
+        "count": 267,
+        "per_1000": 2.53,
+        "speech_count": 39
+      },
+      {
+        "word": "lebih",
+        "count": 267,
+        "per_1000": 2.53,
+        "speech_count": 35
+      },
+      {
+        "word": "hadir",
+        "count": 262,
+        "per_1000": 2.48,
+        "speech_count": 37
+      },
+      {
+        "word": "sebagai",
+        "count": 258,
+        "per_1000": 2.45,
+        "speech_count": 42
+      },
+      {
+        "word": "sangat",
+        "count": 247,
+        "per_1000": 2.34,
+        "speech_count": 39
+      },
+      {
+        "word": "satu",
+        "count": 240,
+        "per_1000": 2.27,
+        "speech_count": 37
+      },
+      {
+        "word": "atas",
+        "count": 235,
+        "per_1000": 2.23,
+        "speech_count": 40
+      },
+      {
+        "word": "sama",
+        "count": 234,
+        "per_1000": 2.22,
+        "speech_count": 35
+      },
+      {
+        "word": "telah",
+        "count": 228,
+        "per_1000": 2.16,
+        "speech_count": 34
+      },
+      {
+        "word": "pak",
+        "count": 227,
+        "per_1000": 2.15,
+        "speech_count": 26
+      },
+      {
+        "word": "dia",
+        "count": 226,
+        "per_1000": 2.14,
+        "speech_count": 26
+      },
+      {
+        "word": "orang",
+        "count": 221,
+        "per_1000": 2.09,
+        "speech_count": 31
+      },
+      {
+        "word": "dunia",
+        "count": 221,
+        "per_1000": 2.09,
+        "speech_count": 37
+      },
+      {
+        "word": "bagi",
+        "count": 218,
+        "per_1000": 2.07,
+        "speech_count": 41
+      },
+      {
+        "word": "punya",
+        "count": 217,
+        "per_1000": 2.06,
+        "speech_count": 34
+      },
+      {
+        "word": "hanya",
+        "count": 211,
+        "per_1000": 2.0,
+        "speech_count": 38
+      },
+      {
+        "word": "boleh",
+        "count": 209,
+        "per_1000": 1.98,
+        "speech_count": 35
+      },
+      {
+        "word": "mungkin",
+        "count": 199,
+        "per_1000": 1.89,
+        "speech_count": 36
+      },
+      {
+        "word": "masih",
+        "count": 198,
+        "per_1000": 1.88,
+        "speech_count": 37
+      },
+      {
+        "word": "pemerintah",
+        "count": 192,
+        "per_1000": 1.82,
+        "speech_count": 33
+      },
+      {
+        "word": "wakil",
+        "count": 191,
+        "per_1000": 1.81,
+        "speech_count": 31
+      },
+      {
+        "word": "bukan",
+        "count": 187,
+        "per_1000": 1.77,
+        "speech_count": 34
+      },
+      {
+        "word": "nanti",
+        "count": 185,
+        "per_1000": 1.75,
+        "speech_count": 30
+      },
+      {
+        "word": "ingin",
+        "count": 183,
+        "per_1000": 1.73,
+        "speech_count": 36
+      },
+      {
+        "word": "dapat",
+        "count": 183,
+        "per_1000": 1.73,
+        "speech_count": 39
+      },
+      {
+        "word": "hormati",
+        "count": 180,
+        "per_1000": 1.71,
+        "speech_count": 37
+      },
+      {
+        "word": "benar",
+        "count": 176,
+        "per_1000": 1.67,
+        "speech_count": 32
+      },
+      {
+        "word": "kami",
+        "count": 174,
+        "per_1000": 1.65,
+        "speech_count": 24
+      },
+      {
+        "word": "ekonomi",
+        "count": 173,
+        "per_1000": 1.64,
+        "speech_count": 31
+      },
+      {
+        "word": "atau",
+        "count": 167,
+        "per_1000": 1.58,
+        "speech_count": 33
+      },
+      {
+        "word": "luar",
+        "count": 164,
+        "per_1000": 1.55,
+        "speech_count": 32
+      },
+      {
+        "word": "sampai",
+        "count": 163,
+        "per_1000": 1.54,
+        "speech_count": 31
+      },
+      {
+        "word": "menjadi",
+        "count": 163,
+        "per_1000": 1.54,
+        "speech_count": 37
+      },
+      {
+        "word": "selalu",
+        "count": 159,
+        "per_1000": 1.51,
+        "speech_count": 36
+      },
+      {
+        "word": "pada",
+        "count": 157,
+        "per_1000": 1.49,
+        "speech_count": 38
+      },
+      {
+        "word": "iya",
+        "count": 156,
+        "per_1000": 1.48,
+        "speech_count": 30
+      },
+      {
+        "word": "terus",
+        "count": 154,
+        "per_1000": 1.46,
+        "speech_count": 33
+      },
+      {
+        "word": "juta",
+        "count": 153,
+        "per_1000": 1.45,
+        "speech_count": 26
+      },
+      {
+        "word": "mana",
+        "count": 151,
+        "per_1000": 1.43,
+        "speech_count": 35
+      },
+      {
+        "word": "kali",
+        "count": 151,
+        "per_1000": 1.43,
+        "speech_count": 30
+      },
+      {
+        "word": "waktu",
+        "count": 150,
+        "per_1000": 1.42,
+        "speech_count": 31
+      },
+      {
+        "word": "tni",
+        "count": 149,
+        "per_1000": 1.41,
+        "speech_count": 30
+      },
+      {
+        "word": "jangan",
+        "count": 149,
+        "per_1000": 1.41,
+        "speech_count": 28
+      },
+      {
+        "word": "tadi",
+        "count": 146,
+        "per_1000": 1.38,
+        "speech_count": 31
+      }
+    ],
+    "top_content_words": [
+      {
+        "word": "indonesia",
+        "count": 1112,
+        "per_1000": 10.54,
+        "speech_count": 43
+      },
+      {
+        "word": "rakyat",
+        "count": 803,
+        "per_1000": 7.61,
+        "speech_count": 41
+      },
+      {
+        "word": "harus",
+        "count": 710,
+        "per_1000": 6.73,
+        "speech_count": 41
+      },
+      {
+        "word": "tahun",
+        "count": 573,
+        "per_1000": 5.43,
+        "speech_count": 40
+      },
+      {
+        "word": "negara",
+        "count": 572,
+        "per_1000": 5.42,
+        "speech_count": 40
+      },
+      {
+        "word": "bangsa",
+        "count": 567,
+        "per_1000": 5.37,
+        "speech_count": 43
+      },
+      {
+        "word": "enggak",
+        "count": 442,
+        "per_1000": 4.19,
+        "speech_count": 30
+      },
+      {
+        "word": "menteri",
+        "count": 342,
+        "per_1000": 3.24,
+        "speech_count": 36
+      },
+      {
+        "word": "presiden",
+        "count": 340,
+        "per_1000": 3.22,
+        "speech_count": 41
+      },
+      {
+        "word": "ketua",
+        "count": 321,
+        "per_1000": 3.04,
+        "speech_count": 29
+      },
+      {
+        "word": "apa",
+        "count": 292,
+        "per_1000": 2.77,
+        "speech_count": 29
+      },
+      {
+        "word": "mau",
+        "count": 284,
+        "per_1000": 2.69,
+        "speech_count": 32
+      },
+      {
+        "word": "seluruh",
+        "count": 275,
+        "per_1000": 2.61,
+        "speech_count": 41
+      },
+      {
+        "word": "republik",
+        "count": 267,
+        "per_1000": 2.53,
+        "speech_count": 39
+      },
+      {
+        "word": "hadir",
+        "count": 262,
+        "per_1000": 2.48,
+        "speech_count": 37
+      },
+      {
+        "word": "satu",
+        "count": 240,
+        "per_1000": 2.27,
+        "speech_count": 37
+      },
+      {
+        "word": "pak",
+        "count": 227,
+        "per_1000": 2.15,
+        "speech_count": 26
+      },
+      {
+        "word": "dia",
+        "count": 226,
+        "per_1000": 2.14,
+        "speech_count": 26
+      },
+      {
+        "word": "orang",
+        "count": 221,
+        "per_1000": 2.09,
+        "speech_count": 31
+      },
+      {
+        "word": "dunia",
+        "count": 221,
+        "per_1000": 2.09,
+        "speech_count": 37
+      },
+      {
+        "word": "punya",
+        "count": 217,
+        "per_1000": 2.06,
+        "speech_count": 34
+      },
+      {
+        "word": "boleh",
+        "count": 209,
+        "per_1000": 1.98,
+        "speech_count": 35
+      },
+      {
+        "word": "mungkin",
+        "count": 199,
+        "per_1000": 1.89,
+        "speech_count": 36
+      },
+      {
+        "word": "masih",
+        "count": 198,
+        "per_1000": 1.88,
+        "speech_count": 37
+      },
+      {
+        "word": "pemerintah",
+        "count": 192,
+        "per_1000": 1.82,
+        "speech_count": 33
+      },
+      {
+        "word": "wakil",
+        "count": 191,
+        "per_1000": 1.81,
+        "speech_count": 31
+      },
+      {
+        "word": "bukan",
+        "count": 187,
+        "per_1000": 1.77,
+        "speech_count": 34
+      },
+      {
+        "word": "nanti",
+        "count": 185,
+        "per_1000": 1.75,
+        "speech_count": 30
+      },
+      {
+        "word": "ingin",
+        "count": 183,
+        "per_1000": 1.73,
+        "speech_count": 36
+      },
+      {
+        "word": "hormati",
+        "count": 180,
+        "per_1000": 1.71,
+        "speech_count": 37
+      },
+      {
+        "word": "benar",
+        "count": 176,
+        "per_1000": 1.67,
+        "speech_count": 32
+      },
+      {
+        "word": "ekonomi",
+        "count": 173,
+        "per_1000": 1.64,
+        "speech_count": 31
+      },
+      {
+        "word": "luar",
+        "count": 164,
+        "per_1000": 1.55,
+        "speech_count": 32
+      },
+      {
+        "word": "selalu",
+        "count": 159,
+        "per_1000": 1.51,
+        "speech_count": 36
+      },
+      {
+        "word": "iya",
+        "count": 156,
+        "per_1000": 1.48,
+        "speech_count": 30
+      },
+      {
+        "word": "terus",
+        "count": 154,
+        "per_1000": 1.46,
+        "speech_count": 33
+      },
+      {
+        "word": "juta",
+        "count": 153,
+        "per_1000": 1.45,
+        "speech_count": 26
+      },
+      {
+        "word": "mana",
+        "count": 151,
+        "per_1000": 1.43,
+        "speech_count": 35
+      },
+      {
+        "word": "kali",
+        "count": 151,
+        "per_1000": 1.43,
+        "speech_count": 30
+      },
+      {
+        "word": "waktu",
+        "count": 150,
+        "per_1000": 1.42,
+        "speech_count": 31
+      },
+      {
+        "word": "tni",
+        "count": 149,
+        "per_1000": 1.41,
+        "speech_count": 30
+      },
+      {
+        "word": "jangan",
+        "count": 149,
+        "per_1000": 1.41,
+        "speech_count": 28
+      },
+      {
+        "word": "lain",
+        "count": 146,
+        "per_1000": 1.38,
+        "speech_count": 34
+      },
+      {
+        "word": "berapa",
+        "count": 142,
+        "per_1000": 1.35,
+        "speech_count": 24
+      },
+      {
+        "word": "kerja",
+        "count": 139,
+        "per_1000": 1.32,
+        "speech_count": 29
+      },
+      {
+        "word": "partai",
+        "count": 139,
+        "per_1000": 1.32,
+        "speech_count": 15
+      },
+      {
+        "word": "sekolah",
+        "count": 138,
+        "per_1000": 1.31,
+        "speech_count": 20
+      },
+      {
+        "word": "bapak",
+        "count": 137,
+        "per_1000": 1.3,
+        "speech_count": 27
+      },
+      {
+        "word": "lihat",
+        "count": 136,
+        "per_1000": 1.29,
+        "speech_count": 29
+      },
+      {
+        "word": "kepala",
+        "count": 133,
+        "per_1000": 1.26,
+        "speech_count": 29
+      },
+      {
+        "word": "umum",
+        "count": 132,
+        "per_1000": 1.25,
+        "speech_count": 23
+      },
+      {
+        "word": "baru",
+        "count": 130,
+        "per_1000": 1.23,
+        "speech_count": 32
+      },
+      {
+        "word": "bekerja",
+        "count": 129,
+        "per_1000": 1.22,
+        "speech_count": 31
+      },
+      {
+        "word": "kira",
+        "count": 125,
+        "per_1000": 1.18,
+        "speech_count": 32
+      },
+      {
+        "word": "triliun",
+        "count": 124,
+        "per_1000": 1.18,
+        "speech_count": 15
+      },
+      {
+        "word": "sendiri",
+        "count": 123,
+        "per_1000": 1.17,
+        "speech_count": 26
+      },
+      {
+        "word": "paling",
+        "count": 123,
+        "per_1000": 1.17,
+        "speech_count": 30
+      },
+      {
+        "word": "salam",
+        "count": 122,
+        "per_1000": 1.16,
+        "speech_count": 40
+      },
+      {
+        "word": "bersama",
+        "count": 118,
+        "per_1000": 1.12,
+        "speech_count": 30
+      },
+      {
+        "word": "tiap",
+        "count": 117,
+        "per_1000": 1.11,
+        "speech_count": 25
+      },
+      {
+        "word": "pertama",
+        "count": 117,
+        "per_1000": 1.11,
+        "speech_count": 31
+      },
+      {
+        "word": "negeri",
+        "count": 116,
+        "per_1000": 1.1,
+        "speech_count": 30
+      },
+      {
+        "word": "rumah",
+        "count": 113,
+        "per_1000": 1.07,
+        "speech_count": 17
+      },
+      {
+        "word": "hidup",
+        "count": 111,
+        "per_1000": 1.05,
+        "speech_count": 32
+      },
+      {
+        "word": "suatu",
+        "count": 111,
+        "per_1000": 1.05,
+        "speech_count": 30
+      },
+      {
+        "word": "kekayaan",
+        "count": 111,
+        "per_1000": 1.05,
+        "speech_count": 26
+      },
+      {
+        "word": "pangan",
+        "count": 110,
+        "per_1000": 1.04,
+        "speech_count": 25
+      },
+      {
+        "word": "kuat",
+        "count": 109,
+        "per_1000": 1.03,
+        "speech_count": 32
+      },
+      {
+        "word": "maha",
+        "count": 108,
+        "per_1000": 1.02,
+        "speech_count": 36
+      },
+      {
+        "word": "belum",
+        "count": 108,
+        "per_1000": 1.02,
+        "speech_count": 27
+      },
+      {
+        "word": "bulan",
+        "count": 107,
+        "per_1000": 1.01,
+        "speech_count": 23
+      },
+      {
+        "word": "penting",
+        "count": 106,
+        "per_1000": 1.0,
+        "speech_count": 33
+      },
+      {
+        "word": "nasional",
+        "count": 106,
+        "per_1000": 1.0,
+        "speech_count": 31
+      },
+      {
+        "word": "pimpinan",
+        "count": 105,
+        "per_1000": 1.0,
+        "speech_count": 30
+      },
+      {
+        "word": "memang",
+        "count": 102,
+        "per_1000": 0.97,
+        "speech_count": 30
+      },
+      {
+        "word": "salah",
+        "count": 102,
+        "per_1000": 0.97,
+        "speech_count": 31
+      },
+      {
+        "word": "sini",
+        "count": 100,
+        "per_1000": 0.95,
+        "speech_count": 34
+      },
+      {
+        "word": "masa",
+        "count": 100,
+        "per_1000": 0.95,
+        "speech_count": 29
+      },
+      {
+        "word": "anak-anak",
+        "count": 100,
+        "per_1000": 0.95,
+        "speech_count": 26
+      },
+      {
+        "word": "prabowo",
+        "count": 99,
+        "per_1000": 0.94,
+        "speech_count": 33
+      },
+      {
+        "word": "saja",
+        "count": 99,
+        "per_1000": 0.94,
+        "speech_count": 27
+      },
+      {
+        "word": "masalah",
+        "count": 99,
+        "per_1000": 0.94,
+        "speech_count": 24
+      },
+      {
+        "word": "perlu",
+        "count": 97,
+        "per_1000": 0.92,
+        "speech_count": 28
+      },
+      {
+        "word": "air",
+        "count": 96,
+        "per_1000": 0.91,
+        "speech_count": 30
+      },
+      {
+        "word": "depan",
+        "count": 96,
+        "per_1000": 0.91,
+        "speech_count": 35
+      },
+      {
+        "word": "merdeka",
+        "count": 96,
+        "per_1000": 0.91,
+        "speech_count": 27
+      },
+      {
+        "word": "desa",
+        "count": 96,
+        "per_1000": 0.91,
+        "speech_count": 18
+      },
+      {
+        "word": "warahmatullahi",
+        "count": 95,
+        "per_1000": 0.9,
+        "speech_count": 42
+      },
+      {
+        "word": "setiap",
+        "count": 94,
+        "per_1000": 0.89,
+        "speech_count": 21
+      },
+      {
+        "word": "wabarakatuh",
+        "count": 94,
+        "per_1000": 0.89,
+        "speech_count": 42
+      },
+      {
+        "word": "sejahtera",
+        "count": 94,
+        "per_1000": 0.89,
+        "speech_count": 36
+      },
+      {
+        "word": "memberi",
+        "count": 93,
+        "per_1000": 0.88,
+        "speech_count": 33
+      },
+      {
+        "word": "anak",
+        "count": 93,
+        "per_1000": 0.88,
+        "speech_count": 29
+      },
+      {
+        "word": "minta",
+        "count": 93,
+        "per_1000": 0.88,
+        "speech_count": 26
+      },
+      {
+        "word": "ibu",
+        "count": 91,
+        "per_1000": 0.86,
+        "speech_count": 25
+      },
+      {
+        "word": "sekali",
+        "count": 91,
+        "per_1000": 0.86,
+        "speech_count": 34
+      },
+      {
+        "word": "sejarah",
+        "count": 91,
+        "per_1000": 0.86,
+        "speech_count": 22
+      },
+      {
+        "word": "bupati",
+        "count": 91,
+        "per_1000": 0.86,
+        "speech_count": 13
+      },
+      {
+        "word": "pemimpin",
+        "count": 90,
+        "per_1000": 0.85,
+        "speech_count": 23
+      },
+      {
+        "word": "keras",
+        "count": 90,
+        "per_1000": 0.85,
+        "speech_count": 29
+      }
+    ],
+    "topics": [
+      {
+        "topic": "mbg",
+        "matched_units": 78,
+        "per_1000_tokens": 0.74,
+        "speech_count": 16,
+        "speech_share": 36.4
+      },
+      {
+        "topic": "pangan",
+        "matched_units": 440,
+        "per_1000_tokens": 4.17,
+        "speech_count": 32,
+        "speech_share": 72.7
+      },
+      {
+        "topic": "ekonomi",
+        "matched_units": 622,
+        "per_1000_tokens": 5.9,
+        "speech_count": 39,
+        "speech_share": 88.6
+      },
+      {
+        "topic": "pendidikan",
+        "matched_units": 284,
+        "per_1000_tokens": 2.69,
+        "speech_count": 33,
+        "speech_share": 75.0
+      },
+      {
+        "topic": "kesehatan_dan_gizi",
+        "matched_units": 425,
+        "per_1000_tokens": 4.03,
+        "speech_count": 39,
+        "speech_share": 88.6
+      },
+      {
+        "topic": "tata_kelola",
+        "matched_units": 386,
+        "per_1000_tokens": 3.66,
+        "speech_count": 37,
+        "speech_share": 84.1
+      },
+      {
+        "topic": "pertahanan_dan_keamanan",
+        "matched_units": 393,
+        "per_1000_tokens": 3.72,
+        "speech_count": 35,
+        "speech_share": 79.5
+      },
+      {
+        "topic": "nasional_dan_identitas",
+        "matched_units": 3458,
+        "per_1000_tokens": 32.78,
+        "speech_count": 44,
+        "speech_share": 100.0
+      }
+    ],
+    "framing": [
+      {
+        "word": "saya",
+        "count": 2673,
+        "per_1000_tokens": 25.33,
+        "speech_count": 43
+      },
+      {
+        "word": "kita",
+        "count": 4071,
+        "per_1000_tokens": 38.59,
+        "speech_count": 44
+      },
+      {
+        "word": "kami",
+        "count": 174,
+        "per_1000_tokens": 1.65,
+        "speech_count": 24
+      },
+      {
+        "word": "mereka",
+        "count": 307,
+        "per_1000_tokens": 2.91,
+        "speech_count": 33
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "ffYHRrgqg5U",
+      "date": "2025-02-10",
+      "title": "(FULL) Pidato Presiden Prabowo Dalam Kongres ke-18 Muslimat NU",
+      "channel": "BeritaSatu",
+      "url": "https://www.youtube.com/watch?v=ffYHRrgqg5U",
+      "duration": 1616,
+      "source_tier": "full_media",
+      "duplicate_group": "event-017",
+      "duplicate_count": 0,
+      "token_count": 1465,
+      "unique_word_count": 551,
+      "topics": {
+        "pangan": 2,
+        "ekonomi": 1,
+        "pendidikan": 10,
+        "kesehatan_dan_gizi": 1,
+        "tata_kelola": 6,
+        "pertahanan_dan_keamanan": 5,
+        "nasional_dan_identitas": 53,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "CfnRESwOZKQ",
+      "date": "2025-04-10",
+      "title": "Pidato Kenegaraan Presiden Prabowo di Hadapan Parlemen Turkiye",
+      "channel": "Sekretariat Presiden",
+      "url": "https://www.youtube.com/watch?v=CfnRESwOZKQ",
+      "duration": 923,
+      "source_tier": "official",
+      "duplicate_group": "event-003",
+      "duplicate_count": 0,
+      "token_count": 807,
+      "unique_word_count": 335,
+      "topics": {
+        "pangan": 0,
+        "ekonomi": 1,
+        "pendidikan": 0,
+        "kesehatan_dan_gizi": 4,
+        "tata_kelola": 3,
+        "pertahanan_dan_keamanan": 0,
+        "nasional_dan_identitas": 33,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "Enmz62kOMyI",
+      "date": "2025-07-01",
+      "title": "Full Pidato Presiden Prabowo di Upacara Peringatan ke 79 Hari Bhayangkara",
+      "channel": "Prabowo Subianto",
+      "url": "https://www.youtube.com/watch?v=Enmz62kOMyI",
+      "duration": 1057,
+      "source_tier": "official",
+      "duplicate_group": "event-040",
+      "duplicate_count": 0,
+      "token_count": 1102,
+      "unique_word_count": 424,
+      "topics": {
+        "pangan": 3,
+        "ekonomi": 2,
+        "pendidikan": 1,
+        "kesehatan_dan_gizi": 3,
+        "tata_kelola": 1,
+        "pertahanan_dan_keamanan": 35,
+        "nasional_dan_identitas": 94,
+        "mbg": 2
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 2,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 2,
+        "mbg_present": true,
+        "evidence": [
+          {
+            "start": 846.279,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          },
+          {
+            "start": 865.24,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "E_doThSKS4E",
+      "date": "2025-08-07",
+      "title": "Presiden Prabowo Hadiri KSTI Indonesia 2025",
+      "channel": "Sekretariat Presiden",
+      "url": "https://www.youtube.com/watch?v=E_doThSKS4E",
+      "duration": 651,
+      "source_tier": "official",
+      "duplicate_group": "event-004",
+      "duplicate_count": 0,
+      "token_count": 588,
+      "unique_word_count": 315,
+      "topics": {
+        "pangan": 0,
+        "ekonomi": 5,
+        "pendidikan": 9,
+        "kesehatan_dan_gizi": 2,
+        "tata_kelola": 0,
+        "pertahanan_dan_keamanan": 2,
+        "nasional_dan_identitas": 11,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "gyT_qLziJ2M",
+      "date": "2025-09-29",
+      "title": "[FULL] Pidato Lengkap Presiden Prabowo di Munas Ke-VI PKS | tvOne",
+      "channel": "tvOneNews ",
+      "url": "https://www.youtube.com/watch?v=gyT_qLziJ2M",
+      "duration": 4928,
+      "source_tier": "full_media",
+      "duplicate_group": "event-024",
+      "duplicate_count": 0,
+      "token_count": 5204,
+      "unique_word_count": 1385,
+      "topics": {
+        "pangan": 29,
+        "ekonomi": 16,
+        "pendidikan": 16,
+        "kesehatan_dan_gizi": 21,
+        "tata_kelola": 28,
+        "pertahanan_dan_keamanan": 10,
+        "nasional_dan_identitas": 133,
+        "mbg": 4
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 4,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 4,
+        "mbg_present": true,
+        "evidence": [
+          {
+            "start": 1924.88,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          },
+          {
+            "start": 2076.96,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          },
+          {
+            "start": 2094.399,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          },
+          {
+            "start": 2889.359,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "02IcsjvhFGQ",
+      "date": "2025-10-24",
+      "title": "Sambutan Presiden Prabowo pada Puncak Peringatan Hari Santri",
+      "channel": "Sekretariat Presiden",
+      "url": "https://www.youtube.com/watch?v=02IcsjvhFGQ",
+      "duration": 175,
+      "source_tier": "official",
+      "duplicate_group": "event-001",
+      "duplicate_count": 0,
+      "token_count": 236,
+      "unique_word_count": 144,
+      "topics": {
+        "pangan": 0,
+        "ekonomi": 0,
+        "pendidikan": 3,
+        "kesehatan_dan_gizi": 0,
+        "tata_kelola": 1,
+        "pertahanan_dan_keamanan": 0,
+        "nasional_dan_identitas": 16,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "OOAGKPFdwf0",
+      "date": "2025-12-25",
+      "title": "Presiden Prabowo Sampaikan Ucapan Selamat Hari Natal 2025, Jakarta, 25 Desember 2025",
+      "channel": "Sekretariat Presiden",
+      "url": "https://www.youtube.com/watch?v=OOAGKPFdwf0",
+      "duration": 161,
+      "source_tier": "official",
+      "duplicate_group": "event-044",
+      "duplicate_count": 0,
+      "token_count": 213,
+      "unique_word_count": 120,
+      "topics": {
+        "pangan": 0,
+        "ekonomi": 0,
+        "pendidikan": 0,
+        "kesehatan_dan_gizi": 0,
+        "tata_kelola": 2,
+        "pertahanan_dan_keamanan": 0,
+        "nasional_dan_identitas": 13,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "doW8-nSNL-8",
+      "date": "2026-01-05",
+      "title": "(FULL) Pidato Presiden Prabowo di Perayaan Natal Nasional 2025",
+      "channel": "VIVA.CO.ID",
+      "url": "https://www.youtube.com/watch?v=doW8-nSNL-8",
+      "duration": 2950,
+      "source_tier": "full_media",
+      "duplicate_group": "event-018",
+      "duplicate_count": 0,
+      "token_count": 2952,
+      "unique_word_count": 830,
+      "topics": {
+        "pangan": 7,
+        "ekonomi": 4,
+        "pendidikan": 3,
+        "kesehatan_dan_gizi": 22,
+        "tata_kelola": 3,
+        "pertahanan_dan_keamanan": 6,
+        "nasional_dan_identitas": 89,
+        "mbg": 11
+      },
+      "mbg": {
+        "mbg_exact_count": 7,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 4,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 11,
+        "mbg_present": true,
+        "evidence": [
+          {
+            "start": 1839.88,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          },
+          {
+            "start": 1935.559,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          },
+          {
+            "start": 1954.279,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          },
+          {
+            "start": 2036.799,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          },
+          {
+            "start": 2053.96,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2060.32,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2082.119,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2168.8,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2324.16,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2329.76,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2334.319,
+            "matches": [
+              "mbg_exact"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "mu2ep3dsHaQ",
+      "date": "2026-02-02",
+      "title": "[FULL] PIDATO PRESIDEN PRABOWO DI RAKORNAS PEMERINTAH PUSAT & DAERAH",
+      "channel": "METRO TV ",
+      "url": "https://www.youtube.com/watch?v=mu2ep3dsHaQ",
+      "duration": 5635,
+      "source_tier": "full_media",
+      "duplicate_group": "event-034",
+      "duplicate_count": 0,
+      "token_count": 6257,
+      "unique_word_count": 1619,
+      "topics": {
+        "pangan": 18,
+        "ekonomi": 38,
+        "pendidikan": 18,
+        "kesehatan_dan_gizi": 25,
+        "tata_kelola": 14,
+        "pertahanan_dan_keamanan": 17,
+        "nasional_dan_identitas": 142,
+        "mbg": 11
+      },
+      "mbg": {
+        "mbg_exact_count": 8,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 3,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 11,
+        "mbg_present": true,
+        "evidence": [
+          {
+            "start": 2468.8,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 3079.04,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          },
+          {
+            "start": 3169.76,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 3211.04,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 3215.2,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 3232.44,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          },
+          {
+            "start": 3353.48,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 3360.72,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 3390.839,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 3516.2,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 3882.96,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "5OIq7GaU4sI",
+      "date": "2026-02-28",
+      "title": "Sambutan Presiden Prabowo pada Perayaan Tahun Baru Imlek Nasional",
+      "channel": "Sekretariat Presiden",
+      "url": "https://www.youtube.com/watch?v=5OIq7GaU4sI",
+      "duration": 257,
+      "source_tier": "official",
+      "duplicate_group": "event-002",
+      "duplicate_count": 0,
+      "token_count": 333,
+      "unique_word_count": 175,
+      "topics": {
+        "pangan": 0,
+        "ekonomi": 0,
+        "pendidikan": 0,
+        "kesehatan_dan_gizi": 3,
+        "tata_kelola": 1,
+        "pertahanan_dan_keamanan": 0,
+        "nasional_dan_identitas": 19,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "Fm09R5akNzM",
+      "date": "2026-03-10",
+      "title": "BREAKING NEWS - [FULL] Pidato Presiden Prabowo di Peringatan Nuzulul Qur'an",
+      "channel": "METRO TV ",
+      "url": "https://www.youtube.com/watch?v=Fm09R5akNzM",
+      "duration": 1309,
+      "source_tier": "full_media",
+      "duplicate_group": "event-033",
+      "duplicate_count": 1,
+      "token_count": 1388,
+      "unique_word_count": 559,
+      "topics": {
+        "pangan": 0,
+        "ekonomi": 3,
+        "pendidikan": 0,
+        "kesehatan_dan_gizi": 1,
+        "tata_kelola": 5,
+        "pertahanan_dan_keamanan": 1,
+        "nasional_dan_identitas": 51,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "VyPCSPnxbaE",
+      "date": "2026-03-11",
+      "title": "Pidato Presiden Prabowo di Tasyakuran HUT ke-1 Danantara",
+      "channel": "METRO TV",
+      "url": "https://www.youtube.com/watch?v=VyPCSPnxbaE",
+      "duration": 986,
+      "source_tier": "media",
+      "duplicate_group": "event-005",
+      "duplicate_count": 0,
+      "token_count": 1205,
+      "unique_word_count": 459,
+      "topics": {
+        "pangan": 3,
+        "ekonomi": 8,
+        "pendidikan": 0,
+        "kesehatan_dan_gizi": 4,
+        "tata_kelola": 1,
+        "pertahanan_dan_keamanan": 1,
+        "nasional_dan_identitas": 34,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "rKpNQwecniM",
+      "date": "2026-05-01",
+      "title": "Pidato Presiden Prabowo pada Peringatan Hari Buruh Internasional",
+      "channel": "Prabowo Subianto",
+      "url": "https://www.youtube.com/watch?v=rKpNQwecniM",
+      "duration": 2242,
+      "source_tier": "official",
+      "duplicate_group": "event-007",
+      "duplicate_count": 4,
+      "token_count": 2044,
+      "unique_word_count": 691,
+      "topics": {
+        "pangan": 15,
+        "ekonomi": 7,
+        "pendidikan": 1,
+        "kesehatan_dan_gizi": 27,
+        "tata_kelola": 10,
+        "pertahanan_dan_keamanan": 4,
+        "nasional_dan_identitas": 59,
+        "mbg": 5
+      },
+      "mbg": {
+        "mbg_exact_count": 4,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 1,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 5,
+        "mbg_present": true,
+        "evidence": [
+          {
+            "start": 2074.32,
+            "matches": [
+              "mbg_exact",
+              "makan_plus_bergizi"
+            ]
+          },
+          {
+            "start": 2088.24,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2102.839,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2129.04,
+            "matches": [
+              "mbg_exact"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "JkLlmVzJ_dc",
+      "date": "2026-05-13",
+      "title": "BREAKING NEWS - [FULL] PIDATO PRESIDEN PRABOWO DI PENYERAHAN UANG SITAAN OLEH SATGAS PKH",
+      "channel": "METRO TV ",
+      "url": "https://www.youtube.com/watch?v=JkLlmVzJ_dc",
+      "duration": 2454,
+      "source_tier": "full_media",
+      "duplicate_group": "event-039",
+      "duplicate_count": 0,
+      "token_count": 2769,
+      "unique_word_count": 916,
+      "topics": {
+        "pangan": 1,
+        "ekonomi": 8,
+        "pendidikan": 4,
+        "kesehatan_dan_gizi": 10,
+        "tata_kelola": 16,
+        "pertahanan_dan_keamanan": 12,
+        "nasional_dan_identitas": 76,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "ypWhdkJiz3o",
+      "date": "2026-05-16",
+      "title": "[FULL] BREAKING NEWS - PIDATO PRESIDEN PRABOWO DI PERESMIAN 1.061 KOPERASI DESA MERAH PUTIH",
+      "channel": "METRO TV ",
+      "url": "https://www.youtube.com/watch?v=ypWhdkJiz3o",
+      "duration": 3135,
+      "source_tier": "full_media",
+      "duplicate_group": "event-019",
+      "duplicate_count": 0,
+      "token_count": 3552,
+      "unique_word_count": 1104,
+      "topics": {
+        "pangan": 40,
+        "ekonomi": 34,
+        "pendidikan": 2,
+        "kesehatan_dan_gizi": 2,
+        "tata_kelola": 8,
+        "pertahanan_dan_keamanan": 18,
+        "nasional_dan_identitas": 103,
+        "mbg": 9
+      },
+      "mbg": {
+        "mbg_exact_count": 9,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 9,
+        "mbg_present": true,
+        "evidence": [
+          {
+            "start": 1680.64,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 1790.159,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 1799.24,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 1857.12,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 1910.799,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 1937.159,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2008.6,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2020.36,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2038.88,
+            "matches": [
+              "mbg_exact"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "7gTnSb4faRk",
+      "date": "2026-05-20",
+      "title": "Presiden Prabowo Sampaikan Pidato pada Rapat Paripurna DPR RI ke-19, Jakarta, 20 Mei 2026",
+      "channel": "Sekretariat Presiden",
+      "url": "https://www.youtube.com/watch?v=7gTnSb4faRk",
+      "duration": 70,
+      "source_tier": "official",
+      "duplicate_group": "event-015",
+      "duplicate_count": 1,
+      "token_count": 68,
+      "unique_word_count": 47,
+      "topics": {
+        "pangan": 0,
+        "ekonomi": 1,
+        "pendidikan": 0,
+        "kesehatan_dan_gizi": 0,
+        "tata_kelola": 0,
+        "pertahanan_dan_keamanan": 0,
+        "nasional_dan_identitas": 4,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "HiJYFR1vR9g",
+      "date": "2026-05-29",
+      "title": "[FULL] Pidato Presiden Prabowo: Pujian untuk Macron Hingga Bahas Kerja Sama | Liputan 6",
+      "channel": "Liputan6",
+      "url": "https://www.youtube.com/watch?v=HiJYFR1vR9g",
+      "duration": 636,
+      "source_tier": "full_media",
+      "duplicate_group": "event-037",
+      "duplicate_count": 0,
+      "token_count": 661,
+      "unique_word_count": 261,
+      "topics": {
+        "pangan": 0,
+        "ekonomi": 3,
+        "pendidikan": 4,
+        "kesehatan_dan_gizi": 0,
+        "tata_kelola": 0,
+        "pertahanan_dan_keamanan": 3,
+        "nasional_dan_identitas": 20,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "e3ByeIYYKYU",
+      "date": "2026-05-31",
+      "title": "Sambutan Presiden Prabowo pada Puncak Peringatan Hari Tri Suci Waisak 2570 BE, 31 Mei 2026",
+      "channel": "Sekretariat Presiden",
+      "url": "https://www.youtube.com/watch?v=e3ByeIYYKYU",
+      "duration": 264,
+      "source_tier": "official",
+      "duplicate_group": "event-016",
+      "duplicate_count": 0,
+      "token_count": 352,
+      "unique_word_count": 206,
+      "topics": {
+        "pangan": 0,
+        "ekonomi": 0,
+        "pendidikan": 0,
+        "kesehatan_dan_gizi": 0,
+        "tata_kelola": 1,
+        "pertahanan_dan_keamanan": 0,
+        "nasional_dan_identitas": 17,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "1fkbpthd1MI",
+      "date": "2026-06-01",
+      "title": "FULL Pidato Prabowo di Upacara Hari Lahir Pancasila",
+      "channel": "CNN Indonesia",
+      "url": "https://www.youtube.com/watch?v=1fkbpthd1MI",
+      "duration": 1303,
+      "source_tier": "full_media",
+      "duplicate_group": "event-027",
+      "duplicate_count": 1,
+      "token_count": 1520,
+      "unique_word_count": 605,
+      "topics": {
+        "pangan": 7,
+        "ekonomi": 38,
+        "pendidikan": 1,
+        "kesehatan_dan_gizi": 5,
+        "tata_kelola": 4,
+        "pertahanan_dan_keamanan": 2,
+        "nasional_dan_identitas": 114,
+        "mbg": 1
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 1,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 1,
+        "mbg_present": true,
+        "evidence": [
+          {
+            "start": 1001.199,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "9KWsOM3B6_c",
+      "date": "2026-06-03",
+      "title": "Pidato Presiden RI pada Acara Building Indonesia's Future Generations Through Nutrition, 3 Juni 2026",
+      "channel": "Sekretariat Presiden",
+      "url": "https://www.youtube.com/watch?v=9KWsOM3B6_c",
+      "duration": 2389,
+      "source_tier": "official",
+      "duplicate_group": "event-013",
+      "duplicate_count": 1,
+      "token_count": 2386,
+      "unique_word_count": 730,
+      "topics": {
+        "pangan": 6,
+        "ekonomi": 5,
+        "pendidikan": 7,
+        "kesehatan_dan_gizi": 14,
+        "tata_kelola": 8,
+        "pertahanan_dan_keamanan": 3,
+        "nasional_dan_identitas": 29,
+        "mbg": 3
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 2,
+        "mbg_related_count": 1,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 3,
+        "mbg_present": true,
+        "evidence": [
+          {
+            "start": 222.76,
+            "matches": [
+              "sppg_context"
+            ]
+          },
+          {
+            "start": 572.04,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          },
+          {
+            "start": 596.88,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "Ntf-BzRGTug",
+      "date": "2026-06-10",
+      "title": "[FULL] PIDATO PRESIDEN PRABOWO DI MUNAS HIPMI, SINGGUNG KRITIK SERING KE LUAR NEGERI",
+      "channel": "METRO TV ",
+      "url": "https://www.youtube.com/watch?v=Ntf-BzRGTug",
+      "duration": 4555,
+      "source_tier": "full_media",
+      "duplicate_group": "event-023",
+      "duplicate_count": 3,
+      "token_count": 4297,
+      "unique_word_count": 1246,
+      "topics": {
+        "pangan": 5,
+        "ekonomi": 33,
+        "pendidikan": 2,
+        "kesehatan_dan_gizi": 4,
+        "tata_kelola": 11,
+        "pertahanan_dan_keamanan": 20,
+        "nasional_dan_identitas": 125,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "rn96VRQ4SgY",
+      "date": "2026-06-23",
+      "title": "Pidato Lengkap Presiden Prabowo Subianto di Musyawarah Ulama PBNU Bangkalan #Beritasatu",
+      "channel": "BeritaSatu",
+      "url": "https://www.youtube.com/watch?v=rn96VRQ4SgY",
+      "duration": 2276,
+      "source_tier": "full_media",
+      "duplicate_group": "event-021",
+      "duplicate_count": 2,
+      "token_count": 2358,
+      "unique_word_count": 795,
+      "topics": {
+        "pangan": 4,
+        "ekonomi": 13,
+        "pendidikan": 3,
+        "kesehatan_dan_gizi": 2,
+        "tata_kelola": 10,
+        "pertahanan_dan_keamanan": 6,
+        "nasional_dan_identitas": 80,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "WN4ObtcpRMs",
+      "date": "2026-06-24",
+      "title": "[FULL] Pidato Prabowo di PNKT XVII 2026: Australia Minta Pupuk dari Indonesia, Boleh Kita Jual?",
+      "channel": "KOMPASTV",
+      "url": "https://www.youtube.com/watch?v=WN4ObtcpRMs",
+      "duration": 2995,
+      "source_tier": "full_media",
+      "duplicate_group": "event-010",
+      "duplicate_count": 2,
+      "token_count": 2990,
+      "unique_word_count": 901,
+      "topics": {
+        "pangan": 96,
+        "ekonomi": 5,
+        "pendidikan": 1,
+        "kesehatan_dan_gizi": 9,
+        "tata_kelola": 5,
+        "pertahanan_dan_keamanan": 21,
+        "nasional_dan_identitas": 86,
+        "mbg": 4
+      },
+      "mbg": {
+        "mbg_exact_count": 4,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 4,
+        "mbg_present": true,
+        "evidence": [
+          {
+            "start": 2490.599,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2496.079,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2502.0,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2509.839,
+            "matches": [
+              "mbg_exact"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hJybE-uF_qE",
+      "date": "2026-06-26",
+      "title": "Pembukaan Sarasehan Kebangsaan KSTI 2026",
+      "channel": "Sekretariat Presiden",
+      "url": "https://www.youtube.com/watch?v=hJybE-uF_qE",
+      "duration": 1688,
+      "source_tier": "official",
+      "duplicate_group": "event-006",
+      "duplicate_count": 0,
+      "token_count": 1619,
+      "unique_word_count": 617,
+      "topics": {
+        "pangan": 3,
+        "ekonomi": 2,
+        "pendidikan": 16,
+        "kesehatan_dan_gizi": 5,
+        "tata_kelola": 0,
+        "pertahanan_dan_keamanan": 10,
+        "nasional_dan_identitas": 58,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "xK61ktEglpc",
+      "date": "2026-06-28",
+      "title": "Pidato Penutupan Sarasehan Kebangsaan KSTI 2026",
+      "channel": "Pangkep TV",
+      "url": "https://www.youtube.com/watch?v=xK61ktEglpc",
+      "duration": 1050,
+      "source_tier": "media",
+      "duplicate_group": "event-009",
+      "duplicate_count": 0,
+      "token_count": 1137,
+      "unique_word_count": 462,
+      "topics": {
+        "pangan": 1,
+        "ekonomi": 4,
+        "pendidikan": 9,
+        "kesehatan_dan_gizi": 1,
+        "tata_kelola": 2,
+        "pertahanan_dan_keamanan": 1,
+        "nasional_dan_identitas": 18,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "HBuj_rOU5yA",
+      "date": "2026-07-01",
+      "title": "FULL! Pidato Prabowo di HUT ke-80 Bhayangkara: Hukum Tak Boleh Tajam ke Bawah, Polri Lindungi Rakyat",
+      "channel": "KOMPASTV",
+      "url": "https://www.youtube.com/watch?v=HBuj_rOU5yA",
+      "duration": 1935,
+      "source_tier": "full_media",
+      "duplicate_group": "event-032",
+      "duplicate_count": 2,
+      "token_count": 1822,
+      "unique_word_count": 679,
+      "topics": {
+        "pangan": 10,
+        "ekonomi": 10,
+        "pendidikan": 3,
+        "kesehatan_dan_gizi": 4,
+        "tata_kelola": 25,
+        "pertahanan_dan_keamanan": 52,
+        "nasional_dan_identitas": 117,
+        "mbg": 2
+      },
+      "mbg": {
+        "mbg_exact_count": 1,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 1,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 2,
+        "mbg_present": true,
+        "evidence": [
+          {
+            "start": 773.36,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          },
+          {
+            "start": 846.839,
+            "matches": [
+              "mbg_exact"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "xh-kV0Rm8K8",
+      "date": "2026-07-09",
+      "title": "[FULL] Pidato Prabowo Luncurkan Biodiesel B50: Indonesia Jadi Negara Pertama Terapkan B50",
+      "channel": "KOMPASTV DEWATA",
+      "url": "https://www.youtube.com/watch?v=xh-kV0Rm8K8",
+      "duration": 2385,
+      "source_tier": "full_media",
+      "duplicate_group": "event-036",
+      "duplicate_count": 2,
+      "token_count": 2541,
+      "unique_word_count": 879,
+      "topics": {
+        "pangan": 9,
+        "ekonomi": 7,
+        "pendidikan": 2,
+        "kesehatan_dan_gizi": 2,
+        "tata_kelola": 9,
+        "pertahanan_dan_keamanan": 16,
+        "nasional_dan_identitas": 69,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "YYas7H5zORI",
+      "date": "2026-07-10",
+      "title": "Full Pidato Presiden Prabowo di Lombok, MBG KITA LANJUTKAN...!!! Oknum yang Nakal PERIKSA..!!",
+      "channel": "Tribun Lombok",
+      "url": "https://www.youtube.com/watch?v=YYas7H5zORI",
+      "duration": 3134,
+      "source_tier": "full_media",
+      "duplicate_group": "event-012",
+      "duplicate_count": 2,
+      "token_count": 3129,
+      "unique_word_count": 948,
+      "topics": {
+        "pangan": 20,
+        "ekonomi": 11,
+        "pendidikan": 0,
+        "kesehatan_dan_gizi": 5,
+        "tata_kelola": 18,
+        "pertahanan_dan_keamanan": 12,
+        "nasional_dan_identitas": 129,
+        "mbg": 7
+      },
+      "mbg": {
+        "mbg_exact_count": 7,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 7,
+        "mbg_present": true,
+        "evidence": [
+          {
+            "start": 11.4,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 25.92,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2700.079,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2714.599,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2731.24,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2907.48,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 2958.24,
+            "matches": [
+              "mbg_exact"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "QAFNXg-LfTU",
+      "date": "2026-07-16",
+      "title": "FULL! Pidato Prabowo Resmikan Groundbreaking LNG Abadi Masela, Indonesia Siap Jadi Negara Industri",
+      "channel": "KOMPASTV",
+      "url": "https://www.youtube.com/watch?v=QAFNXg-LfTU",
+      "duration": 1555,
+      "source_tier": "full_media",
+      "duplicate_group": "event-041",
+      "duplicate_count": 0,
+      "token_count": 1575,
+      "unique_word_count": 601,
+      "topics": {
+        "pangan": 2,
+        "ekonomi": 11,
+        "pendidikan": 1,
+        "kesehatan_dan_gizi": 4,
+        "tata_kelola": 4,
+        "pertahanan_dan_keamanan": 2,
+        "nasional_dan_identitas": 75,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "yJglGGY8ADI",
+      "date": "2026-07-17",
+      "title": "[FULL] Pidato Presiden Prabowo di Panen Raya Tebu Serentak di Malang",
+      "channel": "KOMPASTV",
+      "url": "https://www.youtube.com/watch?v=yJglGGY8ADI",
+      "duration": 2665,
+      "source_tier": "full_media",
+      "duplicate_group": "event-030",
+      "duplicate_count": 1,
+      "token_count": 2617,
+      "unique_word_count": 905,
+      "topics": {
+        "pangan": 42,
+        "ekonomi": 10,
+        "pendidikan": 3,
+        "kesehatan_dan_gizi": 11,
+        "tata_kelola": 5,
+        "pertahanan_dan_keamanan": 59,
+        "nasional_dan_identitas": 106,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "p7G73zBiow4",
+      "date": "2026-07-20",
+      "title": "[FULL] Pidato Presiden Prabowo Di Sidang Kabinet Paripurna | Breaking News tvOne",
+      "channel": "tvOneNews ",
+      "url": "https://www.youtube.com/watch?v=p7G73zBiow4",
+      "duration": 5218,
+      "source_tier": "full_media",
+      "duplicate_group": "event-035",
+      "duplicate_count": 0,
+      "token_count": 5868,
+      "unique_word_count": 1482,
+      "topics": {
+        "pangan": 33,
+        "ekonomi": 54,
+        "pendidikan": 29,
+        "kesehatan_dan_gizi": 32,
+        "tata_kelola": 17,
+        "pertahanan_dan_keamanan": 3,
+        "nasional_dan_identitas": 171,
+        "mbg": 3
+      },
+      "mbg": {
+        "mbg_exact_count": 2,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 1,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 3,
+        "mbg_present": true,
+        "evidence": [
+          {
+            "start": 3512.2,
+            "matches": [
+              "mbg_exact",
+              "makan_plus_bergizi"
+            ]
+          },
+          {
+            "start": 4948.96,
+            "matches": [
+              "mbg_exact"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "vyp6JITYFM8",
+      "date": "2026-07-24",
+      "title": "Pidato Prabowo di Harlah PKB",
+      "channel": "KOMPASTV",
+      "url": "https://www.youtube.com/watch?v=vyp6JITYFM8",
+      "duration": 2803,
+      "source_tier": "media",
+      "duplicate_group": "event-008",
+      "duplicate_count": 0,
+      "token_count": 2730,
+      "unique_word_count": 900,
+      "topics": {
+        "pangan": 2,
+        "ekonomi": 12,
+        "pendidikan": 9,
+        "kesehatan_dan_gizi": 5,
+        "tata_kelola": 3,
+        "pertahanan_dan_keamanan": 7,
+        "nasional_dan_identitas": 77,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 1,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 1,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": true,
+        "evidence": [
+          {
+            "start": 290.479,
+            "matches": [
+              "ambiguous_acronym"
+            ]
+          },
+          {
+            "start": 1949.48,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "IHY-7SvqxoI",
+      "date": "2026-07-29",
+      "title": "[FULL] Pidato Presiden Prabowo di Pelantikan Pamong Praja Muda IPDN 2026 | LIVE EVENT",
+      "channel": "METRO TV ",
+      "url": "https://www.youtube.com/watch?v=IHY-7SvqxoI",
+      "duration": 1631,
+      "source_tier": "full_media",
+      "duplicate_group": "event-031",
+      "duplicate_count": 0,
+      "token_count": 1616,
+      "unique_word_count": 604,
+      "topics": {
+        "pangan": 0,
+        "ekonomi": 2,
+        "pendidikan": 2,
+        "kesehatan_dan_gizi": 9,
+        "tata_kelola": 6,
+        "pertahanan_dan_keamanan": 8,
+        "nasional_dan_identitas": 115,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "NmbVCeypyHE",
+      "date": "2026-07-30",
+      "title": "[FULL] Pidato Prabowo di Akad Rumah Subsidi: Singgung Prestasi India-Soroti Sungai Penuh Sampah",
+      "channel": "KOMPASTV",
+      "url": "https://www.youtube.com/watch?v=NmbVCeypyHE",
+      "duration": 2215,
+      "source_tier": "full_media",
+      "duplicate_group": "event-026",
+      "duplicate_count": 1,
+      "token_count": 2412,
+      "unique_word_count": 834,
+      "topics": {
+        "pangan": 3,
+        "ekonomi": 6,
+        "pendidikan": 1,
+        "kesehatan_dan_gizi": 13,
+        "tata_kelola": 5,
+        "pertahanan_dan_keamanan": 7,
+        "nasional_dan_identitas": 48,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "YUONIE2ivHo",
+      "date": "2026-07-30",
+      "title": "[FULL] BREAKING NEWS - PIDATO PRESIDEN PRABOWO SAAT RESMIKAN REVITALISASI STASIUN SEMARANG TAWANG",
+      "channel": "METRO TV ",
+      "url": "https://www.youtube.com/watch?v=YUONIE2ivHo",
+      "duration": 1255,
+      "source_tier": "full_media",
+      "duplicate_group": "event-020",
+      "duplicate_count": 0,
+      "token_count": 1414,
+      "unique_word_count": 601,
+      "topics": {
+        "pangan": 1,
+        "ekonomi": 7,
+        "pendidikan": 1,
+        "kesehatan_dan_gizi": 2,
+        "tata_kelola": 0,
+        "pertahanan_dan_keamanan": 0,
+        "nasional_dan_identitas": 51,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "SjuGxdMRzPk",
+      "date": "2026-08-06",
+      "title": "[FULL] Pidato Prabowo Depan 150 Peneliti BRIN Soroti Pendidikan di Indonesia hingga Timnas",
+      "channel": "KOMPASTV",
+      "url": "https://www.youtube.com/watch?v=SjuGxdMRzPk",
+      "duration": 1075,
+      "source_tier": "full_media",
+      "duplicate_group": "event-025",
+      "duplicate_count": 0,
+      "token_count": 1185,
+      "unique_word_count": 448,
+      "topics": {
+        "pangan": 0,
+        "ekonomi": 3,
+        "pendidikan": 23,
+        "kesehatan_dan_gizi": 1,
+        "tata_kelola": 0,
+        "pertahanan_dan_keamanan": 0,
+        "nasional_dan_identitas": 22,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "9rpZpKagShM",
+      "date": "2026-08-07",
+      "title": "FULL! Pidato Prabowo di Peluncuran Buku Bahlil: Swasembada Pangan Hingga Danantara Naik 400%",
+      "channel": "KOMPASTV",
+      "url": "https://www.youtube.com/watch?v=9rpZpKagShM",
+      "duration": 2075,
+      "source_tier": "full_media",
+      "duplicate_group": "event-042",
+      "duplicate_count": 0,
+      "token_count": 2315,
+      "unique_word_count": 818,
+      "topics": {
+        "pangan": 6,
+        "ekonomi": 5,
+        "pendidikan": 7,
+        "kesehatan_dan_gizi": 6,
+        "tata_kelola": 1,
+        "pertahanan_dan_keamanan": 3,
+        "nasional_dan_identitas": 46,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "EZC8X_pgFlY",
+      "date": "2026-08-14",
+      "title": "[FULL] Pidato Presiden Prabowo-Puan Maharani soal RAPBN 2027 di Rapat Paripurna DPR",
+      "channel": "KOMPASTV",
+      "url": "https://www.youtube.com/watch?v=EZC8X_pgFlY",
+      "duration": 9512,
+      "source_tier": "full_media",
+      "duplicate_group": "event-014",
+      "duplicate_count": 3,
+      "token_count": 11989,
+      "unique_word_count": 2631,
+      "topics": {
+        "pangan": 15,
+        "ekonomi": 143,
+        "pendidikan": 33,
+        "kesehatan_dan_gizi": 76,
+        "tata_kelola": 97,
+        "pertahanan_dan_keamanan": 12,
+        "nasional_dan_identitas": 403,
+        "mbg": 7
+      },
+      "mbg": {
+        "mbg_exact_count": 5,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 2,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 7,
+        "mbg_present": true,
+        "evidence": [
+          {
+            "start": 507.72,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 755.839,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 757.279,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 759.36,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 864.0,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 870.16,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          },
+          {
+            "start": 4220.239,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pQAVGm6zYsA",
+      "date": "2026-08-14",
+      "title": "[FULL] Pidato Presiden Prabowo di Sidang Tahunan MPR RI 2026 | BREAKING NEWS",
+      "channel": "Official iNews",
+      "url": "https://www.youtube.com/watch?v=pQAVGm6zYsA",
+      "duration": 6875,
+      "source_tier": "full_media",
+      "duplicate_group": "event-022",
+      "duplicate_count": 2,
+      "token_count": 7750,
+      "unique_word_count": 1884,
+      "topics": {
+        "pangan": 45,
+        "ekonomi": 82,
+        "pendidikan": 51,
+        "kesehatan_dan_gizi": 71,
+        "tata_kelola": 34,
+        "pertahanan_dan_keamanan": 23,
+        "nasional_dan_identitas": 274,
+        "mbg": 5
+      },
+      "mbg": {
+        "mbg_exact_count": 4,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 1,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 5,
+        "mbg_present": true,
+        "evidence": [
+          {
+            "start": 4784.48,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 4844.0,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 4935.96,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 4961.36,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 5025.199,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "UYdFSPfJZfk",
+      "date": "2026-08-25",
+      "title": "[FULL] PIDATO PRABOWO RESMIKAN PLTS DI BALI: BERI BINTANG LAGI JIKA MASUK TARGET",
+      "channel": "METRO TV ",
+      "url": "https://www.youtube.com/watch?v=UYdFSPfJZfk",
+      "duration": 1310,
+      "source_tier": "full_media",
+      "duplicate_group": "event-028",
+      "duplicate_count": 0,
+      "token_count": 1388,
+      "unique_word_count": 576,
+      "topics": {
+        "pangan": 3,
+        "ekonomi": 8,
+        "pendidikan": 0,
+        "kesehatan_dan_gizi": 1,
+        "tata_kelola": 5,
+        "pertahanan_dan_keamanan": 4,
+        "nasional_dan_identitas": 33,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "KXoaUQadksU",
+      "date": "2026-08-27",
+      "title": "[FULL] Pidato Presiden Prabowo Hadiri Muktamar ke-35 NU: Singgung MBG hingga Kartu NU",
+      "channel": "KOMPASTV",
+      "url": "https://www.youtube.com/watch?v=KXoaUQadksU",
+      "duration": 1675,
+      "source_tier": "full_media",
+      "duplicate_group": "event-011",
+      "duplicate_count": 1,
+      "token_count": 1697,
+      "unique_word_count": 675,
+      "topics": {
+        "pangan": 5,
+        "ekonomi": 1,
+        "pendidikan": 3,
+        "kesehatan_dan_gizi": 2,
+        "tata_kelola": 5,
+        "pertahanan_dan_keamanan": 1,
+        "nasional_dan_identitas": 63,
+        "mbg": 3
+      },
+      "mbg": {
+        "mbg_exact_count": 3,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 3,
+        "mbg_present": true,
+        "evidence": [
+          {
+            "start": 1292.88,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 1298.0,
+            "matches": [
+              "mbg_exact"
+            ]
+          },
+          {
+            "start": 1316.88,
+            "matches": [
+              "mbg_exact"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ZqMj_BRxODM",
+      "date": "2026-08-31",
+      "title": "[FULL] PIDATO PRESIDEN PRABOWO DI PENUTUPAN MUKTAMAR KE-35 NU",
+      "channel": "METRO TV ",
+      "url": "https://www.youtube.com/watch?v=ZqMj_BRxODM",
+      "duration": 1518,
+      "source_tier": "full_media",
+      "duplicate_group": "event-029",
+      "duplicate_count": 2,
+      "token_count": 1595,
+      "unique_word_count": 645,
+      "topics": {
+        "pangan": 2,
+        "ekonomi": 5,
+        "pendidikan": 0,
+        "kesehatan_dan_gizi": 3,
+        "tata_kelola": 8,
+        "pertahanan_dan_keamanan": 0,
+        "nasional_dan_identitas": 39,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "6mWMd7ClCv8",
+      "date": "2026-09-09",
+      "title": "[FULL] Pidato Presiden Prabowo Lepas Kontingen Indonesia Menuju Asian Games ke-20 Aichi Nagoya",
+      "channel": "SUARANTBcom",
+      "url": "https://www.youtube.com/watch?v=6mWMd7ClCv8",
+      "duration": 923,
+      "source_tier": "full_media",
+      "duplicate_group": "event-038",
+      "duplicate_count": 0,
+      "token_count": 1123,
+      "unique_word_count": 439,
+      "topics": {
+        "pangan": 0,
+        "ekonomi": 0,
+        "pendidikan": 0,
+        "kesehatan_dan_gizi": 2,
+        "tata_kelola": 0,
+        "pertahanan_dan_keamanan": 2,
+        "nasional_dan_identitas": 37,
+        "mbg": 0
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 0,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 0,
+        "mbg_present": false,
+        "evidence": []
+      }
+    },
+    {
+      "id": "BYJsAQ79gdg",
+      "date": "2026-09-09",
+      "title": "Pidato Lengkap Presiden Prabowo di HUT ke 25 Partai Demokrat",
+      "channel": "KOMPASTV MADIUN",
+      "url": "https://www.youtube.com/watch?v=BYJsAQ79gdg",
+      "duration": 3210,
+      "source_tier": "full_media",
+      "duplicate_group": "event-043",
+      "duplicate_count": 0,
+      "token_count": 3238,
+      "unique_word_count": 973,
+      "topics": {
+        "pangan": 2,
+        "ekonomi": 14,
+        "pendidikan": 6,
+        "kesehatan_dan_gizi": 11,
+        "tata_kelola": 4,
+        "pertahanan_dan_keamanan": 5,
+        "nasional_dan_identitas": 106,
+        "mbg": 1
+      },
+      "mbg": {
+        "mbg_exact_count": 0,
+        "mbg_full_phrase_count": 0,
+        "makan_plus_bergizi_count": 1,
+        "mbg_related_count": 0,
+        "mbg_ambiguous_count": 0,
+        "mbg_policy_signal_count": 1,
+        "mbg_present": true,
+        "evidence": [
+          {
+            "start": 888.16,
+            "matches": [
+              "makan_plus_bergizi"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "duplicate_groups": [
+    {
+      "event_group": "event-017",
+      "canonical_id": "ffYHRrgqg5U",
+      "member_ids": [
+        "ffYHRrgqg5U"
+      ]
+    },
+    {
+      "event_group": "event-003",
+      "canonical_id": "CfnRESwOZKQ",
+      "member_ids": [
+        "CfnRESwOZKQ"
+      ]
+    },
+    {
+      "event_group": "event-040",
+      "canonical_id": "Enmz62kOMyI",
+      "member_ids": [
+        "Enmz62kOMyI"
+      ]
+    },
+    {
+      "event_group": "event-004",
+      "canonical_id": "E_doThSKS4E",
+      "member_ids": [
+        "E_doThSKS4E"
+      ]
+    },
+    {
+      "event_group": "event-024",
+      "canonical_id": "gyT_qLziJ2M",
+      "member_ids": [
+        "gyT_qLziJ2M"
+      ]
+    },
+    {
+      "event_group": "event-001",
+      "canonical_id": "02IcsjvhFGQ",
+      "member_ids": [
+        "02IcsjvhFGQ"
+      ]
+    },
+    {
+      "event_group": "event-044",
+      "canonical_id": "OOAGKPFdwf0",
+      "member_ids": [
+        "OOAGKPFdwf0"
+      ]
+    },
+    {
+      "event_group": "event-018",
+      "canonical_id": "doW8-nSNL-8",
+      "member_ids": [
+        "doW8-nSNL-8"
+      ]
+    },
+    {
+      "event_group": "event-034",
+      "canonical_id": "mu2ep3dsHaQ",
+      "member_ids": [
+        "mu2ep3dsHaQ"
+      ]
+    },
+    {
+      "event_group": "event-002",
+      "canonical_id": "5OIq7GaU4sI",
+      "member_ids": [
+        "5OIq7GaU4sI"
+      ]
+    },
+    {
+      "event_group": "event-033",
+      "canonical_id": "Fm09R5akNzM",
+      "member_ids": [
+        "Fm09R5akNzM",
+        "rr-pObURxuc"
+      ]
+    },
+    {
+      "event_group": "event-005",
+      "canonical_id": "VyPCSPnxbaE",
+      "member_ids": [
+        "VyPCSPnxbaE"
+      ]
+    },
+    {
+      "event_group": "event-007",
+      "canonical_id": "rKpNQwecniM",
+      "member_ids": [
+        "BkZwWNtcJko",
+        "CfWcrTCUIcI",
+        "IBGGAryAVu8",
+        "PAtys9TmQ4U",
+        "rKpNQwecniM"
+      ]
+    },
+    {
+      "event_group": "event-039",
+      "canonical_id": "JkLlmVzJ_dc",
+      "member_ids": [
+        "JkLlmVzJ_dc"
+      ]
+    },
+    {
+      "event_group": "event-019",
+      "canonical_id": "ypWhdkJiz3o",
+      "member_ids": [
+        "ypWhdkJiz3o"
+      ]
+    },
+    {
+      "event_group": "event-015",
+      "canonical_id": "7gTnSb4faRk",
+      "member_ids": [
+        "7gTnSb4faRk",
+        "WJtmyDrIgHg"
+      ]
+    },
+    {
+      "event_group": "event-037",
+      "canonical_id": "HiJYFR1vR9g",
+      "member_ids": [
+        "HiJYFR1vR9g"
+      ]
+    },
+    {
+      "event_group": "event-016",
+      "canonical_id": "e3ByeIYYKYU",
+      "member_ids": [
+        "e3ByeIYYKYU"
+      ]
+    },
+    {
+      "event_group": "event-027",
+      "canonical_id": "1fkbpthd1MI",
+      "member_ids": [
+        "1fkbpthd1MI",
+        "mj5ur3bCtR8"
+      ]
+    },
+    {
+      "event_group": "event-013",
+      "canonical_id": "9KWsOM3B6_c",
+      "member_ids": [
+        "9KWsOM3B6_c",
+        "MqRxhlSThLA"
+      ]
+    },
+    {
+      "event_group": "event-023",
+      "canonical_id": "Ntf-BzRGTug",
+      "member_ids": [
+        "K4uvrC38Yxk",
+        "Le2zr-cRENo",
+        "Ntf-BzRGTug",
+        "kyfyXGWzoCY"
+      ]
+    },
+    {
+      "event_group": "event-021",
+      "canonical_id": "rn96VRQ4SgY",
+      "member_ids": [
+        "LVv2n7Yc87E",
+        "bo0MqM07bcs",
+        "rn96VRQ4SgY"
+      ]
+    },
+    {
+      "event_group": "event-010",
+      "canonical_id": "WN4ObtcpRMs",
+      "member_ids": [
+        "LN2JbamjmcE",
+        "WN4ObtcpRMs",
+        "qswoKxCknHg"
+      ]
+    },
+    {
+      "event_group": "event-006",
+      "canonical_id": "hJybE-uF_qE",
+      "member_ids": [
+        "hJybE-uF_qE"
+      ]
+    },
+    {
+      "event_group": "event-009",
+      "canonical_id": "xK61ktEglpc",
+      "member_ids": [
+        "xK61ktEglpc"
+      ]
+    },
+    {
+      "event_group": "event-032",
+      "canonical_id": "HBuj_rOU5yA",
+      "member_ids": [
+        "CpQyrmIrasU",
+        "HBuj_rOU5yA",
+        "MExLyHOhkkE"
+      ]
+    },
+    {
+      "event_group": "event-036",
+      "canonical_id": "xh-kV0Rm8K8",
+      "member_ids": [
+        "A6vTh2qoGrc",
+        "dvCtCfifU30",
+        "xh-kV0Rm8K8"
+      ]
+    },
+    {
+      "event_group": "event-012",
+      "canonical_id": "YYas7H5zORI",
+      "member_ids": [
+        "YYas7H5zORI",
+        "bvLTXCGnFT4",
+        "guZ8TO7OaIQ"
+      ]
+    },
+    {
+      "event_group": "event-041",
+      "canonical_id": "QAFNXg-LfTU",
+      "member_ids": [
+        "QAFNXg-LfTU"
+      ]
+    },
+    {
+      "event_group": "event-030",
+      "canonical_id": "yJglGGY8ADI",
+      "member_ids": [
+        "wqtxaE1csEI",
+        "yJglGGY8ADI"
+      ]
+    },
+    {
+      "event_group": "event-035",
+      "canonical_id": "p7G73zBiow4",
+      "member_ids": [
+        "p7G73zBiow4"
+      ]
+    },
+    {
+      "event_group": "event-008",
+      "canonical_id": "vyp6JITYFM8",
+      "member_ids": [
+        "vyp6JITYFM8"
+      ]
+    },
+    {
+      "event_group": "event-031",
+      "canonical_id": "IHY-7SvqxoI",
+      "member_ids": [
+        "IHY-7SvqxoI"
+      ]
+    },
+    {
+      "event_group": "event-026",
+      "canonical_id": "NmbVCeypyHE",
+      "member_ids": [
+        "3VR-aKaxHyU",
+        "NmbVCeypyHE"
+      ]
+    },
+    {
+      "event_group": "event-020",
+      "canonical_id": "YUONIE2ivHo",
+      "member_ids": [
+        "YUONIE2ivHo"
+      ]
+    },
+    {
+      "event_group": "event-025",
+      "canonical_id": "SjuGxdMRzPk",
+      "member_ids": [
+        "SjuGxdMRzPk"
+      ]
+    },
+    {
+      "event_group": "event-042",
+      "canonical_id": "9rpZpKagShM",
+      "member_ids": [
+        "9rpZpKagShM"
+      ]
+    },
+    {
+      "event_group": "event-014",
+      "canonical_id": "EZC8X_pgFlY",
+      "member_ids": [
+        "38G2GvbhUKo",
+        "EZC8X_pgFlY",
+        "SldYWZTaoXs",
+        "sv1HMoSzRk4"
+      ]
+    },
+    {
+      "event_group": "event-022",
+      "canonical_id": "pQAVGm6zYsA",
+      "member_ids": [
+        "06kk5UIx6a8",
+        "OzET9XSJ55k",
+        "pQAVGm6zYsA"
+      ]
+    },
+    {
+      "event_group": "event-028",
+      "canonical_id": "UYdFSPfJZfk",
+      "member_ids": [
+        "UYdFSPfJZfk"
+      ]
+    },
+    {
+      "event_group": "event-011",
+      "canonical_id": "KXoaUQadksU",
+      "member_ids": [
+        "KXoaUQadksU",
+        "LXPkBOctQhE"
+      ]
+    },
+    {
+      "event_group": "event-029",
+      "canonical_id": "ZqMj_BRxODM",
+      "member_ids": [
+        "ZqMj_BRxODM",
+        "pikkD5C3swU",
+        "zdU-K2x6Foc"
+      ]
+    },
+    {
+      "event_group": "event-038",
+      "canonical_id": "6mWMd7ClCv8",
+      "member_ids": [
+        "6mWMd7ClCv8"
+      ]
+    },
+    {
+      "event_group": "event-043",
+      "canonical_id": "BYJsAQ79gdg",
+      "member_ids": [
+        "BYJsAQ79gdg"
+      ]
+    }
+  ]
+}

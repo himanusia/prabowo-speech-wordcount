@@ -1,2 +1,2 @@
-youtube-transcript-api==1.2.4
+youtube-transcript-api @ git+https://github.com/jdepoix/youtube-transcript-api.git@8f150ba8836da30a36bcd40e8fca226ed179ba72
 yt-dlp==2026.8.19

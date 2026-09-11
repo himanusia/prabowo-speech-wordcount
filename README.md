@@ -34,7 +34,7 @@ The ten uploads are:
 
 ## Method
 
-- `youtube-transcript-api==1.2.4`
+- [`youtube-transcript-api`](https://github.com/jdepoix/youtube-transcript-api), pinned to upstream commit `8f150ba8836da30a36bcd40e8fca226ed179ba72`
 - Indonesian (`id`) caption track
 - Manual track preferred if available; all selected tracks were auto-generated
 - Approximate speech windows exclude obvious MC, opening, music, or closing material
@@ -50,8 +50,8 @@ The counts describe the selected YouTube caption windows, not verified audio gro
 Use Python 3.12+ and install the pinned dependencies:
 
 ```bash
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
+uv venv .venv --python 3.12
+uv pip install --python .venv/bin/python -r requirements.txt
 ```
 
 The fetch step needs network access to YouTube. It writes raw captions and
@@ -68,6 +68,8 @@ locally from those files.
 - `data/manifest.json` — local source/fetch status; ignored by Git
 - `data/transcripts/raw/*.json` — local-only untouched caption snippets plus track metadata
 - `scripts/fetch_sources.py` — fetch the current ten source tracks
+- `scripts/collect_expanded.py` — fetch the local expanded candidate set
+- `scripts/analyze_expanded.py` — deduplicate events and derive topic/framing signals
 - `scripts/analyze_counts.py` — apply windows and deterministic tokenization
 - `scripts/export_counts.py` — write CSVs
 - `scripts/build_ui.py` — rebuild the embedded dashboard
