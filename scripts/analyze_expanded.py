@@ -423,6 +423,8 @@ def main() -> None:
 
     public_sources = []
     public_items = []
+    canonical_ids = {item["id"] for item in canonical}
+    public_variants = []
     for item in canonical:
         public_item = {
             key: item[key]
@@ -432,6 +434,7 @@ def main() -> None:
                 "token_count", "unique_word_count", "topics", "mbg",
             )
         }
+        public_item["counts"] = dict(Counter(item["tokens"]).most_common())
         public_sources.append(public_item)
         public_items.append({
             "event_group": item["duplicate_group"],
@@ -442,6 +445,30 @@ def main() -> None:
                 if group["event_group"] == item["duplicate_group"]
             ),
         })
+
+    for item in eligible:
+        public_variants.append({
+            "id": item["id"],
+            "date": item["date"],
+            "title": item["title"],
+            "channel": item["channel"],
+            "url": item["url"],
+            "duration": item["duration"],
+            "source_tier": item["source_tier"],
+            "source_kind": item["source_kind"],
+            "token_count": len(item["tokens"]),
+            "is_canonical": item["id"] in canonical_ids,
+            "event_group": next(
+                group["event_group"]
+                for group in duplicate_groups
+                if item["id"] in group["member_ids"]
+            ),
+        })
+    public_variants.sort(key=lambda row: (row["date"], row["id"]))
+    word_index = [
+        [word, count, sum(1 for item in canonical if word in item["tokens"])]
+        for word, count in corpus.most_common()
+    ]
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -481,6 +508,8 @@ def main() -> None:
             "framing": framing,
         },
         "sources": public_sources,
+        "variants": public_variants,
+        "word_index": word_index,
         "duplicate_groups": public_items,
     }
     OUTPUT_PATH.write_text(

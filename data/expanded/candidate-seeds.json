@@ -1,0 +1,1769 @@
+{
+  "selected": [
+    {
+      "id": "vyp6JITYFM8",
+      "title": "FULL! Pidato Prabowo di Harlah PKB, Singgung Prabowonomics hingga Tegaskan Jalankan Amanat UUD 1945",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "existing_baseline",
+      "priority": 10
+    },
+    {
+      "id": "rKpNQwecniM",
+      "title": "Pidato Presiden Prabowo pada Peringatan Hari Buruh Internasional",
+      "channel": "Prabowo Subianto",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "existing_baseline",
+      "priority": 10
+    },
+    {
+      "id": "5OIq7GaU4sI",
+      "title": "Sambutan Presiden Prabowo pada Perayaan Tahun Baru Imlek Nasional 2026, 28 Februari 2026",
+      "channel": "NA",
+      "discovery_origins": [
+        "official_channel",
+        "search_sambutan"
+      ],
+      "candidate_score": 6,
+      "selection_reason": "existing_baseline",
+      "priority": 10
+    },
+    {
+      "id": "02IcsjvhFGQ",
+      "title": "Sambutan Presiden Prabowo Subianto pada Puncak Peringatan Hari Santri, 24 Oktober 2025",
+      "channel": "Sekretariat Presiden",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "existing_baseline",
+      "priority": 10
+    },
+    {
+      "id": "rlE01uwNgbc",
+      "title": "[FULL] Pidato di Rusia, Prabowo Singgung MBG dan Meja Makan Keluarga Indonesia",
+      "channel": "VIVA.CO.ID",
+      "discovery_origins": [
+        "search_mbg"
+      ],
+      "candidate_score": 8,
+      "selection_reason": "mbg_topic_candidate",
+      "priority": 8
+    },
+    {
+      "id": "LN2JbamjmcE",
+      "title": "[Full] Pidato Presiden Prabowo Bicara Swasembada Pangan, MBG Hingga Sentil Demo Bayaran!",
+      "channel": "KOMPASTV JAWA TIMUR",
+      "discovery_origins": [
+        "search_mbg"
+      ],
+      "candidate_score": 8,
+      "selection_reason": "mbg_topic_candidate",
+      "priority": 8
+    },
+    {
+      "id": "KXoaUQadksU",
+      "title": "[FULL] Pidato Presiden Prabowo Hadiri Muktamar ke-35 NU: Singgung MBG hingga Kartu NU",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 8,
+      "selection_reason": "mbg_topic_candidate",
+      "priority": 8
+    },
+    {
+      "id": "YYas7H5zORI",
+      "title": "Pidato Lengkap Presiden Prabowo di Lombok, MBG KITA LANJUTKAN...!!! Oknum yang Nakal PERIKSA..!!",
+      "channel": "Tribun Lombok",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 8,
+      "selection_reason": "mbg_topic_candidate",
+      "priority": 8
+    },
+    {
+      "id": "bvLTXCGnFT4",
+      "title": "Pidato Presiden Prabowo Menggebu-gebu: Saya Tidak akan Biarkan Anak Lapar, MBG Kita Teruskan!",
+      "channel": "tvOneNews",
+      "discovery_origins": [
+        "search_pidato",
+        "search_mbg"
+      ],
+      "candidate_score": 8,
+      "selection_reason": "mbg_topic_candidate",
+      "priority": 8
+    },
+    {
+      "id": "IBGGAryAVu8",
+      "title": "Prabowo Asked About MBG's Benefit to Workers During His Speech at the May Day Commemoration",
+      "channel": "KOMPASTV GORONTALO",
+      "discovery_origins": [
+        "search_mbg"
+      ],
+      "candidate_score": 8,
+      "selection_reason": "mbg_topic_candidate",
+      "priority": 8
+    },
+    {
+      "id": "MqRxhlSThLA",
+      "title": "🔴LIVE DELAY - Pidato Presiden Prabowo Pembangunan Generasi Masa Depan RI dengan Pemenuhan Gizi",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 8,
+      "selection_reason": "mbg_topic_candidate",
+      "priority": 8
+    },
+    {
+      "id": "38G2GvbhUKo",
+      "title": "🔴LIVE | Pidato Presiden Prabowo Soal RAPBN 2027, Berapa Anggaran MBG?",
+      "channel": "Liputan6",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 8,
+      "selection_reason": "mbg_topic_candidate",
+      "priority": 8
+    },
+    {
+      "id": "7gTnSb4faRk",
+      "title": "President Prabowo Delivers a Speech at the 19th Plenary Session of the Indonesian House of Repres...",
+      "channel": "NA",
+      "discovery_origins": [
+        "official_channel"
+      ],
+      "candidate_score": 6,
+      "selection_reason": "official_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "1y5JYu2nxqE",
+      "title": "President Prabowo's remarks at the Indonesia-Japan Business Forum, Tokyo, March 30, 2026",
+      "channel": "NA",
+      "discovery_origins": [
+        "official_channel"
+      ],
+      "candidate_score": 6,
+      "selection_reason": "official_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "e3ByeIYYKYU",
+      "title": "President Prabowo's remarks at the peak of the Commemoration of the Tri Suci Waisak Day 2570 BE, ...",
+      "channel": "NA",
+      "discovery_origins": [
+        "official_channel",
+        "search_sambutan"
+      ],
+      "candidate_score": 6,
+      "selection_reason": "official_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "37dayrDBRK8",
+      "title": "Sambutan Presiden Prabowo pada Gala Iftar Dinner Business Summit, Washington DC, 18 Feb 2026",
+      "channel": "NA",
+      "discovery_origins": [
+        "official_channel"
+      ],
+      "candidate_score": 6,
+      "selection_reason": "official_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "RRbA5Z9jttI",
+      "title": "Sambutan Presiden Prabowo pada Roundtable Business Summit di Washington DC, 18 Februari 2026",
+      "channel": "NA",
+      "discovery_origins": [
+        "official_channel",
+        "search_sambutan"
+      ],
+      "candidate_score": 6,
+      "selection_reason": "official_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "9KWsOM3B6_c",
+      "title": "Speech by the President of the Republic of Indonesia at the Building Indonesia's Future Generatio...",
+      "channel": "NA",
+      "discovery_origins": [
+        "official_channel"
+      ],
+      "candidate_score": 6,
+      "selection_reason": "official_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "BkZwWNtcJko",
+      "title": "Saat Prabowo Bicara MBG di Peringatan Hari Buruh May Day 2026",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_mbg"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "mbg_topic_candidate",
+      "priority": 6
+    },
+    {
+      "id": "ffYHRrgqg5U",
+      "title": "(FULL) Pidato Presiden Prabowo Dalam Kongres ke-18 Muslimat NU",
+      "channel": "BeritaSatu",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "doW8-nSNL-8",
+      "title": "(FULL) Pidato Presiden Prabowo di Perayaan Natal Nasional 2025",
+      "channel": "VIVA.CO.ID",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "sv1HMoSzRk4",
+      "title": "[FULL] Berapi-api! Pidato Presiden Prabowo Sampaikan RAPBN 2027 di Paripurna DPR",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "ypWhdkJiz3o",
+      "title": "[FULL] BREAKING NEWS - PIDATO PRESIDEN PRABOWO DI PERESMIAN 1.061 KOPERASI DESA MERAH PUTIH",
+      "channel": "METRO TV",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "YUONIE2ivHo",
+      "title": "[FULL] BREAKING NEWS - PIDATO PRESIDEN PRABOWO SAAT RESMIKAN REVITALISASI STASIUN SEMARANG TAWANG",
+      "channel": "METRO TV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "bo0MqM07bcs",
+      "title": "[FULL] Kejutan Pidato Prabowo di Munas NU, Blak-blakan Kebocoran Anggaran",
+      "channel": "MerdekaDotCom",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "guZ8TO7OaIQ",
+      "title": "[FULL] Pidato Berapi-api Presiden Prabowo Resmikan 5 Bendungan di Indonesia: Sentil Polisi-Kejaksaan",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "OzET9XSJ55k",
+      "title": "[FULL] Pidato Kenegaraan Presiden Prabowo Subianto di Sidang Tahunan MPR | Liputan 6",
+      "channel": "Liputan6",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "Le2zr-cRENo",
+      "title": "[FULL] Pidato Lengkap Presiden Prabowo di Munas HIPMI #beritasatu",
+      "channel": "BeritaSatu",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "gyT_qLziJ2M",
+      "title": "[FULL] Pidato Lengkap Presiden Prabowo di Munas Ke-VI PKS | tvOne",
+      "channel": "tvOneNews",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "CfWcrTCUIcI",
+      "title": "[FULL] Pidato Lengkap Presiden Prabowo di Peringatan Hari Buruh Sedunia 2026  #BeritaSatu",
+      "channel": "BeritaSatu",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "SjuGxdMRzPk",
+      "title": "[FULL] Pidato Prabowo Depan 150 Peneliti BRIN Soroti Pendidikan di Indonesia hingga Timnas",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "NmbVCeypyHE",
+      "title": "[FULL] Pidato Prabowo di Akad Rumah Subsidi: Singgung Prestasi India-Soroti Sungai Penuh Sampah",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "mPTBcmWCz2k",
+      "title": "[FULL] Pidato Prabowo di EEF Rusia, Bicara Kemakmuran Dunia hingga Disambut Aplaus Meriah",
+      "channel": "Tribun Bengkulu",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 3,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "dJ5CNS2bLio",
+      "title": "[FULL] Pidato Prabowo di Forum Kerja Sama Jepang-Indonesia, Dorong Iklim Investasi Kompetitif",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "mj5ur3bCtR8",
+      "title": "[FULL] Pidato Prabowo di Hari Lahir Pancasila: “Tidak Ada Negara yang Merdeka Tanpa Kemakmuran”",
+      "channel": "Liputan6",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "K4uvrC38Yxk",
+      "title": "[FULL] Pidato Prabowo di Munas HIPMI 2026 Bicara Pengusaha, Hilirisasi hingga Arah Politik Indonesia",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "LVv2n7Yc87E",
+      "title": "[FULL] Pidato Prabowo di Penutupan Munas dan Konbes NU, Singgung Tambang Ilegal hingga Kekayaan RI",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "WN4ObtcpRMs",
+      "title": "[FULL] Pidato Prabowo di PNKT XVII 2026: Australia Minta Pupuk dari Indonesia, Boleh Kita Jual?",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "UYdFSPfJZfk",
+      "title": "[FULL] PIDATO PRABOWO RESMIKAN PLTS DI BALI: BERI BINTANG LAGI JIKA MASUK TARGET",
+      "channel": "METRO TV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "qFk6zjmNVFs",
+      "title": "[FULL] Pidato Prabowo Subianto Jadi Tamu Kehormatan Utama di EEF ke-11 (subs Indo) | iNews Terkini",
+      "channel": "Official iNews",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "pikkD5C3swU",
+      "title": "[FULL] Pidato Prabowo Tutup Muktamar NU: Umat Harus Hidup Layak dan Tidak Pinjam Uang dari Rentenir",
+      "channel": "MerdekaDotCom",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "3VR-aKaxHyU",
+      "title": "[FULL] PIDATO PRESIDEN PRABOWO DI AKAD MASSAL RUMAH SUBSIDI [LIVE EVENT]",
+      "channel": "METRO TV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "Ntf-BzRGTug",
+      "title": "[FULL] PIDATO PRESIDEN PRABOWO DI MUNAS HIPMI, SINGGUNG KRITIK SERING KE LUAR NEGERI",
+      "channel": "METRO TV",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "yJglGGY8ADI",
+      "title": "[FULL] Pidato Presiden Prabowo di Panen Raya Tebu Serentak di Malang",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "IHY-7SvqxoI",
+      "title": "[FULL] Pidato Presiden Prabowo di Pelantikan Pamong Praja Muda IPDN 2026 | LIVE EVENT",
+      "channel": "METRO TV",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "ZqMj_BRxODM",
+      "title": "[FULL] PIDATO PRESIDEN PRABOWO DI PENUTUPAN MUKTAMAR KE-35 NU",
+      "channel": "METRO TV",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "zdU-K2x6Foc",
+      "title": "[FULL] Pidato Presiden Prabowo di Penutupan Muktamar ke-35 NU, Bahas Efisiensi BUMN hingga Utang IMF",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "CpQyrmIrasU",
+      "title": "[FULL] Pidato Presiden Prabowo di Peringatan ke-80 Hari Bhayangkara | Liputan 6",
+      "channel": "Liputan6",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "rr-pObURxuc",
+      "title": "[FULL] Pidato Presiden Prabowo di Peringatan Nuzulul Qur'an | Beritasatu Utama",
+      "channel": "BeritaSatu",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "qswoKxCknHg",
+      "title": "[FULL] PIDATO PRESIDEN PRABOWO DI PUNCAK PENAS PETANI NELAYAN XVII",
+      "channel": "METRO TV",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "mu2ep3dsHaQ",
+      "title": "[FULL] PIDATO PRESIDEN PRABOWO DI RAKORNAS PEMERINTAH PUSAT & DAERAH",
+      "channel": "METRO TV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "p7G73zBiow4",
+      "title": "[FULL] Pidato Presiden Prabowo Di Sidang Kabinet Paripurna | Breaking News tvOne",
+      "channel": "tvOneNews",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "06kk5UIx6a8",
+      "title": "[FULL] Pidato Presiden Prabowo di Sidang Tahunan 2026: Swasembada Pangan-Pembenahan BUMN",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "pQAVGm6zYsA",
+      "title": "[FULL] Pidato Presiden Prabowo di Sidang Tahunan MPR RI 2026 | BREAKING NEWS",
+      "channel": "Official iNews",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "PAtys9TmQ4U",
+      "title": "[FULL] Pidato Presiden Prabowo Subianto di Hari Buruh 2026: Negara Akan Bela Buruh dan Lawan PHK!",
+      "channel": "METRO TV",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "EZC8X_pgFlY",
+      "title": "[FULL] Pidato Presiden Prabowo-Puan Maharani soal RAPBN 2027 di Rapat Paripurna DPR",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "dvCtCfifU30",
+      "title": "[FULL] Pidato Presiden Prabowo: B50 Tahap yang ke-8, Diluncurkan Oleh Presiden ke-8",
+      "channel": "METRO TV",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "HiJYFR1vR9g",
+      "title": "[FULL] Pidato Presiden Prabowo: Pujian untuk Macron Hingga Bahas Kerja Sama | Liputan 6",
+      "channel": "Liputan6",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "kyfyXGWzoCY",
+      "title": "[FULL] President Prabowo's Speech at the Opening of the 18th HIPMI National Conference, Bandar La...",
+      "channel": "KOMPASTV DEWATA",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "wqtxaE1csEI",
+      "title": "[FULL] President Prabowo's Speech Before TNI Generals and Farmers Across Indonesia",
+      "channel": "SUARANTBcom",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "xh-kV0Rm8K8",
+      "title": "[FULL] President Prabowo's Speech on the Launch of B50 Biodiesel: Indonesia Becomes the First Cou...",
+      "channel": "KOMPASTV DEWATA",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "6mWMd7ClCv8",
+      "title": "[FULL] President Prabowo’s Speech Sending Off the Indonesian Contingent to the 20th Asian Games i...",
+      "channel": "SUARANTBcom",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "RmQeGt6678M",
+      "title": "[FULL] Sambutan Maruf Amin Depan Presiden Prabowo: Singgung Politik Kiai hingga Tambang",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "xfdUup7K2cQ",
+      "title": "[FULL] Sambutan Ustaz Adi Hidayat depan Presiden Prabowo, Bicara Gerakan Indonesia Menanam",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "JkLlmVzJ_dc",
+      "title": "BREAKING NEWS - [FULL] PIDATO PRESIDEN PRABOWO DI PENYERAHAN UANG SITAAN OLEH SATGAS PKH",
+      "channel": "METRO TV",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "Fm09R5akNzM",
+      "title": "BREAKING NEWS - [FULL] Pidato Presiden Prabowo di Peringatan Nuzulul Qur'an",
+      "channel": "METRO TV",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "1fkbpthd1MI",
+      "title": "FULL Pidato Prabowo di Upacara Hari Lahir Pancasila",
+      "channel": "CNN Indonesia",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "Enmz62kOMyI",
+      "title": "Full Pidato Presiden Prabowo di Upacara Peringatan ke 79 Hari Bhayangkara",
+      "channel": "Prabowo Subianto",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "SldYWZTaoXs",
+      "title": "FULL Pidato Presiden Prabowo Sampaikan RAPBN dan Nota Keuangan 2027",
+      "channel": "CNN Indonesia",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "HBuj_rOU5yA",
+      "title": "FULL! Pidato Prabowo di HUT ke-80 Bhayangkara: Hukum Tak Boleh Tajam ke Bawah, Polri Lindungi Rakyat",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "A6vTh2qoGrc",
+      "title": "FULL! Pidato Prabowo Luncurkan Biodiesel B50: Indonesia Jadi Negara Pertama Terapkan B50",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "QAFNXg-LfTU",
+      "title": "FULL! Pidato Prabowo Resmikan Groundbreaking LNG Abadi Masela, Indonesia Siap Jadi Negara Industri",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "9rpZpKagShM",
+      "title": "FULL! President Prabowo's Speech at Bahlil's Book Launch: Food Self-Sufficiency to Danantara Up 400%",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "MExLyHOhkkE",
+      "title": "Live Event - Pidato Presiden Prabowo di HUT ke-80 Bhayangkara (FULL)",
+      "channel": "METRO TV",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "ByM_Yd3uy-M",
+      "title": "Pernyataan Ketum MUI K.H. Anwar Iskandar pada Silaturahmi Presiden dengan Kiai dan Tokoh Ormas Islam",
+      "channel": "NA",
+      "discovery_origins": [
+        "official_channel"
+      ],
+      "candidate_score": 6,
+      "selection_reason": "official_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "BYJsAQ79gdg",
+      "title": "Pidato Lengkap Presiden Prabowo di HUT ke 25 Partai Demokrat",
+      "channel": "KOMPASTV MADIUN",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "WJtmyDrIgHg",
+      "title": "Pidato Lengkap Presiden Prabowo di Rapat Paripurna DPR",
+      "channel": "KOMPASTV MADIUN",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "rn96VRQ4SgY",
+      "title": "Pidato Lengkap Presiden Prabowo Subianto di Musyawarah Ulama PBNU Bangkalan #Beritasatu",
+      "channel": "BeritaSatu",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "LXPkBOctQhE",
+      "title": "Prabowo: Kiai Kampung Berperan Besar Menjaga Kerukunan dan Kedamaian Desa | Full Sambutan",
+      "channel": "NU Online",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "yyQaYeS7Cms",
+      "title": "Presiden Prabowo Disambut Hangat PM Sharif dalam Upacara Kenegaraan di Islamabad, 9 Desember 2025",
+      "channel": "NA",
+      "discovery_origins": [
+        "official_channel"
+      ],
+      "candidate_score": 4,
+      "selection_reason": "official_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "OOAGKPFdwf0",
+      "title": "Presiden Prabowo Sampaikan Ucapan Selamat Hari Natal 2025, Jakarta, 25 Desember 2025",
+      "channel": "NA",
+      "discovery_origins": [
+        "official_channel"
+      ],
+      "candidate_score": 1,
+      "selection_reason": "official_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "2zmBSsXiX6w",
+      "title": "Presiden Prabowo Tiba di Paris untuk Kunjungan Resmi Kenegaraan, Paris, 26 Mei 2026",
+      "channel": "NA",
+      "discovery_origins": [
+        "official_channel"
+      ],
+      "candidate_score": 4,
+      "selection_reason": "official_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "LUmYZnbmyG4",
+      "title": "Presiden Prabowo Tiba di Seoul, Awali Kunjungan Kenegaraan ke Republik Korea, 31 Maret 2026",
+      "channel": "NA",
+      "discovery_origins": [
+        "official_channel"
+      ],
+      "candidate_score": 4,
+      "selection_reason": "official_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "juAwIQrvRMw",
+      "title": "Presiden Prabowo Tiba di Zurich untuk Hadiri World Economic Forum 2026, Swiss, 21 Januari 2026",
+      "channel": "NA",
+      "discovery_origins": [
+        "official_channel"
+      ],
+      "candidate_score": 1,
+      "selection_reason": "official_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "_Mc1W2edm9E",
+      "title": "President Prabowo Commemorates May Day with Workers at Monas Square, May 1, 2026",
+      "channel": "NA",
+      "discovery_origins": [
+        "official_channel"
+      ],
+      "candidate_score": 3,
+      "selection_reason": "official_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "y2kfhhDgN5s",
+      "title": "Sambutan Lengkap Presiden Prabowo di Akad Massal Rumah Subsidi Batang #BeritaSatu",
+      "channel": "BeritaSatu",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "rr9Ds-eScDQ",
+      "title": "Usai Kunjungan Resmi Kenegaraan di Paris, Presiden Prabowo Bertolak Menuju Tanah Air, 29 Mei 2026",
+      "channel": "NA",
+      "discovery_origins": [
+        "official_channel"
+      ],
+      "candidate_score": 4,
+      "selection_reason": "official_speech_candidate",
+      "priority": 5
+    },
+    {
+      "id": "Sc1IVIaz5SM",
+      "title": "\"Semua Partai Banyak Bajingannya!\" Pidato Prabowo Gemparkan Satu Ruangan",
+      "channel": "MerdekaDotCom",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "jMu830avg98",
+      "title": "[BREAKING NEWS] Pidato Presiden Prabowo di Munas HIPMI XVIII | tvOne",
+      "channel": "tvOneNews",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "_UEZyffi3YU",
+      "title": "[Breaking News] Pidato Presiden Prabowo di Pertemuan dengan Kadin Se-Indonesia | tvOne",
+      "channel": "tvOneNews",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "ZU_qK2nH89o",
+      "title": "[FUUL] Sambutan Presiden Prabowo Lepas Kontingen Indonesia ke Asian Games ke-20 Aichi Nagoya Jepang",
+      "channel": "Pangkep TV",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "H-S3gABohvI",
+      "title": "[LIVE] Sambutan Presiden Prabowo pada Forum Bisnis Indonesia-Jepang, Tokyo, (30/3/2026)",
+      "channel": "ANTARA News",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "ynL-K5CGX1c",
+      "title": "Ada Apa Dengan Strategi Pidato Presiden Prabowo?!",
+      "channel": "Raymond Chin",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "8uV_Y0Jcfgg",
+      "title": "BEGITU LUCU‼️PIDATO PAK PRABOWO BIKIN TERTAWA NGAKAK SAMPAI NGOMPOL",
+      "channel": "RAFAEDAH TV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "rVhF-GrMi8k",
+      "title": "Berapi-api Prabowo Pidato Gebrak Podium Guncang DPR Depan Gibran-Puan: Kita Tak Mau Dibohongi Lagi!",
+      "channel": "MerdekaDotCom",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "AST5Yw5dmv0",
+      "title": "Bicara Apa Adanya Sesuai Isi Hati, Prabowo Malah Keceplosan saat Pidato di Depan Petani dan Nelayan",
+      "channel": "Tribunnews",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "_Ypg-m8B78s",
+      "title": "BREAKING NEWS - Pidato Presiden Prabowo di HUT ke-25 Partai Demokrat",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "GB_4IuWGdHQ",
+      "title": "BREAKING NEWS - Pidato Presiden Prabowo di Penutupan Munas Alim Ulama",
+      "channel": "METRO TV",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "v-1YabkN-pM",
+      "title": "BREAKING NEWS Pidato Presiden Prabowo di Puncak Peringatan Hari Koperasi Nasional Ke-79",
+      "channel": "CNN Indonesia",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "-PNMB8VQ0hY",
+      "title": "BREAKING NEWS: President Prabowo's Speech Commemorating Pancasila Day, June 1, 2026",
+      "channel": "KOMPASTV JAWA BARAT",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "BMNryoXNm8w",
+      "title": "Bukan Asal Bicara, Bakom Pastikan Data Pidato Prabowo Sudah Teruji #beritasatu",
+      "channel": "BeritaSatu",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "m8DvzdheDzk",
+      "title": "Istana Respons Pidato Prabowo soal Upah Pengupas Bawang Rp 700 Ribu Per Kg",
+      "channel": "Kompas.com",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "R-b9-w6QrWg",
+      "title": "Kocak! Pidato Prabowo Subianto di Penutupan Kongres III NasDem: Ingin \"Brewokan\" Seperti Surya Paloh",
+      "channel": "KOMPASTV SUKABUMI",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "cJ-_bH8JIss",
+      "title": "LIVE EVENT - Sambutan Resmi Presiden Prabowo Di Hadapan Jajaran Pejabat Negara",
+      "channel": "METRO TV",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "kGOo1E2KmLw",
+      "title": "LIVE Pidato Prabowo di Harlah PKB",
+      "channel": "CNN Indonesia",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "7OFTHsA1c74",
+      "title": "LIVE: Pidato Prabowo di 25 Tahun Partai Demokrat",
+      "channel": "CNN Indonesia",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "3YMlecD1nQ0",
+      "title": "Luar Biasa!! Ini Dia Pidato Perdana Presiden Prabowo | Pelantikan Presiden & Wakil Presiden RI 2024",
+      "channel": "Indosiar",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "WmwcRVPUKB4",
+      "title": "Menggelegar Pidato Prabowo Getarkan Sidang Tahun MPR/DPR: Kita Siap Habis-Habisan...!",
+      "channel": "MerdekaDotCom",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "O_BigY_r0Do",
+      "title": "Pecah Tawa! Presiden Prabowo Ungkap Diingatkan Pidato Pakai Teks: Kalau Salah Minta Maaf",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "wTHui5fr11M",
+      "title": "PIDATO PRABOWO di Natal Nasional: Saya Lahir dari Ibu Beragama Kristiani❗",
+      "channel": "Tribun MedanTV",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "j3Vc9DfFcks",
+      "title": "Pidato Prabowo Pecah Tawa Saat Singgung Wajah Mentan Amran",
+      "channel": "VIVA.CO.ID",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "Zya6KTuVnwY",
+      "title": "Pidato Presiden Prabowo di Kejagung saat Penyerahan Denda Administratif dan Lahan Kawasan Hutan",
+      "channel": "Prabowo Subianto",
+      "discovery_origins": [
+        "search_pidato",
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "6FhicKsZRpw",
+      "title": "Pidato Presiden Prabowo di Muktamar ke-35 NU: Saya Mau Minta Maaf ke Nahdlatul Ulama... | NTV",
+      "channel": "Nusantara TV",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "Oahke_hLlLc",
+      "title": "Pidato Presiden Prabowo di Retret Ketua DPRD se-Indonesia: Saya Ingin Bicara dari Hati ke Hati",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "RN1KK-VBoUg",
+      "title": "Pidato Presiden Prabowo di Sidang Kabinet Paripurna",
+      "channel": "KOMPASTV LAMPUNG",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "DeIrya-WlpE",
+      "title": "Pidato Terbaru Prabowo: \"Kita Harus Selalu Dengarkan Aspirasi Rakyat!\"",
+      "channel": "Tribun Sumsel",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "97DbNdBGBdQ",
+      "title": "PRABOWO MARAH SAAT PIDATO DITERTAWAKAN ORANG PASPAMRES BERTINDAK CEPAT?",
+      "channel": "REY TV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "GzhUFm9DBVA",
+      "title": "Prabowo Pidato di Hari Koperasi: Ulu Hati Saya Seperti Dihantam Kekayaan RI Dicuri",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "cri23kd5Drc",
+      "title": "Sambutan Hangat Diaspora Untuk Presiden Prabowo Di Korea Selatan | Liputan6",
+      "channel": "Liputan6",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "O1H9Au0hGxA",
+      "title": "Sambutan Prabowo di Penutupan Muktamar Ke-35 NU",
+      "channel": "NU Online",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "hkokmwX91Ts",
+      "title": "Sambutan Presiden Prabowo di Penutupan Muktamar ke-35 NU, Resmi Jadi Anggota Nahdlatul Ulama!",
+      "channel": "KOMPASTV JAWA TIMUR",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "FG-MUTrgsls",
+      "title": "Sambutan Presiden Prabowo di Sekolah Rakyat Banjarbaru | Breaking News",
+      "channel": "tvOneNews",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "eddIEv78h3E",
+      "title": "Sambutan Presiden Republik Indonesia Prabowo Subianto | Muktamar ke-35  NU di Tambak Beras Jombang",
+      "channel": "KRAPYAK TV",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "DY-8kWRECaE",
+      "title": "Speech at the Peak of National Cooperative Day, Prabowo: If You Think Indonesia’s Future Is Bleak...",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "I2MNRKhII50",
+      "title": "YANG CEMBERUT JADI TERSENYUM‼️PARODI PIDATO PRABOWO BIKIN NGAKAK SPONTAN",
+      "channel": "RAFAEDAH TV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "Tp_IaKfb59E",
+      "title": "®️🔴8 KALI TEPUK TANGAN UNTUK PRABOWO SAAT PIDATO DI FORUM EEF❗PRESIDEN PUTIN SAMPAI SENYUM & BERDIRI",
+      "channel": "Tribun Singkawang",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "1-hEfAcRo4k",
+      "title": "🔴BREAKING NEWS - Pidato Kenegaraan Presiden Prabowo di Sidang Tahunan MPR 2026",
+      "channel": "KOMPASTV JAWA TENGAH",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "DW6WkFY5pM4",
+      "title": "🔴BREAKING NEWS - Pidato Kenegaraan Presiden Prabowo di Sidang Tahunan MPR 2026",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "cFo77KlaYEU",
+      "title": "🔴BREAKING NEWS - Pidato Presiden Prabowo di Penutupan Munas Alim Ulama & Konbes NU",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "8hj3tR4gCTc",
+      "title": "🔴BREAKING NEWS - PIDATO PRESIDEN PRABOWO DI PERINGATAN HUT 25 PARTAI DEMOKRAT (09/09)",
+      "channel": "Seputar iNews RCTI",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "7Zi5vqN_VC4",
+      "title": "🔴BREAKING NEWS - Pidato Presiden Prabowo Tutup Sarasehan Kebangsaan Konvensi Sainstek dan Industri",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "search_pidato"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "qlqjxqEKYXQ",
+      "title": "🔴LIVE - Presiden Prabowo Pidato Penutupan Munas-Konbes NU 2026",
+      "channel": "MerdekaDotCom",
+      "discovery_origins": [
+        "search_sambutan"
+      ],
+      "candidate_score": 5,
+      "selection_reason": "media_full_speech_candidate",
+      "priority": 4
+    },
+    {
+      "id": "sJ-b3ohKEs0",
+      "title": "[FULL] Pidato Prabowo pada Perayaan Natal Nasional 2024",
+      "channel": "Kompas.com",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "3XayivTOjCY",
+      "title": "[FULL] Pidato Presiden Prabowo di Pembukaan Sidang Tanwir & Resepsi Milad ke-112 Muhammadiyah",
+      "channel": "METRO TV ",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "-qcEnX4VcWI",
+      "title": "Pidato Presiden Prabowo di Peringatan Hari Guru Nasional",
+      "channel": "KOMPASTV JAWA TENGAH",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "mb2Jw47oVl8",
+      "title": "[FULL] Pidato Perdana Presiden RI Ke-8 Prabowo Subianto | Beritasatu",
+      "channel": "BeritaSatu",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "aW_uzpxH5TQ",
+      "title": "[FULL] Pidato Presiden Prabowo di HUT ke-60 Golkar | Singgung Posisi Menteri di Kabinetnya",
+      "channel": "Liputan6",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "fUA5IWV_00A",
+      "title": "[FULL] Pidato Prabowo di Investor Summit: Bocorkan Susunan Kabinet hingga Bicara Konflik Geopolitik",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "mFeHiRfWNyg",
+      "title": "FULL Pidato Kenegaraan Presiden Prabowo di Sidang Tahunan MPR RI",
+      "channel": "CNN Indonesia",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "5l05r-Uxi-A",
+      "title": "[FULL] Pidato Prabowo soal Perang, dari Gaza, Rusia, dan Sikap Indonesia",
+      "channel": "Kompas.com",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "BNfmMijPCJM",
+      "title": "[FULL] Pidato Presiden Prabowo Subianto Umumkan Kenaikan Gaji Guru di Puncak Hari Guru Nasional",
+      "channel": "KOMPASTV DEWATA",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "k9UueTQI6gw",
+      "title": "FULL Pidato Presiden Prabowo di Hari Guru 2025: Mari Sama-sama Kita Bersatu Membangun Bangsa",
+      "channel": "Official iNews",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "_Aer99PNOA8",
+      "title": "[FULL] Pidato Presiden Prabowo di Peringatan Hari Guru Nasional 2025: Bantu Saya Berantas Korupsi!",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "BgJb8u_VyGo",
+      "title": "LIVE Pidato Presiden Prabowo di Pertemuan Tahunan Bank Indonesia Tahun 2025",
+      "channel": "CNN Indonesia",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "bSpL4BxOMUk",
+      "title": "[FULL] Pidato Kenegaraan Presiden Prabowo pada Sidang Tahunan MPR 2025",
+      "channel": "Kompas.com",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "fmv67UzNYdM",
+      "title": "Pidato Presiden Prabowo di Kongres PSI 2025",
+      "channel": "KOMPASTV JAWA TENGAH",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "s_OZS0_m5C8",
+      "title": "[FULL] Satu Ruangan Terdiam Pidato Prabowo Depan Menteri di Sidang Kabinet Setahun Menjabat",
+      "channel": "MerdekaDotCom",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "rDeg-4Co0F0",
+      "title": "Pidato Presiden Prabowo di ADF 2025",
+      "channel": "Prabowo Subianto",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "g_aLb7K2a-A",
+      "title": "[FULL] Pidato Presiden Prabowo di Indo Defence Expo and Forum 2025",
+      "channel": "METRO TV ",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "tbyjpnb5r70",
+      "title": "[FULL] Pidato Presiden Prabowo di Pertemuan Diplomatik Indonesia-Brasil",
+      "channel": "METRO TV ",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "ysv3asHfnMo",
+      "title": "Pidato Presiden Prabowo pada KTT APEC 2025 Sesi Kedua, Gyeongju, 1 November 2025",
+      "channel": "Sekretariat Presiden",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "73EnzEWg_8k",
+      "title": "[FULL] Pidato Prabowo di Kairo: Singgung Gus Dur, Hitung Koruptor yang Ditangkap",
+      "channel": "Kompas.com",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "KNeFsu2UbDQ",
+      "title": "[FULL] Pidato Prabowo Resmikan Pabrik Kimia di Cilegon: Negosiasi dengan Orang Korea Tak Gampang!",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "oJdO0XleOws",
+      "title": "[FULL]  PIDATO PRESIDEN PRABOWO DI PERINGATAN MAY DAY 2025",
+      "channel": "Kompas TV Biro Makassar",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "Ra4_HJDql14",
+      "title": "[FULL] Berapi-api! Pidato Presiden Prabowo Upacara Hari Lahir Pancasila: Saya Peringati Semua Unsur",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "SrjfNdzQO54",
+      "title": "[FULL] Pidato Presiden Prabowo untuk Atlet Sea Games 2025: Bertanding Harus Sepenuh Hati",
+      "channel": "METRO TV ",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "8gMTWE2Sj8w",
+      "title": "[FULL] Pidato Menggelegar Presiden Prabowo! Beri Amanat di Pelantikan Perwira TNI & Polri 2025",
+      "channel": "KOMPASTV",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "0nXfpX_qDUU",
+      "title": "Presiden Prabowo Beri Arahan pada Rapat Pimpinan TNI Polri Tahun 2025",
+      "channel": "Prabowo Subianto",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "DX2LSscjJ7k",
+      "title": "Sesi Tanya Jawab Presiden Prabowo di Forum SPIEF 2025 (Indonesian-English Subtitle)",
+      "channel": "Prabowo Subianto",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    },
+    {
+      "id": "l49VMXzTeks",
+      "title": "[FULL] Pidato Presiden Prabowo Sebagai Tamu Kehormatan di SPIEF 2025 Rusia #beritasatu",
+      "channel": "BeritaSatu",
+      "discovery_origins": [
+        "targeted_early_search"
+      ],
+      "selection_reason": "early_speech_candidate",
+      "priority": 7
+    }
+  ],
+  "counts": {
+    "all": 160,
+    "official": 14,
+    "mbg": 9,
+    "media": 105,
+    "early": 28
+  }
+}
