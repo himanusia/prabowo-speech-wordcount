@@ -123,10 +123,12 @@ analysis, export, and build steps run offline from those files.
 - `data/expanded/source-catalog.json` — public catalog of canonical events and duplicate groups
 - `data/expanded/candidate-seeds.json` — the discovery/selection list that drives fetching
 - `data/expanded/metadata.json` — upload dates, durations, channels for the candidate set
+- `data/expanded/pending.json` — candidates that are not fetched yet, with the per-item reason
 - `data/expanded/raw/*.json` — local-only caption snippets; ignored by Git
 - `data/transcripts/raw/*.json` — local-only caption snippets for the hand-windowed uploads
 - `scripts/fetch_sources.py` — fetch the ten hand-windowed uploads
 - `scripts/collect_expanded.py` — fetch the expanded candidate set
+- `scripts/list_pending.py` — report which candidates are still missing and why
 - `scripts/analyze_expanded.py` — deduplicate events, count words, derive topics, framing, and MBG signals
 - `scripts/export_expanded.py` — write CSVs
 - `scripts/build_ui_expanded.py` — rebuild the embedded dashboard
