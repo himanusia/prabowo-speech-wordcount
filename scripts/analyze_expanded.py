@@ -42,6 +42,21 @@ NON_SPEECH_RE = re.compile(
 ARRIVAL_RE = re.compile(
     r"(?i)(tiba|bertolak|keberangkatan|arriv|depart|disambut|welcome)"
 )
+# Curated from a manual pass over every fetched title. Media channels routinely add
+# clickbait adjectives ("Berapi-api!", "Bahas ...") to genuine full speeches, so a broad
+# keyword filter would discard real speeches. These patterns instead mark items that are
+# commentary shows, laugh compilations, or short excerpts lifted out of an event that the
+# corpus already covers in full.
+COMMENTARY_RE = re.compile(
+    r"(?i)("
+    r"ada apa dengan|"
+    r"bikin tertawa|ngakak sampai|"
+    r"gemparkan satu ruangan|"
+    r"keceplosan saat pidato|"
+    r"saat prabowo bicara|"
+    r"ketika prabowo bertanya"
+    r")"
+)
 SPEECH_RE = re.compile(
     r"(?i)(pidato|sambutan|speech|remarks|sidang|kenegaraan|"
     r"pernyataan|may day|hari buruh|muktamar|kongres|peringatan|"
@@ -195,6 +210,8 @@ def load_items() -> list[dict]:
 def is_eligible(item: dict) -> bool:
     title = item["title"]
     if NON_SPEECH_RE.search(title):
+        return False
+    if COMMENTARY_RE.search(title):
         return False
     if item["source_kind"] == "baseline":
         return True

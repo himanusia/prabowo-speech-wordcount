@@ -1,8 +1,11 @@
 # Prabowo speech corpus index
 
 Local-first word-frequency, topic, and framing index built from Indonesian YouTube caption
-tracks. The corpus is deduplicated by speech event: one canonical source per event, so a
-speech reuploaded by seven channels is counted once.
+tracks. The corpus is deduplicated by speech event and restricted to actual speeches: one
+canonical source per event, so a speech reuploaded by seven channels is counted once, and
+commentary shows, laugh compilations, and short excerpts are excluded.
+
+Read `RESEARCH-PACK.md` for a single-file readable summary of every number below.
 
 ## Open the UI
 
@@ -18,10 +21,10 @@ at build time.
 ## Current corpus
 
 ```text
-speech events        49    (unique, deduplicated)
-caption uploads      86    (eligible items, duplicates folded in)
-tokens         112.973
-unique words    9.600
+speech events        46    (unique, deduplicated)
+caption uploads      80    (eligible items, duplicates folded in)
+tokens         109.197
+unique words    9.247
 date range     2025-02-10 -> 2026-09-09
 ```
 
@@ -40,16 +43,16 @@ The 429 limit is measured rather than guessed; see
 A second session at half the request rate was cut off after only 10 videos, so the allowance
 looks cumulative rather than per-window.
 
-Events by number of folded reuploads: 1 dup -> 7 events, 2 dup -> 8 events, 3 dup -> 2 events, 4 dup -> 2 events.
+Events by number of folded reuploads: 1 dup -> 7 events, 2 dup -> 10 events, 3 dup -> 1 events, 4 dup -> 1 events.
 
 Multi-upload events:
 
-- 2026-05-01 — Pidato Presiden Prabowo pada Peringatan Hari Buruh Inter — 5 uploads
 - 2026-06-10 — [FULL] PIDATO PRESIDEN PRABOWO DI MUNAS HIPMI, SINGGUNG  — 5 uploads
-- 2026-06-24 — [FULL] Pidato Prabowo di PNKT XVII 2026: Australia Minta — 4 uploads
 - 2026-08-14 — [FULL] Pidato Presiden Prabowo-Puan Maharani soal RAPBN  — 4 uploads
+- 2026-05-01 — Pidato Presiden Prabowo pada Peringatan Hari Buruh Inter — 3 uploads
 - 2026-05-20 — Presiden Prabowo Sampaikan Pidato pada Rapat Paripurna D — 3 uploads
 - 2026-06-23 — Pidato Lengkap Presiden Prabowo Subianto di Musyawarah U — 3 uploads
+- 2026-06-24 — [FULL] Pidato Prabowo di PNKT XVII 2026: Australia Minta — 3 uploads
 - 2026-07-01 — FULL! Pidato Prabowo di HUT ke-80 Bhayangkara: Hukum Tak — 3 uploads
 - 2026-07-09 — [FULL] Pidato Prabowo Luncurkan Biodiesel B50: Indonesia — 3 uploads
 - 2026-07-10 — Full Pidato Presiden Prabowo di Lombok, MBG KITA LANJUTK — 3 uploads
@@ -68,6 +71,17 @@ Multi-upload events:
 - MBG signal counts exact `MBG`, the full `makan bergizi gratis` phrase, `makan` + `bergizi`
   in one caption, and SPPG context; ambiguous acronym hits are reported separately
 
+### What counts as a speech
+
+Media channels add clickbait adjectives ("Berapi-api!", "Bahas ...") to genuine full speeches,
+so keyword filtering on those words discards real speeches. Instead two curated lists decide:
+
+- rejected: statements by other people, arrival/departure clips, and commentary or
+  compilation formats (`ada apa dengan`, `bikin tertawa`, `ngakak sampai`,
+  `gemparkan satu ruangan`, `keceplosan saat pidato`, `saat prabowo bicara`,
+  `ketika prabowo bertanya`) - each pattern came from a manual pass over every fetched title
+- required: the title must describe a speech or remarks by Prabowo
+
 ## Selection pipeline
 
 ```text
@@ -75,9 +89,9 @@ discovery     4 yt-dlp queries -> 566 unique uploads
 scoring       319 candidates passed the title parser -> 160 seeds
 fetching      160 attempts logged -> 84 caption tracks retrieved
 loading       90 items in the corpus input
-eligibility   4 excluded as non-speech (minister statements, commentary clips)
-dedup         37 duplicate uploads folded in
-canonical     49 speech events
+eligibility   10 excluded as non-speech or clip/commentary
+dedup         34 duplicate uploads folded in
+canonical     46 speech events
 ```
 
 ## Caveats before quoting a number
@@ -92,60 +106,62 @@ canonical     49 speech events
 - Topic categories are lexical proxies, not classifications. `anak` counts toward
   `kesehatan_dan_gizi` in every context, including ones unrelated to the nutrition program.
 - The corpus is not exhaustive: 30 candidates were rejected with HTTP 429 and
-  29 were never attempted. See `data/expanded/pending.json`.
+  29 were never attempted. The largest gap is 2024-10 to 2025-12.
 - Per-event token counts range from 68 to 11,989. The five longest events supply
-  32.8% of all tokens, so aggregate frequency partly reflects those five
+  33.9% of all tokens, so aggregate frequency partly reflects those five
   speeches rather than the whole period.
+- The 46 events are not a random sample. Long speeches at large events are likelier to surface
+  in search, so the mix is biased toward state occasions and large mass organisations.
 
 ## Headline numbers
 
 Topic signals per 1,000 tokens and event coverage:
 
 ```text
-mbg                        0.71   18/49
-pangan                     4.01   36/49
-ekonomi                    5.89   44/49
-pendidikan                 2.56   36/49
-kesehatan_dan_gizi         3.82   42/49
-tata_kelola                3.65   41/49
-pertahanan_dan_keamanan    3.70   37/49
-nasional_dan_identitas    31.94   49/49
+mbg                        0.72   17/46
+pangan                     4.10   33/46
+ekonomi                    5.91   41/46
+pendidikan                 2.60   33/46
+kesehatan_dan_gizi         3.94   41/46
+tata_kelola                3.67   39/46
+pertahanan_dan_keamanan    3.83   37/46
+nasional_dan_identitas    32.54   46/46
 ```
 
 Top content words after removing function words and pronouns:
 
 ```text
-indonesia         1170  events=48
-rakyat             820  events=45
-harus              740  events=45
-negara             603  events=45
-bangsa             592  events=47
-tahun              590  events=45
-enggak             518  events=34
+indonesia         1152  events=45
+rakyat             808  events=42
+harus              724  events=43
+negara             593  events=42
+tahun              586  events=42
+bangsa             585  events=45
+enggak             456  events=31
 ketua              387  events=32
-presiden           380  events=46
-menteri            376  events=41
-apa                311  events=34
-mau                303  events=36
-pak                288  events=30
+menteri            371  events=38
+presiden           356  events=43
+apa                296  events=31
+mau                294  events=34
 seluruh            284  events=43
-republik           273  events=41
+republik           272  events=40
+hadir              270  events=40
 ```
 
 Framing pronouns per 1,000 tokens:
 
 ```text
-kita     37.24  (4.207 occurrences, 49/49 events)
-saya     24.79  (2.801 occurrences, 48/49 events)
-mereka    2.81
-kami      1.57
+kita     38.16  (4.167 occurrences, 46/46 events)
+saya     24.99  (2.729 occurrences, 45/46 events)
+mereka    2.87
+kami      1.62
 ```
 
 `kita` leads `saya` across the full corpus. On the original ten-video sample the two were
 nearly tied, so the smaller sample was misleading.
 
-MBG: 19 of 49 events carry an MBG signal, 55 exact
-`MBG` occurrences, 80 policy signals total.
+MBG: 18 of 46 events carry an MBG signal, 54 exact
+`MBG` occurrences, 79 policy signals total.
 
 ## Per-event numbers
 
@@ -166,7 +182,7 @@ MBG: 19 of 49 events carry an MBG signal, 55 exact
 | 2026-02-28 | 333 | 175 | 0 | official | 0 | Sekretariat Presiden | Sambutan Presiden Prabowo pada Perayaan Tahun Baru Imlek N |
 | 2026-03-10 | 1388 | 559 | 1 | full_media | 0 | METRO TV | BREAKING NEWS - [FULL] Pidato Presiden Prabowo di Peringat |
 | 2026-03-11 | 1205 | 459 | 0 | media | 0 | METRO TV | Pidato Presiden Prabowo di Tasyakuran HUT ke-1 Danantara |
-| 2026-05-01 | 2044 | 691 | 4 | official | 5 | Prabowo Subianto | Pidato Presiden Prabowo pada Peringatan Hari Buruh Interna |
+| 2026-05-01 | 2044 | 691 | 2 | official | 5 | Prabowo Subianto | Pidato Presiden Prabowo pada Peringatan Hari Buruh Interna |
 | 2026-05-13 | 2769 | 916 | 0 | full_media | 0 | METRO TV | BREAKING NEWS - [FULL] PIDATO PRESIDEN PRABOWO DI PENYERAH |
 | 2026-05-16 | 3552 | 1104 | 0 | full_media | 9 | METRO TV | [FULL] BREAKING NEWS - PIDATO PRESIDEN PRABOWO DI PERESMIA |
 | 2026-05-20 | 68 | 47 | 2 | official | 0 | Sekretariat Presiden | Presiden Prabowo Sampaikan Pidato pada Rapat Paripurna DPR |
@@ -176,14 +192,12 @@ MBG: 19 of 49 events carry an MBG signal, 55 exact
 | 2026-06-03 | 2386 | 730 | 1 | official | 3 | Sekretariat Presiden | Pidato Presiden RI pada Acara Building Indonesia's Future  |
 | 2026-06-10 | 4297 | 1246 | 4 | full_media | 0 | METRO TV | [FULL] PIDATO PRESIDEN PRABOWO DI MUNAS HIPMI, SINGGUNG KR |
 | 2026-06-23 | 2358 | 795 | 2 | full_media | 0 | BeritaSatu | Pidato Lengkap Presiden Prabowo Subianto di Musyawarah Ula |
-| 2026-06-24 | 2990 | 901 | 3 | full_media | 4 | KOMPASTV | [FULL] Pidato Prabowo di PNKT XVII 2026: Australia Minta P |
+| 2026-06-24 | 2990 | 901 | 2 | full_media | 4 | KOMPASTV | [FULL] Pidato Prabowo di PNKT XVII 2026: Australia Minta P |
 | 2026-06-26 | 1619 | 617 | 0 | official | 0 | Sekretariat Presiden | Pembukaan Sarasehan Kebangsaan KSTI 2026 |
 | 2026-06-28 | 1137 | 462 | 0 | media | 0 | Pangkep TV | Pidato Penutupan Sarasehan Kebangsaan KSTI 2026 |
 | 2026-07-01 | 1822 | 679 | 2 | full_media | 2 | KOMPASTV | FULL! Pidato Prabowo di HUT ke-80 Bhayangkara: Hukum Tak B |
-| 2026-07-04 | 2510 | 894 | 0 | media | 0 | Raymond Chin | Ada Apa Dengan Strategi Pidato Presiden Prabowo?! |
 | 2026-07-09 | 2541 | 879 | 2 | full_media | 0 | KOMPASTV DEWATA | [FULL] Pidato Prabowo Luncurkan Biodiesel B50: Indonesia J |
 | 2026-07-10 | 3129 | 948 | 2 | full_media | 7 | Tribun Lombok | Full Pidato Presiden Prabowo di Lombok, MBG KITA LANJUTKAN |
-| 2026-07-13 | 505 | 240 | 0 | media | 0 | MerdekaDotCom | "Semua Partai Banyak Bajingannya!" Pidato Prabowo Gemparka |
 | 2026-07-16 | 1575 | 601 | 0 | full_media | 0 | KOMPASTV | FULL! Pidato Prabowo Resmikan Groundbreaking LNG Abadi Mas |
 | 2026-07-17 | 2617 | 905 | 1 | full_media | 0 | KOMPASTV | [FULL] Pidato Presiden Prabowo di Panen Raya Tebu Serentak |
 | 2026-07-20 | 5868 | 1482 | 0 | full_media | 3 | tvOneNews | [FULL] Pidato Presiden Prabowo Di Sidang Kabinet Paripurna |
@@ -199,12 +213,11 @@ MBG: 19 of 49 events carry an MBG signal, 55 exact
 | 2026-08-25 | 1388 | 576 | 0 | full_media | 0 | METRO TV | [FULL] PIDATO PRABOWO RESMIKAN PLTS DI BALI: BERI BINTANG  |
 | 2026-08-27 | 1697 | 675 | 1 | full_media | 3 | KOMPASTV | [FULL] Pidato Presiden Prabowo Hadiri Muktamar ke-35 NU: S |
 | 2026-08-31 | 1595 | 645 | 2 | full_media | 0 | METRO TV | [FULL] PIDATO PRESIDEN PRABOWO DI PENUTUPAN MUKTAMAR KE-35 |
-| 2026-09-04 | 761 | 304 | 0 | media | 1 | RAFAEDAH TV | BEGITU LUCU‼️PIDATO PAK PRABOWO BIKIN TERTAWA NGAKAK SAMPA |
 | 2026-09-09 | 3238 | 973 | 1 | full_media | 1 | KOMPASTV MADIUN | Pidato Lengkap Presiden Prabowo di HUT ke 25 Partai Demokr |
 | 2026-09-09 | 1573 | 632 | 1 | media | 0 | Pangkep TV | [FUUL] Sambutan Presiden Prabowo Lepas Kontingen Indonesia |
 
 Machine-readable versions: `data/expanded/events.csv` (this table),
-`data/expanded/word-frequency.csv` (all 9.600 aggregate surface forms),
+`data/expanded/word-frequency.csv` (all 9.247 aggregate surface forms),
 `data/expanded/word-frequency-by-event.csv` (per-event word counts).
 
 ## Setup and reproducibility
@@ -220,6 +233,7 @@ analysis, export, and build steps run offline from those files.
 ## Outputs
 
 - `index.html` — terminal-style interactive dashboard
+- `RESEARCH-PACK.md` — readable single-file summary of the current numbers
 - `data/expanded/analysis.json` — totals, word index, per-event counts, MBG evidence
 - `data/expanded/word-frequency.csv` — aggregate surface forms
 - `data/expanded/word-frequency-by-event.csv` — per-event counts
