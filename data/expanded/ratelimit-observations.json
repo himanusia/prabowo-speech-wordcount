@@ -1,0 +1,67 @@
+{
+  "description": "Measured behaviour of YouTube's caption-endpoint rate limit, which youtube-transcript-api reports as IpBlocked (HTTP 429). Recorded because the library documents no recovery time and no safe request rate.",
+  "endpoint": "timedtext caption fetch plus the watch-page player response",
+  "library_error_mapping": {
+    "IpBlocked": [
+      "_transcripts.py: HTTP 429 from the caption endpoint",
+      "_transcripts.py: watch page returned a g-recaptcha challenge"
+    ]
+  },
+  "sessions": [
+    {
+      "id": "session-a",
+      "date": "2026-09-11",
+      "started_wib": "19:27:15",
+      "last_success_wib": "19:32:19",
+      "duration_seconds": 304,
+      "videos_fetched": 74,
+      "seconds_per_video": 4.1,
+      "requests_per_video": 2,
+      "approximate_requests": 148,
+      "outcome": "HTTP 429 starting at video 75",
+      "pace": "no deliberate sleep (default 0.35s)"
+    },
+    {
+      "id": "probe-after-48min",
+      "date": "2026-09-11",
+      "at_wib": ["20:20:00", "20:25:46"],
+      "outcome": "still IpBlocked",
+      "block_age_minutes": 53
+    },
+    {
+      "id": "probe-next-day",
+      "date": "2026-09-12",
+      "at_wib": "18:12:59",
+      "outcome": "unblocked, 5 of 5 test videos fetched",
+      "block_duration_hours": 23.67
+    },
+    {
+      "id": "session-b",
+      "date": "2026-09-12",
+      "started_wib": "18:15:53",
+      "last_success_wib": "18:17:27",
+      "duration_seconds": 94,
+      "videos_fetched": 10,
+      "seconds_per_video": 9.4,
+      "outcome": "HTTP 429 starting at video 12, despite halving the request rate",
+      "pace": "8s between videos, 45s pause every 15 videos"
+    }
+  ],
+  "findings": [
+    "The first observed block cleared somewhere between 53 minutes and 23 hours 40 minutes after onset.",
+    "Halving the request rate did not help: session A got 74 videos, session B got 10 at roughly half the speed.",
+    "The allowance therefore looks cumulative rather than per-window, which is why this file records wall-clock outcomes instead of recommending a fixed sleep value.",
+    "Slowing down is still required, but the binding constraint appears to be how recently the IP was throttled, not the instantaneous rate."
+  ],
+  "operational_consequence": {
+    "recommended_mode": "collect_expanded.py --only-pending --stop-on-block",
+    "why": "Stop at the first 429 instead of grinding through cooldowns, then wait a long interval before the next session.",
+    "yield_per_session_observed": [74, 10]
+  },
+  "pending_after_session_b": {
+    "IpBlocked": 30,
+    "never_attempted": 29,
+    "no_indonesian_track": 14,
+    "TranscriptsDisabled": 3
+  }
+}

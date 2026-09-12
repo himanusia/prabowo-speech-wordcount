@@ -35,7 +35,7 @@ MBG_FULL_RE = re.compile(
 )
 NON_SPEECH_RE = re.compile(
     r"(?i)(ustaz\s+adi\s+hidayat|mar(?:u|ú)f\s+amin|ketum\s+mui|"
-    r"\bmui\b|mensesneg|menteri|minister|teddy|ahy|gibran|"
+    r"\bmui\b|mensesneg|menteri\b|minister|teddy|"
     r"momen|polemik|pakar|kroni|podcast|parodi|analisis|"
     r"komentari|survei|siswa|siswi|bocah|dapur|ayam|mahfud)"
 )
