@@ -24,7 +24,10 @@
     {
       "id": "probe-after-48min",
       "date": "2026-09-11",
-      "at_wib": ["20:20:00", "20:25:46"],
+      "at_wib": [
+        "20:20:00",
+        "20:25:46"
+      ],
       "outcome": "still IpBlocked",
       "block_age_minutes": 53
     },
@@ -48,20 +51,53 @@
     }
   ],
   "findings": [
-    "The first observed block cleared somewhere between 53 minutes and 23 hours 40 minutes after onset.",
-    "Halving the request rate did not help: session A got 74 videos, session B got 10 at roughly half the speed.",
-    "The allowance therefore looks cumulative rather than per-window, which is why this file records wall-clock outcomes instead of recommending a fixed sleep value.",
-    "Slowing down is still required, but the binding constraint appears to be how recently the IP was throttled, not the instantaneous rate."
+    "The reset time is NOT known. Measurements give bounds only: still blocked 53 minutes after onset, clear 23h40m after onset. Nothing in between was probed.",
+    "The earlier figure of ~24 hours was an upper bound from a single observation, not a measured reset time.",
+    "Halving the request rate did not help: session A got 74 videos, session B got 10 at roughly half the speed, so the allowance looks cumulative rather than per-window.",
+    "One blocked probe costs exactly one video = two HTTP requests (one list, one fetch) and about two seconds. Measured from the run log, not estimated.",
+    "Because the reset time is unknown, the scheduled resume probes on an exponential backoff (1h, 2h, 4h, capped at 4h) counted from consecutive blocked probes and restarts when captions arrive. The schedule itself is therefore the instrument that measures the reset time."
   ],
   "operational_consequence": {
     "recommended_mode": "collect_expanded.py --only-pending --stop-on-block",
     "why": "Stop at the first 429 instead of grinding through cooldowns, then wait a long interval before the next session.",
-    "yield_per_session_observed": [74, 10]
+    "yield_per_session_observed": [
+      74,
+      10
+    ]
   },
   "pending_after_session_b": {
     "IpBlocked": 30,
     "never_attempted": 29,
     "no_indonesian_track": 14,
     "TranscriptsDisabled": 3
-  }
+  },
+  "request_cost": {
+    "blocked_tick": {
+      "videos_attempted": 1,
+      "http_requests": 2,
+      "observed_seconds": 2
+    },
+    "successful_session_session_a": {
+      "videos": 74,
+      "http_requests": 148,
+      "seconds": 304
+    },
+    "successful_session_session_b": {
+      "videos": 10,
+      "http_requests": 20,
+      "seconds": 94
+    }
+  },
+  "probe_schedule": {
+    "cron": "0 * * * *",
+    "backoff_seconds": [
+      3600,
+      7200,
+      14400
+    ],
+    "cap_seconds": 14400,
+    "restarts_when": "a probe returns captions, which proves the window reopened",
+    "approx_requests_per_day_while_blocked": 12
+  },
+  "session_b_log_note": "The first four auto-resume rows (18:43:43, 18:44:05, 18:45:13, 18:45:34) were manual test invocations inside a two-minute window, not four independent probes. The live log keeps one row; the rest are preserved in data/expanded/auto-resume-log.full-backup.jsonl."
 }

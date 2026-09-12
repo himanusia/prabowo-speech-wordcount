@@ -50,6 +50,65 @@ LEFT_BEFORE=$(pending_total)
 START=$(epoch)
 STARTED_AT=$(now)
 
+# YouTube does not publish how long the 429 lasts. The only measurements we have
+# are bounds: still blocked 53 minutes after onset, clear 23h40m after onset. So
+# instead of guessing a fixed interval, probe on an exponential backoff and let
+# the log record where the window actually reopens.
+#
+#   streak 1 -> wait 1h     streak 3 -> 4h (capped)
+#   streak 2 -> wait 2h     streak n -> 4h
+#
+# A probe that returns captions proves the window opened and resets the streak.
+# A blocked probe costs one video, i.e. two HTTP requests, so probing is cheap;
+# what it must not do is hammer the endpoint while the block is still on.
+BACKOFF_BASE_S=3600
+BACKOFF_CAP_S=14400
+
+BACKOFF_WAIT=$("$PY" - "$BACKOFF_BASE_S" "$BACKOFF_CAP_S" <<'PYEOF' 2>/dev/null || echo 0
+import json
+import sys
+from pathlib import Path
+
+base, cap = int(sys.argv[1]), int(sys.argv[2])
+path = Path("data/expanded/auto-resume-log.jsonl")
+if not path.exists():
+    print(0)
+    raise SystemExit
+rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+streak = 0
+for row in reversed(rows):
+    if row.get("new_captions", 0) > 0:
+        break                      # the window opened here; backoff restarts
+    if row.get("blocked_hits", 0) >= 1:
+        streak += 1
+    else:
+        break
+print(0 if streak == 0 else min(base * 2 ** (streak - 1), cap))
+PYEOF
+)
+BACKOFF_WAIT=${BACKOFF_WAIT:-0}
+
+if [ "$BACKOFF_WAIT" -gt 0 ]; then
+  LAST_TS=$("$PY" - <<'PYEOF' 2>/dev/null || echo 0
+import json
+from pathlib import Path
+path = Path("data/expanded/auto-resume-log.jsonl")
+rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+print(rows[-1]["started_at"] if rows else "")
+PYEOF
+)
+  if [ -n "$LAST_TS" ]; then
+    LAST_EPOCH=$(date -j -f "%Y-%m-%dT%H:%M:%S%z" "$LAST_TS" "+%s" 2>/dev/null || echo 0)
+    if [ "$LAST_EPOCH" -gt 0 ]; then
+      ELAPSED_SINCE=$(( START - LAST_EPOCH ))
+      if [ "$ELAPSED_SINCE" -lt "$BACKOFF_WAIT" ]; then
+        # Still inside the backoff window: stay silent, spend nothing.
+        exit 0
+      fi
+    fi
+  fi
+fi
+
 # Gentle session: paced, and it stops on the first 429 instead of grinding.
 "$PY" scripts/collect_expanded.py \
   --only-pending \
