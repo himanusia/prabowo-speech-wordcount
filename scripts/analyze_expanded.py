@@ -54,7 +54,17 @@ COMMENTARY_RE = re.compile(
     r"gemparkan satu ruangan|"
     r"keceplosan saat pidato|"
     r"saat prabowo bicara|"
-    r"ketika prabowo bertanya"
+    r"ketika prabowo bertanya|"
+    # added after the panel-collection QA pass: these four are news items or
+    # talk-show segments about Prabowo, not Prabowo speaking
+    r"bukan asal bicara|"
+    r"istana respons|"
+    r"sambutan hangat diaspora|"
+    r"ditertawakan orang|"
+    # short excerpts of events the corpus already holds in full; they sit below
+    # the cross-day dedup threshold so the clusterer cannot fold them in
+    r"pecah tawa saat singgung|"
+    r"yang merasa indonesia suram"
     r")"
 )
 SPEECH_RE = re.compile(
@@ -261,6 +271,57 @@ def duplicate_clusters(items: list[dict]) -> list[list[dict]]:
     return list(groups.values())
 
 
+OPENING_RE = re.compile(
+    r"(?i)\b(bismillah|assalamualaikum|asalamualaikum|salam sejahtera|"
+    r"yang saya hormati|yang terhormat|yang kami hormati|saudara-saudara|"
+    r"hadirin|om swastiastu|shalom)\b"
+)
+# A padded livestream capture opens with floor noise, introductions, or unrelated
+# chatter before the speech itself starts, so its opening formula sits far into
+# the transcript. Measured on the 2026-08-14 Sidang Tahunan cluster: one upload
+# reached its opening at token 2058 of 30742 (6.7%), while the five genuine
+# uploads of the same speech opened at token 0-11. Thresholds below separate
+# them without touching cases where the longest upload really is the complete one
+# (e.g. the 2026-05-20 Paripurna cluster, where the longest opens at token 3 and
+# the shorter ones are excerpts starting at 13% and beyond).
+PADDED_OPENING_FRACTION = 0.02
+COMPLETE_OPENING_FRACTION = 0.01
+
+
+def opening_fraction(item: dict) -> float | None:
+    """Where the speech opening formula first appears, as a fraction of length."""
+    total = len(item["tokens"])
+    if not total:
+        return None
+    seen = 0
+    for snippet in item["snippets"]:
+        match = OPENING_RE.search(snippet["text"])
+        if match:
+            prefix = len(tokenize(snippet["text"][: match.start()]))
+            return (seen + prefix) / total
+        seen += len(snippet["tokens"])
+    return None
+
+
+def pick_canonical(group: list[dict]) -> dict:
+    """Choose one upload per event, ignoring padded livestream captures."""
+    candidates = group
+    complete = [
+        item for item in group
+        if (frac := opening_fraction(item)) is not None
+        and frac <= COMPLETE_OPENING_FRACTION
+    ]
+    if complete:
+        unpadded = [
+            item for item in group
+            if (frac := opening_fraction(item)) is None
+            or frac <= PADDED_OPENING_FRACTION
+        ]
+        if unpadded:
+            candidates = unpadded
+    return max(candidates, key=canonical_score)
+
+
 def canonical_score(item: dict) -> tuple[int, int, int]:
     title = item["title"]
     score = 0
@@ -383,7 +444,7 @@ def main() -> None:
     duplicate_groups = []
 
     for group_index, group in enumerate(clusters, start=1):
-        chosen = max(group, key=canonical_score)
+        chosen = pick_canonical(group)
         chosen["duplicate_group"] = f"event-{group_index:03d}"
         chosen["duplicate_count"] = len(group) - 1
         chosen["mbg"] = mbg_metrics(chosen["snippets"])
