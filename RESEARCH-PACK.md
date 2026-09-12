@@ -1,18 +1,19 @@
-# Research pack — Prabowo speech corpus
+# Research pack — prabowo.speeches
 
-Derived from Indonesian YouTube caption tracks, deduplicated by speech event and restricted to
-actual speeches. Every number below comes from `data/expanded/analysis.json`; no raw caption
-text is included.
+Indonesian speeches and remarks by President Prabowo Subianto, deduplicated by speech event.
+
+Setiap angka di bawah berasal dari `data/prabowo/analysis.json`; tidak ada
+teks caption mentah yang disertakan.
 
 ```text
-pidato (event unik)      67
-unggahan (upload)        128
+event (unik)             67
+unggahan                 128
 token                    153.699
 kata unik (surface form) 11.630
 rentang                  2024-08-27 → 2026-09-09
 ```
 
-Tier sumber: full_media 39, media 16, official 12
+Tier sumber: full_media 40, media 15, official 12
 
 ## Sebaran per bulan
 
@@ -50,9 +51,6 @@ median         1788
 terpendek        68
 5 teratas     31343  (20.4% dari seluruh token)
 ```
-
-Konsentrasi jauh lebih sehat daripada korpus sebelumnya (33,9% pada 46 pidato). Tidak ada satu
-pidato yang mendominasi.
 
 ## Kata isi teratas (fungsi kata dan pronomina dibuang)
 
@@ -92,20 +90,16 @@ pertahanan_dan_keamanan    3.64   58/67
 nasional_dan_identitas    32.52   67/67
 ```
 
-Kategori boleh tumpang tindih. Ini proksi leksikal, bukan klasifikasi: `anak` selalu masuk
-`kesehatan_dan_gizi` walau konteksnya bukan program gizi.
+Kategori boleh tumpang tindih dan ini proksi leksikal, bukan klasifikasi.
 
 ## Framing pronomina
 
 ```text
-kita      5931   38.59/1k  67/67 pidato
-saya      4096   26.65/1k  66/67 pidato
-mereka     519    3.38/1k
-kami       296    1.93/1k
+saya       4096   26.65/1k  66/67 event
+kita       5931   38.59/1k  67/67 event
+kami        296    1.93/1k  47/67 event
+mereka      519    3.38/1k  55/67 event
 ```
-
-`kita` menang jelas atas `saya` di seluruh rentang waktu. Arah ini stabil dari korpus 10 video,
-45, dan 67 — yang berubah hanya selisihnya, bukan arahnya.
 
 ## MBG
 
@@ -115,42 +109,50 @@ sinyal kebijakan total    88
 pidato memuat MBG         25 dari 67 (37%)
 ```
 
-Sinyal = `MBG` eksak, frasa `makan bergizi gratis`, `makan` + `bergizi` dalam satu caption, atau
-konteks SPPG. Kasus ambigu (mis. lelucon "MBG singkatan Mas Bahlil ganteng") tidak dihitung
-sebagai sinyal kebijakan, jadi angka eksak itu lantai.
+Aturan sinyal: MBG eksak, frasa penuh, pasangan
+makan + bergizi, atau konteks sppg. Kasus ambigu
+dihitung terpisah dan dikurangi dari total, jadi angka eksak itu lantai.
 
 ## Cara transkrip diambil
 
-Dua jalur dipakai, dan teksnya diverifikasi identik:
+```text
+caption_api          74 unggahan
+transcript_panel     48 unggahan
+baseline_import       6 unggahan
+```
 
-- **caption API** (`/api/timedtext` lewat youtube-transcript-api) untuk 84 upload pertama
-- **panel transcript YouTube** (endpoint `youtubei get_panel`) untuk 58 upload sisanya
+Sebagian lewat caption API (`/api/timedtext`), sisanya lewat panel transcript YouTube
+(endpoint `youtubei get_panel`) ketika API-nya kena rate limit. Kedua jalur sudah
+diverifikasi menghasilkan teks identik, jadi pilihan jalur tidak memengaruhi hitungan kata.
+Setiap entri di manifest punya penanda `fetch_method`.
 
-Panel dipakai karena endpoint caption memblokir IP ini dengan HTTP 429 setelah satu burst.
-Validasi silang pada video `9rpZpKagShM`: API 628 snippet vs panel 255 segmen, keduanya
-**15.621 karakter dan 2.362 kata**, rasio normalisasi 1.000, awal dan akhir teks sama persis.
-Jadi pilihan jalur tidak mempengaruhi hitungan kata.
+Satu unggahan hanya diambil lewat satu jalur. Status pengambilan dari 160 kandidat:
+
+```text
+berhasil                 142
+tanpa track yang diminta 15
+subtitle dimatikan       3
+kena rate limit          0
+belum dicoba             0
+```
 
 ## Batasan yang wajib dibaca sebelum mengutip angka
 
-1. Semua caption auto-generated, bukan ground truth audio. Nama, angka, dan akronim adalah titik
-   gagal paling sering.
-2. Pemotongan jendela pidato hanya diterapkan pada 10 unggahan yang dicek manual. Sisanya memakai
-   track penuh, jadi beberapa event masih membawa MC, musik, atau penutup.
-3. Hitungan adalah surface form. `mbg` dan `MBG` sama setelah casefold, tapi `asing` dan
+1. Semua caption auto-generated, bukan ground truth audio. Nama, angka, dan akronim adalah
+   titik gagal paling sering.
+2. Pemotongan jendela pidato hanya diterapkan pada unggahan yang dicek manual. Sisanya
+   memakai track penuh, jadi beberapa event masih membawa MC, musik, atau penutup.
+3. Hitungan adalah surface form: `mbg` dan `MBG` sama setelah casefold, tapi `asing` dan
    `masing-masing` berbeda token.
-4. 15 kandidat tidak punya track Indonesia sama sekali (Prabowo bicara bahasa Inggris di forum
-   internasional: EEF Rusia, APEC, ADF, SPIEF, forum bisnis Jepang/AS), 3 subtitle dimatikan, dan
-   0 tersisa karena rate limit. Tidak ada lagi kandidat yang bisa ditarik.
-5. 67 pidato ini bukan sampel acak. Pidato panjang di acara besar lebih mudah muncul di
-   pencarian, jadi komposisinya bias ke acara kenegaraan dan ormas besar.
-6. Kanal resmi hanya 12 dari 67. Sisanya kanal media, jadi judul dan durasi ikut apa yang
-   diunggah kanal tersebut.
+4. 67 event ini bukan sampel acak. Materi panjang di acara besar lebih mudah muncul di
+   pencarian, jadi komposisinya bias ke acara besar.
+5. Hanya 12 dari 67 event memakai kanal resmi; sisanya kanal media, jadi judul dan durasi
+   ikut apa yang diunggah kanal tersebut.
 
 ## Berkas data
 
 - `analysis.json` — sumber kebenaran
 - `word-frequency.csv` — 11.630 surface form agregat
 - `word-frequency-by-event.csv` — hitungan per pidato
-- `events.csv` — satu baris per pidato dengan kolom MBG
+- `events.csv` — satu baris per pidato dengan kolom sinyal
 - `README.md` — metodologi dan cara rebuild

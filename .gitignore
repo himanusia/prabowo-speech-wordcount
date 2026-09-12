@@ -1,24 +1,18 @@
-# Local environments and caches
+# Virtualenv and Python caches
 .venv/
-.venv-*/
-.qa/
-.chrome-profile*/
 __pycache__/
-*.py[cod]
-.pytest_cache/
-.DS_Store
+*.pyc
 
-# Local/raw source material
-data/transcripts/raw/
-data/expanded/raw/
-data/expanded/ytdlp_subs/
-data/manifest.json
-data/expanded/manifest.json
-data/expanded/discovery.json
-data/*.sha256
+# Raw caption tracks are third-party material and never published.
+# The repository ships source links plus derived counts instead.
+data/*/raw/
+
+# Transient fetch state: recreated by scripts/collect.py and friends.
+data/*/manifest.json
+data/*/discovery.json
+data/*/panel-progress.jsonl
+data/*/auto-resume-run.log
 *.log
 
-# Secrets and local configuration
-.env
-.env.*
-!.env.example
+# Captures produced by the yt-dlp probes used during discovery.
+data/*/ytdlp_subs/

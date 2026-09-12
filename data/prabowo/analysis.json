@@ -1,14 +1,20 @@
 {
-  "generated_at": "2026-09-12T12:25:23.499089+00:00",
+  "generated_at": "2026-09-12T12:56:54.711653+00:00",
+  "profile": {
+    "name": "prabowo",
+    "description": "Indonesian speeches and remarks by President Prabowo Subianto, deduplicated by speech event.",
+    "language_code": "id"
+  },
   "method": {
-    "source": "Indonesian YouTube caption tracks",
+    "source": "YouTube caption tracks (caption API, and the transcript panel where the API is rate limited)",
     "primary_metric": "surface-form token count for canonical speech events",
     "normalization": "Unicode NFC + casefold + Unicode-aware tokenization",
     "event_markers": "bracketed caption events removed",
-    "deduplication": "4-token shingle containment; one canonical source per event",
+    "deduplication": "4-token shingle containment (same day >= 0.22, cross day >= 0.58); one canonical source per event",
+    "canonical_rule": "official channel first, then title cues, then length; padded livestream captures are skipped when another upload of the same event opens at the top (opening fraction > 0.02)",
     "topic_layer": "curated lexical signals; overlapping categories are allowed",
-    "mbg_rule": "exact MBG/full phrase or contextual makan+bergizi/SPPG signal; ambiguous acronym evidence is reported separately",
-    "warning": "caption windows/tracks are not verified audio ground truth; topic signals need spot review before publication"
+    "policy_signal_rule": "MBG: exact token, full phrase, paired terms makan + bergizi, or sppg context; ambiguous evidence is reported separately and subtracted from the total",
+    "warning": "caption tracks are not verified audio ground truth; topic signals need spot review before publication"
   },
   "totals": {
     "input_caption_items": 148,
@@ -1321,7 +1327,8 @@
       "url": "https://www.youtube.com/watch?v=R-b9-w6QrWg",
       "duration": 2405,
       "source_tier": "media",
-      "duplicate_group": "event-065",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-060",
       "duplicate_count": 0,
       "token_count": 2648,
       "unique_word_count": 823,
@@ -1335,14 +1342,15 @@
         "nasional_dan_identitas": 82,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -2179,7 +2187,8 @@
       "url": "https://www.youtube.com/watch?v=fUA5IWV_00A",
       "duration": 3015,
       "source_tier": "full_media",
-      "duplicate_group": "event-051",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-045",
       "duplicate_count": 0,
       "token_count": 3315,
       "unique_word_count": 1112,
@@ -2193,25 +2202,26 @@
         "nasional_dan_identitas": 73,
         "mbg": 2
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 2,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 2,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 2,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 2,
+        "present": true,
         "evidence": [
           {
             "start": 2260.0,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 2479.0,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           }
         ]
@@ -3339,7 +3349,8 @@
       "url": "https://www.youtube.com/watch?v=mb2Jw47oVl8",
       "duration": 3195,
       "source_tier": "full_media",
-      "duplicate_group": "event-050",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-044",
       "duplicate_count": 1,
       "token_count": 3655,
       "unique_word_count": 1174,
@@ -3353,19 +3364,20 @@
         "nasional_dan_identitas": 146,
         "mbg": 1
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 1,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 1,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 1,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 1,
+        "present": true,
         "evidence": [
           {
             "start": 1770.0,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           }
         ]
@@ -4555,7 +4567,8 @@
       "url": "https://www.youtube.com/watch?v=BNfmMijPCJM",
       "duration": 1905,
       "source_tier": "full_media",
-      "duplicate_group": "event-052",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-046",
       "duplicate_count": 0,
       "token_count": 1788,
       "unique_word_count": 598,
@@ -4569,19 +4582,20 @@
         "nasional_dan_identitas": 75,
         "mbg": 1
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 1,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 1,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 1,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 1,
+        "present": true,
         "evidence": [
           {
             "start": 1197.0,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           }
         ]
@@ -5195,7 +5209,8 @@
       "url": "https://www.youtube.com/watch?v=3XayivTOjCY",
       "duration": 3167,
       "source_tier": "full_media",
-      "duplicate_group": "event-048",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-042",
       "duplicate_count": 1,
       "token_count": 3552,
       "unique_word_count": 1120,
@@ -5209,31 +5224,32 @@
         "nasional_dan_identitas": 59,
         "mbg": 3
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 3,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 3,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 3,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 3,
+        "present": true,
         "evidence": [
           {
             "start": 1959.0,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 1983.0,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 2033.0,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           }
         ]
@@ -6369,7 +6385,8 @@
       "url": "https://www.youtube.com/watch?v=73EnzEWg_8k",
       "duration": 2218,
       "source_tier": "full_media",
-      "duplicate_group": "event-058",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-052",
       "duplicate_count": 0,
       "token_count": 2388,
       "unique_word_count": 761,
@@ -6383,14 +6400,15 @@
         "nasional_dan_identitas": 92,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -7165,7 +7183,8 @@
       "url": "https://www.youtube.com/watch?v=sJ-b3ohKEs0",
       "duration": 1751,
       "source_tier": "full_media",
-      "duplicate_group": "event-047",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-041",
       "duplicate_count": 1,
       "token_count": 1564,
       "unique_word_count": 574,
@@ -7179,14 +7198,15 @@
         "nasional_dan_identitas": 67,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -7774,7 +7794,8 @@
       "url": "https://www.youtube.com/watch?v=ffYHRrgqg5U",
       "duration": 1616,
       "source_tier": "full_media",
-      "duplicate_group": "event-018",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-012",
       "duplicate_count": 0,
       "token_count": 1465,
       "unique_word_count": 551,
@@ -7788,14 +7809,15 @@
         "nasional_dan_identitas": 53,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -8358,9 +8380,10 @@
       "title": "Pidato Kenegaraan Presiden Prabowo di Hadapan Parlemen Turkiye",
       "channel": "Sekretariat Presiden",
       "url": "https://www.youtube.com/watch?v=CfnRESwOZKQ",
-      "duration": 923,
+      "duration": 949,
       "source_tier": "official",
-      "duplicate_group": "event-004",
+      "fetch_method": "baseline_import",
+      "duplicate_group": "event-065",
       "duplicate_count": 0,
       "token_count": 807,
       "unique_word_count": 335,
@@ -8374,14 +8397,15 @@
         "nasional_dan_identitas": 33,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -8730,7 +8754,8 @@
       "url": "https://www.youtube.com/watch?v=oJdO0XleOws",
       "duration": 1784,
       "source_tier": "full_media",
-      "duplicate_group": "event-060",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-054",
       "duplicate_count": 0,
       "token_count": 1687,
       "unique_word_count": 586,
@@ -8744,14 +8769,15 @@
         "nasional_dan_identitas": 54,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -9351,7 +9377,8 @@
       "url": "https://www.youtube.com/watch?v=Ra4_HJDql14",
       "duration": 1110,
       "source_tier": "full_media",
-      "duplicate_group": "event-061",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-055",
       "duplicate_count": 0,
       "token_count": 1324,
       "unique_word_count": 493,
@@ -9365,14 +9392,15 @@
         "nasional_dan_identitas": 109,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -9879,7 +9907,8 @@
       "url": "https://www.youtube.com/watch?v=g_aLb7K2a-A",
       "duration": 1178,
       "source_tier": "full_media",
-      "duplicate_group": "event-056",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-050",
       "duplicate_count": 0,
       "token_count": 1321,
       "unique_word_count": 573,
@@ -9893,14 +9922,15 @@
         "nasional_dan_identitas": 40,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -10487,7 +10517,8 @@
       "url": "https://www.youtube.com/watch?v=Enmz62kOMyI",
       "duration": 1057,
       "source_tier": "official",
-      "duplicate_group": "event-041",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-035",
       "duplicate_count": 0,
       "token_count": 1102,
       "unique_word_count": 424,
@@ -10501,25 +10532,26 @@
         "nasional_dan_identitas": 94,
         "mbg": 2
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 2,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 2,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 2,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 2,
+        "present": true,
         "evidence": [
           {
             "start": 846.279,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 865.24,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           }
         ]
@@ -10959,7 +10991,8 @@
       "url": "https://www.youtube.com/watch?v=fmv67UzNYdM",
       "duration": 3441,
       "source_tier": "media",
-      "duplicate_group": "event-055",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-049",
       "duplicate_count": 0,
       "token_count": 3288,
       "unique_word_count": 1132,
@@ -10973,19 +11006,20 @@
         "nasional_dan_identitas": 87,
         "mbg": 1
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 1,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 1,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 1,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 1,
+        "present": true,
         "evidence": [
           {
             "start": 3097.0,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           }
         ]
@@ -12133,7 +12167,8 @@
       "url": "https://www.youtube.com/watch?v=8gMTWE2Sj8w",
       "duration": 705,
       "source_tier": "full_media",
-      "duplicate_group": "event-063",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-057",
       "duplicate_count": 0,
       "token_count": 649,
       "unique_word_count": 281,
@@ -12147,14 +12182,15 @@
         "nasional_dan_identitas": 48,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -12447,9 +12483,10 @@
       "title": "Presiden Prabowo Hadiri KSTI Indonesia 2025",
       "channel": "Sekretariat Presiden",
       "url": "https://www.youtube.com/watch?v=E_doThSKS4E",
-      "duration": 651,
+      "duration": 1980,
       "source_tier": "official",
-      "duplicate_group": "event-005",
+      "fetch_method": "baseline_import",
+      "duplicate_group": "event-066",
       "duplicate_count": 0,
       "token_count": 588,
       "unique_word_count": 315,
@@ -12463,14 +12500,15 @@
         "nasional_dan_identitas": 11,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -12799,7 +12837,8 @@
       "url": "https://www.youtube.com/watch?v=bSpL4BxOMUk",
       "duration": 4550,
       "source_tier": "full_media",
-      "duplicate_group": "event-054",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-048",
       "duplicate_count": 0,
       "token_count": 5764,
       "unique_word_count": 1638,
@@ -12813,61 +12852,62 @@
         "nasional_dan_identitas": 222,
         "mbg": 8
       },
-      "mbg": {
-        "mbg_exact_count": 3,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 5,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 8,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 3,
+        "full_phrase_count": 0,
+        "paired_terms_count": 5,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 8,
+        "present": true,
         "evidence": [
           {
             "start": 1819.0,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 1870.0,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 1935.0,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 1969.0,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 1982.0,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 1992.0,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 2018.0,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2031.0,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           }
         ]
@@ -14519,9 +14559,10 @@
       "title": "Pernyataan Presiden Prabowo Menyikapi Aksi Demo",
       "channel": "Kompas.com",
       "url": "https://www.youtube.com/watch?v=3e_gu9rWwWQ",
-      "duration": 646,
+      "duration": 665,
       "source_tier": "media",
-      "duplicate_group": "event-002",
+      "fetch_method": "baseline_import",
+      "duplicate_group": "event-067",
       "duplicate_count": 0,
       "token_count": 739,
       "unique_word_count": 329,
@@ -14535,14 +14576,15 @@
         "nasional_dan_identitas": 24,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -14885,7 +14927,8 @@
       "url": "https://www.youtube.com/watch?v=gyT_qLziJ2M",
       "duration": 4928,
       "source_tier": "full_media",
-      "duplicate_group": "event-025",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-019",
       "duplicate_count": 0,
       "token_count": 5204,
       "unique_word_count": 1385,
@@ -14899,37 +14942,38 @@
         "nasional_dan_identitas": 133,
         "mbg": 4
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 4,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 4,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 4,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 4,
+        "present": true,
         "evidence": [
           {
             "start": 1924.88,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 2076.96,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 2094.399,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 2889.359,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           }
         ]
@@ -16330,7 +16374,8 @@
       "url": "https://www.youtube.com/watch?v=tbyjpnb5r70",
       "duration": 711,
       "source_tier": "full_media",
-      "duplicate_group": "event-057",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-051",
       "duplicate_count": 0,
       "token_count": 863,
       "unique_word_count": 322,
@@ -16344,14 +16389,15 @@
         "nasional_dan_identitas": 13,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -16681,13 +16727,14 @@
     },
     {
       "id": "02IcsjvhFGQ",
-      "date": "2025-10-24",
-      "title": "Sambutan Presiden Prabowo pada Puncak Peringatan Hari Santri",
+      "date": "2025-10-25",
+      "title": "Sambutan Presiden Prabowo Subianto pada Puncak Peringatan Hari Santri, 24 Oktober 2025",
       "channel": "Sekretariat Presiden",
       "url": "https://www.youtube.com/watch?v=02IcsjvhFGQ",
       "duration": 175,
       "source_tier": "official",
-      "duplicate_group": "event-001",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-004",
       "duplicate_count": 0,
       "token_count": 236,
       "unique_word_count": 144,
@@ -16701,14 +16748,15 @@
         "nasional_dan_identitas": 16,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -16866,7 +16914,8 @@
       "url": "https://www.youtube.com/watch?v=KNeFsu2UbDQ",
       "duration": 1480,
       "source_tier": "full_media",
-      "duplicate_group": "event-059",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-053",
       "duplicate_count": 0,
       "token_count": 1708,
       "unique_word_count": 581,
@@ -16880,14 +16929,15 @@
         "nasional_dan_identitas": 29,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -17482,7 +17532,8 @@
       "url": "https://www.youtube.com/watch?v=BgJb8u_VyGo",
       "duration": 1190,
       "source_tier": "full_media",
-      "duplicate_group": "event-053",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-047",
       "duplicate_count": 0,
       "token_count": 1404,
       "unique_word_count": 577,
@@ -17496,14 +17547,15 @@
         "nasional_dan_identitas": 33,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -18094,7 +18146,8 @@
       "url": "https://www.youtube.com/watch?v=_Aer99PNOA8",
       "duration": 2305,
       "source_tier": "full_media",
-      "duplicate_group": "event-049",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-043",
       "duplicate_count": 2,
       "token_count": 2258,
       "unique_word_count": 775,
@@ -18108,19 +18161,20 @@
         "nasional_dan_identitas": 40,
         "mbg": 1
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 1,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 1,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 1,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 1,
+        "present": true,
         "evidence": [
           {
             "start": 627.0,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           }
         ]
@@ -18911,7 +18965,8 @@
       "url": "https://www.youtube.com/watch?v=SrjfNdzQO54",
       "duration": 1165,
       "source_tier": "full_media",
-      "duplicate_group": "event-062",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-056",
       "duplicate_count": 0,
       "token_count": 1316,
       "unique_word_count": 536,
@@ -18925,14 +18980,15 @@
         "nasional_dan_identitas": 55,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -19482,7 +19538,8 @@
       "url": "https://www.youtube.com/watch?v=OOAGKPFdwf0",
       "duration": 161,
       "source_tier": "official",
-      "duplicate_group": "event-045",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-039",
       "duplicate_count": 0,
       "token_count": 213,
       "unique_word_count": 120,
@@ -19496,14 +19553,15 @@
         "nasional_dan_identitas": 13,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -19637,7 +19695,8 @@
       "url": "https://www.youtube.com/watch?v=doW8-nSNL-8",
       "duration": 2950,
       "source_tier": "full_media",
-      "duplicate_group": "event-019",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-013",
       "duplicate_count": 0,
       "token_count": 2952,
       "unique_word_count": 830,
@@ -19651,79 +19710,80 @@
         "nasional_dan_identitas": 89,
         "mbg": 11
       },
-      "mbg": {
-        "mbg_exact_count": 7,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 4,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 11,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 7,
+        "full_phrase_count": 0,
+        "paired_terms_count": 4,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 11,
+        "present": true,
         "evidence": [
           {
             "start": 1839.88,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 1935.559,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 1954.279,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 2036.799,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 2053.96,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2060.32,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2082.119,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2168.8,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2324.16,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2329.76,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2334.319,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           }
         ]
@@ -20569,7 +20629,8 @@
       "url": "https://www.youtube.com/watch?v=FG-MUTrgsls",
       "duration": 935,
       "source_tier": "media",
-      "duplicate_group": "event-067",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-062",
       "duplicate_count": 0,
       "token_count": 1055,
       "unique_word_count": 551,
@@ -20583,14 +20644,15 @@
         "nasional_dan_identitas": 17,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -21155,7 +21217,8 @@
       "url": "https://www.youtube.com/watch?v=mu2ep3dsHaQ",
       "duration": 5635,
       "source_tier": "full_media",
-      "duplicate_group": "event-035",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-029",
       "duplicate_count": 0,
       "token_count": 6257,
       "unique_word_count": 1619,
@@ -21169,79 +21232,80 @@
         "nasional_dan_identitas": 142,
         "mbg": 11
       },
-      "mbg": {
-        "mbg_exact_count": 8,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 3,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 11,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 8,
+        "full_phrase_count": 0,
+        "paired_terms_count": 3,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 11,
+        "present": true,
         "evidence": [
           {
             "start": 2468.8,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 3079.04,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 3169.76,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 3211.04,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 3215.2,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 3232.44,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 3353.48,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 3360.72,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 3390.839,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 3516.2,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 3882.96,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           }
         ]
@@ -22871,11 +22935,12 @@
     {
       "id": "5OIq7GaU4sI",
       "date": "2026-02-28",
-      "title": "Sambutan Presiden Prabowo pada Perayaan Tahun Baru Imlek Nasional",
+      "title": "Sambutan Presiden Prabowo pada Perayaan Tahun Baru Imlek Nasional 2026, 28 Februari 2026",
       "channel": "Sekretariat Presiden",
       "url": "https://www.youtube.com/watch?v=5OIq7GaU4sI",
-      "duration": 257,
+      "duration": 263,
       "source_tier": "official",
+      "fetch_method": "caption_api",
       "duplicate_group": "event-003",
       "duplicate_count": 0,
       "token_count": 333,
@@ -22890,14 +22955,15 @@
         "nasional_dan_identitas": 19,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -23086,7 +23152,8 @@
       "url": "https://www.youtube.com/watch?v=Fm09R5akNzM",
       "duration": 1309,
       "source_tier": "full_media",
-      "duplicate_group": "event-034",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-028",
       "duplicate_count": 1,
       "token_count": 1388,
       "unique_word_count": 559,
@@ -23100,14 +23167,15 @@
         "nasional_dan_identitas": 51,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -23678,9 +23746,10 @@
       "title": "Pidato Presiden Prabowo di Tasyakuran HUT ke-1 Danantara",
       "channel": "METRO TV",
       "url": "https://www.youtube.com/watch?v=VyPCSPnxbaE",
-      "duration": 986,
+      "duration": 1024,
       "source_tier": "media",
-      "duplicate_group": "event-006",
+      "fetch_method": "baseline_import",
+      "duplicate_group": "event-064",
       "duplicate_count": 0,
       "token_count": 1205,
       "unique_word_count": 459,
@@ -23694,14 +23763,15 @@
         "nasional_dan_identitas": 34,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -24174,7 +24244,8 @@
       "url": "https://www.youtube.com/watch?v=Oahke_hLlLc",
       "duration": 607,
       "source_tier": "media",
-      "duplicate_group": "event-066",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-061",
       "duplicate_count": 0,
       "token_count": 543,
       "unique_word_count": 258,
@@ -24188,14 +24259,15 @@
         "nasional_dan_identitas": 16,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -24465,9 +24537,10 @@
       "title": "Pidato Presiden Prabowo pada Peringatan Hari Buruh Internasional",
       "channel": "Prabowo Subianto",
       "url": "https://www.youtube.com/watch?v=rKpNQwecniM",
-      "duration": 2242,
+      "duration": 2776,
       "source_tier": "official",
-      "duplicate_group": "event-008",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-002",
       "duplicate_count": 2,
       "token_count": 2044,
       "unique_word_count": 691,
@@ -24481,38 +24554,39 @@
         "nasional_dan_identitas": 59,
         "mbg": 5
       },
-      "mbg": {
-        "mbg_exact_count": 4,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 1,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 5,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 4,
+        "full_phrase_count": 0,
+        "paired_terms_count": 1,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 5,
+        "present": true,
         "evidence": [
           {
             "start": 2074.32,
             "matches": [
-              "mbg_exact",
-              "makan_plus_bergizi"
+              "exact_token",
+              "paired_terms"
             ]
           },
           {
             "start": 2088.24,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2102.839,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2129.04,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           }
         ]
@@ -25219,7 +25293,8 @@
       "url": "https://www.youtube.com/watch?v=Zya6KTuVnwY",
       "duration": 2329,
       "source_tier": "official",
-      "duplicate_group": "event-040",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-034",
       "duplicate_count": 1,
       "token_count": 2666,
       "unique_word_count": 886,
@@ -25233,14 +25308,15 @@
         "nasional_dan_identitas": 74,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -26140,7 +26216,8 @@
       "url": "https://www.youtube.com/watch?v=ypWhdkJiz3o",
       "duration": 3135,
       "source_tier": "full_media",
-      "duplicate_group": "event-020",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-014",
       "duplicate_count": 0,
       "token_count": 3552,
       "unique_word_count": 1104,
@@ -26154,67 +26231,68 @@
         "nasional_dan_identitas": 103,
         "mbg": 9
       },
-      "mbg": {
-        "mbg_exact_count": 9,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 9,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 9,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 9,
+        "present": true,
         "evidence": [
           {
             "start": 1680.64,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 1790.159,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 1799.24,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 1857.12,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 1910.799,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 1937.159,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2008.6,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2020.36,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2038.88,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           }
         ]
@@ -27334,7 +27412,8 @@
       "url": "https://www.youtube.com/watch?v=7gTnSb4faRk",
       "duration": 70,
       "source_tier": "official",
-      "duplicate_group": "event-016",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-010",
       "duplicate_count": 2,
       "token_count": 68,
       "unique_word_count": 47,
@@ -27348,14 +27427,15 @@
         "nasional_dan_identitas": 4,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -27416,7 +27496,8 @@
       "url": "https://www.youtube.com/watch?v=HiJYFR1vR9g",
       "duration": 636,
       "source_tier": "full_media",
-      "duplicate_group": "event-038",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-032",
       "duplicate_count": 0,
       "token_count": 661,
       "unique_word_count": 261,
@@ -27430,14 +27511,15 @@
         "nasional_dan_identitas": 20,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -27712,7 +27794,8 @@
       "url": "https://www.youtube.com/watch?v=e3ByeIYYKYU",
       "duration": 264,
       "source_tier": "official",
-      "duplicate_group": "event-017",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-011",
       "duplicate_count": 0,
       "token_count": 352,
       "unique_word_count": 206,
@@ -27726,14 +27809,15 @@
         "nasional_dan_identitas": 17,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -27953,7 +28037,8 @@
       "url": "https://www.youtube.com/watch?v=-PNMB8VQ0hY",
       "duration": 2601,
       "source_tier": "media",
-      "duplicate_group": "event-028",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-022",
       "duplicate_count": 2,
       "token_count": 1989,
       "unique_word_count": 788,
@@ -27967,19 +28052,20 @@
         "nasional_dan_identitas": 140,
         "mbg": 1
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 1,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 1,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 1,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 1,
+        "present": true,
         "evidence": [
           {
             "start": 1482.0,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           }
         ]
@@ -28783,7 +28869,8 @@
       "url": "https://www.youtube.com/watch?v=9KWsOM3B6_c",
       "duration": 2389,
       "source_tier": "official",
-      "duplicate_group": "event-014",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-008",
       "duplicate_count": 1,
       "token_count": 2386,
       "unique_word_count": 730,
@@ -28797,31 +28884,32 @@
         "nasional_dan_identitas": 29,
         "mbg": 3
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 2,
-        "mbg_related_count": 1,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 3,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 2,
+        "context_count": 1,
+        "ambiguous_count": 0,
+        "policy_signal_count": 3,
+        "present": true,
         "evidence": [
           {
             "start": 222.76,
             "matches": [
-              "sppg_context"
+              "context"
             ]
           },
           {
             "start": 572.04,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 596.88,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           }
         ]
@@ -29567,7 +29655,8 @@
       "url": "https://www.youtube.com/watch?v=Ntf-BzRGTug",
       "duration": 4555,
       "source_tier": "full_media",
-      "duplicate_group": "event-024",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-018",
       "duplicate_count": 4,
       "token_count": 4297,
       "unique_word_count": 1246,
@@ -29581,14 +29670,15 @@
         "nasional_dan_identitas": 125,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -30848,7 +30938,8 @@
       "url": "https://www.youtube.com/watch?v=cFo77KlaYEU",
       "duration": 8048,
       "source_tier": "media",
-      "duplicate_group": "event-022",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-016",
       "duplicate_count": 5,
       "token_count": 4808,
       "unique_word_count": 1668,
@@ -30862,14 +30953,15 @@
         "nasional_dan_identitas": 159,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -32551,7 +32643,8 @@
       "url": "https://www.youtube.com/watch?v=WN4ObtcpRMs",
       "duration": 2995,
       "source_tier": "full_media",
-      "duplicate_group": "event-011",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-005",
       "duplicate_count": 2,
       "token_count": 2990,
       "unique_word_count": 901,
@@ -32565,37 +32658,38 @@
         "nasional_dan_identitas": 86,
         "mbg": 4
       },
-      "mbg": {
-        "mbg_exact_count": 4,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 4,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 4,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 4,
+        "present": true,
         "evidence": [
           {
             "start": 2490.599,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2496.079,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2502.0,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2509.839,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           }
         ]
@@ -33510,9 +33604,10 @@
       "title": "Pembukaan Sarasehan Kebangsaan KSTI 2026",
       "channel": "Sekretariat Presiden",
       "url": "https://www.youtube.com/watch?v=hJybE-uF_qE",
-      "duration": 1688,
+      "duration": 2875,
       "source_tier": "official",
-      "duplicate_group": "event-007",
+      "fetch_method": "baseline_import",
+      "duplicate_group": "event-063",
       "duplicate_count": 0,
       "token_count": 1619,
       "unique_word_count": 617,
@@ -33526,14 +33621,15 @@
         "nasional_dan_identitas": 58,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -34164,7 +34260,8 @@
       "url": "https://www.youtube.com/watch?v=7Zi5vqN_VC4",
       "duration": 3045,
       "source_tier": "media",
-      "duplicate_group": "event-010",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-058",
       "duplicate_count": 1,
       "token_count": 3303,
       "unique_word_count": 765,
@@ -34178,14 +34275,15 @@
         "nasional_dan_identitas": 61,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -34964,7 +35062,8 @@
       "url": "https://www.youtube.com/watch?v=HBuj_rOU5yA",
       "duration": 1935,
       "source_tier": "full_media",
-      "duplicate_group": "event-033",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-027",
       "duplicate_count": 3,
       "token_count": 1822,
       "unique_word_count": 679,
@@ -34978,25 +35077,26 @@
         "nasional_dan_identitas": 117,
         "mbg": 2
       },
-      "mbg": {
-        "mbg_exact_count": 1,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 1,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 2,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 1,
+        "full_phrase_count": 0,
+        "paired_terms_count": 1,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 2,
+        "present": true,
         "evidence": [
           {
             "start": 773.36,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           },
           {
             "start": 846.839,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           }
         ]
@@ -35691,7 +35791,8 @@
       "url": "https://www.youtube.com/watch?v=xh-kV0Rm8K8",
       "duration": 2385,
       "source_tier": "full_media",
-      "duplicate_group": "event-037",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-031",
       "duplicate_count": 2,
       "token_count": 2541,
       "unique_word_count": 879,
@@ -35705,14 +35806,15 @@
         "nasional_dan_identitas": 69,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -36605,7 +36707,8 @@
       "url": "https://www.youtube.com/watch?v=YYas7H5zORI",
       "duration": 3134,
       "source_tier": "full_media",
-      "duplicate_group": "event-013",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-007",
       "duplicate_count": 2,
       "token_count": 3129,
       "unique_word_count": 948,
@@ -36619,55 +36722,56 @@
         "nasional_dan_identitas": 129,
         "mbg": 7
       },
-      "mbg": {
-        "mbg_exact_count": 7,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 7,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 7,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 7,
+        "present": true,
         "evidence": [
           {
             "start": 11.4,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 25.92,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2700.079,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2714.599,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2731.24,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2907.48,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 2958.24,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           }
         ]
@@ -37631,7 +37735,8 @@
       "url": "https://www.youtube.com/watch?v=v-1YabkN-pM",
       "duration": 3695,
       "source_tier": "media",
-      "duplicate_group": "event-064",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-059",
       "duplicate_count": 1,
       "token_count": 3715,
       "unique_word_count": 1117,
@@ -37645,14 +37750,15 @@
         "nasional_dan_identitas": 142,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -38783,7 +38889,8 @@
       "url": "https://www.youtube.com/watch?v=QAFNXg-LfTU",
       "duration": 1555,
       "source_tier": "full_media",
-      "duplicate_group": "event-042",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-036",
       "duplicate_count": 0,
       "token_count": 1575,
       "unique_word_count": 601,
@@ -38797,14 +38904,15 @@
         "nasional_dan_identitas": 75,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -39419,7 +39527,8 @@
       "url": "https://www.youtube.com/watch?v=yJglGGY8ADI",
       "duration": 2665,
       "source_tier": "full_media",
-      "duplicate_group": "event-031",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-025",
       "duplicate_count": 1,
       "token_count": 2617,
       "unique_word_count": 905,
@@ -39433,14 +39542,15 @@
         "nasional_dan_identitas": 106,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -40359,7 +40469,8 @@
       "url": "https://www.youtube.com/watch?v=p7G73zBiow4",
       "duration": 5218,
       "source_tier": "full_media",
-      "duplicate_group": "event-036",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-030",
       "duplicate_count": 1,
       "token_count": 5868,
       "unique_word_count": 1482,
@@ -40373,26 +40484,27 @@
         "nasional_dan_identitas": 171,
         "mbg": 3
       },
-      "mbg": {
-        "mbg_exact_count": 2,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 1,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 3,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 2,
+        "full_phrase_count": 0,
+        "paired_terms_count": 1,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 3,
+        "present": true,
         "evidence": [
           {
             "start": 3512.2,
             "matches": [
-              "mbg_exact",
-              "makan_plus_bergizi"
+              "exact_token",
+              "paired_terms"
             ]
           },
           {
             "start": 4948.96,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           }
         ]
@@ -41885,12 +41997,13 @@
     {
       "id": "vyp6JITYFM8",
       "date": "2026-07-24",
-      "title": "Pidato Prabowo di Harlah PKB",
+      "title": "FULL! Pidato Prabowo di Harlah PKB, Singgung Prabowonomics hingga Tegaskan Jalankan Amanat UUD 1945",
       "channel": "KOMPASTV",
       "url": "https://www.youtube.com/watch?v=vyp6JITYFM8",
-      "duration": 2803,
-      "source_tier": "media",
-      "duplicate_group": "event-009",
+      "duration": 2920,
+      "source_tier": "full_media",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-001",
       "duplicate_count": 1,
       "token_count": 2730,
       "unique_word_count": 900,
@@ -41904,25 +42017,26 @@
         "nasional_dan_identitas": 77,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 1,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 1,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 1,
+        "context_count": 0,
+        "ambiguous_count": 1,
+        "policy_signal_count": 0,
+        "present": true,
         "evidence": [
           {
             "start": 290.479,
             "matches": [
-              "ambiguous_acronym"
+              "ambiguous"
             ]
           },
           {
             "start": 1949.48,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           }
         ]
@@ -42838,7 +42952,8 @@
       "url": "https://www.youtube.com/watch?v=IHY-7SvqxoI",
       "duration": 1631,
       "source_tier": "full_media",
-      "duplicate_group": "event-032",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-026",
       "duplicate_count": 0,
       "token_count": 1616,
       "unique_word_count": 604,
@@ -42852,14 +42967,15 @@
         "nasional_dan_identitas": 115,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -43477,7 +43593,8 @@
       "url": "https://www.youtube.com/watch?v=NmbVCeypyHE",
       "duration": 2215,
       "source_tier": "full_media",
-      "duplicate_group": "event-027",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-021",
       "duplicate_count": 2,
       "token_count": 2412,
       "unique_word_count": 834,
@@ -43491,14 +43608,15 @@
         "nasional_dan_identitas": 48,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -44346,7 +44464,8 @@
       "url": "https://www.youtube.com/watch?v=YUONIE2ivHo",
       "duration": 1255,
       "source_tier": "full_media",
-      "duplicate_group": "event-021",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-015",
       "duplicate_count": 0,
       "token_count": 1414,
       "unique_word_count": 601,
@@ -44360,14 +44479,15 @@
         "nasional_dan_identitas": 51,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -44982,7 +45102,8 @@
       "url": "https://www.youtube.com/watch?v=_UEZyffi3YU",
       "duration": 2294,
       "source_tier": "media",
-      "duplicate_group": "event-046",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-040",
       "duplicate_count": 0,
       "token_count": 2501,
       "unique_word_count": 913,
@@ -44996,19 +45117,20 @@
         "nasional_dan_identitas": 41,
         "mbg": 1
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 1,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 1,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 1,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 1,
+        "present": true,
         "evidence": [
           {
             "start": 259.199,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           }
         ]
@@ -45937,7 +46059,8 @@
       "url": "https://www.youtube.com/watch?v=SjuGxdMRzPk",
       "duration": 1075,
       "source_tier": "full_media",
-      "duplicate_group": "event-026",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-020",
       "duplicate_count": 0,
       "token_count": 1185,
       "unique_word_count": 448,
@@ -45951,14 +46074,15 @@
         "nasional_dan_identitas": 22,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -46420,7 +46544,8 @@
       "url": "https://www.youtube.com/watch?v=9rpZpKagShM",
       "duration": 2075,
       "source_tier": "full_media",
-      "duplicate_group": "event-043",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-037",
       "duplicate_count": 0,
       "token_count": 2315,
       "unique_word_count": 818,
@@ -46434,14 +46559,15 @@
         "nasional_dan_identitas": 46,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -47273,7 +47399,8 @@
       "url": "https://www.youtube.com/watch?v=1-hEfAcRo4k",
       "duration": 6978,
       "source_tier": "media",
-      "duplicate_group": "event-023",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-017",
       "duplicate_count": 6,
       "token_count": 7900,
       "unique_word_count": 1910,
@@ -47287,43 +47414,44 @@
         "nasional_dan_identitas": 281,
         "mbg": 5
       },
-      "mbg": {
-        "mbg_exact_count": 4,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 1,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 5,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 4,
+        "full_phrase_count": 0,
+        "paired_terms_count": 1,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 5,
+        "present": true,
         "evidence": [
           {
             "start": 4739.0,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 4796.0,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 4889.0,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 4914.0,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           },
           {
             "start": 4983.0,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           }
         ]
@@ -49249,7 +49377,8 @@
       "url": "https://www.youtube.com/watch?v=sv1HMoSzRk4",
       "duration": 4808,
       "source_tier": "full_media",
-      "duplicate_group": "event-015",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-009",
       "duplicate_count": 3,
       "token_count": 5554,
       "unique_word_count": 1582,
@@ -49263,19 +49392,20 @@
         "nasional_dan_identitas": 200,
         "mbg": 1
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 1,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 1,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 1,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 1,
+        "present": true,
         "evidence": [
           {
             "start": 496.759,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           }
         ]
@@ -50873,7 +51003,8 @@
       "url": "https://www.youtube.com/watch?v=UYdFSPfJZfk",
       "duration": 1310,
       "source_tier": "full_media",
-      "duplicate_group": "event-029",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-023",
       "duplicate_count": 0,
       "token_count": 1388,
       "unique_word_count": 576,
@@ -50887,14 +51018,15 @@
         "nasional_dan_identitas": 33,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -51484,7 +51616,8 @@
       "url": "https://www.youtube.com/watch?v=eddIEv78h3E",
       "duration": 1657,
       "source_tier": "media",
-      "duplicate_group": "event-012",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-006",
       "duplicate_count": 3,
       "token_count": 1700,
       "unique_word_count": 673,
@@ -51498,19 +51631,20 @@
         "nasional_dan_identitas": 62,
         "mbg": 1
       },
-      "mbg": {
-        "mbg_exact_count": 1,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 1,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 1,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 1,
+        "present": true,
         "evidence": [
           {
             "start": 1317.0,
             "matches": [
-              "mbg_exact"
+              "exact_token"
             ]
           }
         ]
@@ -52199,7 +52333,8 @@
       "url": "https://www.youtube.com/watch?v=pikkD5C3swU",
       "duration": 1448,
       "source_tier": "full_media",
-      "duplicate_group": "event-030",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-024",
       "duplicate_count": 4,
       "token_count": 1520,
       "unique_word_count": 616,
@@ -52213,14 +52348,15 @@
         "nasional_dan_identitas": 37,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -52850,7 +52986,8 @@
       "url": "https://www.youtube.com/watch?v=8hj3tR4gCTc",
       "duration": 3160,
       "source_tier": "media",
-      "duplicate_group": "event-044",
+      "fetch_method": "transcript_panel",
+      "duplicate_group": "event-038",
       "duplicate_count": 5,
       "token_count": 3310,
       "unique_word_count": 1011,
@@ -52864,19 +53001,20 @@
         "nasional_dan_identitas": 105,
         "mbg": 1
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 1,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 1,
-        "mbg_present": true,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 1,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 1,
+        "present": true,
         "evidence": [
           {
             "start": 896.0,
             "matches": [
-              "makan_plus_bergizi"
+              "paired_terms"
             ]
           }
         ]
@@ -53903,7 +54041,8 @@
       "url": "https://www.youtube.com/watch?v=ZU_qK2nH89o",
       "duration": 1361,
       "source_tier": "media",
-      "duplicate_group": "event-039",
+      "fetch_method": "caption_api",
+      "duplicate_group": "event-033",
       "duplicate_count": 1,
       "token_count": 1573,
       "unique_word_count": 632,
@@ -53917,14 +54056,15 @@
         "nasional_dan_identitas": 67,
         "mbg": 0
       },
-      "mbg": {
-        "mbg_exact_count": 0,
-        "mbg_full_phrase_count": 0,
-        "makan_plus_bergizi_count": 0,
-        "mbg_related_count": 0,
-        "mbg_ambiguous_count": 0,
-        "mbg_policy_signal_count": 0,
-        "mbg_present": false,
+      "policy_signals": {
+        "label": "MBG",
+        "exact_token_count": 0,
+        "full_phrase_count": 0,
+        "paired_terms_count": 0,
+        "context_count": 0,
+        "ambiguous_count": 0,
+        "policy_signal_count": 0,
+        "present": false,
         "evidence": []
       },
       "counts": {
@@ -54572,10 +54712,10 @@
       "url": "https://www.youtube.com/watch?v=R-b9-w6QrWg",
       "duration": 2405,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 2648,
       "is_canonical": true,
-      "event_group": "event-065"
+      "event_group": "event-060"
     },
     {
       "id": "fUA5IWV_00A",
@@ -54585,10 +54725,10 @@
       "url": "https://www.youtube.com/watch?v=fUA5IWV_00A",
       "duration": 3015,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 3315,
       "is_canonical": true,
-      "event_group": "event-051"
+      "event_group": "event-045"
     },
     {
       "id": "3YMlecD1nQ0",
@@ -54598,10 +54738,10 @@
       "url": "https://www.youtube.com/watch?v=3YMlecD1nQ0",
       "duration": 3116,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 3620,
       "is_canonical": false,
-      "event_group": "event-050"
+      "event_group": "event-044"
     },
     {
       "id": "mb2Jw47oVl8",
@@ -54611,10 +54751,10 @@
       "url": "https://www.youtube.com/watch?v=mb2Jw47oVl8",
       "duration": 3195,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 3655,
       "is_canonical": true,
-      "event_group": "event-050"
+      "event_group": "event-044"
     },
     {
       "id": "BNfmMijPCJM",
@@ -54624,10 +54764,10 @@
       "url": "https://www.youtube.com/watch?v=BNfmMijPCJM",
       "duration": 1905,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 1788,
       "is_canonical": true,
-      "event_group": "event-052"
+      "event_group": "event-046"
     },
     {
       "id": "3XayivTOjCY",
@@ -54637,10 +54777,10 @@
       "url": "https://www.youtube.com/watch?v=3XayivTOjCY",
       "duration": 3167,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 3552,
       "is_canonical": true,
-      "event_group": "event-048"
+      "event_group": "event-042"
     },
     {
       "id": "5l05r-Uxi-A",
@@ -54650,10 +54790,10 @@
       "url": "https://www.youtube.com/watch?v=5l05r-Uxi-A",
       "duration": 3141,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 3505,
       "is_canonical": false,
-      "event_group": "event-048"
+      "event_group": "event-042"
     },
     {
       "id": "73EnzEWg_8k",
@@ -54663,10 +54803,10 @@
       "url": "https://www.youtube.com/watch?v=73EnzEWg_8k",
       "duration": 2218,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 2388,
       "is_canonical": true,
-      "event_group": "event-058"
+      "event_group": "event-052"
     },
     {
       "id": "sJ-b3ohKEs0",
@@ -54676,10 +54816,10 @@
       "url": "https://www.youtube.com/watch?v=sJ-b3ohKEs0",
       "duration": 1751,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 1564,
       "is_canonical": true,
-      "event_group": "event-047"
+      "event_group": "event-041"
     },
     {
       "id": "wTHui5fr11M",
@@ -54689,10 +54829,10 @@
       "url": "https://www.youtube.com/watch?v=wTHui5fr11M",
       "duration": 115,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 103,
       "is_canonical": false,
-      "event_group": "event-047"
+      "event_group": "event-041"
     },
     {
       "id": "ffYHRrgqg5U",
@@ -54702,10 +54842,10 @@
       "url": "https://www.youtube.com/watch?v=ffYHRrgqg5U",
       "duration": 1616,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1465,
       "is_canonical": true,
-      "event_group": "event-018"
+      "event_group": "event-012"
     },
     {
       "id": "CfnRESwOZKQ",
@@ -54713,12 +54853,12 @@
       "title": "Pidato Kenegaraan Presiden Prabowo di Hadapan Parlemen Turkiye",
       "channel": "Sekretariat Presiden",
       "url": "https://www.youtube.com/watch?v=CfnRESwOZKQ",
-      "duration": 923,
+      "duration": 949,
       "source_tier": "official",
-      "source_kind": "baseline",
+      "fetch_method": "baseline_import",
       "token_count": 807,
       "is_canonical": true,
-      "event_group": "event-004"
+      "event_group": "event-065"
     },
     {
       "id": "oJdO0XleOws",
@@ -54728,10 +54868,10 @@
       "url": "https://www.youtube.com/watch?v=oJdO0XleOws",
       "duration": 1784,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 1687,
       "is_canonical": true,
-      "event_group": "event-060"
+      "event_group": "event-054"
     },
     {
       "id": "Ra4_HJDql14",
@@ -54741,10 +54881,10 @@
       "url": "https://www.youtube.com/watch?v=Ra4_HJDql14",
       "duration": 1110,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 1324,
       "is_canonical": true,
-      "event_group": "event-061"
+      "event_group": "event-055"
     },
     {
       "id": "g_aLb7K2a-A",
@@ -54754,10 +54894,10 @@
       "url": "https://www.youtube.com/watch?v=g_aLb7K2a-A",
       "duration": 1178,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 1321,
       "is_canonical": true,
-      "event_group": "event-056"
+      "event_group": "event-050"
     },
     {
       "id": "Enmz62kOMyI",
@@ -54767,10 +54907,10 @@
       "url": "https://www.youtube.com/watch?v=Enmz62kOMyI",
       "duration": 1057,
       "source_tier": "official",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1102,
       "is_canonical": true,
-      "event_group": "event-041"
+      "event_group": "event-035"
     },
     {
       "id": "fmv67UzNYdM",
@@ -54780,10 +54920,10 @@
       "url": "https://www.youtube.com/watch?v=fmv67UzNYdM",
       "duration": 3441,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 3288,
       "is_canonical": true,
-      "event_group": "event-055"
+      "event_group": "event-049"
     },
     {
       "id": "8gMTWE2Sj8w",
@@ -54793,10 +54933,10 @@
       "url": "https://www.youtube.com/watch?v=8gMTWE2Sj8w",
       "duration": 705,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 649,
       "is_canonical": true,
-      "event_group": "event-063"
+      "event_group": "event-057"
     },
     {
       "id": "E_doThSKS4E",
@@ -54804,12 +54944,12 @@
       "title": "Presiden Prabowo Hadiri KSTI Indonesia 2025",
       "channel": "Sekretariat Presiden",
       "url": "https://www.youtube.com/watch?v=E_doThSKS4E",
-      "duration": 651,
+      "duration": 1980,
       "source_tier": "official",
-      "source_kind": "baseline",
+      "fetch_method": "baseline_import",
       "token_count": 588,
       "is_canonical": true,
-      "event_group": "event-005"
+      "event_group": "event-066"
     },
     {
       "id": "bSpL4BxOMUk",
@@ -54819,10 +54959,10 @@
       "url": "https://www.youtube.com/watch?v=bSpL4BxOMUk",
       "duration": 4550,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 5764,
       "is_canonical": true,
-      "event_group": "event-054"
+      "event_group": "event-048"
     },
     {
       "id": "3e_gu9rWwWQ",
@@ -54830,12 +54970,12 @@
       "title": "Pernyataan Presiden Prabowo Menyikapi Aksi Demo",
       "channel": "Kompas.com",
       "url": "https://www.youtube.com/watch?v=3e_gu9rWwWQ",
-      "duration": 646,
+      "duration": 665,
       "source_tier": "media",
-      "source_kind": "baseline",
+      "fetch_method": "baseline_import",
       "token_count": 739,
       "is_canonical": true,
-      "event_group": "event-002"
+      "event_group": "event-067"
     },
     {
       "id": "gyT_qLziJ2M",
@@ -54845,10 +54985,10 @@
       "url": "https://www.youtube.com/watch?v=gyT_qLziJ2M",
       "duration": 4928,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 5204,
       "is_canonical": true,
-      "event_group": "event-025"
+      "event_group": "event-019"
     },
     {
       "id": "tbyjpnb5r70",
@@ -54858,23 +54998,23 @@
       "url": "https://www.youtube.com/watch?v=tbyjpnb5r70",
       "duration": 711,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 863,
       "is_canonical": true,
-      "event_group": "event-057"
+      "event_group": "event-051"
     },
     {
       "id": "02IcsjvhFGQ",
-      "date": "2025-10-24",
-      "title": "Sambutan Presiden Prabowo pada Puncak Peringatan Hari Santri",
+      "date": "2025-10-25",
+      "title": "Sambutan Presiden Prabowo Subianto pada Puncak Peringatan Hari Santri, 24 Oktober 2025",
       "channel": "Sekretariat Presiden",
       "url": "https://www.youtube.com/watch?v=02IcsjvhFGQ",
       "duration": 175,
       "source_tier": "official",
-      "source_kind": "baseline",
+      "fetch_method": "caption_api",
       "token_count": 236,
       "is_canonical": true,
-      "event_group": "event-001"
+      "event_group": "event-004"
     },
     {
       "id": "KNeFsu2UbDQ",
@@ -54884,10 +55024,10 @@
       "url": "https://www.youtube.com/watch?v=KNeFsu2UbDQ",
       "duration": 1480,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 1708,
       "is_canonical": true,
-      "event_group": "event-059"
+      "event_group": "event-053"
     },
     {
       "id": "-qcEnX4VcWI",
@@ -54897,10 +55037,10 @@
       "url": "https://www.youtube.com/watch?v=-qcEnX4VcWI",
       "duration": 2155,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 2212,
       "is_canonical": false,
-      "event_group": "event-049"
+      "event_group": "event-043"
     },
     {
       "id": "BgJb8u_VyGo",
@@ -54910,10 +55050,10 @@
       "url": "https://www.youtube.com/watch?v=BgJb8u_VyGo",
       "duration": 1190,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 1404,
       "is_canonical": true,
-      "event_group": "event-053"
+      "event_group": "event-047"
     },
     {
       "id": "_Aer99PNOA8",
@@ -54923,10 +55063,10 @@
       "url": "https://www.youtube.com/watch?v=_Aer99PNOA8",
       "duration": 2305,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 2258,
       "is_canonical": true,
-      "event_group": "event-049"
+      "event_group": "event-043"
     },
     {
       "id": "k9UueTQI6gw",
@@ -54936,10 +55076,10 @@
       "url": "https://www.youtube.com/watch?v=k9UueTQI6gw",
       "duration": 2260,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 2245,
       "is_canonical": false,
-      "event_group": "event-049"
+      "event_group": "event-043"
     },
     {
       "id": "SrjfNdzQO54",
@@ -54949,10 +55089,10 @@
       "url": "https://www.youtube.com/watch?v=SrjfNdzQO54",
       "duration": 1165,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 1316,
       "is_canonical": true,
-      "event_group": "event-062"
+      "event_group": "event-056"
     },
     {
       "id": "OOAGKPFdwf0",
@@ -54962,10 +55102,10 @@
       "url": "https://www.youtube.com/watch?v=OOAGKPFdwf0",
       "duration": 161,
       "source_tier": "official",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 213,
       "is_canonical": true,
-      "event_group": "event-045"
+      "event_group": "event-039"
     },
     {
       "id": "doW8-nSNL-8",
@@ -54975,10 +55115,10 @@
       "url": "https://www.youtube.com/watch?v=doW8-nSNL-8",
       "duration": 2950,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2952,
       "is_canonical": true,
-      "event_group": "event-019"
+      "event_group": "event-013"
     },
     {
       "id": "FG-MUTrgsls",
@@ -54988,10 +55128,10 @@
       "url": "https://www.youtube.com/watch?v=FG-MUTrgsls",
       "duration": 935,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 1055,
       "is_canonical": true,
-      "event_group": "event-067"
+      "event_group": "event-062"
     },
     {
       "id": "mu2ep3dsHaQ",
@@ -55001,20 +55141,20 @@
       "url": "https://www.youtube.com/watch?v=mu2ep3dsHaQ",
       "duration": 5635,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 6257,
       "is_canonical": true,
-      "event_group": "event-035"
+      "event_group": "event-029"
     },
     {
       "id": "5OIq7GaU4sI",
       "date": "2026-02-28",
-      "title": "Sambutan Presiden Prabowo pada Perayaan Tahun Baru Imlek Nasional",
+      "title": "Sambutan Presiden Prabowo pada Perayaan Tahun Baru Imlek Nasional 2026, 28 Februari 2026",
       "channel": "Sekretariat Presiden",
       "url": "https://www.youtube.com/watch?v=5OIq7GaU4sI",
-      "duration": 257,
+      "duration": 263,
       "source_tier": "official",
-      "source_kind": "baseline",
+      "fetch_method": "caption_api",
       "token_count": 333,
       "is_canonical": true,
       "event_group": "event-003"
@@ -55027,10 +55167,10 @@
       "url": "https://www.youtube.com/watch?v=Fm09R5akNzM",
       "duration": 1309,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1388,
       "is_canonical": true,
-      "event_group": "event-034"
+      "event_group": "event-028"
     },
     {
       "id": "rr-pObURxuc",
@@ -55040,10 +55180,10 @@
       "url": "https://www.youtube.com/watch?v=rr-pObURxuc",
       "duration": 1184,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1204,
       "is_canonical": false,
-      "event_group": "event-034"
+      "event_group": "event-028"
     },
     {
       "id": "VyPCSPnxbaE",
@@ -55051,12 +55191,12 @@
       "title": "Pidato Presiden Prabowo di Tasyakuran HUT ke-1 Danantara",
       "channel": "METRO TV",
       "url": "https://www.youtube.com/watch?v=VyPCSPnxbaE",
-      "duration": 986,
+      "duration": 1024,
       "source_tier": "media",
-      "source_kind": "baseline",
+      "fetch_method": "baseline_import",
       "token_count": 1205,
       "is_canonical": true,
-      "event_group": "event-006"
+      "event_group": "event-064"
     },
     {
       "id": "Oahke_hLlLc",
@@ -55066,10 +55206,10 @@
       "url": "https://www.youtube.com/watch?v=Oahke_hLlLc",
       "duration": 607,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 543,
       "is_canonical": true,
-      "event_group": "event-066"
+      "event_group": "event-061"
     },
     {
       "id": "CfWcrTCUIcI",
@@ -55079,10 +55219,10 @@
       "url": "https://www.youtube.com/watch?v=CfWcrTCUIcI",
       "duration": 1955,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1756,
       "is_canonical": false,
-      "event_group": "event-008"
+      "event_group": "event-002"
     },
     {
       "id": "PAtys9TmQ4U",
@@ -55092,10 +55232,10 @@
       "url": "https://www.youtube.com/watch?v=PAtys9TmQ4U",
       "duration": 2292,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2110,
       "is_canonical": false,
-      "event_group": "event-008"
+      "event_group": "event-002"
     },
     {
       "id": "rKpNQwecniM",
@@ -55103,12 +55243,12 @@
       "title": "Pidato Presiden Prabowo pada Peringatan Hari Buruh Internasional",
       "channel": "Prabowo Subianto",
       "url": "https://www.youtube.com/watch?v=rKpNQwecniM",
-      "duration": 2242,
+      "duration": 2776,
       "source_tier": "official",
-      "source_kind": "baseline",
+      "fetch_method": "caption_api",
       "token_count": 2044,
       "is_canonical": true,
-      "event_group": "event-008"
+      "event_group": "event-002"
     },
     {
       "id": "JkLlmVzJ_dc",
@@ -55118,10 +55258,10 @@
       "url": "https://www.youtube.com/watch?v=JkLlmVzJ_dc",
       "duration": 2454,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2769,
       "is_canonical": false,
-      "event_group": "event-040"
+      "event_group": "event-034"
     },
     {
       "id": "Zya6KTuVnwY",
@@ -55131,10 +55271,10 @@
       "url": "https://www.youtube.com/watch?v=Zya6KTuVnwY",
       "duration": 2329,
       "source_tier": "official",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 2666,
       "is_canonical": true,
-      "event_group": "event-040"
+      "event_group": "event-034"
     },
     {
       "id": "ypWhdkJiz3o",
@@ -55144,10 +55284,10 @@
       "url": "https://www.youtube.com/watch?v=ypWhdkJiz3o",
       "duration": 3135,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 3552,
       "is_canonical": true,
-      "event_group": "event-020"
+      "event_group": "event-014"
     },
     {
       "id": "7gTnSb4faRk",
@@ -55157,10 +55297,10 @@
       "url": "https://www.youtube.com/watch?v=7gTnSb4faRk",
       "duration": 70,
       "source_tier": "official",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 68,
       "is_canonical": true,
-      "event_group": "event-016"
+      "event_group": "event-010"
     },
     {
       "id": "WJtmyDrIgHg",
@@ -55170,10 +55310,10 @@
       "url": "https://www.youtube.com/watch?v=WJtmyDrIgHg",
       "duration": 5972,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 7623,
       "is_canonical": false,
-      "event_group": "event-016"
+      "event_group": "event-010"
     },
     {
       "id": "rVhF-GrMi8k",
@@ -55183,10 +55323,10 @@
       "url": "https://www.youtube.com/watch?v=rVhF-GrMi8k",
       "duration": 562,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 785,
       "is_canonical": false,
-      "event_group": "event-016"
+      "event_group": "event-010"
     },
     {
       "id": "HiJYFR1vR9g",
@@ -55196,10 +55336,10 @@
       "url": "https://www.youtube.com/watch?v=HiJYFR1vR9g",
       "duration": 636,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 661,
       "is_canonical": true,
-      "event_group": "event-038"
+      "event_group": "event-032"
     },
     {
       "id": "e3ByeIYYKYU",
@@ -55209,10 +55349,10 @@
       "url": "https://www.youtube.com/watch?v=e3ByeIYYKYU",
       "duration": 264,
       "source_tier": "official",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 352,
       "is_canonical": true,
-      "event_group": "event-017"
+      "event_group": "event-011"
     },
     {
       "id": "-PNMB8VQ0hY",
@@ -55222,10 +55362,10 @@
       "url": "https://www.youtube.com/watch?v=-PNMB8VQ0hY",
       "duration": 2601,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 1989,
       "is_canonical": true,
-      "event_group": "event-028"
+      "event_group": "event-022"
     },
     {
       "id": "1fkbpthd1MI",
@@ -55235,10 +55375,10 @@
       "url": "https://www.youtube.com/watch?v=1fkbpthd1MI",
       "duration": 1303,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1520,
       "is_canonical": false,
-      "event_group": "event-028"
+      "event_group": "event-022"
     },
     {
       "id": "mj5ur3bCtR8",
@@ -55248,10 +55388,10 @@
       "url": "https://www.youtube.com/watch?v=mj5ur3bCtR8",
       "duration": 1101,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1303,
       "is_canonical": false,
-      "event_group": "event-028"
+      "event_group": "event-022"
     },
     {
       "id": "9KWsOM3B6_c",
@@ -55261,10 +55401,10 @@
       "url": "https://www.youtube.com/watch?v=9KWsOM3B6_c",
       "duration": 2389,
       "source_tier": "official",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2386,
       "is_canonical": true,
-      "event_group": "event-014"
+      "event_group": "event-008"
     },
     {
       "id": "MqRxhlSThLA",
@@ -55274,10 +55414,10 @@
       "url": "https://www.youtube.com/watch?v=MqRxhlSThLA",
       "duration": 3405,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2386,
       "is_canonical": false,
-      "event_group": "event-014"
+      "event_group": "event-008"
     },
     {
       "id": "K4uvrC38Yxk",
@@ -55287,10 +55427,10 @@
       "url": "https://www.youtube.com/watch?v=K4uvrC38Yxk",
       "duration": 4405,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 4207,
       "is_canonical": false,
-      "event_group": "event-024"
+      "event_group": "event-018"
     },
     {
       "id": "Le2zr-cRENo",
@@ -55300,10 +55440,10 @@
       "url": "https://www.youtube.com/watch?v=Le2zr-cRENo",
       "duration": 4380,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 4153,
       "is_canonical": false,
-      "event_group": "event-024"
+      "event_group": "event-018"
     },
     {
       "id": "Ntf-BzRGTug",
@@ -55313,10 +55453,10 @@
       "url": "https://www.youtube.com/watch?v=Ntf-BzRGTug",
       "duration": 4555,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 4297,
       "is_canonical": true,
-      "event_group": "event-024"
+      "event_group": "event-018"
     },
     {
       "id": "jMu830avg98",
@@ -55326,10 +55466,10 @@
       "url": "https://www.youtube.com/watch?v=jMu830avg98",
       "duration": 4740,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 4290,
       "is_canonical": false,
-      "event_group": "event-024"
+      "event_group": "event-018"
     },
     {
       "id": "kyfyXGWzoCY",
@@ -55339,10 +55479,10 @@
       "url": "https://www.youtube.com/watch?v=kyfyXGWzoCY",
       "duration": 4430,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 4244,
       "is_canonical": false,
-      "event_group": "event-024"
+      "event_group": "event-018"
     },
     {
       "id": "GB_4IuWGdHQ",
@@ -55352,10 +55492,10 @@
       "url": "https://www.youtube.com/watch?v=GB_4IuWGdHQ",
       "duration": 2290,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 2385,
       "is_canonical": false,
-      "event_group": "event-022"
+      "event_group": "event-016"
     },
     {
       "id": "LVv2n7Yc87E",
@@ -55365,10 +55505,10 @@
       "url": "https://www.youtube.com/watch?v=LVv2n7Yc87E",
       "duration": 2255,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2350,
       "is_canonical": false,
-      "event_group": "event-022"
+      "event_group": "event-016"
     },
     {
       "id": "bo0MqM07bcs",
@@ -55378,10 +55518,10 @@
       "url": "https://www.youtube.com/watch?v=bo0MqM07bcs",
       "duration": 2213,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2287,
       "is_canonical": false,
-      "event_group": "event-022"
+      "event_group": "event-016"
     },
     {
       "id": "cFo77KlaYEU",
@@ -55391,10 +55531,10 @@
       "url": "https://www.youtube.com/watch?v=cFo77KlaYEU",
       "duration": 8048,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 4808,
       "is_canonical": true,
-      "event_group": "event-022"
+      "event_group": "event-016"
     },
     {
       "id": "qlqjxqEKYXQ",
@@ -55404,10 +55544,10 @@
       "url": "https://www.youtube.com/watch?v=qlqjxqEKYXQ",
       "duration": 5585,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 4584,
       "is_canonical": false,
-      "event_group": "event-022"
+      "event_group": "event-016"
     },
     {
       "id": "rn96VRQ4SgY",
@@ -55417,10 +55557,10 @@
       "url": "https://www.youtube.com/watch?v=rn96VRQ4SgY",
       "duration": 2276,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2358,
       "is_canonical": false,
-      "event_group": "event-022"
+      "event_group": "event-016"
     },
     {
       "id": "LN2JbamjmcE",
@@ -55430,10 +55570,10 @@
       "url": "https://www.youtube.com/watch?v=LN2JbamjmcE",
       "duration": 2398,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2733,
       "is_canonical": false,
-      "event_group": "event-011"
+      "event_group": "event-005"
     },
     {
       "id": "WN4ObtcpRMs",
@@ -55443,10 +55583,10 @@
       "url": "https://www.youtube.com/watch?v=WN4ObtcpRMs",
       "duration": 2995,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2990,
       "is_canonical": true,
-      "event_group": "event-011"
+      "event_group": "event-005"
     },
     {
       "id": "qswoKxCknHg",
@@ -55456,10 +55596,10 @@
       "url": "https://www.youtube.com/watch?v=qswoKxCknHg",
       "duration": 2987,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2955,
       "is_canonical": false,
-      "event_group": "event-011"
+      "event_group": "event-005"
     },
     {
       "id": "hJybE-uF_qE",
@@ -55467,12 +55607,12 @@
       "title": "Pembukaan Sarasehan Kebangsaan KSTI 2026",
       "channel": "Sekretariat Presiden",
       "url": "https://www.youtube.com/watch?v=hJybE-uF_qE",
-      "duration": 1688,
+      "duration": 2875,
       "source_tier": "official",
-      "source_kind": "baseline",
+      "fetch_method": "baseline_import",
       "token_count": 1619,
       "is_canonical": true,
-      "event_group": "event-007"
+      "event_group": "event-063"
     },
     {
       "id": "7Zi5vqN_VC4",
@@ -55482,10 +55622,10 @@
       "url": "https://www.youtube.com/watch?v=7Zi5vqN_VC4",
       "duration": 3045,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 3303,
       "is_canonical": true,
-      "event_group": "event-010"
+      "event_group": "event-058"
     },
     {
       "id": "xK61ktEglpc",
@@ -55493,12 +55633,12 @@
       "title": "Pidato Penutupan Sarasehan Kebangsaan KSTI 2026",
       "channel": "Pangkep TV",
       "url": "https://www.youtube.com/watch?v=xK61ktEglpc",
-      "duration": 1050,
+      "duration": 1059,
       "source_tier": "media",
-      "source_kind": "baseline",
+      "fetch_method": "baseline_import",
       "token_count": 1137,
       "is_canonical": false,
-      "event_group": "event-010"
+      "event_group": "event-058"
     },
     {
       "id": "CpQyrmIrasU",
@@ -55508,10 +55648,10 @@
       "url": "https://www.youtube.com/watch?v=CpQyrmIrasU",
       "duration": 1590,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1470,
       "is_canonical": false,
-      "event_group": "event-033"
+      "event_group": "event-027"
     },
     {
       "id": "HBuj_rOU5yA",
@@ -55521,10 +55661,10 @@
       "url": "https://www.youtube.com/watch?v=HBuj_rOU5yA",
       "duration": 1935,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1822,
       "is_canonical": true,
-      "event_group": "event-033"
+      "event_group": "event-027"
     },
     {
       "id": "MExLyHOhkkE",
@@ -55534,10 +55674,10 @@
       "url": "https://www.youtube.com/watch?v=MExLyHOhkkE",
       "duration": 1950,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1835,
       "is_canonical": false,
-      "event_group": "event-033"
+      "event_group": "event-027"
     },
     {
       "id": "cJ-_bH8JIss",
@@ -55547,10 +55687,10 @@
       "url": "https://www.youtube.com/watch?v=cJ-_bH8JIss",
       "duration": 370,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 409,
       "is_canonical": false,
-      "event_group": "event-033"
+      "event_group": "event-027"
     },
     {
       "id": "A6vTh2qoGrc",
@@ -55560,10 +55700,10 @@
       "url": "https://www.youtube.com/watch?v=A6vTh2qoGrc",
       "duration": 2308,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2501,
       "is_canonical": false,
-      "event_group": "event-037"
+      "event_group": "event-031"
     },
     {
       "id": "dvCtCfifU30",
@@ -55573,10 +55713,10 @@
       "url": "https://www.youtube.com/watch?v=dvCtCfifU30",
       "duration": 2338,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2532,
       "is_canonical": false,
-      "event_group": "event-037"
+      "event_group": "event-031"
     },
     {
       "id": "xh-kV0Rm8K8",
@@ -55586,10 +55726,10 @@
       "url": "https://www.youtube.com/watch?v=xh-kV0Rm8K8",
       "duration": 2385,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2541,
       "is_canonical": true,
-      "event_group": "event-037"
+      "event_group": "event-031"
     },
     {
       "id": "YYas7H5zORI",
@@ -55599,10 +55739,10 @@
       "url": "https://www.youtube.com/watch?v=YYas7H5zORI",
       "duration": 3134,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 3129,
       "is_canonical": true,
-      "event_group": "event-013"
+      "event_group": "event-007"
     },
     {
       "id": "bvLTXCGnFT4",
@@ -55612,10 +55752,10 @@
       "url": "https://www.youtube.com/watch?v=bvLTXCGnFT4",
       "duration": 1616,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1664,
       "is_canonical": false,
-      "event_group": "event-013"
+      "event_group": "event-007"
     },
     {
       "id": "guZ8TO7OaIQ",
@@ -55625,10 +55765,10 @@
       "url": "https://www.youtube.com/watch?v=guZ8TO7OaIQ",
       "duration": 3150,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 3126,
       "is_canonical": false,
-      "event_group": "event-013"
+      "event_group": "event-007"
     },
     {
       "id": "GzhUFm9DBVA",
@@ -55638,10 +55778,10 @@
       "url": "https://www.youtube.com/watch?v=GzhUFm9DBVA",
       "duration": 405,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 334,
       "is_canonical": false,
-      "event_group": "event-064"
+      "event_group": "event-059"
     },
     {
       "id": "v-1YabkN-pM",
@@ -55651,10 +55791,10 @@
       "url": "https://www.youtube.com/watch?v=v-1YabkN-pM",
       "duration": 3695,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 3715,
       "is_canonical": true,
-      "event_group": "event-064"
+      "event_group": "event-059"
     },
     {
       "id": "QAFNXg-LfTU",
@@ -55664,10 +55804,10 @@
       "url": "https://www.youtube.com/watch?v=QAFNXg-LfTU",
       "duration": 1555,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1575,
       "is_canonical": true,
-      "event_group": "event-042"
+      "event_group": "event-036"
     },
     {
       "id": "wqtxaE1csEI",
@@ -55677,10 +55817,10 @@
       "url": "https://www.youtube.com/watch?v=wqtxaE1csEI",
       "duration": 2608,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2576,
       "is_canonical": false,
-      "event_group": "event-031"
+      "event_group": "event-025"
     },
     {
       "id": "yJglGGY8ADI",
@@ -55690,10 +55830,10 @@
       "url": "https://www.youtube.com/watch?v=yJglGGY8ADI",
       "duration": 2665,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2617,
       "is_canonical": true,
-      "event_group": "event-031"
+      "event_group": "event-025"
     },
     {
       "id": "RN1KK-VBoUg",
@@ -55703,10 +55843,10 @@
       "url": "https://www.youtube.com/watch?v=RN1KK-VBoUg",
       "duration": 3073,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 3475,
       "is_canonical": false,
-      "event_group": "event-036"
+      "event_group": "event-030"
     },
     {
       "id": "p7G73zBiow4",
@@ -55716,10 +55856,10 @@
       "url": "https://www.youtube.com/watch?v=p7G73zBiow4",
       "duration": 5218,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 5868,
       "is_canonical": true,
-      "event_group": "event-036"
+      "event_group": "event-030"
     },
     {
       "id": "kGOo1E2KmLw",
@@ -55729,23 +55869,23 @@
       "url": "https://www.youtube.com/watch?v=kGOo1E2KmLw",
       "duration": 2930,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 2793,
       "is_canonical": false,
-      "event_group": "event-009"
+      "event_group": "event-001"
     },
     {
       "id": "vyp6JITYFM8",
       "date": "2026-07-24",
-      "title": "Pidato Prabowo di Harlah PKB",
+      "title": "FULL! Pidato Prabowo di Harlah PKB, Singgung Prabowonomics hingga Tegaskan Jalankan Amanat UUD 1945",
       "channel": "KOMPASTV",
       "url": "https://www.youtube.com/watch?v=vyp6JITYFM8",
-      "duration": 2803,
-      "source_tier": "media",
-      "source_kind": "baseline",
+      "duration": 2920,
+      "source_tier": "full_media",
+      "fetch_method": "caption_api",
       "token_count": 2730,
       "is_canonical": true,
-      "event_group": "event-009"
+      "event_group": "event-001"
     },
     {
       "id": "IHY-7SvqxoI",
@@ -55755,10 +55895,10 @@
       "url": "https://www.youtube.com/watch?v=IHY-7SvqxoI",
       "duration": 1631,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1616,
       "is_canonical": true,
-      "event_group": "event-032"
+      "event_group": "event-026"
     },
     {
       "id": "3VR-aKaxHyU",
@@ -55768,10 +55908,10 @@
       "url": "https://www.youtube.com/watch?v=3VR-aKaxHyU",
       "duration": 2134,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2342,
       "is_canonical": false,
-      "event_group": "event-027"
+      "event_group": "event-021"
     },
     {
       "id": "NmbVCeypyHE",
@@ -55781,10 +55921,10 @@
       "url": "https://www.youtube.com/watch?v=NmbVCeypyHE",
       "duration": 2215,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2412,
       "is_canonical": true,
-      "event_group": "event-027"
+      "event_group": "event-021"
     },
     {
       "id": "YUONIE2ivHo",
@@ -55794,10 +55934,10 @@
       "url": "https://www.youtube.com/watch?v=YUONIE2ivHo",
       "duration": 1255,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1414,
       "is_canonical": true,
-      "event_group": "event-021"
+      "event_group": "event-015"
     },
     {
       "id": "y2kfhhDgN5s",
@@ -55807,10 +55947,10 @@
       "url": "https://www.youtube.com/watch?v=y2kfhhDgN5s",
       "duration": 2161,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2359,
       "is_canonical": false,
-      "event_group": "event-027"
+      "event_group": "event-021"
     },
     {
       "id": "_UEZyffi3YU",
@@ -55820,10 +55960,10 @@
       "url": "https://www.youtube.com/watch?v=_UEZyffi3YU",
       "duration": 2294,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2501,
       "is_canonical": true,
-      "event_group": "event-046"
+      "event_group": "event-040"
     },
     {
       "id": "SjuGxdMRzPk",
@@ -55833,10 +55973,10 @@
       "url": "https://www.youtube.com/watch?v=SjuGxdMRzPk",
       "duration": 1075,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1185,
       "is_canonical": true,
-      "event_group": "event-026"
+      "event_group": "event-020"
     },
     {
       "id": "9rpZpKagShM",
@@ -55846,10 +55986,10 @@
       "url": "https://www.youtube.com/watch?v=9rpZpKagShM",
       "duration": 2075,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 2315,
       "is_canonical": true,
-      "event_group": "event-043"
+      "event_group": "event-037"
     },
     {
       "id": "06kk5UIx6a8",
@@ -55859,10 +55999,10 @@
       "url": "https://www.youtube.com/watch?v=06kk5UIx6a8",
       "duration": 6890,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 7746,
       "is_canonical": false,
-      "event_group": "event-023"
+      "event_group": "event-017"
     },
     {
       "id": "1-hEfAcRo4k",
@@ -55872,10 +56012,10 @@
       "url": "https://www.youtube.com/watch?v=1-hEfAcRo4k",
       "duration": 6978,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 7900,
       "is_canonical": true,
-      "event_group": "event-023"
+      "event_group": "event-017"
     },
     {
       "id": "38G2GvbhUKo",
@@ -55885,10 +56025,10 @@
       "url": "https://www.youtube.com/watch?v=38G2GvbhUKo",
       "duration": 12698,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 17018,
       "is_canonical": false,
-      "event_group": "event-015"
+      "event_group": "event-009"
     },
     {
       "id": "DW6WkFY5pM4",
@@ -55898,10 +56038,10 @@
       "url": "https://www.youtube.com/watch?v=DW6WkFY5pM4",
       "duration": 22560,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 29216,
       "is_canonical": false,
-      "event_group": "event-023"
+      "event_group": "event-017"
     },
     {
       "id": "EZC8X_pgFlY",
@@ -55911,10 +56051,10 @@
       "url": "https://www.youtube.com/watch?v=EZC8X_pgFlY",
       "duration": 9512,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 11989,
       "is_canonical": false,
-      "event_group": "event-015"
+      "event_group": "event-009"
     },
     {
       "id": "OzET9XSJ55k",
@@ -55924,10 +56064,10 @@
       "url": "https://www.youtube.com/watch?v=OzET9XSJ55k",
       "duration": 6822,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 7746,
       "is_canonical": false,
-      "event_group": "event-023"
+      "event_group": "event-017"
     },
     {
       "id": "SldYWZTaoXs",
@@ -55937,10 +56077,10 @@
       "url": "https://www.youtube.com/watch?v=SldYWZTaoXs",
       "duration": 4669,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 5485,
       "is_canonical": false,
-      "event_group": "event-015"
+      "event_group": "event-009"
     },
     {
       "id": "WmwcRVPUKB4",
@@ -55950,10 +56090,10 @@
       "url": "https://www.youtube.com/watch?v=WmwcRVPUKB4",
       "duration": 936,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 1031,
       "is_canonical": false,
-      "event_group": "event-023"
+      "event_group": "event-017"
     },
     {
       "id": "mFeHiRfWNyg",
@@ -55963,10 +56103,10 @@
       "url": "https://www.youtube.com/watch?v=mFeHiRfWNyg",
       "duration": 6818,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 7751,
       "is_canonical": false,
-      "event_group": "event-023"
+      "event_group": "event-017"
     },
     {
       "id": "pQAVGm6zYsA",
@@ -55976,10 +56116,10 @@
       "url": "https://www.youtube.com/watch?v=pQAVGm6zYsA",
       "duration": 6875,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 7750,
       "is_canonical": false,
-      "event_group": "event-023"
+      "event_group": "event-017"
     },
     {
       "id": "sv1HMoSzRk4",
@@ -55989,10 +56129,10 @@
       "url": "https://www.youtube.com/watch?v=sv1HMoSzRk4",
       "duration": 4808,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 5554,
       "is_canonical": true,
-      "event_group": "event-015"
+      "event_group": "event-009"
     },
     {
       "id": "UYdFSPfJZfk",
@@ -56002,10 +56142,10 @@
       "url": "https://www.youtube.com/watch?v=UYdFSPfJZfk",
       "duration": 1310,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1388,
       "is_canonical": true,
-      "event_group": "event-029"
+      "event_group": "event-023"
     },
     {
       "id": "6FhicKsZRpw",
@@ -56015,10 +56155,10 @@
       "url": "https://www.youtube.com/watch?v=6FhicKsZRpw",
       "duration": 665,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 666,
       "is_canonical": false,
-      "event_group": "event-012"
+      "event_group": "event-006"
     },
     {
       "id": "KXoaUQadksU",
@@ -56028,10 +56168,10 @@
       "url": "https://www.youtube.com/watch?v=KXoaUQadksU",
       "duration": 1675,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1697,
       "is_canonical": false,
-      "event_group": "event-012"
+      "event_group": "event-006"
     },
     {
       "id": "LXPkBOctQhE",
@@ -56041,10 +56181,10 @@
       "url": "https://www.youtube.com/watch?v=LXPkBOctQhE",
       "duration": 1517,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1607,
       "is_canonical": false,
-      "event_group": "event-012"
+      "event_group": "event-006"
     },
     {
       "id": "eddIEv78h3E",
@@ -56054,10 +56194,10 @@
       "url": "https://www.youtube.com/watch?v=eddIEv78h3E",
       "duration": 1657,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 1700,
       "is_canonical": true,
-      "event_group": "event-012"
+      "event_group": "event-006"
     },
     {
       "id": "O1H9Au0hGxA",
@@ -56067,10 +56207,10 @@
       "url": "https://www.youtube.com/watch?v=O1H9Au0hGxA",
       "duration": 1279,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 1370,
       "is_canonical": false,
-      "event_group": "event-030"
+      "event_group": "event-024"
     },
     {
       "id": "ZqMj_BRxODM",
@@ -56080,10 +56220,10 @@
       "url": "https://www.youtube.com/watch?v=ZqMj_BRxODM",
       "duration": 1518,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1595,
       "is_canonical": false,
-      "event_group": "event-030"
+      "event_group": "event-024"
     },
     {
       "id": "hkokmwX91Ts",
@@ -56093,10 +56233,10 @@
       "url": "https://www.youtube.com/watch?v=hkokmwX91Ts",
       "duration": 1425,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 1500,
       "is_canonical": false,
-      "event_group": "event-030"
+      "event_group": "event-024"
     },
     {
       "id": "pikkD5C3swU",
@@ -56106,10 +56246,10 @@
       "url": "https://www.youtube.com/watch?v=pikkD5C3swU",
       "duration": 1448,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1520,
       "is_canonical": true,
-      "event_group": "event-030"
+      "event_group": "event-024"
     },
     {
       "id": "zdU-K2x6Foc",
@@ -56119,10 +56259,10 @@
       "url": "https://www.youtube.com/watch?v=zdU-K2x6Foc",
       "duration": 1365,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1473,
       "is_canonical": false,
-      "event_group": "event-030"
+      "event_group": "event-024"
     },
     {
       "id": "6mWMd7ClCv8",
@@ -56132,10 +56272,10 @@
       "url": "https://www.youtube.com/watch?v=6mWMd7ClCv8",
       "duration": 923,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1123,
       "is_canonical": false,
-      "event_group": "event-039"
+      "event_group": "event-033"
     },
     {
       "id": "7OFTHsA1c74",
@@ -56145,10 +56285,10 @@
       "url": "https://www.youtube.com/watch?v=7OFTHsA1c74",
       "duration": 485,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 375,
       "is_canonical": false,
-      "event_group": "event-044"
+      "event_group": "event-038"
     },
     {
       "id": "8hj3tR4gCTc",
@@ -56158,10 +56298,10 @@
       "url": "https://www.youtube.com/watch?v=8hj3tR4gCTc",
       "duration": 3160,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 3310,
       "is_canonical": true,
-      "event_group": "event-044"
+      "event_group": "event-038"
     },
     {
       "id": "BYJsAQ79gdg",
@@ -56171,10 +56311,10 @@
       "url": "https://www.youtube.com/watch?v=BYJsAQ79gdg",
       "duration": 3210,
       "source_tier": "full_media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 3238,
       "is_canonical": false,
-      "event_group": "event-044"
+      "event_group": "event-038"
     },
     {
       "id": "ZU_qK2nH89o",
@@ -56184,10 +56324,10 @@
       "url": "https://www.youtube.com/watch?v=ZU_qK2nH89o",
       "duration": 1361,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 1573,
       "is_canonical": true,
-      "event_group": "event-039"
+      "event_group": "event-033"
     },
     {
       "id": "_Ypg-m8B78s",
@@ -56197,10 +56337,10 @@
       "url": "https://www.youtube.com/watch?v=_Ypg-m8B78s",
       "duration": 3210,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "caption_api",
       "token_count": 3237,
       "is_canonical": false,
-      "event_group": "event-044"
+      "event_group": "event-038"
     },
     {
       "id": "DeIrya-WlpE",
@@ -56210,10 +56350,10 @@
       "url": "https://www.youtube.com/watch?v=DeIrya-WlpE",
       "duration": 772,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 660,
       "is_canonical": false,
-      "event_group": "event-044"
+      "event_group": "event-038"
     },
     {
       "id": "O_BigY_r0Do",
@@ -56223,10 +56363,10 @@
       "url": "https://www.youtube.com/watch?v=O_BigY_r0Do",
       "duration": 408,
       "source_tier": "media",
-      "source_kind": "expanded",
+      "fetch_method": "transcript_panel",
       "token_count": 335,
       "is_canonical": false,
-      "event_group": "event-044"
+      "event_group": "event-038"
     }
   ],
   "word_index": [
@@ -114383,211 +114523,20 @@
   ],
   "duplicate_groups": [
     {
-      "event_group": "event-065",
-      "canonical_id": "R-b9-w6QrWg",
+      "event_group": "event-001",
+      "canonical_id": "vyp6JITYFM8",
       "member_ids": [
-        "R-b9-w6QrWg"
-      ]
-    },
-    {
-      "event_group": "event-051",
-      "canonical_id": "fUA5IWV_00A",
-      "member_ids": [
-        "fUA5IWV_00A"
-      ]
-    },
-    {
-      "event_group": "event-050",
-      "canonical_id": "mb2Jw47oVl8",
-      "member_ids": [
-        "3YMlecD1nQ0",
-        "mb2Jw47oVl8"
-      ]
-    },
-    {
-      "event_group": "event-052",
-      "canonical_id": "BNfmMijPCJM",
-      "member_ids": [
-        "BNfmMijPCJM"
-      ]
-    },
-    {
-      "event_group": "event-048",
-      "canonical_id": "3XayivTOjCY",
-      "member_ids": [
-        "3XayivTOjCY",
-        "5l05r-Uxi-A"
-      ]
-    },
-    {
-      "event_group": "event-058",
-      "canonical_id": "73EnzEWg_8k",
-      "member_ids": [
-        "73EnzEWg_8k"
-      ]
-    },
-    {
-      "event_group": "event-047",
-      "canonical_id": "sJ-b3ohKEs0",
-      "member_ids": [
-        "sJ-b3ohKEs0",
-        "wTHui5fr11M"
-      ]
-    },
-    {
-      "event_group": "event-018",
-      "canonical_id": "ffYHRrgqg5U",
-      "member_ids": [
-        "ffYHRrgqg5U"
-      ]
-    },
-    {
-      "event_group": "event-004",
-      "canonical_id": "CfnRESwOZKQ",
-      "member_ids": [
-        "CfnRESwOZKQ"
-      ]
-    },
-    {
-      "event_group": "event-060",
-      "canonical_id": "oJdO0XleOws",
-      "member_ids": [
-        "oJdO0XleOws"
-      ]
-    },
-    {
-      "event_group": "event-061",
-      "canonical_id": "Ra4_HJDql14",
-      "member_ids": [
-        "Ra4_HJDql14"
-      ]
-    },
-    {
-      "event_group": "event-056",
-      "canonical_id": "g_aLb7K2a-A",
-      "member_ids": [
-        "g_aLb7K2a-A"
-      ]
-    },
-    {
-      "event_group": "event-041",
-      "canonical_id": "Enmz62kOMyI",
-      "member_ids": [
-        "Enmz62kOMyI"
-      ]
-    },
-    {
-      "event_group": "event-055",
-      "canonical_id": "fmv67UzNYdM",
-      "member_ids": [
-        "fmv67UzNYdM"
-      ]
-    },
-    {
-      "event_group": "event-063",
-      "canonical_id": "8gMTWE2Sj8w",
-      "member_ids": [
-        "8gMTWE2Sj8w"
-      ]
-    },
-    {
-      "event_group": "event-005",
-      "canonical_id": "E_doThSKS4E",
-      "member_ids": [
-        "E_doThSKS4E"
-      ]
-    },
-    {
-      "event_group": "event-054",
-      "canonical_id": "bSpL4BxOMUk",
-      "member_ids": [
-        "bSpL4BxOMUk"
+        "kGOo1E2KmLw",
+        "vyp6JITYFM8"
       ]
     },
     {
       "event_group": "event-002",
-      "canonical_id": "3e_gu9rWwWQ",
+      "canonical_id": "rKpNQwecniM",
       "member_ids": [
-        "3e_gu9rWwWQ"
-      ]
-    },
-    {
-      "event_group": "event-025",
-      "canonical_id": "gyT_qLziJ2M",
-      "member_ids": [
-        "gyT_qLziJ2M"
-      ]
-    },
-    {
-      "event_group": "event-057",
-      "canonical_id": "tbyjpnb5r70",
-      "member_ids": [
-        "tbyjpnb5r70"
-      ]
-    },
-    {
-      "event_group": "event-001",
-      "canonical_id": "02IcsjvhFGQ",
-      "member_ids": [
-        "02IcsjvhFGQ"
-      ]
-    },
-    {
-      "event_group": "event-059",
-      "canonical_id": "KNeFsu2UbDQ",
-      "member_ids": [
-        "KNeFsu2UbDQ"
-      ]
-    },
-    {
-      "event_group": "event-053",
-      "canonical_id": "BgJb8u_VyGo",
-      "member_ids": [
-        "BgJb8u_VyGo"
-      ]
-    },
-    {
-      "event_group": "event-049",
-      "canonical_id": "_Aer99PNOA8",
-      "member_ids": [
-        "-qcEnX4VcWI",
-        "_Aer99PNOA8",
-        "k9UueTQI6gw"
-      ]
-    },
-    {
-      "event_group": "event-062",
-      "canonical_id": "SrjfNdzQO54",
-      "member_ids": [
-        "SrjfNdzQO54"
-      ]
-    },
-    {
-      "event_group": "event-045",
-      "canonical_id": "OOAGKPFdwf0",
-      "member_ids": [
-        "OOAGKPFdwf0"
-      ]
-    },
-    {
-      "event_group": "event-019",
-      "canonical_id": "doW8-nSNL-8",
-      "member_ids": [
-        "doW8-nSNL-8"
-      ]
-    },
-    {
-      "event_group": "event-067",
-      "canonical_id": "FG-MUTrgsls",
-      "member_ids": [
-        "FG-MUTrgsls"
-      ]
-    },
-    {
-      "event_group": "event-035",
-      "canonical_id": "mu2ep3dsHaQ",
-      "member_ids": [
-        "mu2ep3dsHaQ"
+        "CfWcrTCUIcI",
+        "PAtys9TmQ4U",
+        "rKpNQwecniM"
       ]
     },
     {
@@ -114598,53 +114547,60 @@
       ]
     },
     {
-      "event_group": "event-034",
-      "canonical_id": "Fm09R5akNzM",
+      "event_group": "event-004",
+      "canonical_id": "02IcsjvhFGQ",
       "member_ids": [
-        "Fm09R5akNzM",
-        "rr-pObURxuc"
+        "02IcsjvhFGQ"
+      ]
+    },
+    {
+      "event_group": "event-005",
+      "canonical_id": "WN4ObtcpRMs",
+      "member_ids": [
+        "LN2JbamjmcE",
+        "WN4ObtcpRMs",
+        "qswoKxCknHg"
       ]
     },
     {
       "event_group": "event-006",
-      "canonical_id": "VyPCSPnxbaE",
+      "canonical_id": "eddIEv78h3E",
       "member_ids": [
-        "VyPCSPnxbaE"
+        "6FhicKsZRpw",
+        "KXoaUQadksU",
+        "LXPkBOctQhE",
+        "eddIEv78h3E"
       ]
     },
     {
-      "event_group": "event-066",
-      "canonical_id": "Oahke_hLlLc",
+      "event_group": "event-007",
+      "canonical_id": "YYas7H5zORI",
       "member_ids": [
-        "Oahke_hLlLc"
+        "YYas7H5zORI",
+        "bvLTXCGnFT4",
+        "guZ8TO7OaIQ"
       ]
     },
     {
       "event_group": "event-008",
-      "canonical_id": "rKpNQwecniM",
+      "canonical_id": "9KWsOM3B6_c",
       "member_ids": [
-        "CfWcrTCUIcI",
-        "PAtys9TmQ4U",
-        "rKpNQwecniM"
+        "9KWsOM3B6_c",
+        "MqRxhlSThLA"
       ]
     },
     {
-      "event_group": "event-040",
-      "canonical_id": "Zya6KTuVnwY",
+      "event_group": "event-009",
+      "canonical_id": "sv1HMoSzRk4",
       "member_ids": [
-        "JkLlmVzJ_dc",
-        "Zya6KTuVnwY"
+        "38G2GvbhUKo",
+        "EZC8X_pgFlY",
+        "SldYWZTaoXs",
+        "sv1HMoSzRk4"
       ]
     },
     {
-      "event_group": "event-020",
-      "canonical_id": "ypWhdkJiz3o",
-      "member_ids": [
-        "ypWhdkJiz3o"
-      ]
-    },
-    {
-      "event_group": "event-016",
+      "event_group": "event-010",
       "canonical_id": "7gTnSb4faRk",
       "member_ids": [
         "7gTnSb4faRk",
@@ -114653,49 +114609,42 @@
       ]
     },
     {
-      "event_group": "event-038",
-      "canonical_id": "HiJYFR1vR9g",
-      "member_ids": [
-        "HiJYFR1vR9g"
-      ]
-    },
-    {
-      "event_group": "event-017",
+      "event_group": "event-011",
       "canonical_id": "e3ByeIYYKYU",
       "member_ids": [
         "e3ByeIYYKYU"
       ]
     },
     {
-      "event_group": "event-028",
-      "canonical_id": "-PNMB8VQ0hY",
+      "event_group": "event-012",
+      "canonical_id": "ffYHRrgqg5U",
       "member_ids": [
-        "-PNMB8VQ0hY",
-        "1fkbpthd1MI",
-        "mj5ur3bCtR8"
+        "ffYHRrgqg5U"
+      ]
+    },
+    {
+      "event_group": "event-013",
+      "canonical_id": "doW8-nSNL-8",
+      "member_ids": [
+        "doW8-nSNL-8"
       ]
     },
     {
       "event_group": "event-014",
-      "canonical_id": "9KWsOM3B6_c",
+      "canonical_id": "ypWhdkJiz3o",
       "member_ids": [
-        "9KWsOM3B6_c",
-        "MqRxhlSThLA"
+        "ypWhdkJiz3o"
       ]
     },
     {
-      "event_group": "event-024",
-      "canonical_id": "Ntf-BzRGTug",
+      "event_group": "event-015",
+      "canonical_id": "YUONIE2ivHo",
       "member_ids": [
-        "K4uvrC38Yxk",
-        "Le2zr-cRENo",
-        "Ntf-BzRGTug",
-        "jMu830avg98",
-        "kyfyXGWzoCY"
+        "YUONIE2ivHo"
       ]
     },
     {
-      "event_group": "event-022",
+      "event_group": "event-016",
       "canonical_id": "cFo77KlaYEU",
       "member_ids": [
         "GB_4IuWGdHQ",
@@ -114707,142 +114656,7 @@
       ]
     },
     {
-      "event_group": "event-011",
-      "canonical_id": "WN4ObtcpRMs",
-      "member_ids": [
-        "LN2JbamjmcE",
-        "WN4ObtcpRMs",
-        "qswoKxCknHg"
-      ]
-    },
-    {
-      "event_group": "event-007",
-      "canonical_id": "hJybE-uF_qE",
-      "member_ids": [
-        "hJybE-uF_qE"
-      ]
-    },
-    {
-      "event_group": "event-010",
-      "canonical_id": "7Zi5vqN_VC4",
-      "member_ids": [
-        "7Zi5vqN_VC4",
-        "xK61ktEglpc"
-      ]
-    },
-    {
-      "event_group": "event-033",
-      "canonical_id": "HBuj_rOU5yA",
-      "member_ids": [
-        "CpQyrmIrasU",
-        "HBuj_rOU5yA",
-        "MExLyHOhkkE",
-        "cJ-_bH8JIss"
-      ]
-    },
-    {
-      "event_group": "event-037",
-      "canonical_id": "xh-kV0Rm8K8",
-      "member_ids": [
-        "A6vTh2qoGrc",
-        "dvCtCfifU30",
-        "xh-kV0Rm8K8"
-      ]
-    },
-    {
-      "event_group": "event-013",
-      "canonical_id": "YYas7H5zORI",
-      "member_ids": [
-        "YYas7H5zORI",
-        "bvLTXCGnFT4",
-        "guZ8TO7OaIQ"
-      ]
-    },
-    {
-      "event_group": "event-064",
-      "canonical_id": "v-1YabkN-pM",
-      "member_ids": [
-        "GzhUFm9DBVA",
-        "v-1YabkN-pM"
-      ]
-    },
-    {
-      "event_group": "event-042",
-      "canonical_id": "QAFNXg-LfTU",
-      "member_ids": [
-        "QAFNXg-LfTU"
-      ]
-    },
-    {
-      "event_group": "event-031",
-      "canonical_id": "yJglGGY8ADI",
-      "member_ids": [
-        "wqtxaE1csEI",
-        "yJglGGY8ADI"
-      ]
-    },
-    {
-      "event_group": "event-036",
-      "canonical_id": "p7G73zBiow4",
-      "member_ids": [
-        "RN1KK-VBoUg",
-        "p7G73zBiow4"
-      ]
-    },
-    {
-      "event_group": "event-009",
-      "canonical_id": "vyp6JITYFM8",
-      "member_ids": [
-        "kGOo1E2KmLw",
-        "vyp6JITYFM8"
-      ]
-    },
-    {
-      "event_group": "event-032",
-      "canonical_id": "IHY-7SvqxoI",
-      "member_ids": [
-        "IHY-7SvqxoI"
-      ]
-    },
-    {
-      "event_group": "event-027",
-      "canonical_id": "NmbVCeypyHE",
-      "member_ids": [
-        "3VR-aKaxHyU",
-        "NmbVCeypyHE",
-        "y2kfhhDgN5s"
-      ]
-    },
-    {
-      "event_group": "event-021",
-      "canonical_id": "YUONIE2ivHo",
-      "member_ids": [
-        "YUONIE2ivHo"
-      ]
-    },
-    {
-      "event_group": "event-046",
-      "canonical_id": "_UEZyffi3YU",
-      "member_ids": [
-        "_UEZyffi3YU"
-      ]
-    },
-    {
-      "event_group": "event-026",
-      "canonical_id": "SjuGxdMRzPk",
-      "member_ids": [
-        "SjuGxdMRzPk"
-      ]
-    },
-    {
-      "event_group": "event-043",
-      "canonical_id": "9rpZpKagShM",
-      "member_ids": [
-        "9rpZpKagShM"
-      ]
-    },
-    {
-      "event_group": "event-023",
+      "event_group": "event-017",
       "canonical_id": "1-hEfAcRo4k",
       "member_ids": [
         "06kk5UIx6a8",
@@ -114855,34 +114669,57 @@
       ]
     },
     {
-      "event_group": "event-015",
-      "canonical_id": "sv1HMoSzRk4",
+      "event_group": "event-018",
+      "canonical_id": "Ntf-BzRGTug",
       "member_ids": [
-        "38G2GvbhUKo",
-        "EZC8X_pgFlY",
-        "SldYWZTaoXs",
-        "sv1HMoSzRk4"
+        "K4uvrC38Yxk",
+        "Le2zr-cRENo",
+        "Ntf-BzRGTug",
+        "jMu830avg98",
+        "kyfyXGWzoCY"
       ]
     },
     {
-      "event_group": "event-029",
+      "event_group": "event-019",
+      "canonical_id": "gyT_qLziJ2M",
+      "member_ids": [
+        "gyT_qLziJ2M"
+      ]
+    },
+    {
+      "event_group": "event-020",
+      "canonical_id": "SjuGxdMRzPk",
+      "member_ids": [
+        "SjuGxdMRzPk"
+      ]
+    },
+    {
+      "event_group": "event-021",
+      "canonical_id": "NmbVCeypyHE",
+      "member_ids": [
+        "3VR-aKaxHyU",
+        "NmbVCeypyHE",
+        "y2kfhhDgN5s"
+      ]
+    },
+    {
+      "event_group": "event-022",
+      "canonical_id": "-PNMB8VQ0hY",
+      "member_ids": [
+        "-PNMB8VQ0hY",
+        "1fkbpthd1MI",
+        "mj5ur3bCtR8"
+      ]
+    },
+    {
+      "event_group": "event-023",
       "canonical_id": "UYdFSPfJZfk",
       "member_ids": [
         "UYdFSPfJZfk"
       ]
     },
     {
-      "event_group": "event-012",
-      "canonical_id": "eddIEv78h3E",
-      "member_ids": [
-        "6FhicKsZRpw",
-        "KXoaUQadksU",
-        "LXPkBOctQhE",
-        "eddIEv78h3E"
-      ]
-    },
-    {
-      "event_group": "event-030",
+      "event_group": "event-024",
       "canonical_id": "pikkD5C3swU",
       "member_ids": [
         "O1H9Au0hGxA",
@@ -114893,7 +114730,108 @@
       ]
     },
     {
-      "event_group": "event-044",
+      "event_group": "event-025",
+      "canonical_id": "yJglGGY8ADI",
+      "member_ids": [
+        "wqtxaE1csEI",
+        "yJglGGY8ADI"
+      ]
+    },
+    {
+      "event_group": "event-026",
+      "canonical_id": "IHY-7SvqxoI",
+      "member_ids": [
+        "IHY-7SvqxoI"
+      ]
+    },
+    {
+      "event_group": "event-027",
+      "canonical_id": "HBuj_rOU5yA",
+      "member_ids": [
+        "CpQyrmIrasU",
+        "HBuj_rOU5yA",
+        "MExLyHOhkkE",
+        "cJ-_bH8JIss"
+      ]
+    },
+    {
+      "event_group": "event-028",
+      "canonical_id": "Fm09R5akNzM",
+      "member_ids": [
+        "Fm09R5akNzM",
+        "rr-pObURxuc"
+      ]
+    },
+    {
+      "event_group": "event-029",
+      "canonical_id": "mu2ep3dsHaQ",
+      "member_ids": [
+        "mu2ep3dsHaQ"
+      ]
+    },
+    {
+      "event_group": "event-030",
+      "canonical_id": "p7G73zBiow4",
+      "member_ids": [
+        "RN1KK-VBoUg",
+        "p7G73zBiow4"
+      ]
+    },
+    {
+      "event_group": "event-031",
+      "canonical_id": "xh-kV0Rm8K8",
+      "member_ids": [
+        "A6vTh2qoGrc",
+        "dvCtCfifU30",
+        "xh-kV0Rm8K8"
+      ]
+    },
+    {
+      "event_group": "event-032",
+      "canonical_id": "HiJYFR1vR9g",
+      "member_ids": [
+        "HiJYFR1vR9g"
+      ]
+    },
+    {
+      "event_group": "event-033",
+      "canonical_id": "ZU_qK2nH89o",
+      "member_ids": [
+        "6mWMd7ClCv8",
+        "ZU_qK2nH89o"
+      ]
+    },
+    {
+      "event_group": "event-034",
+      "canonical_id": "Zya6KTuVnwY",
+      "member_ids": [
+        "JkLlmVzJ_dc",
+        "Zya6KTuVnwY"
+      ]
+    },
+    {
+      "event_group": "event-035",
+      "canonical_id": "Enmz62kOMyI",
+      "member_ids": [
+        "Enmz62kOMyI"
+      ]
+    },
+    {
+      "event_group": "event-036",
+      "canonical_id": "QAFNXg-LfTU",
+      "member_ids": [
+        "QAFNXg-LfTU"
+      ]
+    },
+    {
+      "event_group": "event-037",
+      "canonical_id": "9rpZpKagShM",
+      "member_ids": [
+        "9rpZpKagShM"
+      ]
+    },
+    {
+      "event_group": "event-038",
       "canonical_id": "8hj3tR4gCTc",
       "member_ids": [
         "7OFTHsA1c74",
@@ -114906,10 +114844,212 @@
     },
     {
       "event_group": "event-039",
-      "canonical_id": "ZU_qK2nH89o",
+      "canonical_id": "OOAGKPFdwf0",
       "member_ids": [
-        "6mWMd7ClCv8",
-        "ZU_qK2nH89o"
+        "OOAGKPFdwf0"
+      ]
+    },
+    {
+      "event_group": "event-040",
+      "canonical_id": "_UEZyffi3YU",
+      "member_ids": [
+        "_UEZyffi3YU"
+      ]
+    },
+    {
+      "event_group": "event-041",
+      "canonical_id": "sJ-b3ohKEs0",
+      "member_ids": [
+        "sJ-b3ohKEs0",
+        "wTHui5fr11M"
+      ]
+    },
+    {
+      "event_group": "event-042",
+      "canonical_id": "3XayivTOjCY",
+      "member_ids": [
+        "3XayivTOjCY",
+        "5l05r-Uxi-A"
+      ]
+    },
+    {
+      "event_group": "event-043",
+      "canonical_id": "_Aer99PNOA8",
+      "member_ids": [
+        "-qcEnX4VcWI",
+        "_Aer99PNOA8",
+        "k9UueTQI6gw"
+      ]
+    },
+    {
+      "event_group": "event-044",
+      "canonical_id": "mb2Jw47oVl8",
+      "member_ids": [
+        "3YMlecD1nQ0",
+        "mb2Jw47oVl8"
+      ]
+    },
+    {
+      "event_group": "event-045",
+      "canonical_id": "fUA5IWV_00A",
+      "member_ids": [
+        "fUA5IWV_00A"
+      ]
+    },
+    {
+      "event_group": "event-046",
+      "canonical_id": "BNfmMijPCJM",
+      "member_ids": [
+        "BNfmMijPCJM"
+      ]
+    },
+    {
+      "event_group": "event-047",
+      "canonical_id": "BgJb8u_VyGo",
+      "member_ids": [
+        "BgJb8u_VyGo"
+      ]
+    },
+    {
+      "event_group": "event-048",
+      "canonical_id": "bSpL4BxOMUk",
+      "member_ids": [
+        "bSpL4BxOMUk"
+      ]
+    },
+    {
+      "event_group": "event-049",
+      "canonical_id": "fmv67UzNYdM",
+      "member_ids": [
+        "fmv67UzNYdM"
+      ]
+    },
+    {
+      "event_group": "event-050",
+      "canonical_id": "g_aLb7K2a-A",
+      "member_ids": [
+        "g_aLb7K2a-A"
+      ]
+    },
+    {
+      "event_group": "event-051",
+      "canonical_id": "tbyjpnb5r70",
+      "member_ids": [
+        "tbyjpnb5r70"
+      ]
+    },
+    {
+      "event_group": "event-052",
+      "canonical_id": "73EnzEWg_8k",
+      "member_ids": [
+        "73EnzEWg_8k"
+      ]
+    },
+    {
+      "event_group": "event-053",
+      "canonical_id": "KNeFsu2UbDQ",
+      "member_ids": [
+        "KNeFsu2UbDQ"
+      ]
+    },
+    {
+      "event_group": "event-054",
+      "canonical_id": "oJdO0XleOws",
+      "member_ids": [
+        "oJdO0XleOws"
+      ]
+    },
+    {
+      "event_group": "event-055",
+      "canonical_id": "Ra4_HJDql14",
+      "member_ids": [
+        "Ra4_HJDql14"
+      ]
+    },
+    {
+      "event_group": "event-056",
+      "canonical_id": "SrjfNdzQO54",
+      "member_ids": [
+        "SrjfNdzQO54"
+      ]
+    },
+    {
+      "event_group": "event-057",
+      "canonical_id": "8gMTWE2Sj8w",
+      "member_ids": [
+        "8gMTWE2Sj8w"
+      ]
+    },
+    {
+      "event_group": "event-058",
+      "canonical_id": "7Zi5vqN_VC4",
+      "member_ids": [
+        "7Zi5vqN_VC4",
+        "xK61ktEglpc"
+      ]
+    },
+    {
+      "event_group": "event-059",
+      "canonical_id": "v-1YabkN-pM",
+      "member_ids": [
+        "GzhUFm9DBVA",
+        "v-1YabkN-pM"
+      ]
+    },
+    {
+      "event_group": "event-060",
+      "canonical_id": "R-b9-w6QrWg",
+      "member_ids": [
+        "R-b9-w6QrWg"
+      ]
+    },
+    {
+      "event_group": "event-061",
+      "canonical_id": "Oahke_hLlLc",
+      "member_ids": [
+        "Oahke_hLlLc"
+      ]
+    },
+    {
+      "event_group": "event-062",
+      "canonical_id": "FG-MUTrgsls",
+      "member_ids": [
+        "FG-MUTrgsls"
+      ]
+    },
+    {
+      "event_group": "event-063",
+      "canonical_id": "hJybE-uF_qE",
+      "member_ids": [
+        "hJybE-uF_qE"
+      ]
+    },
+    {
+      "event_group": "event-064",
+      "canonical_id": "VyPCSPnxbaE",
+      "member_ids": [
+        "VyPCSPnxbaE"
+      ]
+    },
+    {
+      "event_group": "event-065",
+      "canonical_id": "CfnRESwOZKQ",
+      "member_ids": [
+        "CfnRESwOZKQ"
+      ]
+    },
+    {
+      "event_group": "event-066",
+      "canonical_id": "E_doThSKS4E",
+      "member_ids": [
+        "E_doThSKS4E"
+      ]
+    },
+    {
+      "event_group": "event-067",
+      "canonical_id": "3e_gu9rWwWQ",
+      "member_ids": [
+        "3e_gu9rWwWQ"
       ]
     }
   ]

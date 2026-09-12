@@ -1,22 +1,27 @@
+#!/usr/bin/env python3
+"""Report which candidates for a corpus profile still have no transcript, and why."""
+
 from __future__ import annotations
 
+import argparse
 import json
 from collections import Counter
-from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-EXPANDED = ROOT / "data" / "expanded"
+from corpus import Corpus, add_profile_argument, load_profile
 
 
 def main() -> None:
-    manifest = json.loads((EXPANDED / "manifest.json").read_text(encoding="utf-8"))
-    metadata = {
-        **json.loads((EXPANDED / "early-metadata.json").read_text(encoding="utf-8")),
-        **json.loads((EXPANDED / "metadata.json").read_text(encoding="utf-8")),
-    }
-    seeds = json.loads((EXPANDED / "candidate-seeds.json").read_text(encoding="utf-8"))["selected"]
-    entries = {entry["id"]: entry for entry in manifest["sources"]}
+    parser = argparse.ArgumentParser(description="List pending candidates for one profile.")
+    add_profile_argument(parser)
+    args = parser.parse_args()
 
+    profile = load_profile(args.profile)
+    corpus = Corpus(profile)
+    seeds = corpus.read_json(corpus.seeds, {"selected": []})["selected"]
+    metadata = corpus.read_json(corpus.metadata, {})
+    manifest = corpus.read_manifest()
+
+    entries = {entry["id"]: entry for entry in manifest.get("sources", [])}
     pending = []
     for seed in seeds:
         video_id = seed["id"]
@@ -39,14 +44,14 @@ def main() -> None:
         })
 
     ok = sum(1 for entry in entries.values() if entry.get("status") == "ok")
-    print(f"seeds={len(seeds)} ok={ok} pending={len(pending)}")
+    print(f"profile={profile['name']} seeds={len(seeds)} ok={ok} pending={len(pending)}")
     print(Counter(item["reason"] for item in pending))
-    (EXPANDED / "pending.json").write_text(
-        json.dumps(pending, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
     for item in pending:
-        print(item["reason"], item["id"], item["date"], item["title"][:70])
+        print(f'  {item["reason"]:<20} {item["id"]}  {item["date"]}  {item["title"][:70]}')
+
+    corpus.pending.write_text(
+        json.dumps(pending, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
 
 
 if __name__ == "__main__":

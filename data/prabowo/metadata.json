@@ -2748,5 +2748,53 @@
     "duration": 149,
     "seed": null,
     "metadata_status": "ok"
+  },
+  "xK61ktEglpc": {
+    "id": "xK61ktEglpc",
+    "upload_date": "20260628",
+    "channel": "Pangkep TV",
+    "title": "Pidato Penutupan Sarasehan Kebangsaan KSTI 2026",
+    "duration": 1059,
+    "metadata_status": "baseline_import"
+  },
+  "hJybE-uF_qE": {
+    "id": "hJybE-uF_qE",
+    "upload_date": "20260626",
+    "channel": "Sekretariat Presiden",
+    "title": "Pembukaan Sarasehan Kebangsaan KSTI 2026",
+    "duration": 2875,
+    "metadata_status": "baseline_import"
+  },
+  "VyPCSPnxbaE": {
+    "id": "VyPCSPnxbaE",
+    "upload_date": "20260311",
+    "channel": "METRO TV",
+    "title": "Pidato Presiden Prabowo di Tasyakuran HUT ke-1 Danantara",
+    "duration": 1024,
+    "metadata_status": "baseline_import"
+  },
+  "CfnRESwOZKQ": {
+    "id": "CfnRESwOZKQ",
+    "upload_date": "20250410",
+    "channel": "Sekretariat Presiden",
+    "title": "Pidato Kenegaraan Presiden Prabowo di Hadapan Parlemen Turkiye",
+    "duration": 949,
+    "metadata_status": "baseline_import"
+  },
+  "E_doThSKS4E": {
+    "id": "E_doThSKS4E",
+    "upload_date": "20250807",
+    "channel": "Sekretariat Presiden",
+    "title": "Presiden Prabowo Hadiri KSTI Indonesia 2025",
+    "duration": 1980,
+    "metadata_status": "baseline_import"
+  },
+  "3e_gu9rWwWQ": {
+    "id": "3e_gu9rWwWQ",
+    "upload_date": "20250831",
+    "channel": "Kompas.com",
+    "title": "Pernyataan Presiden Prabowo Menyikapi Aksi Demo",
+    "duration": 665,
+    "metadata_status": "baseline_import"
   }
 }
