@@ -8,10 +8,12 @@
 # arrived. Intended to run from a Hermes cron job as a script-only (no_agent)
 # task so a quiet tick costs nothing.
 #
-# Exit codes:  0 = ran, nothing new
-#              10 = new captions collected and published
-#              20 = every candidate handled, nothing left to fetch
-#              1 = hard failure (missing venv/scripts, rebuild or push error)
+# Exit codes:  0 = fine (quiet when nothing new, otherwise a summary on stdout)
+#              1 = hard failure (missing venv/scripts, rebuild, guard or push error)
+#
+# Always exit 0 on success, including when work was done: the Hermes scheduler
+# treats any non-zero exit as a failure and raises an alert, so status is
+# reported through stdout instead of the exit code.
 
 set -uo pipefail
 
@@ -95,8 +97,7 @@ if [ "$NEW" -le 0 ]; then
   record_result "$STARTED_AT" "$ELAPSED" 0 "$BLOCKED" "$NO_TRACK" \
     "$LEFT_BEFORE" "$LEFT_AFTER" 0 "$COLLECT_RC" "no_new_captions"
   if [ "$LEFT_AFTER" = "0" ]; then
-    echo "Prabowo corpus: all candidates handled, nothing left to fetch."
-    exit 20
+    echo "Prabowo corpus: all candidates handled, nothing left to fetch. This cron job can be removed."
   fi
   # Silent on a quiet tick: nothing new, so no one needs a message.
   exit 0
@@ -180,4 +181,4 @@ if [ $PUSHED -ne 0 ]; then
 fi
 
 echo "Prabowo corpus: +${NEW} caption(s) published. ${EVENTS} events, ${LEFT_AFTER} candidate(s) still pending."
-exit 10
+exit 0
